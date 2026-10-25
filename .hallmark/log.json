@@ -11,7 +11,7 @@
     "imagery": "original UNSCROLL fox brand artwork, no third-party character images",
     "photos": [],
     "entry": "new application",
-    "fingerprint": ["daily queue", "split ink-red surface", "ten topic groups", "sixteen ordered paths", "focus reader", "local vault"],
+    "fingerprint": ["daily queue", "split ink-red surface", "ten topic groups", "twenty-two ordered paths", "focus reader", "local vault with practice"],
     "sections": ["Today", "Explore", "Vault", "Recall", "You"],
     "signature": "Ink beside a finite daily session",
     "waived": ["23: user-requested red surface", "39b: entire lesson rows are touch targets", "80: original requested mascot brand identity"],
@@ -23,7 +23,8 @@
       "partial": 0,
       "unresolved": 0,
       "renderAudit": "0 FAIL, 0 WARN, 3 WAIVED, 5 ANSWERED, 4 DISMISSED",
-      "captures": "26 route/reader state captures; 18 phone/desktop images independently reviewed"
+      "captures": "32 current route/reader state captures; 18 earlier phone/desktop images independently reviewed; new practice and resume phone states checked",
+      "secondAudit": "105 browser cases and 280 unit/contract cases passed; Hallmark still has no open failures or warnings"
     },
     "prompt": "Mobile-first practical learning PWA, red black ivory anime-inspired identity, daily finite learning and creative cinema/design hobbies."
   }
