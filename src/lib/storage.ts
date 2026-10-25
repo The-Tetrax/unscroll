@@ -41,6 +41,7 @@ export function retainDiscoveries(snapshot: LibrarySnapshot, incoming: Lesson[])
     ...snapshot.state.saved, ...Object.keys(snapshot.state.completed), ...Object.keys(snapshot.state.notes),
     ...Object.keys(snapshot.state.reviews), ...snapshot.state.daily.ids,
     ...snapshot.state.collections.flatMap((collection) => collection.lessonIds),
+    ...Object.keys(snapshot.state.readerDrafts ?? {}), ...Object.keys(snapshot.state.practices ?? {}),
   ])
   const all = new Map([...snapshot.discoveries, ...incoming].map((lesson) => [lesson.id, lesson]))
   const recent = [...all.values()].sort((a, b) => (b.publishedAt ?? '').localeCompare(a.publishedAt ?? '')).slice(0, 60)
@@ -67,10 +68,14 @@ export function parseBackup(text: string, curatedIds: Set<string>): LibrarySnaps
   if (discoveries.some((lesson) => lesson.kind !== 'discovery')) throw new Error('The backup contains invalid discovery content.')
   const ids = new Set([...curatedIds, ...discoveries.map((lesson) => lesson.id)])
   const referenced = [...state.saved, ...Object.keys(state.completed), ...Object.keys(state.notes), ...Object.keys(state.reviews),
-    ...state.daily.ids, ...state.collections.flatMap((collection) => collection.lessonIds)]
+    ...state.daily.ids, ...state.collections.flatMap((collection) => collection.lessonIds),
+    ...Object.keys(state.readerDrafts ?? {}), ...Object.keys(state.practices ?? {})]
   if (referenced.some((id) => !ids.has(id))) throw new Error('This backup references missing lessons. Update the app or choose a complete backup.')
   if (new Set(discoveries.map((lesson) => lesson.id)).size !== discoveries.length
-    || new Set(state.collections.map((collection) => collection.id)).size !== state.collections.length) {
+    || new Set(state.collections.map((collection) => collection.id)).size !== state.collections.length
+    || new Set(state.saved).size !== state.saved.length || new Set(state.daily.ids).size !== state.daily.ids.length
+    || new Set(state.delivered).size !== state.delivered.length
+    || state.collections.some((collection) => new Set(collection.lessonIds).size !== collection.lessonIds.length)) {
     throw new Error('This backup contains duplicate records. No data was changed.')
   }
   return { state: state as AppState, discoveries: discoveries as Lesson[] }

@@ -22,8 +22,12 @@ export function Today({ library, route }: { library: Library; route: Route }) {
     'phone-eye': ['THINK', 'IN SCENES.'], directing: ['DIRECT', 'THE MOMENT.'], light: ['FOLLOW', 'THE LIGHT.'],
     editing: ['FIND', 'THE CUT.'], sound: ['LISTEN', 'CLOSER.'], 'cinema-study': ['WATCH', 'WITH INTENT.'],
     colour: ['SEE', 'THE COLOUR.'], 'type-space': ['GIVE TYPE', 'SOME SPACE.'], 'ux-eye': ['QUESTION', 'THE DESIGN.'], draw: ['DRAW', 'THE FORM.'],
+    'evidence-checks': ['CHECK', 'THE CLAIM.'], 'shared-systems': ['TRACE', 'THE SYSTEM.'], 'invisible-work': ['NOTICE', 'THE WORK.'],
+    'phone-detail': ['CHECK', 'THE DETAILS.'], 'drawing-marks': ['MAKE', 'YOUR MARK.'], 'beyond-screens': ['TEST', 'THE BEHAVIOR.'],
   }
   const poster = pathPosters[featurePath.id] ?? ['MAKE', 'IT REAL.']
+  const unfinished = Object.keys(state.readerDrafts ?? {}).filter((id) => !state.completed[id])
+  const planned = Object.values(state.practices ?? {}).filter((practice) => practice.status === 'planned').length
 
   return <>
     <div className="day-heading"><time dateTime={today}>{dateLabel}</time><span className="streak-label"><Flame size={17} aria-hidden="true"/>{streak(state, today)} day streak</span></div>
@@ -33,13 +37,18 @@ export function Today({ library, route }: { library: Library; route: Route }) {
         <p>{done ? 'One idea used beats a hundred ideas collected.' : 'Small lessons for a life beyond the feed.'}</p>
         {next ? <button type="button" className="button button-primary hero-action" onClick={() => route.setParam('lesson', next.id)}>{completed ? 'Continue session' : 'Start today’s session'}<ArrowRight size={20} aria-hidden="true"/></button>
           : <button type="button" className="button button-primary hero-action" onClick={() => route.navigate(done ? 'vault' : 'explore')}>{done ? 'Keep an idea close' : 'Explore the library'}<ArrowRight size={20} aria-hidden="true"/></button>}
-        <span className="hero-footnote">{queue.length ? `${queue.length} bites. About ${queue.reduce((total, lesson) => total + readingMinutes(lesson), 0)} minutes. Then you’re done.` : 'The daily queue is clear. Explore at your own pace.'}</span>
+        <span className="hero-footnote">{queue.length ? `${queue.length} bites. About ${queue.reduce((total, lesson) => total + readingMinutes(lesson), 0)} minutes of reading.` : 'The daily queue is clear. Explore at your own pace.'}</span>
       </div>
       <div className="hero-art"><div className="hero-art-sun" aria-hidden="true"/><Mascot/><span className="mascot-caption">Ink’s rule: stay curious.</span></div>
     </section>
     <div className="daily-progress"><div><span>{done ? 'Daily session complete' : 'Your daily session'}</span><strong>{completed}<span> / {queue.length || state.goal} bites</span></strong></div><ProgressBar value={completed} max={queue.length || state.goal} label="Daily bites completed"/></div>
 
     {!state.welcomeDismissed && <section className="welcome-note"><Sprout size={21} aria-hidden="true"/><p><strong>Welcome to your better phone habit.</strong> Read a bite. Try something. Recall it later. Your progress stays on this device.</p><button type="button" className="icon-button" aria-label="Dismiss welcome" onClick={() => library.updateState((old) => ({ ...old, welcomeDismissed: true }))}><X size={18} aria-hidden="true"/></button></section>}
+
+    {(unfinished.length > 0 || planned > 0) && <div className="continuity-links">
+      {unfinished.length > 0 && <button type="button" className="text-action" onClick={() => route.navigate('vault', { view: 'unfinished' })}>{unfinished.length} unfinished {unfinished.length === 1 ? 'bite' : 'bites'}<ArrowUpRight size={17} aria-hidden="true"/></button>}
+      {planned > 0 && <button type="button" className="text-action" onClick={() => route.navigate('vault', { view: 'practice' })}>{planned} {planned === 1 ? 'experiment' : 'experiments'} to try offscreen<ArrowUpRight size={17} aria-hidden="true"/></button>}
+    </div>}
 
     <div className="today-columns">
       <section className="daily-lineup" aria-labelledby="lineup-heading">
@@ -66,7 +75,7 @@ export function Today({ library, route }: { library: Library; route: Route }) {
     <section className="discovery-section"><SectionHeading title="Beyond the library"><button type="button" className="text-action" disabled={library.discoveryLoading} onClick={() => { void library.refreshDiscoveries() }}><RefreshCw size={16} className={library.discoveryLoading ? 'spin' : ''} aria-hidden="true"/>{library.discoveryLoading ? 'Checking' : 'Refresh'}</button></SectionHeading>
       <p className="section-description">A daily selection of Wikipedia reference extracts. Different from our original, practical lessons.</p>
       {library.discoveryLoading && !library.edition && <div className="discovery-skeleton" role="status"><span/><span/><span/><p>Finding today’s references…</p></div>}
-      {library.edition && <p className="edition-status" role="status">{library.edition.status === 'fresh' ? `Edition ${library.edition.date} (UTC)` : library.edition.message ?? 'Showing a downloaded edition.'}</p>}
+      {library.edition && <p className="edition-status" role="status">{library.edition.status === 'fresh' ? `Edition ${library.edition.date} (UTC)` : library.edition.message ?? `Downloaded edition ${library.edition.date} (UTC).`}</p>}
       <div className="discovery-grid">{library.edition?.lessons.filter((lesson) => !state.completed[lesson.id]).map((lesson) => <LessonCard key={lesson.id} lesson={lesson} saved={state.saved.includes(lesson.id)} completed={false} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>)}</div>
       {library.edition?.lessons.length !== 0 && library.edition?.lessons.every((lesson) => state.completed[lesson.id]) && <p className="inline-notice">You’ve read this edition. No need to repeat it.</p>}
     </section>

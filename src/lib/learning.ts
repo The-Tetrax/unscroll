@@ -1,5 +1,5 @@
 import { CATEGORY_IDS } from '../types'
-import type { AppState, Lesson } from '../types'
+import type { AppState, Lesson, ReaderDraft } from '../types'
 
 export function localDate(date = new Date()): string {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`
@@ -61,8 +61,9 @@ export function ensureDaily(
 
 export function completeLesson(state: AppState, lesson: Lesson, correct: boolean | null, date = localDate()): AppState {
   if (state.completed[lesson.id]) return state
+  const next = clearReaderDraft(state, lesson.id)
   return {
-    ...state,
+    ...next,
     xp: state.xp + (lesson.kind === 'discovery' ? 10 : 20),
     completed: { ...state.completed, [lesson.id]: { date, correct } },
     reviews: { ...state.reviews, [lesson.id]: { due: addDays(date, 1), interval: 1, repetitions: 0 } },
@@ -113,4 +114,40 @@ export function levelFor(xp: number): { level: number; title: string; next: numb
   const level = Math.floor(xp / 200) + 1
   const titles = ['The beginning', 'Paying attention', 'Pattern finder', 'Clear thinker', 'Idea collector', 'Everyday practitioner']
   return { level, title: titles[Math.min(titles.length - 1, level - 1)], next: level * 200, progress: (xp % 200) / 200 }
+}
+
+export function saveReaderDraft(state: AppState, id: string, draft: Omit<ReaderDraft, 'updatedAt'>, now = new Date().toISOString()): AppState {
+  if (state.completed[id]) return state
+  const previous = state.readerDrafts?.[id]
+  if (previous?.stage === draft.stage && previous.choice === draft.choice && previous.revealed === draft.revealed) return state
+  return { ...state, readerDrafts: { ...state.readerDrafts, [id]: { ...draft, updatedAt: now } } }
+}
+
+export function clearReaderDraft(state: AppState, id: string): AppState {
+  if (!state.readerDrafts?.[id]) return state
+  const readerDrafts = { ...state.readerDrafts }
+  delete readerDrafts[id]
+  const next: AppState = { ...state, readerDrafts }
+  if (!Object.keys(readerDrafts).length) delete next.readerDrafts
+  return next
+}
+
+export const MAX_PLANNED_PRACTICES = 5
+
+export function setPractice(state: AppState, id: string, status: 'planned' | 'tried' | null, date = localDate()): AppState {
+  const previous = state.practices?.[id]
+  if (previous?.status === status || (!previous && status === null)) return state
+  const practices = { ...state.practices }
+  if (status === null) delete practices[id]
+  else {
+    if (status === 'planned' && Object.values(practices).filter((practice) => practice.status === 'planned').length >= MAX_PLANNED_PRACTICES) {
+      throw new Error('Keep at most five experiments planned. Try or remove one before adding another.')
+    }
+    const plannedOn = previous?.plannedOn && previous.plannedOn <= date ? previous.plannedOn : date
+    practices[id] = status === 'tried' ? { status, plannedOn, triedOn: date } : { status, plannedOn }
+  }
+  const next: AppState = { ...state, practices }
+  if (!Object.keys(practices).length) delete next.practices
+  // Practice is self-reported, not another source of points or review credit.
+  return next
 }

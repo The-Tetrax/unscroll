@@ -6,6 +6,8 @@ import type { Library } from '../hooks/useLibrary'
 import type { Route } from '../hooks/useRoute'
 import type { Lesson } from '../types'
 import { EmptyState, LessonCard } from './shared'
+import { PracticeActions } from './PracticeActions'
+import { matchesLesson, noteExcerpt } from '../lib/search'
 
 const PAGE_SIZE = 12
 const COLLECTION_LIMIT = 40
@@ -19,29 +21,29 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
   const [collectionName, setCollectionName] = useState('')
   const [collectionFeedback, setCollectionFeedback] = useState<{ message: string; error: boolean } | null>(null)
   const { state } = library
-  const view = route.params.get('view') === 'notes' ? 'notes' : 'saved'
+  const requestedView = route.params.get('view')
+  const view = requestedView === 'notes' || requestedView === 'practice' || requestedView === 'unfinished' ? requestedView : 'saved'
   const query = route.params.get('q') ?? ''
   const collectionId = route.params.get('collection') ?? ''
   const selectedCollection = state.collections.find((collection) => collection.id === collectionId)
   const missingCollection = Boolean(collectionId && !selectedCollection)
   const savedIds = new Set(state.saved)
   const noteIds = Object.keys(state.notes).filter((id) => state.notes[id].trim().length > 0)
+  const practiceIds = Object.keys(state.practices ?? {}).sort((a, b) => Number(state.practices?.[a].status === 'tried') - Number(state.practices?.[b].status === 'tried'))
+  const unfinishedIds = Object.keys(state.readerDrafts ?? {}).filter((id) => !state.completed[id])
+    .sort((a, b) => (state.readerDrafts?.[b].updatedAt ?? '').localeCompare(state.readerDrafts?.[a].updatedAt ?? ''))
   const search = query.trim().toLocaleLowerCase()
   const membership = selectedCollection ? new Set(selectedCollection.lessonIds) : null
   const editingDisabled = !library.ready || Boolean(library.fatal)
-  const sourceIds = view === 'notes' ? noteIds : selectedCollection ? [...selectedCollection.lessonIds].reverse() : [...savedIds].reverse()
+  const sourceIds = view === 'notes' ? noteIds : view === 'practice' ? practiceIds : view === 'unfinished' ? unfinishedIds
+    : selectedCollection ? [...selectedCollection.lessonIds].reverse() : [...savedIds].reverse()
   const matchingLessons = sourceIds
     .map((id) => library.getLesson(id))
     .filter((lesson): lesson is Lesson => Boolean(lesson))
     .filter((lesson) => {
       if (missingCollection || (membership && !membership.has(lesson.id))) return false
       if (!search) return true
-      const searchableText = [
-        lesson.title, lesson.topic, lesson.hook, ...lesson.body, lesson.takeaway,
-        lesson.action, categoryById[lesson.category].name,
-        view === 'notes' ? state.notes[lesson.id] : '',
-      ].join(' ').toLocaleLowerCase()
-      return searchableText.includes(search)
+      return matchesLesson(lesson, search, `${categoryById[lesson.category].name} ${view === 'notes' ? state.notes[lesson.id] : ''}`)
     })
   const requestedPage = Number(route.params.get('page') ?? '1')
   const pageCount = Math.max(1, Math.ceil(matchingLessons.length / PAGE_SIZE))
@@ -118,14 +120,16 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
     ? 'This collection is unavailable'
     : hasFilters
       ? 'No matching lessons'
-      : view === 'notes' ? 'Your notes will appear here' : 'Nothing saved yet'
+      : view === 'notes' ? 'Your notes will appear here' : view === 'practice' ? 'Pick one thing to try.' : view === 'unfinished' ? 'No unfinished steps.' : 'Nothing saved yet'
   const emptyDescription = missingCollection
     ? 'The collection may have been deleted. Clear the filter to see the rest of your vault.'
     : hasFilters
       ? view === 'notes'
         ? 'Try a different search or collection. Notes appear here even when their lessons are not saved.'
         : 'Try a different search or collection. Open a saved lesson to change its collection membership.'
-      : view === 'notes'
+      : view === 'practice' ? 'Use “Plan this experiment” inside a lesson. Keep up to five planned; mark an attempt when you try it. This is your own record, without points or deadlines.'
+        : view === 'unfinished' ? 'When you leave a bite partway through, its step and answer are kept here. Completed bites move to your learning history.'
+        : view === 'notes'
         ? 'Open a lesson and write a note. It will stay here even if you do not save the lesson.'
         : 'Save a lesson you want to return to. Explore has original lessons and downloaded discoveries to choose from.'
 
@@ -138,11 +142,13 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
     <div className="filter-row" role="group" aria-label="Vault view">
       <button type="button" className={`chip${view === 'saved' ? ' is-active' : ''}`} aria-pressed={view === 'saved'} aria-controls={resultsId} onClick={() => changeFilters({ view: 'saved' })}>Saved ({savedIds.size})</button>
       <button type="button" className={`chip${view === 'notes' ? ' is-active' : ''}`} aria-pressed={view === 'notes'} aria-controls={resultsId} onClick={() => changeFilters({ view: 'notes' })}>Notes ({noteIds.length})</button>
+      <button type="button" className={`chip${view === 'practice' ? ' is-active' : ''}`} aria-pressed={view === 'practice'} aria-controls={resultsId} onClick={() => changeFilters({ view: 'practice', collection: '', q: '' })}>Practice ({practiceIds.length})</button>
+      <button type="button" className={`chip${view === 'unfinished' ? ' is-active' : ''}`} aria-pressed={view === 'unfinished'} aria-controls={resultsId} onClick={() => changeFilters({ view: 'unfinished', collection: '', q: '' })}>Unfinished ({unfinishedIds.length})</button>
     </div>
 
     <div className="form-row">
       <div className="field">
-        <label className="field-label" htmlFor={`${prefix}-search`}><Search size={18} aria-hidden="true"/> {view === 'notes' ? 'Search notes and lessons' : 'Search saved lessons'}</label>
+        <label className="field-label" htmlFor={`${prefix}-search`}><Search size={18} aria-hidden="true"/> {view === 'notes' ? 'Search notes and lessons' : view === 'practice' ? 'Search experiments' : view === 'unfinished' ? 'Search unfinished bites' : 'Search saved lessons'}</label>
         <input id={`${prefix}-search`} className="field-input" type="search" value={query} maxLength={200} autoComplete="off" aria-controls={resultsId} aria-describedby={`${prefix}-search-hint`} onChange={(event) => changeFilters({ q: event.currentTarget.value }, true)}/>
         <p className="field-hint" id={`${prefix}-search-hint`}>{view === 'notes' ? 'Search your note text, lesson titles and lesson content.' : 'Search lesson titles, topics and lesson content.'}</p>
       </div>
@@ -186,16 +192,18 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
     </details>
 
     <section id={resultsId} aria-labelledby={`${prefix}-results-title`}>
-      <div className="section-heading"><h2 id={`${prefix}-results-title`} ref={resultsHeading} tabIndex={-1}>{view === 'notes' ? 'Your notes' : selectedCollection ? selectedCollection.name : 'Saved lessons'}</h2></div>
+      <div className="section-heading"><h2 id={`${prefix}-results-title`} ref={resultsHeading} tabIndex={-1}>{view === 'notes' ? 'Your notes' : view === 'practice' ? 'Ideas you put to use' : view === 'unfinished' ? 'Pick up where you left off' : selectedCollection ? selectedCollection.name : 'Saved lessons'}</h2></div>
+      {view === 'practice' && <p className="field-hint">A reading streak is not a practice record. Keep up to five planned experiments, then record what you noticed in a note. “Tried” is self-reported and awards no XP.</p>}
       <p className="section-description" role="status" aria-live="polite" aria-atomic="true">{matchingLessons.length
-        ? `Showing ${start + 1} to ${start + visibleLessons.length} of ${matchingLessons.length} ${view === 'notes' ? 'lessons with notes' : selectedCollection ? 'collected lessons' : 'saved lessons'}${selectedCollection ? ` in ${selectedCollection.name}` : ''}.`
-        : `No ${view === 'notes' ? 'notes' : 'saved lessons'}${hasFilters ? ' match these filters' : ' to show'}.`}</p>
+        ? `Showing ${start + 1} to ${start + visibleLessons.length} of ${matchingLessons.length} ${view === 'notes' ? 'lessons with notes' : view === 'practice' ? 'experiments' : view === 'unfinished' ? 'unfinished bites' : selectedCollection ? 'collected lessons' : 'saved lessons'}${selectedCollection ? ` in ${selectedCollection.name}` : ''}.`
+        : `No ${view === 'notes' ? 'notes' : view === 'practice' ? 'experiments' : view === 'unfinished' ? 'unfinished bites' : 'saved lessons'}${hasFilters ? ' match these filters' : ' to show'}.`}</p>
       {visibleLessons.length > 0 ? <ul className="lesson-list">
         {visibleLessons.map((lesson) => {
-          const note = (state.notes[lesson.id] ?? '').replace(/\s+/g, ' ').trim()
-          const excerpt = note.length > 240 ? `${note.slice(0, 240)}...` : note
+          const excerpt = noteExcerpt(state.notes[lesson.id] ?? '')
           return <li key={lesson.id}>
             <LessonCard lesson={lesson} saved={savedIds.has(lesson.id)} completed={Boolean(state.completed[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>
+            {view === 'practice' && <div className="practice-entry"><p>{lesson.action}</p><PracticeActions library={library} lesson={lesson}/><button type="button" className="text-action" onClick={() => route.navigate('vault', { ...Object.fromEntries(route.params), lesson: lesson.id, stage: 'try' })}>Record what you noticed<NotebookPen size={17} aria-hidden="true"/></button></div>}
+            {view === 'unfinished' && <div className="unfinished-entry"><span className="field-hint">Resume at {state.readerDrafts?.[lesson.id].stage === 'try' ? 'Put it to use' : state.readerDrafts?.[lesson.id].stage === 'recall' ? 'Make it stick' : 'Understand'}. No completion XP yet.</span><button type="button" className="text-action" onClick={() => { library.discardDraft(lesson.id); resultsHeading.current?.focus() }}>Forget this position</button></div>}
             {view === 'notes' && <div className="panel">
               <p className="section-description">{excerpt}</p>
               <button type="button" className="button button-quiet" aria-label={`Open note for ${lesson.title}`} onClick={() => route.navigate('vault', { ...Object.fromEntries(route.params), lesson: lesson.id, stage: 'try' })}><NotebookPen size={18} aria-hidden="true"/>Open note</button>

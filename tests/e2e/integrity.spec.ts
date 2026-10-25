@@ -76,6 +76,7 @@ function backupFileText(snapshot: LibrarySnapshot, exportedAt = CLOCK): string {
 interface PausedDiscovery {
   requested: Promise<Request>
   release: () => void
+  handled: Promise<void>
 }
 
 interface DiscoveryNetwork {
@@ -93,7 +94,7 @@ const test = base.extend<{ network: DiscoveryNetwork }>({
     context.pages().forEach(watchPage)
     context.on('page', watchPage)
     const releases: (() => void)[] = []
-    let next: { started: (request: Request) => void; released: Promise<void>; body: string } | undefined
+    let next: { started: (request: Request) => void; released: Promise<void>; body: string; done: () => void } | undefined
     const network: DiscoveryNetwork = {
       requests: [],
       pauseNext(edition) {
@@ -101,11 +102,13 @@ const test = base.extend<{ network: DiscoveryNetwork }>({
         const body = JSON.stringify(editionSchema.parse(edition))
         let started!: (request: Request) => void
         let release!: () => void
+        let done!: () => void
         const requested = new Promise<Request>((resolve) => { started = resolve })
         const released = new Promise<void>((resolve) => { release = resolve })
-        next = { started, released, body }
+        const handled = new Promise<void>((resolve) => { done = resolve })
+        next = { started, released, body, done }
         releases.push(release)
-        return { requested, release }
+        return { requested, release, handled }
       },
     }
     await context.route('**/*', async (route) => {
@@ -122,10 +125,14 @@ const test = base.extend<{ network: DiscoveryNetwork }>({
           paused.started(request)
           await paused.released
         }
-        await route.fulfill({
-          status: 200, contentType: 'application/json', headers: { 'Cache-Control': 'no-store' },
-          body: paused?.body ?? unavailable,
-        })
+        try {
+          if (request.failure()) await route.abort('aborted')
+          else await route.fulfill({
+            status: 200, contentType: 'application/json', headers: { 'Cache-Control': 'no-store' },
+            body: paused?.body ?? unavailable,
+          })
+        } catch (error) { if (!request.failure()) throw error }
+        finally { paused?.done() }
       } else {
         await route.continue()
       }
@@ -209,7 +216,10 @@ async function waitForStored(page: Page, snapshot: LibrarySnapshot) {
 
 async function waitForUnavailable(page: Page) {
   await expect(page.locator('main#main')).toBeVisible()
-  await expect(page.locator('.discovery-section .edition-status')).toHaveText(UNAVAILABLE.message!)
+  const snapshot = await readStored(page)
+  const latest = snapshot?.discoveries.map((lesson) => lesson.publishedAt ?? '').sort().at(-1)
+  await expect(page.locator('.discovery-section .edition-status')).toHaveText(latest
+    ? `Downloaded edition ${latest} (UTC). It may be older than today; saved references remain available.` : UNAVAILABLE.message!)
   await expect(page.getByRole('button', { name: 'Refresh', exact: true })).toBeEnabled()
 }
 
@@ -227,7 +237,7 @@ async function openNote(page: Page) {
   }).locator('.lesson-card-main').click()
   const dialog = page.getByRole('dialog', { name: lesson.title, exact: true })
   await expect(dialog).toBeVisible()
-  await dialog.getByRole('button', { name: 'Try this idea', exact: true }).click()
+  await dialog.getByRole('navigation', { name: 'Lesson stages' }).getByRole('button', { name: /Put it to use$/ }).click()
   return dialog
 }
 
@@ -270,20 +280,20 @@ async function expectExport(page: Page, snapshot: LibrarySnapshot) {
 
 async function releaseOldResponse(page: Page, paused: PausedDiscovery) {
   const request = await paused.requested
-  const pendingResponse = page.waitForResponse((response) => response.request() === request)
+  await expect.poll(() => request.failure()?.errorText).toMatch(/abort|cancel|interrupt/i)
   paused.release()
-  const response = await pendingResponse
-  expect(response.status()).toBe(200)
-  expect(await response.finished()).toBeNull()
-  expect(await response.json()).toEqual(LATE_EDITION)
-  // Enabled Refresh proves the hook has consumed the body and left its finally block.
+  await paused.handled
+  // An abandoned response must not prevent a new fetch or resurrect old cards.
   await expect(page.getByRole('button', { name: 'Refresh', exact: true })).toBeEnabled()
-  await expect(page.locator('.discovery-section .edition-status')).toHaveCount(0)
+  await expect(page.locator('.discovery-section .edition-status')).toHaveText('No downloaded edition is available. Refresh when connected; the original lesson library is still here.')
   await expect(page.locator('.discovery-grid .lesson-card-main')).toHaveCount(0)
 }
 
 test('A stale tab cannot overwrite a committed note and exports its own unsaved in-memory library', async ({ page, context }) => {
   const initial = issuedSnapshot()
+  // Both tabs begin at the same already-saved position so opening the reader
+  // does not create the conflict before the note edit this test targets.
+  initial.state.readerDrafts = { [ORIGINAL_ID]: { stage: 'try', choice: null, revealed: false, updatedAt: CLOCK } }
   const baselineNote = 'Shared baseline before either tab edits.'
   initial.state.notes = { [ORIGINAL_ID]: baselineNote }
   await seedAndLoad(page, initial)
@@ -363,7 +373,7 @@ test('Import replaces the library while an older discovery request is held and i
   await waitForStored(page, imported)
 
   await navigate(page, 'today')
-  await expect(page.getByRole('button', { name: 'Checking', exact: true })).toBeDisabled()
+  await expect(page.getByRole('button', { name: 'Refresh', exact: true })).toBeEnabled()
   await releaseOldResponse(page, paused)
   await navigate(page, 'profile')
   // The download observes in-memory data after response handling and drains any attempted writes.
@@ -394,7 +404,7 @@ test('Confirmed reset during a held refresh clears the old library without late 
   await waitForStored(page, cleared)
 
   await navigate(page, 'today')
-  await expect(page.getByRole('button', { name: 'Checking', exact: true })).toBeDisabled()
+  await expect(page.getByRole('button', { name: 'Refresh', exact: true })).toBeEnabled()
   await releaseOldResponse(page, paused)
   await expect(page.locator('.xp-label')).toHaveText('0 XP')
   await navigate(page, 'profile')

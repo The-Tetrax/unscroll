@@ -4,11 +4,12 @@ import fs from 'node:fs/promises'
 const out = '.hallmark/journeys'
 await fs.mkdir(out, { recursive: true })
 const browser = await chromium.launch()
+let captures = 0
 for (const [name, width, height] of [['phone', 390, 844], ['desktop', 1280, 900]]) {
   const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce', serviceWorkers: 'allow', locale: 'en-US' })
   const page = await context.newPage()
   await page.route('**/.netlify/functions/discover', (route) => route.fulfill({ status: 503, contentType: 'application/json', body: JSON.stringify({ error: 'Offline visual-review fixture' }) }))
-  const shot = async (label, fullPage = true) => { await page.screenshot({ path: `${out}/${name}-${label}.png`, fullPage }) }
+  const shot = async (label, fullPage = true) => { await page.screenshot({ path: `${out}/${name}-${label}.png`, fullPage }); captures += 1 }
   for (const route of ['today', 'explore', 'vault', 'review', 'profile']) {
     await page.goto(`http://localhost:4173/#/${route}`)
     await page.locator('main#main').waitFor()
@@ -25,6 +26,7 @@ for (const [name, width, height] of [['phone', 390, 844], ['desktop', 1280, 900]
   await shot('reader-understand', false)
   await dialog.getByRole('button', { name: 'Try this idea', exact: true }).click()
   await dialog.getByRole('textbox', { name: /Your note or experiment/ }).fill('Visual review sample: compare the same doorway from two camera heights.')
+  await dialog.getByRole('button', { name: 'Plan this experiment', exact: true }).click()
   await dialog.getByRole('button', { name: 'Save this bite', exact: true }).click()
   await shot('reader-experiment', false)
   await dialog.getByRole('button', { name: 'Test my recall', exact: true }).click()
@@ -37,10 +39,24 @@ for (const [name, width, height] of [['phone', 390, 844], ['desktop', 1280, 900]
   await page.goto('http://localhost:4173/#/vault?view=notes')
   await page.getByRole('heading', { level: 1 }).waitFor()
   await shot('vault-with-note')
+  await page.goto('http://localhost:4173/#/vault?view=practice')
+  await page.getByRole('heading', { level: 1 }).waitFor()
+  await shot('practice-planned')
+  await page.getByRole('button', { name: 'Mark as tried', exact: true }).click()
+  await shot('practice-tried')
+  await page.goto('http://localhost:4173/#/explore?path=phone-detail&lesson=fg-013')
+  await page.getByRole('dialog').getByRole('button', { name: 'Try this idea', exact: true }).click()
+  await page.getByRole('dialog').getByRole('button', { name: 'Close lesson', exact: true }).click()
+  await page.goto('http://localhost:4173/#/vault?view=unfinished')
+  await page.getByRole('heading', { level: 1 }).waitFor()
+  await shot('unfinished')
+  await page.locator('.lesson-card-main').click()
+  await shot('reader-resumed', false)
+  await page.getByRole('dialog').getByRole('button', { name: 'Close lesson', exact: true }).click()
   await page.goto('http://localhost:4173/#/profile')
   await page.getByRole('heading', { level: 1 }).waitFor()
   await shot('profile-with-progress')
   await context.close()
 }
 await browser.close()
-console.log('Captured 26 desktop/phone route and reader-state images in .hallmark/journeys. Sample notes are only in isolated review contexts.')
+console.log(`Captured ${captures} desktop/phone route and reader-state images in .hallmark/journeys. Sample notes are only in isolated review contexts.`)

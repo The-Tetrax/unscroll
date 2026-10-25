@@ -42,11 +42,27 @@ export const lessonSchema = z.object({
   }).optional(),
 }).strict().superRefine((lesson, ctx) => {
   if (lesson.kind === 'discovery') {
-    if (!lesson.id.startsWith('wiki-') || !lesson.attribution || !lesson.publishedAt) {
+    if (!/^wiki-[1-9]\d*$/.test(lesson.id) || !lesson.attribution || !lesson.publishedAt) {
       ctx.addIssue({ code: 'custom', message: 'Discoveries require stable wiki IDs, date, and attribution' })
     }
-    if (lesson.sources.some((source) => new URL(source.url).hostname !== 'en.wikipedia.org')) {
+    const articleUrl = (value: string) => {
+      try { const url = new URL(value); return url.origin === 'https://en.wikipedia.org' && url.pathname.startsWith('/wiki/') }
+      catch { return false }
+    }
+    if (lesson.sources.some((source) => !articleUrl(source.url))) {
       ctx.addIssue({ code: 'custom', message: 'Discovery sources must be English Wikipedia articles' })
+    }
+    if (lesson.evidence !== 'reference' || lesson.quiz) ctx.addIssue({ code: 'custom', message: 'External extracts cannot pose as original research or quizzes' })
+    if (lesson.attribution) {
+      let historyValid = false
+      try {
+        const url = new URL(lesson.attribution.historyUrl)
+        historyValid = url.origin === 'https://en.wikipedia.org' && url.pathname === '/w/index.php' && url.searchParams.get('action') === 'history' && Boolean(url.searchParams.get('title'))
+      } catch { /* Invalid URLs are reported as schema issues, never thrown. */ }
+      if (!historyValid || lesson.attribution.author !== 'Wikipedia contributors'
+        || lesson.attribution.license !== 'CC BY-SA 4.0' || lesson.attribution.licenseUrl !== 'https://creativecommons.org/licenses/by-sa/4.0/') {
+        ctx.addIssue({ code: 'custom', message: 'External extracts require Wikipedia history and the correct CC BY-SA attribution' })
+      }
     }
   } else if (!lesson.quiz) {
     ctx.addIssue({ code: 'custom', message: 'An original lesson needs a retrieval question' })
@@ -80,6 +96,18 @@ export const stateSchema = z.object({
   reducedMotion: z.boolean(),
   welcomeDismissed: z.boolean(),
   followedPath: safeId.optional(),
+  readerDrafts: z.record(safeId, z.object({
+    stage: z.enum(['read', 'try', 'recall']),
+    choice: z.union([z.literal(0), z.literal(1), z.literal(2), z.null()]),
+    revealed: z.boolean(),
+    updatedAt: z.string().datetime(),
+  }).strict()).optional(),
+  practices: z.record(safeId, z.object({
+    status: z.enum(['planned', 'tried']),
+    plannedOn: dateSchema,
+    triedOn: dateSchema.optional(),
+  }).strict().refine((practice) => practice.status === 'tried' ? Boolean(practice.triedOn && practice.triedOn >= practice.plannedOn) : practice.triedOn === undefined,
+    'Practice dates must agree with their status')).optional(),
 }).strict()
 
 export const editionSchema = z.object({
@@ -87,7 +115,9 @@ export const editionSchema = z.object({
   lessons: z.array(lessonSchema).max(12),
   status: z.enum(['fresh', 'cached', 'unavailable']),
   message: z.string().max(600).optional(),
-}).strict().refine((edition) => edition.lessons.every((lesson) => lesson.kind === 'discovery'), 'Edition can only contain attributed discoveries')
+}).strict()
+  .refine((edition) => edition.lessons.every((lesson) => lesson.kind === 'discovery' && lesson.publishedAt === edition.date), 'Edition can only contain attributed discoveries from its stated date')
+  .refine((edition) => new Set(edition.lessons.map((lesson) => lesson.id)).size === edition.lessons.length, 'An edition cannot contain duplicate articles')
 
 export const backupSchema = z.object({
   app: z.literal('UNSCROLL'),

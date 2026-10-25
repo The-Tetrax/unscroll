@@ -63,6 +63,19 @@ export interface Collection {
   lessonIds: string[]
 }
 
+export interface ReaderDraft {
+  stage: 'read' | 'try' | 'recall'
+  choice: 0 | 1 | 2 | null
+  revealed: boolean
+  updatedAt: string
+}
+
+export interface Practice {
+  status: 'planned' | 'tried'
+  plannedOn: string
+  triedOn?: string
+}
+
 export interface AppState {
   version: 1
   name: string
@@ -81,6 +94,8 @@ export interface AppState {
   reducedMotion: boolean
   welcomeDismissed: boolean
   followedPath?: string
+  readerDrafts?: Record<string, ReaderDraft>
+  practices?: Record<string, Practice>
 }
 
 export interface DiscoveryEdition {

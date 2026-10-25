@@ -24,7 +24,7 @@ for (const lesson of lessons) {
   assert(!/[\u2013\u2014]/.test(JSON.stringify(lesson)), `${lesson.id}: forbidden long dash`)
   assert(lesson.quiz && new Set(lesson.quiz.options).size === 3, `${lesson.id}: invalid quiz options`)
 }
-assert.equal(lessons.length, 520, 'Expected 520 original lessons across ten categories')
+assert.equal(lessons.length, 544, 'Expected 544 original lessons across ten categories')
 for (const path of learningPaths) {
   assert(path.lessonIds.length > 0, `${path.id}: empty path`)
   assert.equal(new Set(path.lessonIds).size, path.lessonIds.length, `${path.id}: duplicate lesson`)

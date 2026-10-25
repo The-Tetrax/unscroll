@@ -456,7 +456,7 @@ test('Explore filters cinema and subtopics, clears empty searches, and preserves
 test('Explore paginates twelve results, disables its boundaries, and resets pagination on filters', async ({ page, network }) => {
   await openFreshToday(page, network)
   await navigate(page, 'explore')
-  expect(lessons).toHaveLength(520)
+  expect(lessons).toHaveLength(544)
   const catalog = [...lessons, ...network.edition.lessons]
   const pages = Math.ceil(catalog.length / 12)
   const titles = page.locator('.explore-results .lesson-card-main h3')
@@ -891,6 +891,9 @@ test('Layouts fit 320, 390, 768, 1280, and 1920px with usable primary targets an
     const lesson = original('cinema-001')
     await visit(page, 'explore', { lesson: lesson.id })
     const dialog = await reader(page, lesson)
+    // Reopening now restores the previous width's unfinished stage. Select
+    // Understand explicitly so every size still tests all three stages.
+    await dialog.getByRole('navigation', { name: 'Lesson stages' }).getByRole('button', { name: /Understand$/ }).click()
     for (const stage of ['understand', 'try', 'recall'] as const) {
       if (stage === 'try') await dialog.getByRole('button', { name: 'Try this idea', exact: true }).click()
       if (stage === 'recall') await dialog.getByRole('button', { name: 'Test my recall', exact: true }).click()

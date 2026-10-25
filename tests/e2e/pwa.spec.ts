@@ -29,7 +29,7 @@ const EDITION: DiscoveryEdition = {
     {
       id: 'wiki-990002', category: 'mind', topic: 'Fixture references',
       title: 'Fixture reference: Spaced repetition', hook: 'A second deterministic offline reference.',
-      body: ['This synthetic reference makes the downloaded edition distinct from the 520 original lessons.'],
+      body: ['This synthetic reference makes the downloaded edition distinct from the original lesson library.'],
       takeaway: 'Downloaded references must remain distinguishable from original lessons.',
       action: 'Note a question for a later source check.',
       kind: 'discovery', evidence: 'reference', publishedAt: DAY,
@@ -94,7 +94,7 @@ const test = base.extend<{ network: NetworkState }>({
 
 test.use({ serviceWorkers: 'allow', timezoneId: 'Asia/Kolkata', locale: 'en-US' })
 test.beforeEach(async ({ page }) => {
-  await page.clock.install({ time: new Date(CLOCK) })
+  await page.clock.setFixedTime(new Date(CLOCK))
 })
 
 function appUrl(fragment = '/today') {
@@ -163,6 +163,7 @@ async function openReader(page: Page, lesson: Lesson) {
   await page.goto(appUrl(`/explore?lesson=${encodeURIComponent(lesson.id)}`))
   const dialog = page.getByRole('dialog', { name: lesson.title, exact: true })
   await expect(dialog).toBeVisible()
+  await dialog.getByRole('navigation', { name: 'Lesson stages' }).getByRole('button', { name: /Understand$/ }).click()
   await expect(dialog.locator('.reader-prose > p')).toHaveText(lesson.body)
   return dialog
 }
@@ -179,10 +180,10 @@ async function navigate(page: Page, screen: 'today' | 'explore' | 'vault' | 'rev
   await expect(page.locator('main#main')).toBeVisible()
 }
 
-test('The installed worker cold-reloads offline with all 520 original lessons, saved discoveries, and notes', async ({ page, context, network }) => {
+test('The installed worker cold-reloads offline with all 544 original lessons, saved discoveries, and notes', async ({ page, context, network }) => {
   test.setTimeout(180_000)
   await openApp(page, network)
-  expect(lessons).toHaveLength(520)
+  expect(lessons).toHaveLength(544)
   const original = lessonById.get('cinema-001')!
   const discovery = EDITION.lessons[0]
   const notes = {
@@ -244,7 +245,7 @@ test('The installed worker cold-reloads offline with all 520 original lessons, s
   const pages = Math.ceil(catalog.length / 12)
   const seen: string[] = []
   await expect(page.locator('.explore-results .section-heading [role="status"]')).toHaveText(`${catalog.length} bites`)
-  // One paginated sweep proves all 520 originals are present, without generating 520 tests.
+  // One paginated sweep proves the entire original library is present offline.
   for (let index = 0; index < pages; index += 1) {
     const titles = page.locator('.explore-results .lesson-card-main h3')
     const expected = catalog.slice(index * 12, (index + 1) * 12).map((lesson) => lesson.title)
@@ -257,7 +258,7 @@ test('The installed worker cold-reloads offline with all 520 original lessons, s
     else await expect(next).toBeDisabled()
   }
   expect(seen).toEqual(catalog.map((lesson) => lesson.title))
-  expect(seen.slice(0, 520)).toEqual(lessons.map((lesson) => lesson.title))
+  expect(seen.slice(0, lessons.length)).toEqual(lessons.map((lesson) => lesson.title))
   expect(new Set(seen).size).toBe(catalog.length)
   await page.reload({ waitUntil: 'domcontentloaded' })
   await expect(page.locator('.explore-results .lesson-card-main h3')).toHaveText(catalog.slice((pages - 1) * 12).map((lesson) => lesson.title))

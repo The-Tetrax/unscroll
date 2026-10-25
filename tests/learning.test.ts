@@ -451,8 +451,8 @@ describe('streak and reading time', () => {
 })
 
 describe('bundled library content contract', () => {
-  it('contains the documented 520 lessons and at least 40 in each of ten categories', () => {
-    expect(lessons).toHaveLength(520)
+  it('contains the documented 544 lessons and at least 40 in each of ten categories', () => {
+    expect(lessons).toHaveLength(544)
     expect(categories).toHaveLength(10)
     expect(new Set(categories.map((category) => category.id))).toEqual(new Set(CATEGORY_IDS))
     for (const category of CATEGORY_IDS) {
@@ -490,8 +490,8 @@ describe('bundled library content contract', () => {
     }
   })
 
-  it('contains sixteen uniquely identified nonempty paths with no repeated or missing lesson IDs', () => {
-    expect(learningPaths).toHaveLength(16)
+  it('contains twenty-two uniquely identified nonempty paths with no repeated or missing lesson IDs', () => {
+    expect(learningPaths).toHaveLength(22)
     expect(new Set(learningPaths.map((path) => path.id)).size).toBe(learningPaths.length)
     for (const path of learningPaths) {
       expect(path.lessonIds.length, path.id).toBeGreaterThan(0)

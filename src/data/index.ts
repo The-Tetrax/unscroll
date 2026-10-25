@@ -7,6 +7,7 @@ import { fieldcraftLessons, fieldcraftPaths } from './fieldcraft'
 import { presencePerspectiveLessons, presencePerspectivePaths } from './presence-perspective'
 import { cinemaLessons, cinemaPaths } from './cinema'
 import { designLessons, designPaths } from './design'
+import { fieldGuideLessons, fieldGuidePaths } from './field-guides'
 
 export const lessons: Lesson[] = [
   ...mindThinkingLessons,
@@ -17,8 +18,10 @@ export const lessons: Lesson[] = [
   ...presencePerspectiveLessons,
   ...cinemaLessons,
   ...designLessons,
+  ...fieldGuideLessons,
 ]
 
 export const lessonById = new Map(lessons.map((lesson) => [lesson.id, lesson]))
-export const learningPaths = [...fieldcraftPaths, ...presencePerspectivePaths, ...cinemaPaths, ...designPaths]
+export const learningPaths = [...fieldcraftPaths, ...presencePerspectivePaths, ...cinemaPaths, ...designPaths, ...fieldGuidePaths]
+export const newFieldGuides = fieldGuidePaths
 export { categories, categoryById } from './categories'

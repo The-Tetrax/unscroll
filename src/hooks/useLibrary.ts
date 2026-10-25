@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { lessons, learningPaths, lessonById } from '../data'
-import type { AppState, DiscoveryEdition, Lesson } from '../types'
-import { completeLesson, createInitialState, ensureDaily, localDate, reviewLesson } from '../lib/learning'
+import type { AppState, DiscoveryEdition, Lesson, ReaderDraft } from '../types'
+import { completeLesson, createInitialState, ensureDaily, localDate, reviewLesson, saveReaderDraft, clearReaderDraft, setPractice } from '../lib/learning'
 import type { ReviewGrade } from '../lib/learning'
 import { downloadFile, loadLibrary, parseBackup, persistLibrary, persistLibraryIfUnchanged, retainDiscoveries, serializeBackup } from '../lib/storage'
 import type { LibrarySnapshot } from '../lib/storage'
-import { editionSchema } from '../lib/schema'
+import { cachedEdition, labelEdition, readDiscoveryResponse } from '../lib/discovery-client'
 
 const INITIAL: LibrarySnapshot = { state: createInitialState(), discoveries: [] }
 
@@ -22,6 +22,7 @@ export function useLibrary() {
   const [edition, setEdition] = useState<DiscoveryEdition | null>(null)
   const [discoveryLoading, setDiscoveryLoading] = useState(false)
   const fetching = useRef(false)
+  const activeRequest = useRef<AbortController | null>(null)
   const [today, setToday] = useState(localDate)
   const [editionDay, setEditionDay] = useState(() => new Date().toISOString().slice(0, 10))
 
@@ -51,6 +52,7 @@ export function useLibrary() {
       current.current = loaded
       checkpoint.current = storedCheckpoint
       setSnapshot(loaded)
+      if (loaded.discoveries.length) setEdition(cachedEdition(loaded.discoveries, new Date().toISOString().slice(0, 10)))
       setStorageError(warning)
       setReady(true)
     }).catch((error: Error) => { if (active) setFatal(error.message) })
@@ -77,25 +79,32 @@ export function useLibrary() {
 
   const refreshDiscoveries = useCallback(async () => {
     if (fetching.current || replacing.current) return
+    if (!navigator.onLine) {
+      setEdition(cachedEdition(current.current.discoveries, editionDay))
+      return
+    }
     const startedGeneration = generation.current
+    const controller = new AbortController()
+    activeRequest.current = controller
+    const timeout = setTimeout(() => controller.abort(), 25_000)
     fetching.current = true
     setDiscoveryLoading(true)
     try {
-      const response = await fetch('/.netlify/functions/discover', { signal: AbortSignal.timeout(25_000), headers: { Accept: 'application/json' } })
-      if (!response.ok || !response.headers.get('content-type')?.includes('application/json')) throw new Error('Unavailable')
-      const text = await response.text()
-      if (text.length > 300_000) throw new Error('Response too large')
-      const parsed = editionSchema.parse(JSON.parse(text)) as DiscoveryEdition
+      const response = await fetch('/.netlify/functions/discover', { signal: controller.signal, headers: { Accept: 'application/json' } })
+      const parsed = labelEdition(await readDiscoveryResponse(response), new Date().toISOString().slice(0, 10), navigator.onLine)
       if (startedGeneration !== generation.current) return
-      setEdition(parsed)
-      update((old) => ({ ...old, discoveries: retainDiscoveries(old, parsed.lessons) }))
+      setEdition(parsed.status === 'unavailable' && current.current.discoveries.length ? cachedEdition(current.current.discoveries, editionDay) : parsed)
+      if (parsed.lessons.length) update((old) => {
+        const discoveries = retainDiscoveries(old, parsed.lessons)
+        return JSON.stringify(discoveries) === JSON.stringify(old.discoveries) ? old : { ...old, discoveries }
+      })
     } catch {
       if (startedGeneration !== generation.current) return
-      const latest = [...current.current.discoveries].sort((a, b) => (b.publishedAt ?? '').localeCompare(a.publishedAt ?? ''))[0]?.publishedAt
-      const cached = current.current.discoveries.filter((lesson) => lesson.publishedAt === latest).slice(0, 6)
-      setEdition({ date: latest ?? editionDay, lessons: cached, status: cached.length ? 'cached' : 'unavailable',
-        message: cached.length ? 'Showing the last downloaded edition. Your saved lessons still work offline.' : 'Daily discoveries need a connection and the Netlify content service. Your original lessons are still available in the app.' })
-    } finally { fetching.current = false; setDiscoveryLoading(false) }
+      setEdition(cachedEdition(current.current.discoveries, editionDay))
+    } finally {
+      clearTimeout(timeout)
+      if (activeRequest.current === controller) { activeRequest.current = null; fetching.current = false; setDiscoveryLoading(false) }
+    }
   }, [editionDay, update])
 
   useEffect(() => {
@@ -110,14 +119,20 @@ export function useLibrary() {
   const allLessons = [...lessons, ...snapshot.discoveries]
 
   const replaceLibrary = async (replacement: LibrarySnapshot) => {
+    if (replacing.current) throw new Error('A library replacement is already running. Wait for it to finish.')
     replacing.current = true
     generation.current += 1
+    activeRequest.current?.abort()
+    activeRequest.current = null
+    fetching.current = false
+    setDiscoveryLoading(false)
     try {
       await writes.current.catch(() => {})
       await persistLibrary(replacement)
       checkpoint.current = JSON.stringify(replacement)
       current.current = replacement
       setSnapshot(replacement)
+      setEdition(cachedEdition(replacement.discoveries, new Date().toISOString().slice(0, 10)))
       setFatal('')
       setStorageError('')
       setReady(true)
@@ -128,11 +143,19 @@ export function useLibrary() {
     state: snapshot.state, allLessons, ready, fatal, storageError, today, edition, discoveryLoading, updateState, refreshDiscoveries,
     getLesson: (id: string) => lessonById.get(id) ?? snapshot.discoveries.find((lesson) => lesson.id === id),
     complete: (lesson: Lesson, correct: boolean | null) => updateState((state) => completeLesson(state, lesson, correct)),
-    review: (id: string, grade: ReviewGrade) => updateState((state) => reviewLesson(state, id, grade)),
+    review: (id: string, grade: ReviewGrade) => {
+      let recorded = false
+      updateState((state) => { const next = reviewLesson(state, id, grade); recorded = next !== state; return next })
+      return recorded
+    },
+    saveDraft: (id: string, draft: Omit<ReaderDraft, 'updatedAt'>) => updateState((state) => saveReaderDraft(state, id, draft)),
+    discardDraft: (id: string) => updateState((state) => clearReaderDraft(state, id)),
+    setPractice: (id: string, status: 'planned' | 'tried' | null) => updateState((state) => setPractice(state, id, status)),
     toggleSave: (id: string) => updateState((state) => ({ ...state, saved: state.saved.includes(id) ? state.saved.filter((saved) => saved !== id) : [...state.saved, id] })),
     saveNote: (id: string, note: string) => updateState((state) => {
+      if (note.length > 5000) throw new Error('Keep a note within 5,000 characters. Your previous note has not changed.')
       const notes = { ...state.notes }
-      if (note.trim()) notes[id] = note.slice(0, 5000)
+      if (note.trim()) notes[id] = note
       else delete notes[id]
       return { ...state, notes }
     }),
@@ -149,7 +172,6 @@ export function useLibrary() {
     reset: async () => {
       const empty = { state: createInitialState(), discoveries: [] }
       await replaceLibrary(empty)
-      setEdition(null)
     },
   }
 }
