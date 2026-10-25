@@ -29,6 +29,11 @@ for (const file of ['brand-icon.svg', 'icons/icon-192.png', 'icons/icon-512.png'
   const bytes = await fs.readFile(path.join(root, 'public', file))
   records.push({ file, source: 'Original UNSCROLL artwork', license: 'MIT', licenseFile: 'licenses/UNSCROLL-MIT.txt', size: bytes.length, sha256: crypto.createHash('sha256').update(bytes).digest('hex') })
 }
+for (const file of await fs.readdir(path.join(root, 'public/lesson-visuals'))) {
+  if (!file.endsWith('.svg')) continue
+  const bytes = await fs.readFile(path.join(root, 'public/lesson-visuals', file))
+  records.push({ file: `lesson-visuals/${file}`, source: 'Original UNSCROLL explanatory diagram', license: 'MIT', licenseFile: 'licenses/UNSCROLL-MIT.txt', size: bytes.length, sha256: crypto.createHash('sha256').update(bytes).digest('hex') })
+}
 await fs.copyFile(path.join(root, 'LICENSE'), path.join(root, 'public/licenses/UNSCROLL-MIT.txt'))
 await fs.writeFile(path.join(root, 'public/asset-licenses.json'), JSON.stringify({ version: 1, assets: records }, null, 2))
 console.log(`Generated four install icons and verified license records for ${records.length} local assets.`)

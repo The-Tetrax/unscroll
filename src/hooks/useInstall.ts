@@ -28,10 +28,12 @@ export function useInstall() {
     available: Boolean(prompt), installed, online,
     install: async () => {
       if (!prompt) return
-      await prompt.prompt()
-      const { outcome } = await prompt.userChoice
-      if (outcome === 'accepted') setInstalled(true)
+      const currentPrompt = prompt
       setPrompt(null)
+      await currentPrompt.prompt()
+      const { outcome } = await currentPrompt.userChoice
+      if (outcome === 'accepted') setInstalled(true)
+      return outcome
     },
   }
 }

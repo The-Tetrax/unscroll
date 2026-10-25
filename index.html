@@ -16,8 +16,9 @@
     <title>UNSCROLL - A little wiser</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><main class="loading-screen startup-screen"><div class="brand"><img src="/brand-icon.svg" alt="" width="40" height="40"/><span>UNSCROLL.</span></div><div class="startup-pages" aria-hidden="true"><span></span><span></span><span></span></div><h1>Your ideas, ready when you are.</h1><p id="startup-status" role="status">Opening the illustrated library...</p><p>On your first visit, app files download for offline reading.</p><button id="startup-retry" class="button button-quiet" type="button" hidden>Retry without clearing data</button></main></div>
     <noscript><main><h1>UNSCROLL</h1><p>Short, practical learning for a life beyond the feed. Enable JavaScript to use your offline library, saved lessons, and recall practice. No account or tracking is required.</p></main></noscript>
+    <script src="/boot.js"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

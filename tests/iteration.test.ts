@@ -145,6 +145,31 @@ describe('reader drafts', () => {
     expect(unchanged.readerDrafts?.[ORIGINAL.id]?.updatedAt).toBe(NOW)
   })
 
+  it('saves a changed lesson revision even when the stage, answer and reveal state are unchanged', () => {
+    expect(ORIGINAL.revision).toBeTruthy()
+    const value = { stage: 'recall', choice: 0, revealed: true } as const
+    const baseline: AppState = { ...withHistory(), readerDrafts: { [OTHER.id]: draft({ stage: 'try' }) } }
+    for (const previousRevision of [undefined, 'fixture-previous-revision']) {
+      expect(previousRevision).not.toBe(ORIGINAL.revision)
+      const previous = { ...value, ...(previousRevision ? { lessonRevision: previousRevision } : {}) }
+      const state = saveReaderDraft(baseline, ORIGINAL.id, previous, NOW)
+      const before = structuredClone(state)
+      const current = { ...value, lessonRevision: ORIGINAL.revision! }
+      const next = saveReaderDraft(state, ORIGINAL.id, current, LATER)
+      expect(next).not.toBe(state)
+      expect(next).toEqual({ ...before, readerDrafts: {
+        ...before.readerDrafts, [ORIGINAL.id]: { ...current, updatedAt: LATER },
+      } })
+      expect(stateSchema.safeParse(next).success).toBe(true)
+      expect(learningCredit(next)).toEqual(learningCredit(before))
+      expect(saveReaderDraft(next, ORIGINAL.id, { ...current }, '2026-10-27T12:00:00.000Z')).toBe(next)
+      expect(next.readerDrafts?.[ORIGINAL.id]?.updatedAt).toBe(LATER)
+      expect(state).toEqual(before)
+      expect(previous).not.toHaveProperty('updatedAt')
+      expect(current).not.toHaveProperty('updatedAt')
+    }
+  })
+
   it('ignores draft saves for completed lessons without disturbing another unfinished lesson', () => {
     const completed = completeLesson(withHistory(), ORIGINAL, true, DAY)
     const state = saveReaderDraft(completed, OTHER.id, { stage: 'try', choice: null, revealed: false }, NOW)
@@ -312,13 +337,38 @@ describe('backup and validation compatibility', () => {
     expect(legacy).toEqual(before)
   })
 
+  it('round-trips legacy and older-revision drafts without silently migrating saved answers', () => {
+    expect(ORIGINAL.revision).toBeTruthy()
+    const article = discovery(11, PREVIOUS_DAY)
+    for (const previousRevision of [undefined, 'fixture-previous-revision']) {
+      expect(previousRevision).not.toBe(ORIGINAL.revision)
+      const legacy: LibrarySnapshot = {
+        state: { ...withHistory(), readerDrafts: {
+          [ORIGINAL.id]: draft({ stage: 'recall', choice: 0, revealed: true,
+            ...(previousRevision ? { lessonRevision: previousRevision } : {}) }),
+          [article.id]: draft({ stage: 'recall', revealed: true }),
+        } },
+        discoveries: [article],
+      }
+      const before = structuredClone(legacy)
+      const restored = parseBackup(JSON.stringify(backupDocument(legacy)), CURATED_IDS)
+      expect(restored).toStrictEqual(before)
+      expect(restored.state.readerDrafts?.[ORIGINAL.id]?.lessonRevision).toBe(previousRevision)
+      if (previousRevision === undefined) expect(restored.state.readerDrafts![ORIGINAL.id]).not.toHaveProperty('lessonRevision')
+      expect(restored.state.readerDrafts![article.id]).not.toHaveProperty('lessonRevision')
+      expect(parseBackup(serializeBackup(restored), CURATED_IDS)).toStrictEqual(before)
+      expect(legacy).toStrictEqual(before)
+    }
+  })
+
   it('round-trips original and external drafts, planned and tried records, and full attributed extracts', () => {
+    expect(ORIGINAL.revision).toBeTruthy()
     const older = discovery(11, PREVIOUS_DAY)
     const newer = discovery(12)
     const state: AppState = {
       ...withHistory(), followedPath: 'colour',
       readerDrafts: {
-        [ORIGINAL.id]: draft({ stage: 'recall', choice: 0, revealed: true }),
+        [ORIGINAL.id]: draft({ stage: 'recall', choice: 0, revealed: true, lessonRevision: ORIGINAL.revision! }),
         [older.id]: draft({ stage: 'recall', choice: null, revealed: true }),
       },
       practices: {
@@ -334,6 +384,8 @@ describe('backup and validation compatibility', () => {
     const restored = parseBackup(serializeBackup(snapshot), CURATED_IDS)
     expect(restored).toEqual(before)
     expect(restored.state.version).toBe(1)
+    expect(restored.state.readerDrafts?.[ORIGINAL.id]?.lessonRevision).toBe(ORIGINAL.revision)
+    expect(restored.state.readerDrafts![older.id]).not.toHaveProperty('lessonRevision')
     for (const article of restored.discoveries) {
       expect(article.body).toHaveLength(2)
       expect(article.attribution).toEqual(snapshot.discoveries.find((item) => item.id === article.id)!.attribution)
@@ -387,6 +439,9 @@ describe('backup and validation compatibility', () => {
   it('validates draft stages, answer bounds, reveal booleans and timestamps without accepting extra fields', () => {
     const valid = draft({ stage: 'recall', choice: 0, revealed: true })
     expect(stateSchema.safeParse({ ...withHistory(), readerDrafts: { [ORIGINAL.id]: valid } }).success).toBe(true)
+    for (const lessonRevision of [ORIGINAL.revision, 'r'.repeat(60)]) {
+      expect(stateSchema.safeParse({ ...withHistory(), readerDrafts: { [ORIGINAL.id]: { ...valid, lessonRevision } } }).success).toBe(true)
+    }
     const invalid: [string, unknown][] = [
       ['completed stage', { ...valid, stage: 'done' }],
       ['negative choice', { ...valid, choice: -1 }],
@@ -395,6 +450,9 @@ describe('backup and validation compatibility', () => {
       ['string reveal flag', { ...valid, revealed: 'true' }],
       ['date instead of timestamp', { ...valid, updatedAt: DAY }],
       ['malformed timestamp', { ...valid, updatedAt: 'not-a-timestamp' }],
+      ['numeric revision', { ...valid, lessonRevision: 1 }],
+      ['null revision', { ...valid, lessonRevision: null }],
+      ['overlong revision', { ...valid, lessonRevision: 'r'.repeat(61) }],
       ['extra reward field', { ...valid, xp: 20 }],
     ]
     for (const [name, value] of invalid) {
@@ -482,6 +540,10 @@ describe('backup and validation compatibility', () => {
     expect(lessonSchema.safeParse(article).success).toBe(true)
     expect(article.quiz).toBeUndefined()
     expect(lessonSchema.safeParse({ ...article, quiz: ORIGINAL.quiz }).success).toBe(false)
+    expect(ORIGINAL.guide).toBeDefined()
+    expect(ORIGINAL.revision).toBeTruthy()
+    expect(lessonSchema.safeParse({ ...article, guide: ORIGINAL.guide }).success).toBe(false)
+    expect(lessonSchema.safeParse({ ...article, revision: ORIGINAL.revision }).success).toBe(false)
     for (const evidence of ['research', 'framework']) {
       expect(lessonSchema.safeParse({ ...article, evidence }).success).toBe(false)
     }
@@ -498,9 +560,9 @@ describe('library search and note excerpts', () => {
   })
 
   it('matches every query term across actual lesson fields without requiring a contiguous phrase', () => {
-    expect(matchesLesson(ORIGINAL, '  PENCIL\nCÚP\tCOLOUR ')).toBe(true)
-    expect(matchesLesson(ORIGINAL, 'cup pencil')).toBe(true)
-    expect(matchesLesson(ORIGINAL, 'cup xylophone')).toBe(false)
+    expect(matchesLesson(ORIGINAL, '  ORCHARD\nPÉAR\tCOLOUR ')).toBe(true)
+    expect(matchesLesson(ORIGINAL, 'pear orchard')).toBe(true)
+    expect(matchesLesson(ORIGINAL, 'pear xylophone')).toBe(false)
     expect(matchesLesson(ORIGINAL, ' \n\t ')).toBe(true)
   })
 
@@ -509,9 +571,58 @@ describe('library search and note excerpts', () => {
     expect(path).toBeDefined()
     expect(path!.lessonIds).toContain(ORIGINAL.id)
     const context = `${path!.title} ${path!.description} ${path!.inspiration}`
-    expect(matchesLesson(ORIGINAL, 'blackmagic pencil colour')).toBe(false)
-    expect(matchesLesson(ORIGINAL, 'blackmagic pencil colour', context)).toBe(true)
+    expect(matchesLesson(ORIGINAL, 'blackmagic orchard pear colour')).toBe(false)
+    expect(matchesLesson(ORIGINAL, 'blackmagic orchard pear colour', context)).toBe(true)
     expect(matchesLesson(ORIGINAL, 'blackmagic xylophone', context)).toBe(false)
+  })
+
+  it('searches long prose and each guide-only field using isolated, schema-valid fixtures', () => {
+    // Do not spread ORIGINAL and only replace its body: its guide would still contribute search text.
+    const fixture: Lesson = {
+      id: 'search-001', category: 'design', topic: 'Fixture search', title: 'Fixture color comparison',
+      hook: 'Synthetic search fixture.', body: [
+        'Synthetic fixture text. '.repeat(60).trim(),
+        `${'More fixture text. '.repeat(60)}lastbodymarker.`,
+      ],
+      action: 'Write a fixture observation.', takeaway: 'Keep the fixture separate from real teaching.', evidence: 'framework',
+      quiz: { question: 'Which fixture option is designated?', options: ['First', 'Second', 'Third'], correctIndex: 0, explanation: 'The first is designated for this fixture.' },
+      sources: [{ title: 'Fixture source', url: 'https://example.org/fixture', publisher: 'Fixture publisher' }],
+    }
+    const guide: NonNullable<Lesson['guide']> = {
+      id: fixture.id, outcome: fixture.hook, scene: 'Synthetic fixture comparison.',
+      sections: fixture.body.map((paragraph, index) => ({ title: `Fixture section ${index + 1}`, paragraphs: [paragraph] })),
+      visuals: [{ type: 'comparison', title: 'Fixture diagram', alt: 'Two synthetic fixture labels.', caption: 'Compare the fixture labels.',
+        items: [{ label: 'First', detail: 'First fixture detail.' }, { label: 'Second', detail: 'Second fixture detail.' }] }],
+      practice: { minutes: 3, needs: ['Paper'], steps: ['Draw a fixture.', 'Label the fixture.', 'Compare the labels.'],
+        notice: 'Inspect the fixture labels.', troubleshooting: 'Check the fixture again.' },
+      recall: { prompt: 'What changed in the fixture?', answer: 'The fixture label changed.', hint: 'Compare both labels.' },
+      quiz: fixture.quiz!, takeaway: fixture.takeaway, sourceNote: 'Synthetic content for search tests only.',
+    }
+    const before = structuredClone({ fixture, guide })
+    expect(lessonSchema.safeParse(fixture).success).toBe(true)
+    expect(fixture).not.toHaveProperty('guide')
+    expect(matchesLesson(fixture, 'LASTBODYMÁRKER colour')).toBe(true)
+    const needle = 'guideonlymarker'
+    const fields: [string, (value: NonNullable<Lesson['guide']>) => void][] = [
+      ['practice notice', (value) => { value.practice.notice = needle }],
+      ['practice troubleshooting', (value) => { value.practice.troubleshooting = needle }],
+      ['recall prompt', (value) => { value.recall.prompt = needle }],
+      ['recall answer', (value) => { value.recall.answer = needle }],
+      ['visual title', (value) => { value.visuals[0]!.title = needle }],
+      ['visual caption', (value) => { value.visuals[0]!.caption = needle }],
+      ['visual item label', (value) => { value.visuals[0]!.items[0]!.label = needle }],
+      ['visual item detail', (value) => { value.visuals[0]!.items[0]!.detail = needle }],
+    ]
+    for (const [field, change] of fields) {
+      const candidate = { ...structuredClone(fixture), guide: structuredClone(guide) }
+      expect(matchesLesson(candidate, needle), field).toBe(false)
+      change(candidate.guide)
+      expect(lessonSchema.safeParse(candidate).success, field).toBe(true)
+      expect(matchesLesson(candidate, `${needle} colour lastbodymarker`), field).toBe(true)
+      expect(matchesLesson(candidate, `${needle} xylophone`), field).toBe(false)
+      expect(matchesLesson({ ...candidate, guide: undefined }, needle), field).toBe(false)
+    }
+    expect({ fixture, guide }).toEqual(before)
   })
 
   it('compacts note whitespace, truncates at a word boundary and bounds a single unbroken word', () => {

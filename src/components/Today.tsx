@@ -1,11 +1,12 @@
-import { ArrowRight, ArrowUpRight, Check, ChevronRight, Flame, RefreshCw, Sprout, X } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Check, ChevronRight, Flame, RefreshCw } from 'lucide-react'
 import { categories, learningPaths, lessons } from '../data'
 import type { Library } from '../hooks/useLibrary'
 import type { Route } from '../hooks/useRoute'
 import { dueReviewIds, readingMinutes, streak } from '../lib/learning'
 import { EmptyState, LessonCard, Mascot, ProgressBar, SectionHeading } from './shared'
+import { OnboardingInvite } from './Onboarding'
 
-export function Today({ library, route }: { library: Library; route: Route }) {
+export function Today({ library, route, onSetup }: { library: Library; route: Route; onSetup: () => void }) {
   const { state, today } = library
   const queue = state.daily.ids.flatMap((id) => { const lesson = library.getLesson(id); return lesson ? [lesson] : [] })
   const completed = queue.filter((lesson) => state.completed[lesson.id]).length
@@ -43,7 +44,7 @@ export function Today({ library, route }: { library: Library; route: Route }) {
     </section>
     <div className="daily-progress"><div><span>{done ? 'Daily session complete' : 'Your daily session'}</span><strong>{completed}<span> / {queue.length || state.goal} bites</span></strong></div><ProgressBar value={completed} max={queue.length || state.goal} label="Daily bites completed"/></div>
 
-    {!state.welcomeDismissed && <section className="welcome-note"><Sprout size={21} aria-hidden="true"/><p><strong>Welcome to your better phone habit.</strong> Read a bite. Try something. Recall it later. Your progress stays on this device.</p><button type="button" className="icon-button" aria-label="Dismiss welcome" onClick={() => library.updateState((old) => ({ ...old, welcomeDismissed: true }))}><X size={18} aria-hidden="true"/></button></section>}
+    {!state.welcomeDismissed && <OnboardingInvite onOpen={onSetup} onDismiss={() => library.updateState((old) => ({ ...old, welcomeDismissed: true }))}/>}
 
     {(unfinished.length > 0 || planned > 0) && <div className="continuity-links">
       {unfinished.length > 0 && <button type="button" className="text-action" onClick={() => route.navigate('vault', { view: 'unfinished' })}>{unfinished.length} unfinished {unfinished.length === 1 ? 'bite' : 'bites'}<ArrowUpRight size={17} aria-hidden="true"/></button>}

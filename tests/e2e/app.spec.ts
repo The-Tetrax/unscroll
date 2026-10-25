@@ -145,14 +145,16 @@ function card(page: Page, title: string) {
 }
 
 async function reader(page: Page, lesson: Lesson) {
-  const dialog = page.getByRole('dialog', { name: lesson.title, exact: true })
+  const dialog = page.locator('.reader-dialog')
   await expect(dialog).toBeVisible()
+  await expect(dialog).toHaveRole('dialog')
+  await expect(dialog).toHaveAccessibleName(lesson.title)
   await expect(dialog.locator('#reader-title')).toHaveText(lesson.title)
   return dialog
 }
 
 async function closeReader(page: Page) {
-  await page.getByRole('dialog').getByRole('button', { name: 'Close lesson', exact: true }).click()
+  await page.locator('.reader-dialog').getByRole('button', { name: 'Close lesson', exact: true }).click()
   await expect(page.getByRole('dialog')).toHaveCount(0)
 }
 
@@ -223,7 +225,7 @@ async function seedStoredReview(page: Page, snapshot: LibrarySnapshot) {
 }
 
 async function answerRecall(page: Page, lesson: Lesson, correct: boolean) {
-  const dialog = page.getByRole('dialog')
+  const dialog = page.locator('.reader-dialog')
   const quiz = lesson.quiz!
   const answer = correct ? quiz.correctIndex : (quiz.correctIndex + 1) % quiz.options.length
   await expect(dialog.getByRole('group', { name: quiz.question, exact: true })).toBeVisible()
@@ -242,17 +244,21 @@ async function completeReader(page: Page, lesson: Lesson, correct = true, revisi
   const dialog = await reader(page, lesson)
   await expect(dialog.getByRole('navigation', { name: 'Lesson stages' }).getByRole('button', { name: /Understand$/ }))
     .toHaveAttribute('aria-current', 'step')
-  await expect(dialog.locator('.reader-prose > p')).toHaveText(lesson.body)
+  await expect(dialog.locator(lesson.guide ? '.teaching-section > p' : '.reader-prose > p')).toHaveText(lesson.body)
   await dialog.getByRole('button', { name: 'Try this idea', exact: true }).click()
   await expect(dialog.getByRole('heading', { name: 'Take it into the real world.', exact: true })).toBeVisible()
-  await expect(dialog.locator('.reader-action')).toHaveText(lesson.action)
+  if (lesson.guide) {
+    await expect(dialog.locator('.reader-action > li')).toHaveText(lesson.guide.practice.steps)
+  } else {
+    await expect(dialog.locator('.reader-action')).toHaveText(lesson.action)
+  }
   await dialog.getByRole('button', { name: 'Test my recall', exact: true }).click()
   const finish = dialog.getByRole('button', { name: revisit ? 'Finish revisit' : 'Complete bite', exact: true })
   await expect(finish).toBeDisabled()
   await answerRecall(page, lesson, correct)
   await expect(finish).toBeEnabled()
   await finish.click()
-  await expect(page.getByRole('dialog').getByRole('heading', { name: 'One idea. Yours now.', exact: true })).toBeVisible()
+  await expect(dialog.getByRole('heading', { name: 'One idea. Yours now.', exact: true })).toBeVisible()
 }
 
 async function confirmAction(page: Page, action: () => Promise<unknown>, message: RegExp, accept: boolean) {
@@ -360,11 +366,11 @@ test('Completing all five daily lessons ends the session without a refill or ext
     await completeReader(page, lesson)
     await waitForStored(page, (snapshot) => Object.keys(snapshot.state.completed).length, index + 1)
     await expect(page.locator('.daily-progress [role="progressbar"]')).toHaveAttribute('aria-valuenow', String(index + 1))
-    const next = page.getByRole('dialog').getByRole('button', { name: 'Next bite', exact: true })
+    const next = page.locator('.reader-dialog').getByRole('button', { name: 'Next bite', exact: true })
     if (index < issued.length - 1) await next.click()
     else await expect(next).toHaveCount(0)
   }
-  await page.getByRole('dialog').getByRole('button', { name: 'Back to my day', exact: true }).click()
+  await page.locator('.reader-dialog').getByRole('button', { name: 'Back to my day', exact: true }).click()
   await expect(page.getByRole('heading', { level: 1, name: /THAT’S A WRAP\./ })).toBeVisible()
   await expect(page.getByText('Daily session complete', { exact: true })).toBeVisible()
   await waitForStored(page, (snapshot) => ({ daily: snapshot.state.daily, delivered: snapshot.state.delivered, xp: snapshot.state.xp, activity: snapshot.state.activity }),
@@ -508,15 +514,15 @@ test('Notes autosave, are searchable in Notes Vault without a bookmark, and surv
   await page.getByRole('button', { name: 'Clear search and collection filter', exact: true }).click()
   await page.getByRole('button', { name: `Open note for ${lesson.title}`, exact: true }).click()
   await reader(page, lesson)
-  await expect(page.getByRole('dialog').getByRole('button', { name: 'Try this idea', exact: true })).toHaveCount(0)
-  await expect(page.getByRole('dialog').getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(note)
-  await page.getByRole('dialog').getByRole('button', { name: 'Save this bite', exact: true }).click()
+  await expect(dialog.getByRole('button', { name: 'Try this idea', exact: true })).toHaveCount(0)
+  await expect(dialog.getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(note)
+  await dialog.getByRole('button', { name: 'Save this bite', exact: true }).click()
   await waitForStored(page, (snapshot) => snapshot.state.saved, [lesson.id])
-  await page.getByRole('dialog').getByRole('button', { name: 'Unsave this bite', exact: true }).click()
+  await dialog.getByRole('button', { name: 'Unsave this bite', exact: true }).click()
   await waitForStored(page, (snapshot) => ({ saved: snapshot.state.saved, note: snapshot.state.notes[lesson.id] }), { saved: [], note })
   await page.reload()
   await reader(page, lesson)
-  await expect(page.getByRole('dialog').getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(note)
+  await expect(dialog.getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(note)
   await closeReader(page)
   await expect(page.getByRole('button', { name: 'Saved (0)', exact: true })).toBeVisible()
   await expect(page.getByRole('button', { name: 'Notes (1)', exact: true })).toHaveAttribute('aria-pressed', 'true')
@@ -633,8 +639,8 @@ test('Profile downloads a real backup, rejects invalid JSON without loss, and re
   await createCollection(page, 'Backup kit')
   await card(page, lesson.title).locator('.lesson-card-main').click()
   await (await reader(page, lesson)).getByRole('button', { name: 'Try this idea', exact: true }).click()
-  await page.getByRole('dialog').locator('.collection-picker > summary').click()
-  await page.getByRole('dialog').getByRole('checkbox', { name: 'Backup kit', exact: true }).check()
+  await dialog.locator('.collection-picker > summary').click()
+  await dialog.getByRole('checkbox', { name: 'Backup kit', exact: true }).check()
   await closeReader(page)
   await navigate(page, 'profile')
   await page.getByLabel('Nickname (optional)', { exact: true }).fill('Backup reader')
@@ -720,7 +726,7 @@ test('A due review uses the real IndexedDB schema, schedules three days ahead, a
   const expectedReview = { due: '2030-06-18', interval: 3, repetitions: 1, lastReviewed: DAY }
   await waitForStored(page, (value) => ({ xp: value.state.xp, review: value.state.reviews[lesson.id], activity: value.state.activity[DAY] }),
     { xp: 25, review: expectedReview, activity: 1 })
-  await page.getByRole('dialog').getByRole('button', { name: 'Back to reviews', exact: true }).click()
+  await dialog.getByRole('button', { name: 'Back to reviews', exact: true }).click()
   await expect(page.locator('.review-overview strong')).toHaveText(['0', '1', '1'])
   await expect(page.getByRole('heading', { name: 'You’re caught up.', exact: true })).toBeVisible()
   await expect(page.locator('.empty-state')).toContainText('Your next review is 2030-06-18.')
@@ -728,7 +734,7 @@ test('A due review uses the real IndexedDB schema, schedules three days ahead, a
   await visit(page, 'review', { lesson: lesson.id, mode: 'review' })
   await reader(page, lesson)
   await answerRecall(page, lesson, true)
-  await page.getByRole('dialog').getByRole('button', { name: 'Easy recall', exact: true }).click()
+  await dialog.getByRole('button', { name: 'Easy recall', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'A little more likely to stick.', exact: true })).toBeVisible()
   await expect(page.locator('.xp-label')).toHaveText('25 XP')
   await closeReader(page)

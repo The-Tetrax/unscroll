@@ -106,6 +106,12 @@ export function streak(state: AppState, date = localDate()): number {
 }
 
 export function readingMinutes(lesson: Lesson): number {
+  if (lesson.guide) {
+    const guide = lesson.guide
+    const text = [guide.outcome, ...guide.sections.flatMap((section) => [section.title, ...section.paragraphs]),
+      ...guide.visuals.map((visual) => visual.caption), ...guide.practice.steps, guide.practice.notice, guide.practice.troubleshooting, guide.takeaway].join(' ')
+    return Math.max(1, Math.ceil(text.split(/\s+/).length / 180))
+  }
   const words = [lesson.hook, ...lesson.body, lesson.action, lesson.takeaway].join(' ').split(/\s+/).length
   return Math.max(1, Math.ceil(words / 180))
 }
@@ -119,7 +125,7 @@ export function levelFor(xp: number): { level: number; title: string; next: numb
 export function saveReaderDraft(state: AppState, id: string, draft: Omit<ReaderDraft, 'updatedAt'>, now = new Date().toISOString()): AppState {
   if (state.completed[id]) return state
   const previous = state.readerDrafts?.[id]
-  if (previous?.stage === draft.stage && previous.choice === draft.choice && previous.revealed === draft.revealed) return state
+  if (previous?.stage === draft.stage && previous.choice === draft.choice && previous.revealed === draft.revealed && previous.lessonRevision === draft.lessonRevision) return state
   return { ...state, readerDrafts: { ...state.readerDrafts, [id]: { ...draft, updatedAt: now } } }
 }
 

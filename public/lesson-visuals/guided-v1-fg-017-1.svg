@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="753" viewBox="0 0 720 753" role="img" aria-labelledby="draw-fg-017-title draw-fg-017-desc">
+  <title id="draw-fg-017-title">Match the opening, not a habitual oval</title>
+  <desc id="draw-fg-017-desc">Three circular-lid profiles have equal drawn major spans and exact minor-to-major ratios 48/60 = 0.8, 30/60 = 0.5, and 12/60 = 0.2. Their actual ellipse heights change in those proportions. Below, an enlarged 60 by 30 example shows perpendicular major and minor axes crossing at the center and four rim landmarks. Millimeters name the lesson&apos;s planned drawing spans, not physical screen measurements or conversions to viewing angles.</desc>
+  <defs>
+    <marker id="draw-fg-017-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="753" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Match the opening, not a habitual oval</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="111" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Each wide span: 60 mm</text>
+
+        <text x="132" y="158" text-anchor="middle" font-size="22" font-weight="700" fill="#231f20">More open</text>
+        <ellipse cx="132" cy="247" rx="88" ry="70.4" fill="#e8e2d6" stroke="#231f20" stroke-width="3" data-major-mm="60" data-minor-mm="48"/>
+        <path d="M44 247 H220 M132 176.6 V317.4" fill="none" stroke="#bc2031" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="132" y="360" text-anchor="middle" font-size="22" font-weight="400" fill="#231f20">48 / 60 = 0.8</text>
+
+        <text x="360" y="158" text-anchor="middle" font-size="22" font-weight="700" fill="#231f20">Middle</text>
+        <ellipse cx="360" cy="247" rx="88" ry="44" fill="#e8e2d6" stroke="#231f20" stroke-width="3" data-major-mm="60" data-minor-mm="30"/>
+        <path d="M272 247 H448 M360 203 V291" fill="none" stroke="#bc2031" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="360" y="360" text-anchor="middle" font-size="22" font-weight="400" fill="#231f20">30 / 60 = 0.5</text>
+
+        <text x="588" y="158" text-anchor="middle" font-size="22" font-weight="700" fill="#231f20">More closed</text>
+        <ellipse cx="588" cy="247" rx="88" ry="17.6" fill="#e8e2d6" stroke="#231f20" stroke-width="3" data-major-mm="60" data-minor-mm="12"/>
+        <path d="M500 247 H676 M588 229.4 V264.6" fill="none" stroke="#bc2031" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="588" y="360" text-anchor="middle" font-size="22" font-weight="400" fill="#231f20">12 / 60 = 0.2</text>
+
+    <path d="M24 393 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="433" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Middle profile</text>
+    <ellipse cx="310" cy="552" rx="204" ry="102" fill="#e8e2d6" stroke="#231f20" stroke-width="3" data-major-mm="60" data-minor-mm="30"/>
+    <path d="M106 552 H514 M310 450 V654" fill="none" stroke="#bc2031" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="106" cy="552" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="514" cy="552" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="310" cy="450" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="310" cy="654" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <path d="M548 450 V654 M539 450 H557 M539 654 H557 M106 684 H514 M106 675 V693 M514 675 V693" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="569" y="560" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">30 mm</text>
+    <text x="310" y="722" text-anchor="middle" font-size="24" font-weight="400" fill="#231f20">60 mm</text>
+
+  </g>
+</svg>

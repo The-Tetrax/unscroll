@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="445" viewBox="0 0 680 445" role="img" aria-labelledby="title desc">
+  <title id="title">Separate a visible action from an explanation</title>
+  <desc id="desc">The observation is that someone looked away before answering. Possible explanations include recalling a detail, feeling uncomfortable, and many others. None is confirmed by the gesture. A useful next step is a neutral question about the actual issue, such as which booking confirmation arrived, rather than an accusation about honesty.</desc>
+  <rect width="680" height="445" rx="12" fill="#eeeae1"/>
+  <g font-family="Arial, sans-serif" fill="#231f20">
+    <text x="30" y="44" font-size="25" font-weight="bold">What you saw</text>
+    <rect x="30" y="63" width="620" height="64" rx="5" fill="#faf6ed"/>
+    <text x="49" y="103" font-size="24">They looked away before answering.</text>
+    <path d="M340 127v39M139 166h402M139 166v20M340 166v20M541 166v20" fill="none" stroke="#8a7e74" stroke-width="2"/>
+    <text x="30" y="219" font-size="21">Remembering?</text>
+    <text x="258" y="219" font-size="21">Uncomfortable?</text>
+    <text x="489" y="219" font-size="21">Something else?</text>
+    <text x="30" y="259" font-size="20" fill="#9d1829">Possibilities, not answers supplied by the gesture.</text>
+    <path d="M30 283h620" stroke="#c6beb1" stroke-width="2"/>
+    <text x="30" y="324" font-size="25" font-weight="bold">Check the issue, not the gesture</text>
+    <text x="30" y="363" font-size="22">“Which booking confirmation did you receive?”</text>
+    <text x="30" y="405" font-size="20">Use the answer or agreed record to decide the next step.</text>
+  </g>
+</svg>

@@ -1,4 +1,4 @@
-import { test as base, expect, type Page } from '@playwright/test'
+import { test as base, expect, type Locator, type Page } from '@playwright/test'
 import { lessonById, lessons } from '../../src/data'
 import { editionSchema } from '../../src/lib/schema'
 import type { LibrarySnapshot } from '../../src/lib/storage'
@@ -41,6 +41,13 @@ const EDITION: DiscoveryEdition = {
       },
     },
   ],
+}
+
+interface TeachingAsset {
+  src: string
+  width: number
+  height: number
+  alt?: string
 }
 
 interface NetworkState {
@@ -136,7 +143,22 @@ async function openApp(page: Page, network: NetworkState) {
   }).toBeGreaterThan(0)
 }
 
+async function readVisualAssets(): Promise<Record<string, TeachingAsset[]>> {
+  const { default: assets } = await import('../../src/teaching/visual-assets.json', { with: { type: 'json' } })
+  return assets
+}
+
 async function waitForPrecache(page: Page) {
+  const assets = await readVisualAssets()
+  expect(Object.keys(assets).sort(), 'Every original lesson must have a visual manifest entry')
+    .toEqual(lessons.map((lesson) => lesson.id).sort())
+  const visualPaths = lessons.flatMap((lesson) => {
+    expect(lesson.guide, `Teaching guide for ${lesson.id}`).toBeDefined()
+    expect(assets[lesson.id], `Manifest diagrams for ${lesson.id}`).toHaveLength(lesson.guide!.visuals.length)
+    return assets[lesson.id].map((asset) => asset.src)
+  }).sort()
+  expect(visualPaths.length, 'The visual precache assertion must not be empty').toBeGreaterThan(0)
+  expect(new Set(visualPaths).size, 'Each manifest diagram must have its own asset URL').toBe(visualPaths.length)
   // clientsClaim is part of the production PWA configuration. Do not skip WebKit here.
   await page.waitForFunction(() => navigator.serviceWorker?.controller?.state === 'activated', undefined, { timeout: 45_000 })
   const state = await page.evaluate(async () => (await navigator.serviceWorker.ready).active?.state)
@@ -154,9 +176,43 @@ async function waitForPrecache(page: Page) {
       icon192: paths.includes('/icons/icon-192.png'),
       icon512: paths.includes('/icons/icon-512.png'),
       maskable: paths.includes('/icons/maskable-512.png'),
+      visualManifest: paths.includes('/lesson-visuals/manifest.json'),
+      visuals: paths.filter((path) => path.startsWith('/lesson-visuals/') && path.endsWith('.svg')).sort(),
     }
-  }), { message: 'Wait for the actual production shell, knowledge chunk, fonts, CSS, and icons in Cache Storage', timeout: 45_000 })
-    .toEqual({ shell: true, knowledge: true, entry: true, css: true, fonts: true, icon192: true, icon512: true, maskable: true })
+  }), { message: `Wait for the actual production shell, knowledge chunk, fonts, CSS, icons, and all ${visualPaths.length} manifest diagrams in Cache Storage`, timeout: 45_000 })
+    .toEqual({ shell: true, knowledge: true, entry: true, css: true, fonts: true, icon192: true, icon512: true, maskable: true,
+      visualManifest: true, visuals: visualPaths })
+}
+
+async function expectReaderBody(dialog: Locator, lesson: Lesson) {
+  const selector = lesson.kind === 'discovery' ? '.reader-prose > p' : '.teaching-section > p'
+  await expect(dialog.locator(selector)).toHaveText(lesson.body)
+}
+
+async function expectOfflineIllustrations(dialog: Locator, lesson: Lesson) {
+  expect(await dialog.page().evaluate(() => navigator.onLine)).toBe(false)
+  expect(await dialog.page().evaluate(() => navigator.serviceWorker.controller?.state)).toBe('activated')
+  expect(lesson.guide, `Illustrated teaching for ${lesson.id}`).toBeDefined()
+  const assets = (await readVisualAssets())[lesson.id]
+  expect(assets).toHaveLength(lesson.guide!.visuals.length)
+  expect(assets.length).toBeGreaterThan(0)
+  // Exclude the duplicate images inside the closed enlargement dialogs.
+  const images = dialog.locator('.teaching-visual > img.teaching-image')
+  await expect(images).toHaveCount(assets.length)
+  for (const [index, asset] of assets.entries()) {
+    const image = images.nth(index)
+    await image.scrollIntoViewIfNeeded()
+    await expect(image).toBeVisible()
+    await expect(image).toHaveAttribute('src', asset.src)
+    await expect(image).toHaveAttribute('alt', asset.alt ?? lesson.guide!.visuals[index].alt)
+    const decoded = await image.evaluate(async (element) => {
+      if (!(element instanceof HTMLImageElement)) throw new Error('Expected a real lesson image')
+      await element.decode()
+      return { complete: element.complete, src: new URL(element.currentSrc).pathname,
+        width: element.naturalWidth, height: element.naturalHeight }
+    })
+    expect(decoded, `Offline decoding of ${asset.src}`).toEqual({ complete: true, src: asset.src, width: asset.width, height: asset.height })
+  }
 }
 
 async function openReader(page: Page, lesson: Lesson) {
@@ -164,7 +220,7 @@ async function openReader(page: Page, lesson: Lesson) {
   const dialog = page.getByRole('dialog', { name: lesson.title, exact: true })
   await expect(dialog).toBeVisible()
   await dialog.getByRole('navigation', { name: 'Lesson stages' }).getByRole('button', { name: /Understand$/ }).click()
-  await expect(dialog.locator('.reader-prose > p')).toHaveText(lesson.body)
+  await expectReaderBody(dialog, lesson)
   return dialog
 }
 
@@ -182,9 +238,18 @@ async function navigate(page: Page, screen: 'today' | 'explore' | 'vault' | 'rev
 
 test('The installed worker cold-reloads offline with all 544 original lessons, saved discoveries, and notes', async ({ page, context, network }) => {
   test.setTimeout(180_000)
+  const onlineVisualRequests = new Set<string>()
+  // Page requests exclude the worker's own precache fetches. Detect accidental online warming.
+  page.on('request', (request) => {
+    const path = new URL(request.url()).pathname
+    if (!network.offline && path.startsWith('/lesson-visuals/')) onlineVisualRequests.add(path)
+  })
   await openApp(page, network)
   expect(lessons).toHaveLength(544)
   const original = lessonById.get('cinema-001')!
+  const unopened = lessonById.get('design-001')!
+  expect(original.revision, 'Drafts must carry the current lesson content revision').toBeTruthy()
+  expect(unopened.category).not.toBe(original.category)
   const discovery = EDITION.lessons[0]
   const notes = {
     [original.id]: 'Offline camera experiment: compare both recordings.',
@@ -199,11 +264,22 @@ test('The installed worker cold-reloads offline with all 544 original lessons, s
   }
   await expect.poll(async () => {
     const snapshot = await readStored(page)
-    return snapshot ? { notes: snapshot.state.notes, saved: snapshot.state.saved } : undefined
-  }).toEqual({ notes, saved: [original.id, discovery.id] })
+    return snapshot ? { version: snapshot.state.version, notes: snapshot.state.notes, saved: snapshot.state.saved,
+      readerDrafts: snapshot.state.readerDrafts } : undefined
+  }).toEqual({ version: 1, notes, saved: [original.id, discovery.id], readerDrafts: {
+    [original.id]: { stage: 'try', choice: null, revealed: false, updatedAt: CLOCK, lessonRevision: original.revision },
+    [discovery.id]: { stage: 'try', choice: null, revealed: false, updatedAt: CLOCK },
+  } })
   await navigate(page, 'today')
   await waitForPrecache(page)
   const beforeOffline = await readStored(page)
+  expect(beforeOffline).toBeDefined()
+  expect(beforeOffline!.state.readerDrafts).not.toHaveProperty(unopened.id)
+  const unopenedAssets = (await readVisualAssets())[unopened.id]
+  expect(unopenedAssets).toHaveLength(unopened.guide!.visuals.length)
+  for (const asset of unopenedAssets) {
+    expect(onlineVisualRequests.has(asset.src), `${asset.src} must not have been opened online`).toBe(false)
+  }
   const onlineFixtureResponses = network.fixtureResponses
   network.offline = true
   // End DevTools interception before exercising the real offline network stack.
@@ -266,9 +342,23 @@ test('The installed worker cold-reloads offline with all 544 original lessons, s
   await page.reload({ waitUntil: 'domcontentloaded' })
   const originalDialog = page.getByRole('dialog', { name: original.title, exact: true })
   await expect(originalDialog).toBeVisible()
-  await expect(originalDialog.locator('.reader-prose > p')).toHaveText(original.body)
+  await expectReaderBody(originalDialog, original)
+  await expect(originalDialog.locator('.resume-notice')).toContainText('Your unfinished bite is restored. No completion was recorded.')
+  await expect(originalDialog.getByRole('button', { name: 'Unsave this bite', exact: true })).toHaveAttribute('aria-pressed', 'true')
+  await expectOfflineIllustrations(originalDialog, original)
   await originalDialog.getByRole('button', { name: 'Try this idea', exact: true }).click()
   await expect(originalDialog.getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(notes[original.id])
+  await closeReader(page)
+
+  // First open in a different category, with no stage change or extra draft write.
+  await page.goto(appUrl(`/explore?lesson=${encodeURIComponent(unopened.id)}`))
+  const unopenedDialog = page.getByRole('dialog', { name: unopened.title, exact: true })
+  await expect(unopenedDialog).toBeVisible()
+  await expect(unopenedDialog.getByRole('navigation', { name: 'Lesson stages' }).getByRole('button', { name: /Understand$/ }))
+    .toHaveAttribute('aria-current', 'step')
+  await expect(unopenedDialog.locator('.resume-notice')).toHaveCount(0)
+  await expectReaderBody(unopenedDialog, unopened)
+  await expectOfflineIllustrations(unopenedDialog, unopened)
   await closeReader(page)
   await navigate(page, 'review')
   await expect(page.getByRole('heading', { level: 1, name: /DON’T JUST READ IT\./ })).toBeVisible()

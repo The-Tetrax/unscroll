@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "node --use-system-ca node_modules/vite/bin/vite.js",
     "build": "npm run assets && npm run typecheck && npm run validate:content && vite build",
-    "assets": "node scripts/generate-assets.mjs",
+    "assets": "tsx scripts/generate-teaching-assets.ts && node scripts/generate-assets.mjs",
+    "review:visuals": "tsx scripts/generate-teaching-assets.ts --review",
     "typecheck": "tsc -b",
     "validate:content": "tsx scripts/validate-content.ts",
     "test": "vitest run",

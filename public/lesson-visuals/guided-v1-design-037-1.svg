@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="644" viewBox="0 0 720 644" role="img" aria-labelledby="draw-design-037-title draw-design-037-desc">
+  <title id="draw-design-037-title">Build the bend before the outline</title>
+  <desc id="draw-design-037-desc">Two original leaf studies contrast a rigid upright symbol with the lesson&apos;s drooping leaf. At left, attachment, blade, and tip keep rising. At right, the stem rises from a visible attachment, turns at a high bend, and connects to a blade hanging right. Red paths trace proposed gesture, not measured forces. The stretched outer curve and compressed inner curve belong to the same blade.</desc>
+  <defs>
+    <marker id="draw-design-037-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="644" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Build the bend before the outline</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="109" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Upright symbol</text>
+    <text x="378" y="109" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Observed droop</text>
+    <path d="M350 133 V549" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M161 456 C168 429 170 396 169 366" fill="none" stroke="#231f20" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M169 366 C98 326 111 229 176 150 C249 236 259 320 169 366 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M161 456 C175 365 179 257 176 160" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-design-037-arrow)"/>
+    <circle cx="161" cy="456" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <path d="M405 456 C419 390 423 235 478 209" fill="none" stroke="#231f20" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M478 209 C538 162 646 226 647 399 C571 378 512 318 478 209 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M405 456 C419 348 432 209 486 207 C542 205 601 307 638 389" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-design-037-arrow)"/>
+    <circle cx="405" cy="456" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <text x="511" y="153" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">High bend</text>
+    <path d="M529 164 L493 194" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="555" y="453" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Hanging tip</text>
+    <path d="M632 429 L645 409" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="93" y="510" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Still rising</text>
+    <text x="369" y="510" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Attachment</text>
+    <path d="M428 484 L409 466" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="605" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Move the tip; keep the attachment.</text>
+
+  </g>
+</svg>

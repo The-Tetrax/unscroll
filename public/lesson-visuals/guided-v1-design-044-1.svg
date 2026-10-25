@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="709" viewBox="0 0 720 709" role="img" aria-labelledby="draw-design-044-title draw-design-044-desc">
+  <title id="draw-design-044-title">Two shadows, two surfaces</title>
+  <desc id="draw-design-044-desc">An orange rests on a sheet of paper. The upper-left light corresponds to a bright upper-left fruit surface and a darker turning surface on the right. That form shadow stays on the orange. A separate connected cast shadow extends away toward lower right across the receiving paper, beginning at the contact. Red light arrows stop at the fruit. The drawing does not assert a shadow length, fixed darkness, or automatic bright reflected-light rim.</desc>
+  <defs>
+    <marker id="draw-design-044-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+    <radialGradient id="draw-design-044-orange" cx=".27" cy=".23" r=".88">
+      <stop offset="0" stop-color="#E5DBBF"/><stop offset=".43" stop-color="#d1c4a6"/><stop offset=".73" stop-color="#8F8470"/><stop offset="1" stop-color="#625b4f"/>
+    </radialGradient>
+
+  </defs>
+  <rect width="720" height="709" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Two shadows, two surfaces</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="111" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Upper-left light</text>
+    <path d="M61 415 L459 299 L689 513 L220 616 Z" fill="#e8e2d6" stroke="#b9b1a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M279 445 C330 427 430 440 555 479 C621 505 604 538 540 538 C446 537 335 490 279 449 Z" fill="#4F5147" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <ellipse cx="285" cy="447" rx="36" ry="10" fill="#34362f"/>
+    <circle cx="285" cy="333" r="115" fill="url(#draw-design-044-orange)"/>
+    <path d="M209 247 C250 205 304 208 349 240" fill="none" stroke="#8f8470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <ellipse cx="267" cy="224" rx="8" ry="4" transform="rotate(-18 267 224)" fill="#8F8470"/>
+    <path d="M91 147 L202 253" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-design-044-arrow)"/>
+    <path d="M156 141 L263 217" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-design-044-arrow)"/>
+    <text x="484" y="249" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Form shadow</text>
+    <text x="484" y="281" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">On the orange</text>
+    <path d="M473 291 L375 368" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="99" y="533" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Contact</text>
+    <path d="M194 522 L277 458" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="436" y="587" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Cast shadow</text>
+    <text x="436" y="621" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">On the paper</text>
+    <path d="M487 559 L477 500" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="674" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Turning surface. Blocked light.</text>
+
+  </g>
+</svg>

@@ -8,6 +8,8 @@ import type { Route } from '../hooks/useRoute'
 import { addDays, levelFor, streak } from '../lib/learning'
 import type { AppState, CategoryId } from '../types'
 import { EmptyState, ProgressBar, SectionHeading } from './shared'
+import { AppStatus } from './AppStatus'
+import type { AppStatus as PwaStatus } from '../hooks/useAppStatus'
 
 type Notice = { kind: 'info' | 'success' | 'error'; message: string } | null
 type BackupAction = 'export' | 'import' | 'reset'
@@ -31,16 +33,18 @@ function isStandaloneWindow() {
     || (navigator as Navigator & { standalone?: boolean }).standalone === true
 }
 
-export function Profile({ library, route, install }: { library: Library; route: Route; install: Install }) {
+export function Profile({ library, route, install, appStatus, onSetup }: { library: Library; route: Route; install: Install; appStatus: PwaStatus; onSetup: () => void }) {
   const prefix = useId()
   const fileInput = useRef<HTMLInputElement>(null)
   const nicknameInput = useRef<HTMLInputElement>(null)
   const backupLock = useRef(false)
   const persistenceLock = useRef(false)
   const installLock = useRef(false)
+  const preferenceLock = useRef(false)
   const [nicknameDraft, setNicknameDraft] = useState<string | null>(null)
   const [nicknameInvalid, setNicknameInvalid] = useState(false)
   const [preferencesNotice, setPreferencesNotice] = useState<Notice>(null)
+  const [savingPreferences, setSavingPreferences] = useState(false)
   const [backupNotice, setBackupNotice] = useState<Notice>(null)
   const [backupAction, setBackupAction] = useState<BackupAction | null>(null)
   const [persistenceNotice, setPersistenceNotice] = useState<Notice>(null)
@@ -50,7 +54,7 @@ export function Profile({ library, route, install }: { library: Library; route: 
   const [installing, setInstalling] = useState(false)
   const [standalone, setStandalone] = useState(isStandaloneWindow)
   const { state } = library
-  const disabled = !library.ready || Boolean(library.fatal) || backupAction !== null
+  const disabled = !library.ready || Boolean(library.fatal) || backupAction !== null || savingPreferences
   const nickname = nicknameDraft ?? state.name
   const level = levelFor(state.xp)
   const followedPath = learningPaths.find((path) => path.id === state.followedPath)
@@ -72,8 +76,10 @@ export function Profile({ library, route, install }: { library: Library; route: 
 
   useEffect(() => {
     const section = route.params.get('section')
-    if (section === 'install' || section === 'backup') {
-      document.getElementById(`${prefix}-${section}-section`)?.scrollIntoView({ block: 'start' })
+    if (section && ['preferences', 'learning', 'install', 'backup', 'offline', 'privacy'].includes(section)) {
+      const target = document.getElementById(`${prefix}-${section}-section`)
+      target?.scrollIntoView({ block: 'start' })
+      target?.focus({ preventScroll: true })
     }
   }, [route.params, prefix])
 
@@ -90,20 +96,31 @@ export function Profile({ library, route, install }: { library: Library; route: 
     }
   }, [])
 
-  function updatePreferences(change: (current: AppState) => AppState, message: string) {
-    if (disabled || backupLock.current) return false
-    setPreferencesNotice(null)
+  useEffect(() => {
+    let active = true
+    if (typeof navigator.storage?.persisted === 'function') {
+      void navigator.storage.persisted().then((granted) => { if (active && !persistenceLock.current) setPersistenceGranted(granted) }).catch(() => {})
+    }
+    return () => { active = false }
+  }, [])
+
+  async function updatePreferences(change: (current: AppState) => AppState, message: string) {
+    if (disabled || backupLock.current || preferenceLock.current) return false
+    preferenceLock.current = true
+    setSavingPreferences(true)
+    setPreferencesNotice({ kind: 'info', message: 'Saving this preference to your device...' })
     try {
       library.updateState(change)
+      await library.flushStorage()
       setPreferencesNotice({ kind: 'success', message })
       return true
     } catch (error) {
       setPreferencesNotice({ kind: 'error', message: errorMessage(error, 'This preference could not be changed. Try again.') })
       return false
-    }
+    } finally { preferenceLock.current = false; setSavingPreferences(false) }
   }
 
-  function saveNickname(event: FormEvent<HTMLFormElement>) {
+  async function saveNickname(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (disabled || backupLock.current) return
     const name = nickname.trim()
@@ -114,14 +131,14 @@ export function Profile({ library, route, install }: { library: Library; route: 
       nicknameInput.current?.focus()
       return
     }
-    if (updatePreferences((current) => ({ ...current, name }), name ? 'Nickname updated.' : 'Nickname cleared.')) {
+    if (await updatePreferences((current) => ({ ...current, name }), name ? 'Nickname updated.' : 'Nickname cleared.')) {
       setNicknameDraft(null)
     }
   }
 
   function changeInterest(id: CategoryId, checked: boolean) {
     const category = categories.find((entry) => entry.id === id)
-    updatePreferences((current) => {
+    void updatePreferences((current) => {
       const interests = checked ? [...new Set([...current.interests, id])] : current.interests.filter((interest) => interest !== id)
       if (!interests.length) throw new Error('Keep at least one interest selected.')
       return { ...current, interests }
@@ -203,8 +220,11 @@ export function Profile({ library, route, install }: { library: Library; route: 
     setInstalling(true)
     setInstallNotice({ kind: 'info', message: 'Follow the installation prompt in your browser.' })
     try {
-      await install.install()
-      setInstallNotice({ kind: 'info', message: 'The install prompt has closed. If you accepted, follow your browser\'s instructions. If you dismissed it, you can try the browser menu later.' })
+      const outcome = await install.install()
+      setInstallNotice({ kind: 'info', message: outcome === 'accepted'
+        ? 'Installation accepted. Follow your browser\'s remaining steps and look for UNSCROLL on your home screen.'
+        : outcome === 'dismissed' ? 'Installation was dismissed. You can keep reading here or install later from the browser menu.'
+          : 'No install prompt is available now. Use your browser menu or the device instructions below.' })
     } catch (error) {
       setInstallNotice({ kind: 'error', message: `The install request could not finish. ${errorMessage(error, 'Try your browser menu instead.')} You can still use UNSCROLL in this browser.` })
     } finally {
@@ -216,11 +236,11 @@ export function Profile({ library, route, install }: { library: Library; route: 
   return <>
     <header className="page-header">
       <h1>Your profile</h1>
-      <p className="page-intro">Your learning, preferences and backups. No account required.</p>
+      <p className="page-intro">Make the reader comfortable. Keep your learning safe on this device.</p>
     </header>
-    <div className="profile-shortcuts"><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'install', true)}><Smartphone size={18} aria-hidden="true"/>Install on my phone</button><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'backup', true)}><Download size={18} aria-hidden="true"/>Backups and data</button></div>
+    <nav className="profile-shortcuts" aria-label="Settings sections"><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'preferences', true)}>Reading and pace</button><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'offline', true)}>Offline and updates</button><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'install', true)}><Smartphone size={18} aria-hidden="true"/>Install on my phone</button><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'backup', true)}><Download size={18} aria-hidden="true"/>Backups and data</button><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'learning', true)}>Learning history</button><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'privacy', true)}>Help and privacy</button></nav>
 
-    <section className="panel settings-section" aria-label="Preferences">
+    <section id={`${prefix}-preferences-section`} tabIndex={-1} className="panel settings-section" aria-label="Preferences">
       <SectionHeading title="Preferences"/>
       <form onSubmit={saveNickname} noValidate>
         <div className="form-row">
@@ -237,9 +257,9 @@ export function Profile({ library, route, install }: { library: Library; route: 
         <legend className="field-label">Daily goal</legend>
         <p className="field-hint" id={`${prefix}-goal-hint`}>Changes apply to the next day's session. Today's issued list stays the same. A session can be shorter when fewer new lessons remain.</p>
         <div className="filter-row">
-          {([3, 5, 7] as const).map((goal) => <label className={`chip${state.goal === goal ? ' is-active' : ''}`} key={goal}>
-            <input type="radio" name={`${prefix}-goal`} value={goal} checked={state.goal === goal} onChange={() => updatePreferences((current) => ({ ...current, goal }), `Daily goal changed to ${goal} lessons for the next day's session.`)}/>
-            {goal} lessons
+          {([1, 3, 5, 7] as const).map((goal) => <label className={`chip${state.goal === goal ? ' is-active' : ''}`} key={goal}>
+            <input type="radio" name={`${prefix}-goal`} value={goal} checked={state.goal === goal} onChange={() => { void updatePreferences((current) => ({ ...current, goal }), `Daily goal changed to ${goal} ${goal === 1 ? 'lesson' : 'lessons'} for the next day's session.`) }}/>
+            {goal} {goal === 1 ? 'lesson' : 'lessons'}
           </label>)}
         </div>
       </fieldset>
@@ -258,13 +278,14 @@ export function Profile({ library, route, install }: { library: Library; route: 
       <div className="toggle-row">
         <div>
           <label className="field-label" htmlFor={`${prefix}-motion`}>Reduce motion</label>
-          <p className="field-hint" id={`${prefix}-motion-hint`}>Reduce interface animations. This preference stays in this browser.</p>
+          <p className="field-hint" id={`${prefix}-motion-hint`}>Reduce interface animations. Your device's reduced-motion setting is always respected, even when this switch is off.</p>
         </div>
         <input id={`${prefix}-motion`} className="toggle-control" type="checkbox" role="switch" checked={state.reducedMotion} disabled={disabled} aria-describedby={`${prefix}-motion-hint`} onChange={(event) => {
           const reducedMotion = event.currentTarget.checked
-          updatePreferences((current) => ({ ...current, reducedMotion }), reducedMotion ? 'Reduced motion enabled.' : 'Reduced motion preference turned off.')
+          void updatePreferences((current) => ({ ...current, reducedMotion }), reducedMotion ? 'Reduced motion enabled.' : 'Reduced motion preference turned off.')
         }}/>
       </div>
+      <fieldset className="field" disabled={disabled} aria-describedby={`${prefix}-reading-hint`}><legend className="field-label">Lesson text size</legend><p className="field-hint" id={`${prefix}-reading-hint`}>Change explanations, practice, questions and diagram captions. You can also use your browser's zoom.</p><div className="filter-row">{(['standard', 'large'] as const).map((readingSize) => <label className={`chip${(state.readingSize ?? 'standard') === readingSize ? ' is-active' : ''}`} key={readingSize}><input type="radio" name={`${prefix}-reading-size`} checked={(state.readingSize ?? 'standard') === readingSize} onChange={() => { void updatePreferences((current) => ({ ...current, readingSize }), readingSize === 'large' ? 'Larger lesson text saved.' : 'Standard lesson text saved.') }}/>{readingSize === 'large' ? 'Larger text' : 'Standard text'}</label>)}</div><p className="reading-preview">Read the example, try one change, and look for what is different.</p></fieldset>
       <InlineNotice id={preferencesFeedbackId} notice={preferencesNotice}/>
     </section>
 
@@ -278,16 +299,16 @@ export function Profile({ library, route, install }: { library: Library; route: 
       </> : <p className="section-description">{state.followedPath ? 'This path is no longer available. Your completed lessons are still recorded.' : 'No path followed. Choose one in Explore to guide future daily sessions.'}</p>}
       {state.followedPath && <>
         <p className="field-hint">Stopping keeps your completed lessons and today's issued list.</p>
-        <button type="button" className="button button-quiet" disabled={disabled} aria-describedby={preferencesFeedbackId} onClick={() => updatePreferences((current) => {
+        <button type="button" className="button button-quiet" disabled={disabled} aria-describedby={preferencesFeedbackId} onClick={() => { void updatePreferences((current) => {
           const next = { ...current }
           delete next.followedPath
           return next
-        }, 'You are no longer following a path. Your completed lessons and saved lessons are unchanged.')}>Stop following this path</button>
+        }, 'You are no longer following a path. Your completed lessons and saved lessons are unchanged.') }}>Stop following this path</button>
       </>}
       <button type="button" className="button button-quiet" onClick={() => route.navigate('explore')}>Explore learning paths<ArrowUpRight size={18} aria-hidden="true"/></button>
     </section>
 
-    <section className="panel settings-section" aria-label="Learning progress">
+    <section id={`${prefix}-learning-section`} tabIndex={-1} className="panel settings-section" aria-label="Learning progress">
       <SectionHeading title="Your learning"/>
       <p className="section-description">Learning history since <time dateTime={state.joined}>{formatLocalDate(state.joined)}</time>, stored in this browser.</p>
       <dl className="stats-grid">
@@ -332,7 +353,7 @@ export function Profile({ library, route, install }: { library: Library; route: 
       </> : <EmptyState title="No completed lessons yet" action="Explore lessons" onAction={() => route.navigate('explore')} symbol="">Finish a lesson to record it here. Your completion history stays in this browser.</EmptyState>}
     </section>
 
-    <section id={`${prefix}-backup-section`} className="panel settings-section" aria-label="Backups and clearing data">
+    <section id={`${prefix}-backup-section`} tabIndex={-1} className="panel settings-section" aria-label="Backups and clearing data">
       <SectionHeading title="Backups and local data"/>
       <p className="section-description" id={`${prefix}-backup-hint`}>Export before importing a backup or clearing data. Backups include progress, saved lessons, notes, collections, preferences and retained discoveries. Imports replace your current library, rather than merging it.</p>
       <p className="field-hint">Choose an exported UNSCROLL JSON backup smaller than 20 MB. Files are validated locally before replacement. A backup contains your notes and nickname as readable text, so store it somewhere private.</p>
@@ -348,6 +369,10 @@ export function Profile({ library, route, install }: { library: Library; route: 
       <InlineNotice id={`${prefix}-storage-error`} notice={library.fatal || library.storageError ? { kind: 'error', message: library.fatal || library.storageError } : null}/>
     </section>
 
+    <section id={`${prefix}-offline-section`} tabIndex={-1} className="panel settings-section" aria-label="Offline library and updates">
+      <AppStatus status={appStatus} online={install.online}/>
+    </section>
+
     <section className="panel settings-section" aria-label="Browser storage protection">
       <SectionHeading title="Protect browser storage"/>
       <p className="section-description">Ask the browser to keep this site's data when it frees storage space. It may deny the request. This does not replace a backup or prevent you from clearing site data.</p>
@@ -355,7 +380,7 @@ export function Profile({ library, route, install }: { library: Library; route: 
       <InlineNotice id={`${prefix}-persistence-feedback`} notice={persistenceNotice}/>
     </section>
 
-    <section id={`${prefix}-install-section`} className="panel settings-section" aria-label="Install UNSCROLL">
+    <section id={`${prefix}-install-section`} tabIndex={-1} className="panel settings-section" aria-label="Install UNSCROLL">
       <SectionHeading title="Install UNSCROLL"/>
       {standalone ? <p className="section-description">UNSCROLL is running in standalone app mode.</p> : install.installed ? <p className="section-description">Installation has been accepted or reported by your browser. Look for UNSCROLL on your home screen or in your app launcher.</p> : install.available ? <>
         <p className="section-description">Your browser offers installation. Add UNSCROLL to open it from your home screen or app launcher.</p>
@@ -380,11 +405,15 @@ export function Profile({ library, route, install }: { library: Library; route: 
       <InlineNotice id={`${prefix}-install-feedback`} notice={installNotice}/>
     </section>
 
-    <section className="panel settings-section" aria-label="Privacy and sources">
+    <section id={`${prefix}-privacy-section`} tabIndex={-1} className="panel settings-section" aria-label="Privacy and sources">
+      <button type="button" className="button button-quiet" onClick={(event) => { event.currentTarget.focus({ preventScroll: true }); onSetup() }}>How UNSCROLL works</button>
+      <h2>Moving to another phone?</h2>
+      <ol className="install-steps"><li>Export a backup from this browser and keep it somewhere private.</li><li>Open the same site in the new phone's browser, then import that backup in You.</li><li>Check your notes and saved lessons before clearing anything from the old device.</li></ol>
+      <p className="field-hint">An installed app can use different storage from a browser tab, especially on iOS. Check before switching. UNSCROLL never silently merges two libraries.</p>
       <details>
         <summary>Privacy, sources and licenses</summary>
         <h3>Your data</h3>
-        <p>No account is required. Your nickname, notes, interests, progress, saved lessons and collections stay in this browser. UNSCROLL does not upload or sync your learning data. Backup files are read and written locally.</p>
+        <p>UNSCROLL has no learning account or cloud sync. Your nickname, notes, interests, progress, saved lessons and collections stay in this browser. Backup files are read and written locally. A privately hosted site can require a separate Netlify sign-in before online access.</p>
         <p>Daily discoveries are downloaded from the content service. Network requests and external source links expose ordinary connection information to their hosts, but do not send your notes, preferences or progress. External sites have their own privacy policies.</p>
         <h3>Offline reading</h3>
         <p>Original lessons work offline once the app's files are cached. Saved discoveries are retained locally and included in backups. External source pages are not cached by UNSCROLL and need an internet connection.</p>

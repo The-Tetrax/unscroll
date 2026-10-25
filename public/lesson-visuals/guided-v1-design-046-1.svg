@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="783" viewBox="0 0 720 783" role="img" aria-labelledby="draw-design-046-title draw-design-046-desc">
+  <title id="draw-design-046-title">Compare three boat arrangements</title>
+  <desc id="draw-design-046-desc">Three original composition thumbnails contain a folded paper boat, a stone, and a broad cloth fold. The first places the boat low left and the stone high right along a diagonal fold. The second moves the boat centrally and crops the stone near the upper-right edge. The third leaves a larger quiet region by keeping the boat left, reducing the fold, and cropping most of the stone. These test placement and crop, not progressively more finished drawings or a universally best composition.</desc>
+  <defs>
+    <marker id="draw-design-046-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+    <clipPath id="draw-design-046-frame-a"><rect x="180" y="105" width="516" height="170"/></clipPath>
+    <clipPath id="draw-design-046-frame-b"><rect x="180" y="319" width="516" height="170"/></clipPath>
+    <clipPath id="draw-design-046-frame-c"><rect x="180" y="533" width="516" height="170"/></clipPath>
+
+  </defs>
+  <rect width="720" height="783" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Compare three boat arrangements</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="147" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Diagonal</text>
+    <text x="24" y="361" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Central</text>
+    <text x="24" y="575" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">More space</text>
+    <g clip-path="url(#draw-design-046-frame-a)">
+      <rect x="180" y="105" width="516" height="170" fill="#e8e2d6"/>
+      <path d="M195 259 C325 262 368 192 481 177 Q571 164 664 126 L680 141 C557 189 422 200 371 244 Q278 290 195 278 Z" fill="#c8c1b3" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M556 166 C550 146 571 122 600 124 Q637 121 648 150 L639 174 Q598 192 560 178 Z" fill="#8c877b" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M568 148 L596 135 L620 141" fill="none" stroke="#aaa18e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <g transform="translate(282 236)">
+    <path d="M-60 0 L-14 -24 L5 -42 L30 0 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M5 -42 L59 0 L30 0 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M-60 0 H59 L36 25 L-34 25 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M-60 0 L4 14 L59 0 M5 -42 L4 14" fill="none" stroke="#231f20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+    </g>
+    <rect x="180" y="105" width="516" height="170" fill="none" stroke="#231f20" stroke-width="2"/>
+    <g clip-path="url(#draw-design-046-frame-b)">
+      <rect x="180" y="319" width="516" height="170" fill="#e8e2d6"/>
+      <path d="M183 454 Q273 411 349 469 L397 499 L357 504 Q276 442 186 479 Z" fill="#c8c1b3" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M638 347 Q642 307 681 303 C724 311 738 351 711 373 Q671 385 640 366 Z" fill="#8c877b" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <g transform="translate(434 426)">
+    <path d="M-60 0 L-14 -24 L5 -42 L30 0 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M5 -42 L59 0 L30 0 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M-60 0 H59 L36 25 L-34 25 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M-60 0 L4 14 L59 0 M5 -42 L4 14" fill="none" stroke="#231f20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+    </g>
+    <rect x="180" y="319" width="516" height="170" fill="none" stroke="#231f20" stroke-width="2"/>
+    <g clip-path="url(#draw-design-046-frame-c)">
+      <rect x="180" y="533" width="516" height="170" fill="#e8e2d6"/>
+      <path d="M181 682 Q276 664 377 686 L438 710 H180 Z" fill="#cec7b9" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M681 548 C676 526 708 511 735 530 L739 572 Q707 594 684 569 Z" fill="#9b9588" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <g transform="translate(286 645)">
+    <path d="M-60 0 L-14 -24 L5 -42 L30 0 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M5 -42 L59 0 L30 0 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M-60 0 H59 L36 25 L-34 25 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M-60 0 L4 14 L59 0 M5 -42 L4 14" fill="none" stroke="#231f20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+    </g>
+    <rect x="180" y="533" width="516" height="170" fill="none" stroke="#231f20" stroke-width="2"/>
+    <text x="24" y="748" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Change placement, crop, or contrast.</text>
+
+  </g>
+</svg>

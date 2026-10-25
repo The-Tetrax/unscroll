@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="737" viewBox="0 0 720 737" role="img" aria-labelledby="draw-fg-020-title draw-fg-020-desc">
+  <title id="draw-fg-020-title">Scale the leaf, not just the frame</title>
+  <desc id="draw-fg-020-desc">The same original curved leaf is drawn in a four-by-four grid inside a 4 cm square and an 8 cm square. The target is twice the source width and twice its height, not just a relabeled same-size grid. Source cells are 1 cm and target cells 2 cm. From each upper-left origin, tip (2, 0.5) becomes (4, 1), stem join (2, 3.5) becomes (4, 7), widest left (0.75, 2) becomes (1.5, 4), and widest right (3.25, 2) becomes (6.5, 4). All four landmarks retain their within-cell positions. Screen centimeters are not physically calibrated.</desc>
+  <defs>
+    <marker id="draw-fg-020-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="737" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Scale the leaf, not just the frame</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="336" y="111" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">8 × 8 cm</text>
+    <text x="32" y="201" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">4 × 4 cm</text>
+    <g id="draw-fg-020-source" data-grid-side="176">
+    <rect x="32" y="221" width="176" height="176" fill="#f7f4ed" stroke="#231f20" stroke-width="2"/>
+    <g transform="translate(32 221) scale(44)"><path d="M2 .5 C2.55 .82 3.25 1.3 3.25 2 C3.25 2.7 2.6 3.14 2 3.5 C1.4 3.14 .75 2.7 .75 2 C.75 1.3 1.45 .82 2 .5 Z" fill="#e8e2d6" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></g>
+    <path d="M76 221 V397 M32 265 H208" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M120 221 V397 M32 309 H208" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M164 221 V397 M32 353 H208" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <g transform="translate(32 221) scale(44)">
+      <path d="M2 .5 C2.55 .82 3.25 1.3 3.25 2 C3.25 2.7 2.6 3.14 2 3.5 C1.4 3.14 .75 2.7 .75 2 C.75 1.3 1.45 .82 2 .5 Z" fill="none" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <path d="M2 3.5 V3.82" fill="none" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    </g>
+    <circle cx="120" cy="243" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="120" cy="375" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="65" cy="309" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="175" cy="309" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+  </g>
+    <g id="draw-fg-020-target" data-grid-side="352">
+    <rect x="336" y="133" width="352" height="352" fill="#f7f4ed" stroke="#231f20" stroke-width="2"/>
+    <g transform="translate(336 133) scale(88)"><path d="M2 .5 C2.55 .82 3.25 1.3 3.25 2 C3.25 2.7 2.6 3.14 2 3.5 C1.4 3.14 .75 2.7 .75 2 C.75 1.3 1.45 .82 2 .5 Z" fill="#e8e2d6" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></g>
+    <path d="M424 133 V485 M336 221 H688" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M512 133 V485 M336 309 H688" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M600 133 V485 M336 397 H688" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <g transform="translate(336 133) scale(88)">
+      <path d="M2 .5 C2.55 .82 3.25 1.3 3.25 2 C3.25 2.7 2.6 3.14 2 3.5 C1.4 3.14 .75 2.7 .75 2 C.75 1.3 1.45 .82 2 .5 Z" fill="none" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <path d="M2 3.5 V3.82" fill="none" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    </g>
+    <circle cx="512" cy="177" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="512" cy="441" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="402" cy="309" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="622" cy="309" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+  </g>
+    <text x="283" y="142" text-anchor="end" font-size="22" font-weight="400" fill="#231f20">(0, 0)</text>
+    <path d="M294 138 H328" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M225 309 H319" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-fg-020-arrow)"/>
+    <text x="272" y="281" text-anchor="middle" font-size="26" font-weight="700" fill="#bc2031">×2</text>
+    <text x="272" y="349" text-anchor="middle" font-size="22" font-weight="400" fill="#231f20">Both axes</text>
+    <text x="120" y="440" text-anchor="middle" font-size="24" font-weight="400" fill="#231f20">1 cm cells</text>
+    <text x="512" y="527" text-anchor="middle" font-size="24" font-weight="400" fill="#231f20">2 cm cells</text>
+    <text x="24" y="593" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Tip: (2, 0.5) → (4, 1) cm</text>
+    <text x="24" y="633" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Stem: (2, 3.5) → (4, 7) cm</text>
+    <text x="24" y="700" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Same cells. Both dimensions double.</text>
+
+  </g>
+</svg>

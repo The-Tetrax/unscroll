@@ -1,3 +1,5 @@
+import type { LessonGuide } from './teaching/types.ts'
+
 export const CATEGORY_IDS = ['mind', 'work', 'money', 'life', 'people', 'tech', 'thinking', 'wellbeing', 'cinema', 'design'] as const
 export type CategoryId = (typeof CATEGORY_IDS)[number]
 
@@ -26,6 +28,8 @@ export interface Lesson {
   quiz?: Quiz
   sources: Source[]
   evidence: 'research' | 'framework' | 'reference'
+  guide?: LessonGuide
+  revision?: string
   kind?: 'discovery'
   publishedAt?: string
   attribution?: {
@@ -68,6 +72,7 @@ export interface ReaderDraft {
   choice: 0 | 1 | 2 | null
   revealed: boolean
   updatedAt: string
+  lessonRevision?: string
 }
 
 export interface Practice {
@@ -79,7 +84,7 @@ export interface Practice {
 export interface AppState {
   version: 1
   name: string
-  goal: 3 | 5 | 7
+  goal: 1 | 3 | 5 | 7
   interests: CategoryId[]
   completed: Record<string, Completion>
   saved: string[]
@@ -93,6 +98,8 @@ export interface AppState {
   joined: string
   reducedMotion: boolean
   welcomeDismissed: boolean
+  onboardingVersion?: 1
+  readingSize?: 'standard' | 'large'
   followedPath?: string
   readerDrafts?: Record<string, ReaderDraft>
   practices?: Record<string, Practice>

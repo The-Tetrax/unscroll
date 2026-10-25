@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="783" viewBox="0 0 720 783" role="img" aria-labelledby="draw-fg-019-title draw-fg-019-desc">
+  <title id="draw-fg-019-title">Suggest ridges with cast shadows</title>
+  <desc id="draw-fg-019-desc">Two original ridged-cardboard studies compare full ridge outlines with selected narrow cast-shadow shapes on the far side of the ridges. The second deliberately omits neighboring shadows. A lower cross-section explains the cause: parallel light arrows travel down and right, one stopping at a raised ridge and another at exposed paper to its left. A dark receiving patch is behind the ridge on the right. No light arrow continues into that blocked patch. Shadow length is illustrative, not measured.</desc>
+  <defs>
+    <marker id="draw-fg-019-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="783" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Suggest ridges with cast shadows</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="113" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Every ridge outlined</text>
+    <text x="391" y="113" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Selected shadows</text>
+    <path d="M30 181 L265 156 L338 376 L89 393 Z" fill="#e8e2d6" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+      <path d="M48 178 L63 166 L115 354 L97 367 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M63 166 L77 174 L128 361 L115 354" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <path d="M92 178 L107 166 L159 354 L141 367 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M107 166 L121 174 L172 361 L159 354" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <path d="M136 178 L151 166 L203 354 L185 367 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M151 166 L165 174 L216 361 L203 354" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <path d="M180 178 L195 166 L247 354 L229 367 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M195 166 L209 174 L260 361 L247 354" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <path d="M224 178 L239 166 L291 354 L273 367 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M239 166 L253 174 L304 361 L291 354" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <path d="M391 181 L626 156 L696 376 L450 393 Z" fill="#eee9df" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M415 166 L429 174 L480 361 L467 354 Z" fill="#38312C" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M503 166 L517 174 L548 288 L534 282 Z" fill="#38312C" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M583 198 L595 201 L639 361 L626 354 Z" fill="#38312C" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M24 425 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="469" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Side light</text>
+    <text x="365" y="516" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Raised ridge</text>
+    <path d="M377 528 L344 568" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="24" y="685" width="672" height="15" fill="#e8e2d6"/>
+    <path d="M24 685 H696" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M290 685 L330 539 L370 685 Z" fill="#b59c79" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="370" y="685" width="106" height="15" fill="#38312C"/>
+    <path d="M223 432 L330 539" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-fg-019-arrow)"/>
+    <path d="M96 520 L261 685" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-fg-019-arrow)"/>
+    <text x="464" y="612" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Shadow behind</text>
+    <path d="M542 624 L429 680" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="746" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Lit paper</text>
+    <path d="M134 737 L211 696" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+  </g>
+</svg>

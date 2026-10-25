@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="806" viewBox="0 0 720 806" role="img" aria-labelledby="draw-design-045-title draw-design-045-desc">
+  <title id="draw-design-045-title">Observe, recall, redesign the pouch</title>
+  <desc id="draw-design-045-desc">An original zip pouch appears in three labeled studies. Observation shows a top opening on the top plane, a side plane, and an attached loop. The memory trial intentionally loses the thickness and misplaces the opening on the front. An invented version restores the volume and adds an upward-opening pocket attached to the right face. The pocket has its own top and side planes; red marks identify the structural change rather than decorative stitching.</desc>
+  <defs>
+    <marker id="draw-design-045-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="806" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Observe, recall, redesign the pouch</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="111" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Observed</text>
+    <text x="393" y="111" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Memory trial</text>
+    <text x="77" y="154" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Top opening</text>
+    <path d="M178 165 L185 201" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M84 237 C45 219 40 280 84 270" fill="none" stroke="#231f20" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M85 210 Q104 188 126 180 Q131 177 142 179 L285 190 Q298 192 302 194 L263 225 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M263 225 L296 199 Q302 202 302 216 V315 Q302 332 293 337 L265 356 Z" fill="#aaa18e" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M85 210 L257 224 Q266 225 266 238 L265 350 Q264 363 250 362 L89 346 Q78 344 78 332 L75 219 Q75 210 85 210 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M119 196 L278 210" fill="none" stroke="#231f20" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M121 201 L277 215" fill="none" stroke="#69635f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M276 210 L288 217 L284 230 L273 222 Z" fill="#ddd7cc" stroke="#231f20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="86" y="404" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Side thickness</text>
+    <path d="M242 385 L285 298" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M433 243 C401 221 400 280 433 274" fill="none" stroke="#231f20" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M440 224 L641 237 Q652 238 652 251 V345 Q652 358 638 356 L440 343 Q429 342 429 329 V238 Q429 224 440 224 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M449 275 L630 289" fill="none" stroke="#bc2031" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="535" y="154" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Flat body</text>
+    <path d="M582 165 L612 227" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="427" y="404" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Opening slipped</text>
+    <path d="M509 379 L529 289" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M24 443 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="485" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Invented side pocket</text>
+    <path d="M160 578 C106 549 98 624 158 619" fill="none" stroke="#231f20" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M162 544 L211 504 Q215 502 229 504 L482 524 Q498 526 498 537 L421 563 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M421 563 L493 531 Q499 536 499 553 V677 Q499 691 486 698 L420 730 Z" fill="#aaa18e" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M162 544 L410 562 Q422 564 421 580 L420 712 Q420 730 403 729 L164 708 Q149 706 149 690 V559 Q149 543 162 544 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M201 528 L463 549" fill="none" stroke="#231f20" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M201 534 L461 555" fill="none" stroke="#69635f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M458 548 L472 557 L466 576 L451 563 Z" fill="#ddd7cc" stroke="#231f20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M437 620 L488 595 L548 611 L496 637 Z" fill="#e8e2d6" stroke="#bc2031" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M496 637 L548 611 L548 679 L493 704 Z" fill="#aaa18e" stroke="#bc2031" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M437 620 L496 637 L493 704 L438 688 Z" fill="#c8beac" stroke="#bc2031" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M447 619 L489 601 L535 613 L495 629 Z" fill="#77736a" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M437 620 L438 688" fill="none" stroke="#bc2031" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+    <text x="561" y="593" text-anchor="start" font-size="22" font-weight="400" fill="#231f20">New pocket</text>
+    <path d="M565 605 L544 622" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="569" y="668" text-anchor="start" font-size="22" font-weight="400" fill="#231f20">Faces up</text>
+    <path d="M566 677 L509 621" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="772" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Keep the volume; change one attachment.</text>
+
+  </g>
+</svg>

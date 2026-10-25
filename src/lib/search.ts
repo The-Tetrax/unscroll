@@ -7,7 +7,9 @@ export function normalizeSearch(text: string): string {
 
 export function matchesLesson(lesson: Lesson, query: string, extraText = ''): boolean {
   const terms = normalizeSearch(query).split(/\s+/).filter(Boolean)
-  const haystack = normalizeSearch([lesson.title, lesson.hook, lesson.topic, lesson.action, lesson.takeaway, ...lesson.body, extraText].join(' '))
+  const guidance = lesson.guide ? [lesson.guide.practice.notice, lesson.guide.practice.troubleshooting, lesson.guide.recall.prompt, lesson.guide.recall.answer,
+    ...lesson.guide.visuals.flatMap((visual) => [visual.title, visual.caption, ...visual.items.flatMap((item) => [item.label, item.detail])])].join(' ') : ''
+  const haystack = normalizeSearch([lesson.title, lesson.hook, lesson.topic, lesson.action, lesson.takeaway, ...lesson.body, guidance, extraText].join(' '))
   return terms.every((term) => haystack.includes(term))
 }
 

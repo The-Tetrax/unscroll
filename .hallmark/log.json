@@ -22,9 +22,9 @@
       "resolved": 4,
       "partial": 0,
       "unresolved": 0,
-      "renderAudit": "0 FAIL, 0 WARN, 3 WAIVED, 5 ANSWERED, 4 DISMISSED",
-      "captures": "32 current route/reader state captures; 18 earlier phone/desktop images independently reviewed; new practice and resume phone states checked",
-      "secondAudit": "105 browser cases and 280 unit/contract cases passed; Hallmark still has no open failures or warnings"
+      "renderAudit": "0 FAIL, 0 WARN, 3 WAIVED, 6 ANSWERED, 5 DISMISSED",
+      "captures": "48 current desktop/phone route, reader, setup and settings captures; contact sheets cover all604 SVGs; representative diagrams and phone states inspected, not independent expert review of every visual",
+      "secondAudit": "189 browser cases passed in one consolidated run; 913 unit/contract cases passed; all604 diagrams decoded; optional onboarding, reading size and one-lesson pacing, real update/offline verification and failure recovery tested"
     },
     "prompt": "Mobile-first practical learning PWA, red black ivory anime-inspired identity, daily finite learning and creative cinema/design hobbies."
   }

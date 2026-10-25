@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="803" viewBox="0 0 720 803" role="img" aria-labelledby="draw-design-047-title draw-design-047-desc">
+  <title id="draw-design-047-title">Study bands, matte tone, and folds</title>
+  <desc id="draw-design-047-desc">Three original surface drawings share a steady light: a polished spoon with curved adjacent bright and dark reflected bands; unprinted matte paper with a broad, low-contrast tonal change; and folded cloth whose larger shadow shapes precede a little woven texture. Below, two bowl details keep the shape fixed while shifting a bright band for a separate viewpoint test. These are example reflection maps, not measured materials or permanent painted spoon markings.</desc>
+  <defs>
+    <marker id="draw-design-047-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+    <clipPath id="draw-design-047-spoon"><path d="M123 193 C70 191 52 235 72 288 C81 324 101 345 123 348 L147 489 Q154 510 174 503 Q184 498 179 480 L145 345 C179 327 198 298 186 254 C178 215 151 191 123 193 Z"/></clipPath>
+    <clipPath id="draw-design-047-cloth"><path d="M507 299 C523 265 538 264 552 278 L605 260 Q621 262 630 286 L661 419 Q600 398 506 437 Q493 373 507 299 Z"/></clipPath>
+    <clipPath id="draw-design-047-bowl-a"><ellipse cx="170" cy="703" rx="49" ry="64"/></clipPath>
+    <clipPath id="draw-design-047-bowl-b"><ellipse cx="389" cy="703" rx="49" ry="64"/></clipPath>
+    <linearGradient id="draw-design-047-paper"><stop stop-color="#ded9cd"/><stop offset="1" stop-color="#C8C3B6"/></linearGradient>
+    <pattern id="draw-design-047-weave" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M1 0 V12 M0 5 H12" fill="none" stroke="#69635f" stroke-width=".8" opacity=".38"/></pattern>
+
+  </defs>
+  <rect width="720" height="803" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Study bands, matte tone, and folds</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="108" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">One steady light</text>
+    <path d="M256 94 L305 131" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-design-047-arrow)"/>
+    <text x="48" y="161" text-anchor="start" font-size="22" font-weight="700" fill="#231f20">Polished spoon</text>
+    <text x="285" y="161" text-anchor="start" font-size="22" font-weight="700" fill="#231f20">Matte paper</text>
+    <text x="540" y="161" text-anchor="start" font-size="22" font-weight="700" fill="#231f20">Folded cloth</text>
+    <path d="M123 193 C70 191 52 235 72 288 C81 324 101 345 123 348 L147 489 Q154 510 174 503 Q184 498 179 480 L145 345 C179 327 198 298 186 254 C178 215 151 191 123 193 Z" fill="#343A3B" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <g clip-path="url(#draw-design-047-spoon)">
+      <path d="M137 182 C97 222 83 272 126 313 C140 327 145 349 146 365 L170 511 L200 504 L163 349 C205 310 210 236 177 189 Z" fill="#E9E8E0" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M88 186 C60 246 99 304 120 313 C88 261 136 242 116 193 Z" fill="#a5a5a0" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M169 199 C186 243 175 291 151 315" fill="none" stroke="#9d9f99" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <path d="M279 227 L444 243 L427 406 Q346 406 266 389 Z" fill="url(#draw-design-047-paper)" stroke="#a5a093" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M507 299 C523 265 538 264 552 278 L605 260 Q621 262 630 286 L661 419 Q600 398 506 437 Q493 373 507 299 Z" fill="#c8c3b6" stroke="#9b9588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M552 278 Q580 330 571 412 L624 411 Q592 349 605 260 Z" fill="#767167" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M507 299 Q523 350 506 437 L541 428 Q548 342 552 278 Z" fill="#a49d8e" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <g clip-path="url(#draw-design-047-cloth)"><rect x="492" y="360" width="175" height="83" fill="url(#draw-design-047-weave)"/></g>
+    <text x="69" y="547" text-anchor="start" font-size="22" font-weight="400" fill="#231f20">Sharp bands</text>
+    <text x="298" y="547" text-anchor="start" font-size="22" font-weight="400" fill="#231f20">Broad tone</text>
+    <text x="517" y="547" text-anchor="start" font-size="22" font-weight="400" fill="#231f20">Folds + weave</text>
+    <path d="M24 578 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="170" y="621" text-anchor="middle" font-size="24" font-weight="700" fill="#231f20">View A</text>
+    <text x="389" y="621" text-anchor="middle" font-size="24" font-weight="700" fill="#231f20">View B</text>
+    <ellipse cx="170" cy="703" rx="49" ry="64" fill="#343A3B" stroke="#231f20" stroke-width="2"/>
+    <ellipse cx="389" cy="703" rx="49" ry="64" fill="#343A3B" stroke="#231f20" stroke-width="2"/>
+    <path d="M164 634 C119 683 187 715 155 772" fill="none" stroke="#E9E8E0" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#draw-design-047-bowl-a)"/>
+    <path d="M402 634 C357 683 425 715 393 772" fill="none" stroke="#E9E8E0" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#draw-design-047-bowl-b)"/>
+    <path d="M244 704 H313" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-design-047-arrow)"/>
+    <text x="517" y="687" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Bands move.</text>
+    <text x="517" y="723" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Not paint.</text>
+
+  </g>
+</svg>

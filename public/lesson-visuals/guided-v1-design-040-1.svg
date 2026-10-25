@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="767" viewBox="0 0 720 767" role="img" aria-labelledby="draw-design-040-title draw-design-040-desc">
+  <title id="draw-design-040-title">Check the shoe&apos;s outer extent</title>
+  <desc id="draw-design-040-desc">An original side-view shoe sits inside a five-checkpoint envelope: heel top, high opening, furthest toe, lowest sole, and heel base. A faint trial puts the toe too high; a short red arrow lowers it before lace detail. The lower study deliberately raises the ankle into a boot while retaining a shoe-like foot and sole. These are construction comparisons, not standard shoe proportions.</desc>
+  <defs>
+    <marker id="draw-design-040-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="767" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Check the shoe&apos;s outer extent</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="267" y="138" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Opening</text>
+    <path d="M310 149 L324 168" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="215" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Heel</text>
+    <path d="M84 222 L128 242" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M325 179 L621 305 L363 428" fill="none" stroke="#b4ada1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+    <circle cx="621" cy="305" r="5" fill="#f7f4ed" stroke="#b4ada1" stroke-width="2"/>
+    <text x="485" y="263" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Lower toe</text>
+    <path d="M642 315 Q648 339 630 359" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-design-040-arrow)"/>
+    <path d="M137 245 C170 255 205 281 236 258 L287 188 Q306 179 325 179 L385 275 C449 297 515 319 577 341 Q607 355 621 368 C562 380 455 407 363 428 L150 385 Q124 382 118 371 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M122 348 C221 392 458 405 604 357 L621 368 C562 380 455 407 363 428 L150 385 Q131 382 118 371 Z" fill="#aaa18e" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M161 249 Q211 229 284 217 L273 239 Q251 278 228 271 Q194 262 161 249 Z" fill="#77736a" stroke="#231f20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M300 218 L334 235 M310 241 L346 258 M322 264 L360 280" fill="none" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M137 245 L325 179 L621 368 L363 428 L118 371 Z" fill="none" stroke="#bc2031" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 7"/>
+    <circle cx="137" cy="245" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="325" cy="179" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="621" cy="368" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="363" cy="428" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="118" cy="371" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <text x="590" y="429" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Toe</text>
+    <path d="M619 406 L621 380" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="331" y="477" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Sole</text>
+    <path d="M356 451 L361 440" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M24 505 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="550" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Invented boot</text>
+    <text x="24" y="594" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Raise the ankle.</text>
+    <text x="24" y="630" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Keep the foot.</text>
+    <path d="M400 565 L470 555 L488 614 L520 648 L615 672 Q640 681 644 694 Q619 714 560 718 L402 716 Q388 713 390 697 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M392 694 Q508 723 644 694 L638 706 Q604 727 555 729 L401 726 Q390 723 390 713 Z" fill="#aaa18e" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M400 565 Q428 542 470 555 L470 570 Q438 582 400 578 Z" fill="#77736a" stroke="#bc2031" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M400 578 L395 644 M470 570 L488 614" fill="none" stroke="#bc2031" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M396 642 Q429 662 458 640 L472 623 L520 648" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/>
+
+  </g>
+</svg>

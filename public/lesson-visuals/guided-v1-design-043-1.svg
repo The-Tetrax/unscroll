@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="660" viewBox="0 0 720 660" role="img" aria-labelledby="draw-design-043-title draw-design-043-desc">
+  <title id="draw-design-043-title">Let the towel&apos;s edges differ</title>
+  <desc id="draw-design-043-desc">An original partly rolled towel contains three different transitions. A light hem meets its darker overlap abruptly without an extra black border. The broad roll changes gradually from light to shade. Its loose tail fades to the exact gray of the backdrop, so part of the boundary is genuinely absent; a neighboring visible segment still explains the tail. Equal tail and backdrop values illustrate a lost edge, not a claim that every real towel has one.</desc>
+  <defs>
+    <marker id="draw-design-043-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+    <linearGradient id="draw-design-043-roll" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DED8CB"/><stop offset=".38" stop-color="#C8C3B6"/><stop offset="1" stop-color="#77736A"/>
+    </linearGradient>
+    <linearGradient id="draw-design-043-tail" gradientUnits="userSpaceOnUse" x1="320" y1="350" x2="608" y2="350">
+      <stop offset="0" stop-color="#DED8CB"/><stop offset=".46" stop-color="#a5a093"/><stop offset=".85" stop-color="#77736A"/><stop offset="1" stop-color="#77736A"/>
+    </linearGradient>
+    <linearGradient id="draw-design-043-found"><stop stop-color="#b5ae9f"/><stop offset="1" stop-color="#77736A"/></linearGradient>
+
+  </defs>
+  <rect width="720" height="660" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Let the towel&apos;s edges differ</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="112" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Hard hem</text>
+    <text x="277" y="112" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Soft roll</text>
+    <text x="531" y="112" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Lost tail</text>
+    <rect x="44" y="162" width="632" height="354" rx="8" fill="#77736A"/>
+    <path d="M321 319 C453 315 476 363 531 365 C579 368 618 342 661 339 L661 452 C602 465 547 439 508 438 C419 437 365 407 294 406 Z" fill="url(#draw-design-043-tail)" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M163 234 Q267 222 375 271 L347 431 Q246 398 163 414 Z" fill="url(#draw-design-043-roll)" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <ellipse cx="163" cy="324" rx="65" ry="90" fill="url(#draw-design-043-roll)"/>
+    <path d="M100 344 C88 303 110 240 155 234 Q266 222 375 271" fill="none" stroke="#484741" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M159 275 C212 276 209 359 169 369 C136 380 105 341 126 310 C142 286 181 297 181 324 Q180 341 158 339" fill="none" stroke="#77736A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M270 355 C307 363 356 381 397 400 L391 415 C349 397 302 378 266 370 Z" fill="#484741" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M281 330 C333 339 373 359 407 377 L397 400 C356 381 307 363 270 355 Z" fill="#DED8CB" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M315 409 Q362 436 459 440" fill="none" stroke="url(#draw-design-043-found)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M127 124 L322 353" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M335 124 L281 284" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M587 124 L608 348" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="434" y="567" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Tail = backdrop</text>
+    <path d="M544 542 L591 447" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="624" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">No outline where values meet.</text>
+
+  </g>
+</svg>

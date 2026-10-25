@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="630" viewBox="0 0 680 630" role="img" aria-labelledby="title desc">
+  <title id="title">Use white paper to return window light to a mug's darker side</title>
+  <desc id="desc">A top-view diagram places a window to the left, a mug in the center, white paper to the right, and a fixed phone below. Light travels from the window toward the mug and paper. Some light reflects from the paper back toward the mug's shadow side. Below, two simplified drawings show the same bright side and a lighter shadow side with paper. These are explanatory drawings, not photographs or measured results.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#b72135"/></marker>
+    <clipPath id="cup-a"><path d="M96 482h120v66q0 25-60 25t-60-25Z"/></clipPath>
+    <clipPath id="cup-b"><path d="M420 482h120v66q0 25-60 25t-60-25Z"/></clipPath>
+  </defs>
+  <rect width="680" height="630" rx="12" fill="#eeeae1"/>
+  <g font-family="Arial, sans-serif" fill="#231f20">
+    <text x="30" y="42" font-size="25" font-weight="bold">The setup, seen from above</text>
+    <text x="30" y="75" font-size="20">Window on the left. Paper on the right.</text>
+    <rect x="42" y="113" width="44" height="176" fill="#d6e4eb" stroke="#3d525f" stroke-width="3"/>
+    <path d="M42 200h44M64 113v176" stroke="#3d525f" stroke-width="2"/>
+    <text x="26" y="321" font-size="21">Window</text>
+    <path d="M105 185h153M105 145h433" stroke="#b72135" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <text x="196" y="111" font-size="20" fill="#9d1829">Daylight also reaches the paper</text>
+    <circle cx="325" cy="217" r="57" fill="#faf6ed" stroke="#231f20" stroke-width="3"/>
+    <path d="M325 160a57 57 0 0 1 0 114Z" fill="#77716f"/>
+    <path d="M370 197h19q28 20 0 40h-19" fill="none" stroke="#231f20" stroke-width="5"/>
+    <text x="301" y="312" font-size="22">Mug</text>
+    <path d="M565 133v151" stroke="#231f20" stroke-width="17"/>
+    <path d="M561 133v151" stroke="#faf6ed" stroke-width="10"/>
+    <path d="M543 165Q465 167 398 215" stroke="#b72135" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <text x="380" y="265" font-size="20" fill="#9d1829">Some light returns</text>
+    <text x="499" y="318" font-size="21">White paper</text>
+    <rect x="284" y="348" width="84" height="40" rx="5" fill="#231f20"/>
+    <circle cx="326" cy="359" r="5" fill="#faf6ed"/>
+    <path d="M326 338v-13" stroke="#69615d" stroke-width="2" stroke-dasharray="5 5"/>
+    <text x="391" y="375" font-size="20">Phone stays here</text>
+    <path d="M30 411h620" stroke="#c6beb1" stroke-width="2"/>
+    <text x="37" y="449" font-size="22" font-weight="bold">Without paper</text>
+    <text x="366" y="449" font-size="22" font-weight="bold">With well-placed paper</text>
+    <path d="M96 482h120v66q0 25-60 25t-60-25Z" fill="#faf6ed" stroke="#231f20" stroke-width="3"/>
+    <rect x="157" y="472" width="70" height="112" fill="#77716f" clip-path="url(#cup-a)"/>
+    <ellipse cx="156" cy="482" rx="60" ry="16" fill="#eeeae1" stroke="#231f20" stroke-width="3"/>
+    <path d="M218 499h15q35 24 0 48h-15" fill="none" stroke="#77716f" stroke-width="10"/>
+    <path d="M420 482h120v66q0 25-60 25t-60-25Z" fill="#faf6ed" stroke="#231f20" stroke-width="3"/>
+    <rect x="481" y="472" width="70" height="112" fill="#bab1a6" clip-path="url(#cup-b)"/>
+    <ellipse cx="480" cy="482" rx="60" ry="16" fill="#eeeae1" stroke="#231f20" stroke-width="3"/>
+    <path d="M542 499h15q35 24 0 48h-15" fill="none" stroke="#bab1a6" stroke-width="10"/>
+    <text x="30" y="612" font-size="19">Illustration only. Look for a change on the darker side.</text>
+  </g>
+</svg>

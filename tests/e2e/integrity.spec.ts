@@ -290,10 +290,17 @@ async function releaseOldResponse(page: Page, paused: PausedDiscovery) {
 }
 
 test('A stale tab cannot overwrite a committed note and exports its own unsaved in-memory library', async ({ page, context }) => {
+  // Two independent tabs load and validate the full illustrated library; keep all
+  // persistence assertions, allowing WebKit's slower multi-document startup.
+  test.setTimeout(90_000)
   const initial = issuedSnapshot()
+  const original = lessonById.get(ORIGINAL_ID)!
+  expect(original.revision, 'Seed the lesson content revision, not the teaching schema revision').toBeTruthy()
   // Both tabs begin at the same already-saved position so opening the reader
   // does not create the conflict before the note edit this test targets.
-  initial.state.readerDrafts = { [ORIGINAL_ID]: { stage: 'try', choice: null, revealed: false, updatedAt: CLOCK } }
+  initial.state.readerDrafts = { [ORIGINAL_ID]: {
+    stage: 'try', choice: null, revealed: false, updatedAt: CLOCK, lessonRevision: original.revision,
+  } }
   const baselineNote = 'Shared baseline before either tab edits.'
   initial.state.notes = { [ORIGINAL_ID]: baselineNote }
   await seedAndLoad(page, initial)
@@ -310,6 +317,12 @@ test('A stale tab cannot overwrite a committed note and exports its own unsaved 
   const staleReader = await openNote(stalePage)
   await expect(writer.getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(baselineNote)
   await expect(staleReader.getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(baselineNote)
+  for (const reader of [writer, staleReader]) {
+    await expect(reader.locator('.resume-notice')).toContainText('Your unfinished bite is restored. No completion was recorded.')
+    await expect(reader.getByRole('alert')).toHaveCount(0)
+  }
+  expect(await readStored(page)).toEqual(initial)
+  expect(await readStored(stalePage)).toEqual(initial)
 
   const committedNote = 'Written in the first tab.\nThis note must remain on disk.'
   await writer.getByRole('textbox', { name: /Your note or experiment/ }).fill(committedNote)

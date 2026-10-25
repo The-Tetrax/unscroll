@@ -22,6 +22,7 @@ release
 .hallmark/screenshots
 .hallmark/shots
 .hallmark/journeys
+.hallmark/teaching
 *.tsbuildinfo
 
 # Editor directories and files

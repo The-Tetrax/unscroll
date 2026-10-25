@@ -1,8 +1,9 @@
 import AxeBuilder from '@axe-core/playwright'
 import { test as base, expect, type Locator, type Page, type Request } from '@playwright/test'
-import { learningPaths, lessonById, lessons } from '../../src/data'
+import { categoryById, learningPaths, lessonById, lessons } from '../../src/data'
 import { createInitialState, ensureDaily } from '../../src/lib/learning'
 import { backupSchema, editionSchema, lessonSchema, stateSchema } from '../../src/lib/schema'
+import { matchesLesson } from '../../src/lib/search'
 import type { LibrarySnapshot } from '../../src/lib/storage'
 import type { AppState, DiscoveryEdition, Lesson, Page as AppPage, Practice, ReaderDraft } from '../../src/types'
 
@@ -16,6 +17,7 @@ const STORAGE_KEY = 'unscroll-library-v1'
 const PAGE_SIZE = 12
 const PRACTICE_LIMIT = 'Keep at most five experiments planned. Try or remove one before adding another.'
 const PRACTICE_ONLY = 'Practice only. This review was not due; its date and XP are unchanged.'
+const UPDATED_LESSON = 'This lesson now has a fuller explanation and a new question. Start with the updated lesson; your notes, saved items, and previous completions are unchanged.'
 
 type QuizLesson = Lesson & { quiz: NonNullable<Lesson['quiz']> }
 
@@ -248,8 +250,10 @@ async function expectCredit(page: Page, state: AppState) {
   await expect(page.locator('.xp-label')).toHaveText(`${state.xp} XP`)
 }
 
-async function expectDraft(page: Page, lesson: Lesson, value: Omit<ReaderDraft, 'updatedAt'>) {
-  await waitForStored(page, (snapshot) => snapshot.state.readerDrafts?.[lesson.id], { ...value, updatedAt: CLOCK })
+async function expectDraft(page: Page, lesson: Lesson, value: Omit<ReaderDraft, 'updatedAt' | 'lessonRevision'>) {
+  await waitForStored(page, (snapshot) => snapshot.state.readerDrafts?.[lesson.id], {
+    ...value, updatedAt: CLOCK, ...(lesson.revision ? { lessonRevision: lesson.revision } : {}),
+  })
 }
 
 async function openToday(page: Page, edition = EDITION) {
@@ -577,6 +581,9 @@ test('UI backup round-trip preserves original and external drafts, planned and t
     [lesson.id]: { status: 'planned', plannedOn: DAY },
     [REFERENCE.id]: { status: 'tried', plannedOn: DAY, triedOn: DAY },
   })
+  expect(lesson.revision).toBeTruthy()
+  expect(before.state.readerDrafts?.[lesson.id]?.lessonRevision).toBe(lesson.revision)
+  expect(before.state.readerDrafts![REFERENCE.id]).not.toHaveProperty('lessonRevision')
   await navigate(page, 'profile')
   const backup = await exportBackup(page)
   expect({ state: backup.document.state, discoveries: backup.document.discoveries }).toEqual(before)
@@ -676,8 +683,16 @@ test('Search uses Patrick Jane and Sherlock path context and normalizes accents,
   const relevantPaths = learningPaths.filter((path) => path.id === 'observe' || path.id === 'remember')
   expect(relevantPaths).toHaveLength(2)
   const pathIds = new Set(relevantPaths.flatMap((path) => path.lessonIds))
-  const expected = lessons.filter((lesson) => pathIds.has(lesson.id))
+  const catalog = [...lessons, ...EDITION.lessons]
+  // Fuller guides can match outside a named path; check the complete indexed library in its real order.
+  const expectedFor = (query: string) => catalog.filter((lesson) => {
+    const paths = learningPaths.filter((path) => path.lessonIds.includes(lesson.id))
+    const context = [categoryById[lesson.category].name, ...paths.flatMap((path) => [path.title, path.description, path.inspiration])].join(' ')
+    return matchesLesson(lesson, query, context)
+  })
   for (const query of ['Patrick Jane', '  SHÉRLOCK   HÓLMES  ']) {
+    const expected = expectedFor(query)
+    expect(expected.map((lesson) => lesson.id)).toEqual(expect.arrayContaining([...pathIds]))
     await search.fill(query)
     await expect(status).toHaveText(`${expected.length} bites`)
     const seen: string[] = []
@@ -692,20 +707,30 @@ test('Search uses Patrick Jane and Sherlock path context and normalizes accents,
   }
 
   const lesson = original('design-001')
-  await search.fill('blackmagic pencil cup color')
+  const canonicalQuery = 'blackmagic orchard pear color'
+  const normalizedQuery = '  BLÁCKMAGIC   ÓRCHARD   PE\u0301AR   COLOUR  '
+  const canonical = expectedFor(canonicalQuery)
+  expect(canonical.map((item) => item.id)).toContain(lesson.id)
+  await search.fill(canonicalQuery)
+  await expect(titles).toHaveText(canonical.slice(0, PAGE_SIZE).map((item) => item.title))
+  await expect(status).toHaveText(`${canonical.length} ${canonical.length === 1 ? 'bite' : 'bites'}`)
   await expect(card(page, lesson)).toBeVisible()
   const canonicalTitles = await titles.allTextContents()
   const canonicalCount = await status.textContent()
-  await search.fill('  BLÁCKMAGIC   PÉNCIL   CU\u0301P   COLOUR  ')
+  expect(expectedFor(normalizedQuery)).toEqual(canonical)
+  await search.fill(normalizedQuery)
   await expect(titles).toHaveText(canonicalTitles)
   await expect(status).toHaveText(canonicalCount!)
   await card(page, lesson).locator('.lesson-card-main').click()
   const dialog = await reader(page, lesson)
-  await expect(dialog.locator('.reader-prose > p')).toHaveText(lesson.body)
+  expect(lesson.guide).toBeDefined()
+  await expect(dialog.locator('.teaching-section > h2')).toHaveText(lesson.guide!.sections.map((section) => section.title))
+  await expect(dialog.locator('.teaching-section > p')).toHaveText(lesson.body)
+  await expect(dialog.locator('.reader-prose > p')).toHaveCount(0)
   await expectSources(dialog, lesson)
   await closeReader(page)
-  await expect(search).toHaveValue('  BLÁCKMAGIC   PÉNCIL   CU\u0301P   COLOUR  ')
-  await search.fill('blackmagic pencil cup colour zzzz-no-such-iteration-term')
+  await expect(search).toHaveValue(normalizedQuery)
+  await search.fill(`${canonicalQuery} zzzz-no-such-iteration-term`)
   await expect(titles).toHaveCount(0)
   await expect(status).toHaveText('0 bites')
   await expect(page.getByRole('heading', { name: 'Try a different angle.', exact: true })).toBeVisible()
@@ -813,6 +838,70 @@ test('Importing a legacy v1 backup clears an already displayed edition, aborts a
   await waitForStored(page, (snapshot) => snapshot, refreshed)
 })
 
+test('Legacy and older-revision drafts import unchanged, then restart at the updated question without losing the library', async ({ page }) => {
+  const initial = await openToday(page)
+  const lesson = original('design-001')
+  const other = original('design-002')
+  const completed = original('design-003')
+  expect(lesson.revision).toBeTruthy()
+  expect(other.revision).toBeTruthy()
+  for (const previousRevision of [undefined, 'fixture-previous-revision']) {
+    expect(previousRevision).not.toBe(lesson.revision)
+    const seed: LibrarySnapshot = { ...structuredClone(initial), state: {
+      ...structuredClone(initial.state), xp: 20,
+      completed: { [completed.id]: { date: YESTERDAY, correct: true } },
+      reviews: { [completed.id]: { due: TOMORROW, interval: 1, repetitions: 0 } },
+      activity: { [YESTERDAY]: 1 }, saved: [lesson.id, other.id],
+      notes: { [lesson.id]: 'Keep this note about the older cup example.', [other.id]: 'Keep this separate observation.' },
+      collections: [{ id: 'older-notes', name: 'Older notes', lessonIds: [lesson.id, other.id] }],
+      practices: { [lesson.id]: { status: 'planned', plannedOn: YESTERDAY } },
+      readerDrafts: {
+        [lesson.id]: { stage: 'recall', choice: 0, revealed: true, updatedAt: '2030-06-14T12:00:00.000Z',
+          ...(previousRevision ? { lessonRevision: previousRevision } : {}) },
+        [other.id]: { stage: 'try', choice: null, revealed: false, updatedAt: CLOCK, lessonRevision: other.revision! },
+      },
+    } }
+    await navigate(page, 'profile')
+    await importBackup(page, backupText(seed), `iteration-${previousRevision ?? 'legacy'}-draft.json`)
+    await waitForStored(page, (snapshot) => snapshot, seed)
+    const backup = await exportBackup(page)
+    expect({ state: backup.document.state, discoveries: backup.document.discoveries }).toEqual(seed)
+    if (previousRevision === undefined) expect(backup.document.state.readerDrafts![lesson.id]).not.toHaveProperty('lessonRevision')
+    else expect(backup.document.state.readerDrafts![lesson.id].lessonRevision).toBe(previousRevision)
+
+    let dialog = await openReader(page, lesson)
+    await expectStage(dialog, 'read')
+    await expect(dialog.locator('.resume-notice')).toHaveCount(0)
+    await expect(dialog.getByText(UPDATED_LESSON, { exact: true })).toBeVisible()
+    await expect(dialog.locator('.teaching-section > p')).toHaveText(lesson.body)
+    expect(await stored(page)).toEqual(seed)
+    await dialog.getByRole('navigation', { name: 'Lesson stages', exact: true }).getByRole('button', { name: /Make it stick$/ }).click()
+    await expect(dialog.getByRole('group', { name: lesson.quiz.question, exact: true })).toBeVisible()
+    await expect(dialog.locator('.transfer-question > p').first()).toHaveText(lesson.guide!.recall.prompt)
+    await expect(dialog.getByRole('radio')).toHaveCount(lesson.quiz.options.length)
+    await expect(dialog.locator('input[type="radio"]:checked')).toHaveCount(0)
+    await expect(dialog.locator('.quiz-feedback')).toHaveCount(0)
+    await expect(dialog.getByRole('button', { name: 'Check my answer', exact: true })).toBeDisabled()
+    await expect(dialog.getByRole('button', { name: 'Complete bite', exact: true })).toBeDisabled()
+    await expectDraft(page, lesson, { stage: 'recall', choice: null, revealed: false })
+    const current = structuredClone(seed)
+    current.state.readerDrafts![lesson.id] = {
+      stage: 'recall', choice: null, revealed: false, updatedAt: CLOCK, lessonRevision: lesson.revision!,
+    }
+    await waitForStored(page, (snapshot) => snapshot, current)
+    await expectCredit(page, seed.state)
+    await page.reload()
+    dialog = await reader(page, lesson)
+    await expectStage(dialog, 'recall')
+    await expect(dialog.locator('.resume-notice')).toContainText('Your unfinished bite is restored. No completion was recorded.')
+    await expect(dialog.getByText(UPDATED_LESSON, { exact: true })).toHaveCount(0)
+    await expect(dialog.locator('input[type="radio"]:checked')).toHaveCount(0)
+    await expect(dialog.locator('.quiz-feedback')).toHaveCount(0)
+    expect(await stored(page)).toEqual(current)
+    await closeReader(page)
+  }
+})
+
 test('A server-fresh edition from yesterday is labeled downloaded with its date and remains cached after reload', async ({ page, network }) => {
   const stale: DiscoveryEdition = {
     date: YESTERDAY, status: 'fresh', lessons: [{ ...REFERENCE, publishedAt: YESTERDAY }],
@@ -853,9 +942,12 @@ test('Completed and review readers ignore drafts, and repeating a review does no
   seed.state.activity = { [YESTERDAY]: 1 }
   seed.state.xp = 20
   // A valid backup can contain a stale draft for a completed lesson; it must not be resumed.
+  // Use current revisions so these readers must ignore the drafts independently of migration.
+  expect(lesson.revision).toBeTruthy()
+  expect(unfinished.revision).toBeTruthy()
   seed.state.readerDrafts = {
-    [lesson.id]: { stage: 'try', choice: lesson.quiz.correctIndex, revealed: true, updatedAt: CLOCK },
-    [unfinished.id]: { stage: 'recall', choice: unfinished.quiz.correctIndex, revealed: true, updatedAt: CLOCK },
+    [lesson.id]: { stage: 'try', choice: lesson.quiz.correctIndex, revealed: true, updatedAt: CLOCK, lessonRevision: lesson.revision! },
+    [unfinished.id]: { stage: 'recall', choice: unfinished.quiz.correctIndex, revealed: true, updatedAt: CLOCK, lessonRevision: unfinished.revision! },
   }
   await navigate(page, 'profile')
   await importBackup(page, backupText(seed), 'iteration-review-v1.json')

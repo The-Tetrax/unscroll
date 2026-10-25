@@ -88,6 +88,4838 @@
       "licenseFile": "licenses/UNSCROLL-MIT.txt",
       "size": 14790,
       "sha256": "159a01ca30a3920d3dbf696de6ab0731fd1c5fe11a4679b075ec5a9fb447f852"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10645,
+      "sha256": "ebd140b231c229bfd7ff002b7903ca9328f84c22830e8d9e485546a745260d42"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9430,
+      "sha256": "7409641b0bd94d40d30d3ed1f8dc61749ef6d0916a800efba5dbb7e29f29949e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-002-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4679,
+      "sha256": "4d002e9273ede5f4066b89cbc380d1b4cc804384d17237191483b770cb768315"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8793,
+      "sha256": "1a591d291b48c886b4aa7e42585d85b2ec81ddf8ea3c4ae096e7743be71db686"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-003-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4381,
+      "sha256": "8390b4a02bec49840e061b5704120f476706136a6e42be5b8c87612ce0fac1d7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5703,
+      "sha256": "73fa2ea734529ed51b1cdecfb8c1db8496f4f1252a3bed27bc612ce3ce4c7d5f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-004-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9771,
+      "sha256": "d42244e84d7d7c3bc4442edbc881ce306d2a3439ab6e0a6a5456c9fc34b46180"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8841,
+      "sha256": "28097424777f09c43cc3bcf649304b47449346bcd38c0187b84e149d36a0aa09"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6903,
+      "sha256": "92254b9f4e6d14ef4234d64926de88f6a375c3693cac7655aabeaa722467ab14"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7689,
+      "sha256": "71c2db73014701b7e87b6cc1dd5a5cc67a92b59ef9a95c79ecd36e5802f00bd0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-007-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7864,
+      "sha256": "3d26761be559f788b378d4183a795bdeb6d803ac7700f17578eff6f6c0e17a56"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11893,
+      "sha256": "1f774cba89732ac807a80d97cb83f3bf594540609509f0a9ded22dfab93c0442"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-008-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5946,
+      "sha256": "1359def32c0897c80f99ec94fa9b0f05a5d3718160193bda9a40e6b3d7a982f0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7157,
+      "sha256": "f5d49d62be21007ecf4b92ec0adb80d4a7c16f3a711e1f20849e2a1a6e2862bd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8800,
+      "sha256": "1ff628594a666519e0f87664d4fa383beff14f502f45697117597030dc2430dc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-010-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11472,
+      "sha256": "d811b89447b278408b3be41598859fda0f115d2d482776ef2a40c87937a1558b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10413,
+      "sha256": "d83da84faae5f3e1d7a6062dcf4348be476ab16dcce051b8d49c03475fc2ffd5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-011-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4807,
+      "sha256": "617289b20788a15eb4d77920f51e7806970040b1fa218d673bf794b5935c1ac5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13385,
+      "sha256": "058c6815879ea925040515f3cc33b6fd587f81090c98b979d3ecbc77b1920d1a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-012-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4872,
+      "sha256": "4234e9eea2f2a25749cbea1a232110aa1510bb3c6790f223e2fc336e6356acdf"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12758,
+      "sha256": "5715cfb5854beed93669fcbc0b212b82479b3cf3672cd1cda5b273e6ddbdf925"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12709,
+      "sha256": "b4efdc2245235082df6de0422cd9d4149b21cac04ece472bf2062609020ecb29"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-014-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13222,
+      "sha256": "933043b6ec4af5a1cab1ccbc9635697ef76ba4d9f11bcdff72a7b01483560ade"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12318,
+      "sha256": "7569ae08799f3832d2e9f0a05eb0f75b2257d522d3765d1cd631854e9b007f26"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7722,
+      "sha256": "e6cf785570ec9a17305e4341c429ca1c30455e86d380adda2385ab1337d39047"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-016-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5087,
+      "sha256": "3585888a9ccf3b4054192ed2e2cabcfcfffe466371c61586ebc389eea61a8f78"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 16532,
+      "sha256": "84805d3910ef037b56da342f7d7d5ee33be2b58a1b7192fe6fae4f263c4b13f9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11678,
+      "sha256": "5663e9de7a2149d8215a314c9eebe311a4880b15e41f6de39a68e2a9ab9feabb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8156,
+      "sha256": "67c87c79205168c6440285a4723c1588587b62846f888203f83f6b28af015b26"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10940,
+      "sha256": "88d8c494e7b8a0d580ae8c453ba001c44fad08f7f2575de8336ec8fec8d606e4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12031,
+      "sha256": "a0fe2c5f54b880d7bdac2983e99206f11ed8413e0fc92b310f94ca4d0e52ec7e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-021-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4739,
+      "sha256": "147bdc346c64f1239f3a65fad4e3cfc7c12e8f8b57c837381cf25bbcf5ea7e78"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8056,
+      "sha256": "152e97996d8633642a1ec111f81f58509456265915f8229ced614eb105850f02"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-022-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4609,
+      "sha256": "44b14a41f1ea5563ff3e794bfd85345a1467a736b3f7563390daf8575d907be2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14432,
+      "sha256": "64312d17554d8b5d8f51a95fdff11e0c0863ca6586192504736e5452a0373734"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13652,
+      "sha256": "b52f837e6adfd25cc1e28a4dad34226d38a5ebeaaf3837faf51fd298021481ce"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-024-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4928,
+      "sha256": "fd4d4ba04169db9bcbb24312c3dfa006031d6a43cc1572d355596cbe5993ea2f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12039,
+      "sha256": "2cde00a8a312a19098d944bcc8a207769ec52ed4af69f13e2d010d6750217224"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8389,
+      "sha256": "08c4950fc1ceb83ba2c82bd9594c65d5949a9a1756d435990ee8aea7abf29aa6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-026-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10384,
+      "sha256": "c89705a033eb9a66f211c481404edbf4b3ed3e7baa24a7793211fb44adea82c6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3786,
+      "sha256": "2e3b6173e067d9c4a7570fc5fa1a3fd5804d56421aa374f8c1de48f74356d124"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10122,
+      "sha256": "2ac308cc2390cf6da2ac447defd48db308867b5977e591fa927f0a3a92aa1fa6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5921,
+      "sha256": "89bd35f20c9a6828416ccb4d03c03072adb1013cd1fcffd199370ddf79cf6e6b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8587,
+      "sha256": "ac71e6f3b5690b16664a43ab0e7f52a3d5d4c07ac4a048ba8c0cd8ced4ac6b2a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8521,
+      "sha256": "43e8007da6924e71d70f0ffd952a2da855dc30658a7ee9b0bb722dacef5dd9bd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7082,
+      "sha256": "8310f8e5d348cb832fdaed469d00219f4280d3018b46388b752deb7627a334d6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8076,
+      "sha256": "e4d5f9d5e6857023ee2497560db65c5bc3012e80064d71bd7610d1b6a808e495"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7741,
+      "sha256": "5aa967048cf55644c650444ef03179b2ea0a203d96f37ca45fe31842d45b5fdb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 16572,
+      "sha256": "aba0563d95e4a737c27e44d8c62d701fc02f56ac32ea2aeaf77eea3c55b11261"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8913,
+      "sha256": "20e848b81061d57e7b930e388b2a4f2e3b11d4e1e1157c582a23c3419403fb84"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7591,
+      "sha256": "0a1b2b41e67db44be34b5c68b7cbe7d357ccac694ad18653542062cd15b5143f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9041,
+      "sha256": "d7f588804359edd10bed0676834384b90ddbd2422d5a56b89ba06b845b47a376"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11560,
+      "sha256": "f1b37bd711bcd512c498063c55ad3fce4dd13cbd1a5b3c34dddcf38824af860a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13946,
+      "sha256": "b04972436463a278a051188201cc0e9a4f39a9a48e0ab28cf93fe641e0aa0bad"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-041-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14600,
+      "sha256": "b5372fff0425ab28c6996acf440e63c92d7a14d17ee36318ca22c5809024d5ef"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-042-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10722,
+      "sha256": "23106f9a6694e3b4f0151e8a74a108e46b4cb12942be9019aa13c6837e4aa24e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-042-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4568,
+      "sha256": "307a556bddd56bf136ae873fde33ece72295e92fd7d840e33184eb508e58c365"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-043-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9136,
+      "sha256": "ccf6c0e0d38617e0d45fce2e9f1f5533a9649baf9d9073a7084c03160d6bcce1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-043-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7834,
+      "sha256": "f904991f96ecba12dae3cb95d576e6c461b7127f9d00f13b6dc98e6dd4c064dc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-044-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6695,
+      "sha256": "fbe00d58cff50b10eff4bcfff85904ede59c58299d8979658ec70b4501cf3ae1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-045-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14001,
+      "sha256": "3bd63ea1cd682371faff307bf05899eaa470d54646738b0ec8efff42a8576888"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-046-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4996,
+      "sha256": "c165d665d958b24d6a47388bde0426ef13834a854b37eb4abc21d85845909d15"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-046-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9994,
+      "sha256": "b6504300788eacd7bbf7e68f09a55db82a0b3ffaa4e5c3f38a70fc80c02b7204"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-047-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6828,
+      "sha256": "7cc76524d2c376f67c40ca059dcb5b54777d40896eab81abaa12c28a4d717997"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-048-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4982,
+      "sha256": "8712067f4e40438229731e0e90ff47cc013b255acd71aeefcd30c70baa959693"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-049-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11668,
+      "sha256": "49728c4fb99c18f07c9a1eb61b263aaff5a2c371dde4427f6ad362b4b93a7c4e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-050-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13303,
+      "sha256": "13267d9107775c8ef9afdf14ea46bab5d27e212fea80e4967711066e76bf8ace"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-051-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5754,
+      "sha256": "43968a09fe3c85199430f96f7553254ddeef3e9fe2c507a8800ed2434b4d56cd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-052-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8377,
+      "sha256": "cca7014e2b672a0ae71feaff2a9bd48b429677fbdf6312bc45bed931bdc0c4c8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-053-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4961,
+      "sha256": "cd310cb350f951f7daebdf08a9a65f775c43f1426b952427e0665784bfc794ce"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-054-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5366,
+      "sha256": "f54c9183cb412b1b833caf4ddc85e912392c4b5b620c9cb3296ea4ca0f728e7a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-055-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4688,
+      "sha256": "7cc9a166a215d3c206b63510b3dfd2e99c53aebf64f3cfae23adde0274ad5743"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-056-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12871,
+      "sha256": "b4efd7dadb8bd897cb7965537fd376a8a859097b631ddef2999df29c0d45751f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-057-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4676,
+      "sha256": "8c28ee57eb7196e9295d66ce2c9a3f068cce746ca5b43a7b2ae5427f08ec5dc5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-058-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7063,
+      "sha256": "d1517c8aa9ef34e6f25bf1511b33212c2d6f6e2503a6c5ae6a6ab96dd8bb1d20"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-059-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4752,
+      "sha256": "48c45158200c231aaa62cd8cde5689ee629eab78985ea46757dd8d04d0b8f8f3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-059-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13142,
+      "sha256": "1f3b2e70d6f157acc5da2fb372ce8215d58942454dad65ff45495d4b206f475d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-060-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4270,
+      "sha256": "b6643d404d4451f4a0547f409308507c9fc538b37a8891199bb698797f6bdc26"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-060-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4442,
+      "sha256": "8862304f00d36c85b71dde75675255bd89f03e9538a863e3eb4d38712a3ade7e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-061-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4771,
+      "sha256": "2c946a439be9cdcedefd15a91a8d05d99137eb911cad56a0e166fa74d473b75d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-062-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11065,
+      "sha256": "04639f612d9059852b5ed6cab6a9232eea24486568567d998ec947e874f29f15"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-062-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4759,
+      "sha256": "0245b34b2996298a1ddb3b9f27b0f61ad9f11c979427cee37fb3b815aa9812e4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-063-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6823,
+      "sha256": "4d9328161ef65d4e4ad95b153d997d261f7bc4acc0df9d0756c5cec1c0ab9288"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-cinema-064-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5609,
+      "sha256": "4626f0fbe84b06b754c7745217dd1960c739e4047927e94e406bade8aefe06ac"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 2908,
+      "sha256": "88ae871c588059f488f26be51114a648e30becb304aaf574339b945d1dd5fb4d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5446,
+      "sha256": "efae1f337903109608ff5feac030ce0ea5ace1e90d1e5bb5c789679a5e072e13"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 2177,
+      "sha256": "b417af658e400975d2e3f65c05fb818857c86b47121bc4e9e46ff20fba7fd596"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-003-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7951,
+      "sha256": "5c41a9d784e7d44cd4749905b41c8d5b317d6483b01a096582df7bbc2cc992d7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3789,
+      "sha256": "1d3fdd77fa8669ebdbd08ff5a27a85447f3c5841635cd83e53a1a60aba9bfb06"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3383,
+      "sha256": "fce58d5a1da47aee93c280c561e7c711fe8d2815ae263622a149742c4be82194"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5740,
+      "sha256": "29de075589342e44cb183f662f59f8428f4d00277e3193362072f4a2ddb74a3a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-006-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6448,
+      "sha256": "49769cc9dbe82f86aa0948bb6d8b86cb3fea2d01583ef6a46e0bc5f99a0fb153"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4682,
+      "sha256": "c2c1cbf95075f8b7c61e205b438b32a4e399829d2a984c7b8763612ebf1151c9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5878,
+      "sha256": "902688ba8b0e3ca770f2adc14901e6f494513b2b337e13a43ddd81a680620970"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4978,
+      "sha256": "b5e46e21d471b86e4c09c897d261395e77c95e8932b61b8e94a10665fd854f4f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-009-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4872,
+      "sha256": "8d26cc974c43ee5142cd465f76d45df576a8a9922c1d2d32cb5ce18ead47fbe1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4486,
+      "sha256": "d34b180e11a73be9a46c7b33270647c5b9b9a59057ea1ef7618286c64ca61664"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-010-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6463,
+      "sha256": "87c1fa07bba8ab8ab0d0150441e1781d0a18a4101885d52c5f972cd6c765b3a1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3352,
+      "sha256": "f2e78353079bf6e0bc21a2ee04f22c0bbd2093a752b80ca19bd4e5a21d4cae5b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-011-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7687,
+      "sha256": "b5eb45f7b02d2c04c1f7e10dca46301d2baf54ccb374ffb9163133f8b67f2edc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4154,
+      "sha256": "34fb57db3ae7eded3f90e50ede13755b5539ecba4021b1bf7c7aac3d2576fe39"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4347,
+      "sha256": "c108d007c9082138138a870410866371f5554d816f48d7b97e317e458a45a5da"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4829,
+      "sha256": "c1803a990944b57c7abe6187e8f9da7dd7628ed8dc444bc2e1e5ae71cde039f3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 2386,
+      "sha256": "5f096955ad90e3535ec6dd1185bbd063099121cae66b5bc584606d66f77a5339"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4640,
+      "sha256": "378c0a2748b057f074566a18dce9f55f5a7ed1aae0dd7516c846e9d432d08bbf"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-016-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10275,
+      "sha256": "4cf541edf7d49bfc933c269d2574373ca1c2d0b87863cba975a36dd5fa94e232"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4967,
+      "sha256": "f7e16772a7f90a4e9391e507a686df5546b5e5bca5840ebe807e49ccf02918d2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5888,
+      "sha256": "074ba3ccf40fdca9ac68b26b577282aa8465c78f40cd7cdd35e9c81fdcdd1b03"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-018-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8326,
+      "sha256": "548733352f8c6c83b54d68f17d6c71ee7390bcf05c07b434cfe9673604ac82f7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-018-3.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8317,
+      "sha256": "b1b3b3e2860dd8beff7c79a6721e607aa76c3a7e9e4cc630030ef3e498a510a9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5031,
+      "sha256": "8a1e0777b7f3dda5f3a8f986dfddde15e32e96462edcbbe26402b6c81c207526"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-019-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7948,
+      "sha256": "50ea6f0e0a3329b10cbe2e2c25a541f2899f5936df19e7ab81f16cfb7b72e9b4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3780,
+      "sha256": "4f81ef8040c7fd3dd21fa7640828d6c118789a61d29740c488fcc904c012247f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3835,
+      "sha256": "ee88798364678aad7f864e524c8be6a78e91d7fb3ae68c14f7e67cd0cfd80c30"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3350,
+      "sha256": "1d8fdba289de3c851101c4bad17995f426102c70f960c0abc36438b8606cb1a5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3067,
+      "sha256": "bd1207061c4a82a84178303cf864b90670e8ee6233798b826d38e5110f2e4985"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4105,
+      "sha256": "47c670f2c3e2c27fc18c01a4e6fcfc8289d66e903b276ee5f858368d684e42d4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-024-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7015,
+      "sha256": "ba939e8e80941261d0f5c7697332217c5914b68b09be943a6dd0b20af29d354e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9248,
+      "sha256": "705e587265d87390b49d16f44cd3b77ee5c96a4b31915c026cf4056d417be162"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5240,
+      "sha256": "197c7de83f9923b9081e24546421ae2fc51708b0f7b942f8047454d9b03d56d9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 23101,
+      "sha256": "d214bd0bbeb1cdf54f9297522955a0b71a298d089bf3cc2906d4e47c7262b202"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8777,
+      "sha256": "ca8e22c3df3e270b4fb34909279f5b09247aaeb1029cc898510989e5055a0893"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6204,
+      "sha256": "55aaeefb619f3382e8a80e492a53cb3956f888d9a2ea9ca7bcbef76afa7a416d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7991,
+      "sha256": "a288d35bf815c15141a7cac40594319b2b1414f507ae43ce453eabd777731cec"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7175,
+      "sha256": "3cb32aa3f3c84c360314587f1951ec4d83a178266736a718340a11fcf06bf82d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5905,
+      "sha256": "51e64304418fa887138723efa1295cafe7ae66d88831be4ab583e2ae09597500"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9197,
+      "sha256": "4714b14a6b1c4cd3a24a596cb56ea3c3cc43c306feb5e8f3667f2b401fc25647"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9883,
+      "sha256": "5c9a936a8f9405b279fa70f29c1cf1f81ccf642cf47e0c1b0014188671a8688e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 20247,
+      "sha256": "b2174c6fecbb6f4ce6ce5e8f3e466a76b5c7aa6980c4e66d62c1c1efb92b84e2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8386,
+      "sha256": "07d75028749c1f6c14c95bb3521fa05a91fcfb34fa9161a088e4abc7fd975929"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3861,
+      "sha256": "5972bcc1cae933353df183c78300cefab8ce54e866af0ac6173b32fd49f0a132"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-037-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10522,
+      "sha256": "99dfe682eb5fdacd188179497474405bb698947bd5ebfb9517eae35bba1e1f30"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5816,
+      "sha256": "6454a4ec4d3e21376abeddaae91eca163f01844e22ad4eaeaa93c13bcc101f7b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-038-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9600,
+      "sha256": "01f7306d8400bffe109e4c9dfde03cd6cc0f1997ce609037580b62ad0194eb82"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-038-3.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10091,
+      "sha256": "76fa4c48d9568173a56444dfd5d48031467bf1bee7fe4c72e431d669e93e7086"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4245,
+      "sha256": "7b382fc0d2a80901096bc4cff52bc0a3bb894922e4e4d23cb891d0a2108e29f7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-039-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11055,
+      "sha256": "311be2da2a277e4da37c1bcb2e1d0924041ab226a69233a46f724e4e0079e564"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5612,
+      "sha256": "80a08f6fe730bbd1a8a576695715352877dc8b3bb5de821701e88188f3f890f5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-040-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9881,
+      "sha256": "99a57ecb99e86b106bf89ffa5a2ff7fca67639b7b2172199c24f85cf1b315586"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-041-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4639,
+      "sha256": "a66c88fea5911cabb23a82ac63300390b90f4d33edb9c98f8de6ba46d66e5c97"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-041-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14468,
+      "sha256": "b96703507628349c81b2b61a03adc610381cd56cf90fab5e76eb96a5e9126e07"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-042-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9121,
+      "sha256": "c9aa8a81ed629f4624f493913fb1db50544888dd14801d0be33010cf5f6aa9f1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-042-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6466,
+      "sha256": "c484dd893be3c5b2c42e47299730b4b95b8f65c7dd8930d47ac2c43de209161d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-043-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4612,
+      "sha256": "0e066f45ab8b974a40dfa7a00150d476722e4b489b7f856cd8fe1587ccfd4c24"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-043-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7792,
+      "sha256": "dbf35a07086c552cc73c2098931988cbe9be660a897942488ea486dd351987be"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-044-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 3883,
+      "sha256": "fbb1d278ff109682371b8b17b43689ac38f3136396594fbb168a8e4a5371a62a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-044-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6493,
+      "sha256": "a3b2cf222b52e70039a4ad06c9f07447a74c7ffed5e0ef882ce570506c33062e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-045-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6970,
+      "sha256": "30d45a0b2b852fa3b354ed8c01138d81216af5899deeb4a4d4be489af61b71c5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-045-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7840,
+      "sha256": "08c5aa13366d56fa33207e5debc2cb19beba998f3654e35aee7fc73e98affee9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-046-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5944,
+      "sha256": "14b077b64be8eaa18fae6e302920a87f2c2dc0fd7a3be814d64c75faeb921a88"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-046-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8172,
+      "sha256": "e46296d0e76a94f0af9af4d86315df442b4e8a59d9308ffeac5d88786b2ca48c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-047-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6306,
+      "sha256": "13c84d0ffef950eedcaa697f0b42105692443c35967ab91a37655ba6dfad786a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-047-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7794,
+      "sha256": "97f715d7e928aee5b2ceed58455ed47f8262c04cd6a238ac2ebb08387e8c8c71"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-design-048-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4089,
+      "sha256": "1d97bc6625bc5c12653b0023c7c2ceba38122836d5f2e820bcb4b278a95be0a2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7013,
+      "sha256": "4bd77ecb8e684cc373d3b65be680ff22aadfa794f455515cf2e7cde7142cc0eb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6946,
+      "sha256": "f85301e00689060a9464dae9c89bf5559db82694b91cf3d364239caf8aad6f69"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-002-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4788,
+      "sha256": "54f6eadfb6a1cfbf0f47cf3677b9250f67025521df03a48a62b242e1613a16ea"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5420,
+      "sha256": "4b6c44edc8485f5c740ec0503828fa9600fdc20eeec56f5490658c290010689b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7515,
+      "sha256": "1db6127079e35b255c7ab165c7bd11a7f7f9a4d6b4b078b30fa9539204fd0897"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5224,
+      "sha256": "78e709faae4dedf97bf202c8f6689ca3e430ebb48e17ae4cfe1d728c44eff75d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-005-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4731,
+      "sha256": "1ef4fb58f26030e9eba7a2cff9c46c77ae6b66cc7db148f97d860d264d3c6672"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7170,
+      "sha256": "b91e582aed65dca7950ef7db52419ed3e0fa0517d13637e217f6626654002501"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6404,
+      "sha256": "db1a820cf225113a16ae922c056354111db75171fdc749c85732e8302bbdc59c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10014,
+      "sha256": "2992be538398d33d55f12301ef588452166d450efdb9af77712bf6b389285706"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7514,
+      "sha256": "2df976055a0dcb97f35ac2c0e2ad0b76aa3942d76579505525971b82697f9fe9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14468,
+      "sha256": "c9a0f41c102a9d9395356d8d551458e1b36148ee39c67b12f15b751a38181acc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 18448,
+      "sha256": "447c869a0a6867017c32bf5fad71ce25fa710713f483bf8bb860152c4db3d956"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7681,
+      "sha256": "b4602a4d53ad3a455afc53148e3e578ee141e28d05f8da39e98f7c4997f90c48"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11223,
+      "sha256": "d36ba50479010d67d58dcb99a22bf766fea7292c2a68bdd5bb92c63eaf87c4dd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7927,
+      "sha256": "010f30e32d8daf04c8b4f4d36d8dfff4294dfd31c1ecfdf94b1ccc1dd72d2b81"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-014-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9196,
+      "sha256": "451ff39d44dfc6cda985cdd8434d789e37fdf46bd860e48808af9676f0cc2f33"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11631,
+      "sha256": "5f399814feae3f9f3d421214bdd8b21b427b1c5da66ef5c8572c71c82e37db9b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-015-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5890,
+      "sha256": "86ba98154e853c27d93f5e0e4479ec476971c46fe87fdea063df68e8a7f0f368"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5555,
+      "sha256": "b7b6e5f61f6a408e045d8ee2a7b10c03f56ff1aab2f52ab904d8cd678c1bc43f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4325,
+      "sha256": "f2d87d6f01769f2df4adb126e5f71c8c9ece5baf93e7c0f8ff9c56fbe9e03f28"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-017-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5982,
+      "sha256": "38060223637df3b90bbbe463bea9f6958b31aa268f64866aaeecf1a2282ff06c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 32990,
+      "sha256": "c4f43dcd4107f643fa2b19067c87a65ee113545c04d1dcc383b530f186deafc6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-018-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12456,
+      "sha256": "d2fbf55ecb689a26c5ed14f2718f0df38aa4adea1e1044a4b827d41c3bf174aa"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5585,
+      "sha256": "ab86e86a3ecc3425e7df399873276105edd985d9663ca4b744f51c788657a899"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6189,
+      "sha256": "57aabb004e8bb00bf3c5906e2fde367340b2475c71f6166768089c420f7d7e49"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5125,
+      "sha256": "c32d1d0297e1fa26536515ac5f3f320ba912a3e4de7b09977c4eef48c7637c6e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 17281,
+      "sha256": "41359c1c8ac2f4caea8b36f3534a815f4e5281ae83794c0d387dd360a821ce2f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8657,
+      "sha256": "454c57da790b482aae9136a842ca4b9d09202ded95820de6bda0c96bb1d0ee1a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-fg-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12587,
+      "sha256": "f10bc62796b7a1d13e1f3be85a65949df0fbb76ad704f681129ed7106e726c55"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10718,
+      "sha256": "bef3cb961afc9cabbe3bea3d689b156d4e48101230befad0e359db553e6264b2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11252,
+      "sha256": "0bfa7d84fd2d499cdf540c8c7c0b75bdcfe89e527bdb7f9416a45d326cb217a4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10251,
+      "sha256": "7e1cf9fdc1a992fc408871440964547bd7341841bf217834c0ce29fca58d16dd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12377,
+      "sha256": "55e03bf61cde2a467d64011bfaae3e66df6246f576f21d12f6cb6b3010a69a54"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5683,
+      "sha256": "867d84ea204051116523129b68cae745cb7743d24d7352ad73484d00832ca12e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14447,
+      "sha256": "6f71575825dfa32eaece1a891146220cabb26e8114470bf96d474d702fa6b397"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5628,
+      "sha256": "43c46c526c85d1da0008c47e48a3429b644266c6ac479d4bab426774b83db39a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5519,
+      "sha256": "066657280084c225719730964ec815658a1951efdbc3b949d4d9302dd0c42238"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11041,
+      "sha256": "b4af1240b47d10c27dd8937efdd3501e320e660be758a6b6fd07d7da8e1265c7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5630,
+      "sha256": "e3bff649c975ffaab0448aa797b78b71d96e2fa13f79b764836cf2167ea8d350"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5732,
+      "sha256": "71536fcda09c8ccd08bf496ae5bc07b1c66ccce02038a334e07c994505091d3f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5719,
+      "sha256": "2f15e93b3ec5340a7661a5af968fce088fadd1b6fb294f9427d27f8808abde29"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5655,
+      "sha256": "f39b28e608624863ed41209108f0963f8c36c9dcb43b96039d7e3c5f159f989b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5611,
+      "sha256": "a78202a3385bff90b7b3c8672a200e15c6faa649fe1cf5b156832d253fbdea41"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5634,
+      "sha256": "8d7cd6458bbec5ab37cd9b35537de5d4480759a3d84f03aec36eda7c5118033b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4478,
+      "sha256": "0e27214437f973d1b988aabb1157ab479ae97d4d156667025bc5e6125c6e1059"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13920,
+      "sha256": "9bea1efb37c012ad70aedd59ad82ebbe5641c72820e1bfb831237b106f0c6f39"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9570,
+      "sha256": "53c4b2f94383739dfe77c6a36b3d7e03d98372d3e3f8c772723ef979b348b52c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4337,
+      "sha256": "4384b99efd917d5cd1e0e2d966421cd4956fac8cf6ef76bcf98ec8fa20e20519"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5712,
+      "sha256": "55bb7f2ce5e2c62ef599978514f6f8e9c5944d8cbd8870b583ad438642d57023"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11139,
+      "sha256": "a7f251e402275c0b61c87bd7228fe2d5282a778a04079b6cad1966c238ce1515"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4668,
+      "sha256": "7bc05f8bb41b4e7b063bc7e8c63593055930fd9c8c62fee084cbf14310ab2de9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13139,
+      "sha256": "7869e340b2d6f39973703eca1c28047ae647cfc454f94afd4c12b67bc1634b19"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4818,
+      "sha256": "f853f268ef862d49084afa1ee03ec52b2e2aaad291aedf5bf666227c65ea46a8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6713,
+      "sha256": "220e25872ae6209e786fe149f30d7610f5c269bd33f3d6ab1e4ea7a9dce0ce42"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4468,
+      "sha256": "9925192b0fe3f2df385a2102ab43947eb51a201614ecac17006c499ece3c2ffd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5034,
+      "sha256": "5b73a8d54f29902f1e8689fdf8dcb7fdaab78f7ed9791dd96900a2b5a15629ec"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14538,
+      "sha256": "f31caf88513694ab05b5d6c19c5731faba2a8bd3df716b1cf884fd9abcb3addc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6297,
+      "sha256": "e41813b72e81831490e65f7114e04152d46e277784c0fe25e0a155f990b09217"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4683,
+      "sha256": "888dc7d203cdd24b2f694588557d3f3df3cf752d6a95ddb8af9afdab698c3618"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9530,
+      "sha256": "c0ca5f6828251e13d978f2258d0ff281419c90be54e3314c962d9a01081399fa"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 15079,
+      "sha256": "67574f03196afae365ae13dbcf9304be11fa9105c8028988f4ed38ebeb37c8f9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5870,
+      "sha256": "3c00dc4fb5d99e4807acf9e62d06e4488728cbf371b8f76eb9edca5d770f79c9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9813,
+      "sha256": "68f5285f4dea96c6d3c4a2b39098cc73131ca9296818e2da4af9fb578cf78000"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6791,
+      "sha256": "570c71302bc58df1f9f811e8c0dc51b54841f7bac19a42a2f26e9804750a5287"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6080,
+      "sha256": "38d3838d918d5ee5197fd4aa7c9f617546a31cd7a8f3dcbcf8cf489f43dfa0ab"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7939,
+      "sha256": "bfb630b58cd218d6c269a4f5c03461edb708e5d4f9f6f3e1c8f2ae09c83ed334"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5670,
+      "sha256": "78fdc3107df5fa8bf4878eedbf9beaad531705fccaab55760cdfbd36794b106d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9502,
+      "sha256": "ecab4a2334bf09cf3301e9ee2d5b3cca75204ca64521e30bd8af7798c41399d3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-life-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6873,
+      "sha256": "537ea137993a85e64872adc1c3e720407f2c021a9997fbcff98ca47ea59c8d47"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4705,
+      "sha256": "7fc490561d50b1bb610e9e0be5d319a5a679ec29cde875d463cc2597e0a5f1fd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4833,
+      "sha256": "b50f4fc40028300deef19f0ebef5cf6fc5f2f78773ba0dc7969483d969103a43"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4484,
+      "sha256": "5f570bbef71a50cc608465a498ce340005dcc3d4d458f4ba7af642af881adfe9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5362,
+      "sha256": "53cb76ff7978282c2d841338c9a4c6f90e32fcfb222870299ceb14096c9aa3a5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4475,
+      "sha256": "11059eb122241174a17be478d903657f5d337c04793147a4da64fbcd3ee1338f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4519,
+      "sha256": "5ed386477197358733a49294b324699fb3d864e9b8370e801a7147eec4bfec9a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4272,
+      "sha256": "59cc6cffa23559deddb043c89244bcb03d0da1d8bf813a2c0610e3efb317a0a8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5862,
+      "sha256": "f0a20c1818113986d7c9f8fd9f507e1ae6736e219d2ae16c52bc50cab3c0d17c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4749,
+      "sha256": "3e1e0a620f2c72fe1f6fcef420953d86099a2e63f369600675268e101f46debc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5065,
+      "sha256": "f9031bb11935752c1d23b93be691fe15ae94271aae5fc9c3e5df05a3e22e7407"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4826,
+      "sha256": "89d01b92f86a05f2a484764536194afbcf7a168ac268edad249c2ce9b23dbdc3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4808,
+      "sha256": "30796dc4f1ace2078c36d29b4627242f659cf014d1c3820856d02c105ec836d4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4923,
+      "sha256": "05937941ba3c803293d3a291c3042817a2867941011b9c4ccde21784c096e03d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6054,
+      "sha256": "beafb576912ca168f5de258945602a2262222e15a9f15a4d906c3fa7f9fd5225"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4473,
+      "sha256": "4a5ce8f95eeb1a1e58110d807abdc952f875e187019c68ec9dfee7a4f025b348"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5371,
+      "sha256": "ae68474363b5a158350134bd69fd9ad5c867d14f65359cabf17ab10f6a740061"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4690,
+      "sha256": "88e398033ed3a0dfb93c345b1e719c3ee2c108f20d9206c0e880ad35dd1c9375"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5019,
+      "sha256": "892e904a8b2a6466210e146ef419b609ef1b1ea20d94c09840658e01515ffd0c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5349,
+      "sha256": "96c24fcdff915b3645b452f51a6c585eaafa8a9d9c04b4d3dc07c767d2308996"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4986,
+      "sha256": "502b215abf0d9b67b776aba885b67cc6dbd50118b7a821c5d67f9b546d3378c7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8897,
+      "sha256": "e4e573224ea529756bc8c1943f76e8bc0ac26273a3b131e306b2dfe54b4e9e9e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10751,
+      "sha256": "3fed268a137738baec0c1a86970e1471b5659061315d772d3fe4d24fbd2b5352"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5051,
+      "sha256": "c2e5312aff9ded1dc0d9f78f91f0158412c0133e6d082f79a745fc88d17ddc5e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4713,
+      "sha256": "956933823d041e2af94d7b93f981c87dd9036ccad6e17f3bad679d53e149a775"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6091,
+      "sha256": "6a3b6be80b15f2c89988cd4d52f85e54fdd26145d96dc2515b94dd4aee6ec618"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4496,
+      "sha256": "0dce8e10f1bb1224c91d0696e6aaedd2d360da8e84538e0230f06a5d140c9d1f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5471,
+      "sha256": "035b0d9f07812844da8e2cffde117efb5e839f8a5d6dafffbec8a3b51701630c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5913,
+      "sha256": "fbab4e62bcbe5a6aff15e3f5182d8e532cb5db9cde631d3628239583ae0a51d3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4350,
+      "sha256": "d6141ef1a62aee4e60a2e2d95429b04a2f64a568b0d8823abd93796a140089a4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4923,
+      "sha256": "c85fdcd39382a651ce0cb92c4d59aacf8112ab3d052135902f48bcc88108061d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4831,
+      "sha256": "425db27cfdc2c77b1a6277d6fcfa250da59ec913d116887dd776995caaf1bb5d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4935,
+      "sha256": "a5fcdd10686af8cb9c0b79881b0b5533c5e6e6e48a75bbe79449be7f5532c0d3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5910,
+      "sha256": "de6e68640d71d16c4b21d57da7afa1828dce0ef99877ba2994c9f04fb7537f7f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5056,
+      "sha256": "5f109373acc37b2e29b9cb5d0e7d3a0c3455cf65090e3df28b6cac944d673713"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6173,
+      "sha256": "69cd43a4aa8ac93d0cf79ae1ea5b9237adc35e237595de5960d4c5b7747d7f71"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10585,
+      "sha256": "1423efc0213ed0bc02e55bf0292b2769ff5a3049da066d3915a853cd0ec51b44"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4329,
+      "sha256": "15ccc787efc2891de4206988fcfeed994196db1a7874d3f00e3fa7bd14d8d69c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-037-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6160,
+      "sha256": "3a45d13be1753e1a0ea49d68d88b24ef7ad517c16116c93055951a41789c28c0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4887,
+      "sha256": "c7a857bb6cd2c085d852b005769463a9389fe06494ed1292db48fc4278042249"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5717,
+      "sha256": "4f99f4d2aa26bc4398a175b82a0a750b49b9d454edd01a3056a47c5222e1b20c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-mind-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4491,
+      "sha256": "d85058934b5487209fcf4c554eefc78842da6d6ef3116e8dcb2d3e48d65b4ada"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4227,
+      "sha256": "10cae95caf5a39c5c3dbd305182f110c7968806bcfc219ee5ce730fc3ec97601"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4686,
+      "sha256": "f15a088de2fd83b4f203cc8a38752b0fc2dc02a2131367a0e06ce04a701fed26"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4874,
+      "sha256": "728293e50d1023d34f0772470151455a93775f182fd05dd46cbcfdb3d0fb43c1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4808,
+      "sha256": "00fc67573eee19c4047c605c3429652cddb51dbfc726f36a1e8ddcb2b4ea6e35"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4724,
+      "sha256": "43ed176517fb572a53c61205f8e71e2b635b6dad6579fd5e7486626168c0102f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4197,
+      "sha256": "ebf4286addf10d6b67259cafc3b170c10b7d12b19a9b2073c6b0e36e32faea74"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4214,
+      "sha256": "775699dacd9f4bbbd6ecaf7d48f10c87b0d8f29ead5ac79ab5a0a1d0944c1424"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4732,
+      "sha256": "4f487bae4bff4f49e59bbba2c093a2581dba80bfe7a5a5597e0d3cab6c8c3ba0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4741,
+      "sha256": "3f44591633672510b03f1af64cc742718912feb5586d1c02073f9131fdd5cefd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4360,
+      "sha256": "6e44e42f7a1a3615735dccc14c2566731c9af392b2de834cc771b38db354d1ba"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5660,
+      "sha256": "5eb8d253f8e26965b4bc121f1d2079dcd5cbd0541c4393a9fb8ad5ff5be22027"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5506,
+      "sha256": "a98a82ba83b3bc1aca2fc0539b0b2a0f392f21dc208bec96d740cd8689cde267"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4266,
+      "sha256": "868b84a15e5335d6d85865d04a9477b3769771b152b09060587d38eb649dfcf6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4460,
+      "sha256": "10b5d0cf6f5269188f0f72ce06dafe181e2558186136e5f216d94022f06e7d52"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5720,
+      "sha256": "60a42699c3a2d8ead0d346ff6ff8651f5f068ad8ed46a704a991ad633e773349"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8024,
+      "sha256": "725e4fb8026e4fea0116d04f6cb02e67d15c867919c575435a2da131b6dbcc6e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5468,
+      "sha256": "205ddf1cf54daafe444456fa4d3f9566eee9ca543dc2c914ef5d4fb5d8bb3c84"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5421,
+      "sha256": "4ec3defdec976b0a8818b9ee525b1131d925569ac719734299332c949d6ffd0c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5748,
+      "sha256": "7d9787b50f11849223fbbe22c67a6e2f3f894e351795c2190960f42728a47f74"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4483,
+      "sha256": "fd28796108d9ed312c0caeff7a999f5599948b0f28f81c1014335250047abba7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4757,
+      "sha256": "48ce5512bbb80dcc901dbd64ee260636e2b1b3a3c99a82e4c98738d595595755"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4815,
+      "sha256": "90263238d1937bfaa5300720a90d1df5c4c55ffa221417bb6c1825f87e079d65"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4482,
+      "sha256": "f38b21156e7c6d88b38c8eb9d2f66dc353ddf5ec75d461a2acb8d62b791e2bc4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6924,
+      "sha256": "1df380fd0a34329740561c8bf4d100912f1e0d153c37e60adf3318c2bbde52ff"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5349,
+      "sha256": "a4eb5d3b81e280cb4a359ddadc1598a1b3f68469f8aecfabedbac7510dca7d53"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4732,
+      "sha256": "385799f9d1e38834006febce852ac2b30aeaefc08b3c8fe93fe1a458551dcc70"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4246,
+      "sha256": "3f06a38c532459754b3b249ff1936ae7ca26be12d2f846770f2e268c4e01638b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5864,
+      "sha256": "4b5ad6a1d0e0dfcef9cfea3c5d0f09fd8e6c14af582b77604df78cf5ea3f1b8a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4764,
+      "sha256": "19227e32b9f550b73d082e524a17611a6b2abfc2869959c6b6616379240d008e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4273,
+      "sha256": "cc267e80a09560ef01906ccdcac1eb043f827671fb1a0b2cbc8ac89a45077224"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4519,
+      "sha256": "b138e4779797c32397432f4aa58492e4b2faf9a4c77971fc7a4a51bc6beda5b8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5696,
+      "sha256": "a5e57ba038cde279f8e79244dee68a2ba80b68f47175aca47c39bb6505c7874a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5325,
+      "sha256": "f91af7ad5dc69914d816aed2f4e4b346b95f17c75ad0347f9c3483b7fa6cb344"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4737,
+      "sha256": "4310766542196d4058c22da37350c953ac3caa8fee0c6df4ea896b1fa153b044"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4539,
+      "sha256": "0cfcac7bc203e5bdb98f203b8778caf7ad00c4693ebebd559f915978fea3116b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4761,
+      "sha256": "a04907a47daf20ddd5db049dd08c7bd7e457d05fc465f2116f6b1df65fe5e365"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4781,
+      "sha256": "2b44ec9e33f84dc5736f61afa8ed482dbbf0637eb41eb1f84f778f8cb0d29927"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4777,
+      "sha256": "018a58a4a07819897a90ea40f671c55bf0ba6ba16d5db8235835a28dd2861367"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4740,
+      "sha256": "ea42d4923208fc0a9744bbd2f430081f4ba83f29b9193712fce4c3ff154c116e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-money-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5870,
+      "sha256": "e3db62f9f1a961a77d0adebc1921234edd66cef4f7b96adca27490730e4acd35"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4770,
+      "sha256": "3a06c3f92c398a18f5c76a77324ce747955e8bf8ceb081c105a8e04dd18606b3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11331,
+      "sha256": "b32e38a3d34a76fefeb58b7736f484548432a28a4367617f11615fc576d75bda"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8155,
+      "sha256": "e28853ac6ff8d4d4635c68109a9e490b3acc08dcd41dd3997c6ca25b4c723bbe"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13174,
+      "sha256": "2487226bc2f2946323d4ce44e8124aab22f0ad7513ebbf4ec34a788a485a0f60"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 1701,
+      "sha256": "89ceab37559e4cd79e429ea239f4304fd6a91f373ebd225d376f876adfc3b950"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-005-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4480,
+      "sha256": "76779ab538e0f77c3947940e5f620f58d0fc369ddd9a3e784f3219568d032842"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5780,
+      "sha256": "32a39e9968d7c62636062440cf0c1a0343eaffc64c34558e941ce61975312abc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5673,
+      "sha256": "1faa1f316a3cb762179ca2e4aee461f6755ed8d030ebb2aab700c9664ae082b2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4575,
+      "sha256": "086f132b2cc4fde67846e1ffa277c1ede891ce9a3459900dc6c0c25f07022ec5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7310,
+      "sha256": "126f5934983d62c6b586a6ecb3beed97011bdf2db845e32a1aecc17023e04299"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5702,
+      "sha256": "7ee7acbefb0e053f6488d67abd02932134fde8ec46c03d4b3f49c7d654eb34a4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7270,
+      "sha256": "578967ffa051f37fc049561b8f27a461f4ad9502f270e7bd2b189c126513bb70"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6357,
+      "sha256": "6da22c4b0342931fdb971a21aefd8d885dde121330eabaf5870732915a53022e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6711,
+      "sha256": "389432bcfd3ea95a09ca37b4efb1aba1c0ab54d1428b738a38f9856df9a2c254"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5136,
+      "sha256": "42cfd91cf5ca4d22d12366e48fe5048f8cb476c2538c8e73e2a7cfe7e808185c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5766,
+      "sha256": "c0fa29c192c815b68630a815a5f370fb92dd4c9e0b6c3a4185bdaad29a84876c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4798,
+      "sha256": "8881facb5ca93532cfe3fc7c95377ce33680831ff01648656f08ad8cd59fcb06"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-016-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4746,
+      "sha256": "74d411beea9b5d457095aea6010a30f53dabe63e5610697ee0a6230ef88e7c81"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4879,
+      "sha256": "2dd6f47f7fcf3cfa32af59beb7932e9b135660415b33927ac67abba0cd9c681d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4925,
+      "sha256": "3dbc46eea413837e19bb3353f711022b7108cc6fc8b21ad963ff3582cd93c8ae"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5476,
+      "sha256": "8af78572eb2aea4cab903480a505237cca5a91881a9b2cef076719fe55775d74"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8141,
+      "sha256": "0d08b3d3c8c33c73be76966ab0010a2731b56c1bd255ea734b71789478c935f9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5967,
+      "sha256": "ea4f368646c4d5da845ab9061991a41f96de8b44c7fbc1d13d030d96d6509380"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7417,
+      "sha256": "bc8986811e0e2967a7be749cd7d79c5c4fddac00345507326a1e8569388a79f0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8779,
+      "sha256": "d75eb400b365f1473101ff44b7f74ec161a3211d88ccfd10d2a5ada473f66704"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8508,
+      "sha256": "b5902b067652f782d4b4332baec9c769ea6d0651f71ac6b43b56ff05b41afc09"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4412,
+      "sha256": "d62952ec6c5f63de183c2c26de735d9b3804129116bba7d626ec2332c3a83366"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6102,
+      "sha256": "38212ae3e5c22238110f36dce3cbe2f85b0cdb4c85733e1d08189f97bae3e9b8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5897,
+      "sha256": "e6a2cdb0c4d5409e2f939308f9a51980306e6abbdd8dead0eea7444f4b50f8d9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6046,
+      "sha256": "029f566a2590cb86f709b36453ef1f01fb9c6883208a3c5156b8f1536b44f6d0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6091,
+      "sha256": "2097b9b4a4d89dd20ce289b726d140f59765906b7178d750b45e547f87209446"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11138,
+      "sha256": "19a85144792a9565be498f2032626b9d3d4c0039fccb465ab0b95439ab0a2ee9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5338,
+      "sha256": "d7ab631cdad81dda5b2658ee2521d083af8dbeeae73cfb34ab532249fac66546"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-observer-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5681,
+      "sha256": "4921af89cf2a8e91e559f18ccfba1b3c76988e47d4ef20f39fb68ea9eb8aaeab"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5748,
+      "sha256": "2c61b964166dce7f730166c0b8c1a0a71dab75f1d7136188b1ca9d8c3f56dea1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5083,
+      "sha256": "e9fa5ef10375e61e7c106aa5b6134bfc60473c3eb0c2c73916e297ccd9ca01fb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6684,
+      "sha256": "c4e28aae62213c5609476af56320e8d9951a9765079f120047119f9450060a9f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4703,
+      "sha256": "6dda2d1c46d511380502f8b1ab90910816a8994c8ffb9b18160b61677f5e9352"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6137,
+      "sha256": "1cdd195f8ab319b01d30061e422b0788454dcbb51957dc5bd600aba38a9c76e2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4958,
+      "sha256": "c66823701d2925c816b93bf3b9336f958c32b5ef6f0af74a13146b69fd928c86"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5047,
+      "sha256": "74026cf059a8500b194bcdcdcd46cbd96f395b8475e268c69e66973ab86cf435"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5844,
+      "sha256": "a652776ad6792270a4ad39af70774716ffbe72e751b4389f794defb1b717bf4a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5415,
+      "sha256": "4d9376ca77f8559badda92d5d959104a7752077ca2dfe2da0427373c5850314b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6954,
+      "sha256": "57c38a3bf0734596432c89501703ea3501197a48d14b61f818a7dbb9f979ea84"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4711,
+      "sha256": "54645c3e8a224e2132b08fafbdfc4f62e1c025948efcde79fd889803f9728582"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6658,
+      "sha256": "1d699c9aacb5b26b0ec31bf5422a901ff01b390359af793b6a663024287af683"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5878,
+      "sha256": "541f922ad143da25d248b302f8f7f980ec1dea8fb09fa0863304960899317b52"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5065,
+      "sha256": "a520145b831ece451685f7a4c213e0e2c540762e996a2359ff85f0cbf03d01ad"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5930,
+      "sha256": "f7272ef17b3a86907bca7d7dbb2890ee2948190de41f106af046180dbc739478"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8434,
+      "sha256": "7776cd55c3034b2f37483130c56f8ce9ebd5f691fee13b6bde866163a9a3adbf"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6155,
+      "sha256": "2aa1262b1d973594f65a740eea0a9f438b09c9b74b2d07f470e0c4423d0dfc1b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4945,
+      "sha256": "dd2afaa4e0d4b33b4a902821c59bfcd011f2bb5f7e74e32aa1e0706dfa9a2367"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6270,
+      "sha256": "7bf29e4e2ebc75ea3bf80ae7493e5515b2fef534bcb43055696b44e990be69c8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5352,
+      "sha256": "e5a60eb29ed535b6ac88f7f2540de1dab64138584964c603256e87d3d28d70df"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5094,
+      "sha256": "c208e19b8b04cc26c906e050fbe655c93c1b70ed985c05ddb5b56921c5de0636"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4874,
+      "sha256": "35021c4ea0e6aadafe747723088f5adfcee062297e38653b76e77ba9fa8cf025"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7325,
+      "sha256": "78109e14aa445f7bc7c76c618cfc9487e47fa0158a9601677d45f15bd72cd204"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5731,
+      "sha256": "bb24f4d01231278d65efc225a14ee692a8e678f0f992b135d0576e9d6292a30f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6092,
+      "sha256": "7bf86dc8a0c49c17cd649860b11cc51d8d41074f4945a1be978161bf39f136a9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4688,
+      "sha256": "d9944d658e8cece32e2ca351bc07060f25ab33db23b035c167bb384b632fa31a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6124,
+      "sha256": "1beb15d6d72f5b8f7457dfb8f1ff5e815b8aacf96d15bca6cbf8811579886fbe"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5356,
+      "sha256": "3780e7190fded62cb1b7a83db965767d8c5d2983db29d6d9bfe845df269789f4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5925,
+      "sha256": "e57306bbca824f5ad2eab6673cc73f2ef7d15485fb1cfae02abc02a7c30defca"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4507,
+      "sha256": "92ccec2713d839b332db4de8b4de6b3c6a810a3e1cece1b77688ae61891d4f3c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5733,
+      "sha256": "f33e8061f8c698361c94c1683ba901e8d65d302094399ec204c38890583018b6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5909,
+      "sha256": "523193501b777c2057dcc213bf6d322a16cff97ac53b09d0b987f8a1f42f52fa"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5916,
+      "sha256": "5ecb164554cb9b8663ac1b6e6a08d055fbb588452965652479a8c53a35e26bb1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4718,
+      "sha256": "b5d49c15fc776c05466bbebbaa8a1189146bc2326df3e6b565b1207280280ac8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5795,
+      "sha256": "2a6505eff2577fa63ef332ee8612eae63255898ba4d0299719851d2a685b752b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5749,
+      "sha256": "462e2b10061281b639aaad7ef911729f001a1a6422c9830e996ca407960926e1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9288,
+      "sha256": "03f463ee17e2486eeabd2f8ac3b9aa95c9afe97d52b381a1564c7b94643c24d2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4914,
+      "sha256": "1f6b6f1ff8a7d069c976ca1934872b6d9c8840e7202ad660b6dbac774e1109d4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4829,
+      "sha256": "21bbe1ecc9e2a13d212fe0713ae735a5f656a70d5541c864e20a81ec9d555195"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-people-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6350,
+      "sha256": "8159bbc703fa5daf74812818a85b5ce99d853dc9c52dc732e02bbadc65f8585b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4447,
+      "sha256": "2215a85adff017ec1b8c3e21b89b45283f85d0aa5ad4f0a90dea2db10bb417e0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4913,
+      "sha256": "fe72b0ad14ddabf37f5021314b35873f26408cdcfb687028ddb6071ca428bca5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9577,
+      "sha256": "4148255dc1a89ccadcd20a5f4a940b1e6fc7dda53778463429ebe63ecac7461c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4623,
+      "sha256": "e07d44e6adc1506bff0e58774788992fbb0b6cb1c771530b21bf86d41a50ee87"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4789,
+      "sha256": "701327acfff8feb5117cda9c72fca977604113bb95e3d9689faa5310e75903ac"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4832,
+      "sha256": "e293a046a4539af269b81d4cbe0876e7b2a27a3b43472443a65527fb5ef09dbe"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4427,
+      "sha256": "4ad99f5527fa70743c6a5468813d3c1642d6d0b658a1dbd187242096a1160571"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4637,
+      "sha256": "8f121cac52b3d18e950d831745cd27397d56841ec7fbcd2d251d6fd5513e1e2c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4787,
+      "sha256": "0176c2344251c522d8e3818e146d6860b1d35094200c066a25d9c6e3a64631c7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10022,
+      "sha256": "e436a74b78dd0db3354f35f15e68b70f67d100e15bedce990e7bed9681756d89"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4814,
+      "sha256": "e88b5bec191b60daf4208a57bc05cd66cc61d6a9610a4f3b051630b11192134b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4392,
+      "sha256": "eef9f5e97de9dfe6e008c159642340350c7e0568b0dbca35e5456bdd184f8a2d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4782,
+      "sha256": "8a7aed91c45a9ccbf44900e7e49de788380cbd5f5db37db0bbd9ade54e453639"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9656,
+      "sha256": "9c4a816364811f8d25d806ebd53f092cc962c4f81b91e9db902a1c4f61867d59"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4819,
+      "sha256": "8b8df5e79d178b278d7f31f79a1a698abce91293e867cb2a389b1d382962f115"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4772,
+      "sha256": "9142e158c42518e6b7f4fcc13a2075882fbdf0a42b6169860631f05bcd2c48b5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10327,
+      "sha256": "e2b97000487392b3728ff2ac9d70f03c957a50997102eab8916b580f413ab55b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4696,
+      "sha256": "c17677d1a2b4a498742496e17eefb55ea569b0c3deb97a9df8766968d5a73eb7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5137,
+      "sha256": "810555c3103377619d42209339ea9fdd541f670159b1ea9e71b2c381ca499330"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-perspective-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9720,
+      "sha256": "70c38786d35c3f3752c87c31e1781548b633271dc13944feba018960215bfb1c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7771,
+      "sha256": "e525639c63d37df35b064b0532b98d62bbc32a2b5339379995edd37ff5670a68"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9886,
+      "sha256": "a2d1096ec71b9157715dd441a022f373ef74c4ad1897da7208b94c1ef3617ac1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10476,
+      "sha256": "69fdb72ecfe7e1d60b7680d28469191045c6efec8299e134c1d7e360093a9c6d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-003-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10458,
+      "sha256": "6b598c1135284891516eb8da31f30c4eafd67163253fdfb4ba48f61153f4a095"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6275,
+      "sha256": "ffdd508db0d1f2d70930c5ef4574a8fcd0e90f957dbb7bfed18a2a9289a425d1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5198,
+      "sha256": "53c7480c442906212118bb87d0d2519537de9343d2b058b4793844649c4fbbc2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11418,
+      "sha256": "672b15fbe8afa5de0e0ebe910ee0ae1395ba0ce8c03219abffdad3c1c72f6d50"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-006-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11397,
+      "sha256": "dac34ba02fb384ff3c998b480fba690479987a7a49d1bdf88951aa5d09511c16"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13159,
+      "sha256": "432d7962f1baa7254c12530db2b343938f039ad0a274fa795e4442c5e81c0f87"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6272,
+      "sha256": "79540170601fd46cbda1842bbc0290ab281d817834c927ba6ff142e399e5e18a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6625,
+      "sha256": "bd933c3cfdacdacd82ada021677ecb95271c13c1d21b953ec09e36f0a051e79a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6615,
+      "sha256": "0a0159617c3d9a509808d49749a4dfc91fe5ff730311aabff5ae8bf31d3f8352"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5918,
+      "sha256": "21035bca464ac49c2c1db21965f1bd1c3d94bcaffac3a1b33f2ea5c12635e2ab"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5761,
+      "sha256": "eb441444808f68b52acf7f7101d7b106304f843f93b37f958323b0a5092d29a1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9760,
+      "sha256": "87bde4330876ca141f34f25cc6179d61f3875a68f9a588ef5803304a7a166bda"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-013-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4422,
+      "sha256": "d0a3938cadab1529ed81a6b0f55127dda56d0bc74af40b0712c62a690e761c1a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5055,
+      "sha256": "2144a308a17993ac67852d2b93eb90b894efaa6753ed2c36e0f2c9bcac18005a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5413,
+      "sha256": "3906110a8bb06c7e8eb677d8312657a3035d77c821f8a3eaf699baf552ec38c9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5567,
+      "sha256": "c4d0fdedc429cec9c281df490e49dae097413707b810d45e82175134e8ce3500"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5891,
+      "sha256": "ec436fef853356457b66116725fa76930887f628e554fb231f216916f6472c6f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11575,
+      "sha256": "0ae62b9020a1ef97bb9bdd3ce62a6908154c0a69495ec849b8f12d7c656e81ec"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-018-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4140,
+      "sha256": "52afc3a694f192aa30e84538b7acff8dc4049a01baa205efdd3e204e2c349fa8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4187,
+      "sha256": "42aee095aea1b3c544f42c6d53dfd99d63afa246d2419e7b36e4f2560bcc7bed"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-presence-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6024,
+      "sha256": "d81df4a004b973018dc12740454cf53ef987add02ef8007aa43f1c563957733c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6118,
+      "sha256": "656394083f6f4b7d716f931db5c75b6eb4c740545d3b59e0d20687e1d196a090"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5427,
+      "sha256": "2a2f960776041f44a2801088dfb496b3be5111b3cef4ed3487cd15a409f42d64"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5077,
+      "sha256": "8afdf900871b8b7e4d6bb8e24527d7bd3a89413bc08f765b217d72bb866e5f90"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-003-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4451,
+      "sha256": "1220541183fe9d82bafa68150ec813fd11fd5e3b30b13dc4aeef41654938f9e2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5372,
+      "sha256": "ee95fc8ceab8c17df5a6490c54cf898472a1d19350075dcf92d073cacbaba0c1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5282,
+      "sha256": "d4a3db895792bc28ba978776f4e55e7aa673d67d7a154931a39946a5cfe91c0d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6215,
+      "sha256": "53a1d63f963dc9501d946dc77e9c3e367c8080a4ff5aa4ab54046368ca6e8d73"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4370,
+      "sha256": "f5f3af508bebae999d813d977ef96498adb1faaec24c37312ee5eaf8756beacb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5661,
+      "sha256": "2ab3c81826999f8486aaaf603ca24a04cb9f7e73ae5be1f90811122cb02e2a13"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4759,
+      "sha256": "ffe9199314b7fc6fcde7dd52b8bd02a9563523bb569266b39b34845f19c8b974"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5259,
+      "sha256": "7b55de828fe6af62d0ff594fb4e4ebec9deb927ff354bfdd54c5e8fb9487a57f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11386,
+      "sha256": "f7d909be5fcad0c8188efa77c347c860467b7d2f5c169c7032b06ed80b1189db"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-011-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4578,
+      "sha256": "95b9a8e1bba505824b38089311c9c250dec13d88407a9570d464f9bdbac6648b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6417,
+      "sha256": "9f08919a94fa7310c3ece9783b29c8ce9bac5b0edd8a741298831e96dd1b98e8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5923,
+      "sha256": "2ee75a6c01862c225944a8db966870b8d49f73583b567762b794a22a09715c44"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6950,
+      "sha256": "8872ac81d6dcb89d4c0e5db35fc89c633af28d91030f0a8797a9b2861a0a0283"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5410,
+      "sha256": "5437f05103024549e45a97b9a4818abac9c6a9cee69c03d363880da5c237991c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-speaker-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6128,
+      "sha256": "e88b61cce1ad007efb250ffef4184a3e9b6f14682a423b826a27d6401519a3f0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14309,
+      "sha256": "9ac2ed4158a08610464e9dae865bfcccdcf31858c0441a59a914fef10681a87c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4775,
+      "sha256": "c4944ad4e8a49dc047f7c244415097fe784bb036f4e060a42ad96604b00534f2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5163,
+      "sha256": "8dbc9ae56419e4fc572a65d28e680b192271ec41625aa5127ac22649d5bba9dd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13574,
+      "sha256": "6d0fb06bd112fc9173345b6a09f2fd430b808df66111b5ea764fd09380d9f9f1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 16269,
+      "sha256": "6339a4d06d9e612e01d02ddba9d7ea522431dc44ac008f5a450092c7716c1246"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10602,
+      "sha256": "a5b3e3b6f1f4dfd828272b684d33dd869d42b01f8f900a9804ed4fbe4a609b99"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-006-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5617,
+      "sha256": "e8c897d667757a30e47474d166a9d8316e126a345f44dbd9bb8cc98ad3f84d6e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5320,
+      "sha256": "fae85995b4f2e75d9a4ce7a62a980b6c64b4f2f2cdb385ea95cea2b2b84a75f7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13595,
+      "sha256": "c616d3cd61d98be7581ecf0a52d95c66a3905265450d9ee94679db17453ce7dc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6018,
+      "sha256": "1d71ddda64aa76d0a194c480135f8f1b4ad4f1895957e742bedeb6eab30e19ab"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6658,
+      "sha256": "d79d3ceacf01952d91bbecf75491245b4c7e9105549f50fae2dedf6b0235fd42"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5846,
+      "sha256": "6905ab28a6460c40809147c807208b2fcc2f237f941bb27a1952924e4b195a44"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5837,
+      "sha256": "64f6c57da1d55eb8b76ba0d54f9b8913f5fce6d0009e09a5bc06d6000eaf8c20"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13654,
+      "sha256": "cbdeb108a0b0aa7986bc6a075e1d5a371b0c96ae40b5c6a775152f5bf330aa9a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10983,
+      "sha256": "370d28a15151cbd76855d398b4d45a514da9bb77f77d629a1571bf4385bed770"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4411,
+      "sha256": "36bca718c091c3f2c91bbd7cd1de23dc732a552f762929836a7997280d78ee83"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5825,
+      "sha256": "60f9402ebabf4e0455f90dec6a1f8e66ddc5e9f37857a12a7134451f422727ea"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5526,
+      "sha256": "a61a7c00a60ea6468c24a3d86ccad6f73c0db2775d338bd7ad71a17c960803e0"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4698,
+      "sha256": "5337c66c232ccf7434540a7763e5c1da3039fd3a9b45b2a0b1c5da6b9b90ae71"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4650,
+      "sha256": "cbf85d920f32b371154f245a8c327c1837f8b2d2d82ddf6c82539d3b0eab88c4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5663,
+      "sha256": "42d18760eeb866f2404ed04df05dd0e5e0c8e0f0f52f74ef67f8a8860b2fa805"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6922,
+      "sha256": "4c7bfca3a28dcac90f4ad07d1c7ebd27628da2d490fd4c88ef2905f3df0acfbd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8625,
+      "sha256": "dfb1a7332769a5e61995422a480c4521cf9a8a295fa44e2e040aee0d633637f8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7926,
+      "sha256": "5c73c001290f83f04c378ef09cbe53b48c23330ce695384ed4418590bea9e062"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4671,
+      "sha256": "ef73835566343834439b304ed610cd33a00a2f1778598c3623405c44bc1e3c2e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4702,
+      "sha256": "2edf62e57a7d2c340113f1cc1182eabe3a2dc1b0dbf5ad1cfc5ad7edde45ff94"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10851,
+      "sha256": "9a1e36ed1b86e777c1a27e41a217c5c7daaff3731387008aa580dcd8b318c287"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-026-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5586,
+      "sha256": "519cbe71bd288e9cacf72a651ccb0289e6e748bb70e91cf6ddba29486643365e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8747,
+      "sha256": "675d74437b3d292acf7485dcb1a159e847107d89ff327e56fad549b3b5ba56f1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6414,
+      "sha256": "8964908dcc205fbe6d7a227ddf7d5d1b6c93293314e965eb0d162bc78f50ea0a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6278,
+      "sha256": "c35e8c2b7f702df75209d5ce5fb617b05dd8014f72506060216c3b0d519b4a9e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8702,
+      "sha256": "cb97cacbc1649b0ee0460cfca5d12850c86ef42268e47b261586f991e9693bdc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4962,
+      "sha256": "59ad787aeea0e78e3fd3734dc4cc383af57241de3743411c1d742cfa61ff1d6f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5858,
+      "sha256": "072ae6a01f08be2932c2de1bc8c7a537e0aa7f3a342d190f86dd7ddb1bfbd36d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14023,
+      "sha256": "723b2e037e17aef2480d49a73c64a1cbf85ebddde22816c2caf5324e3bec1c70"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12578,
+      "sha256": "6f5bbe33fb01563d11c591041d57a2f6219051030fef1cbfdad3343e585c1b3f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6867,
+      "sha256": "30dc8d2caea421ebdac26f7d5618b9b5abe22cd20cc28ba94bad026b815f81c7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5965,
+      "sha256": "a6cc697fbb79f06c11a1465081a4b35315d47568462eb62b9f5dc736ac7c8914"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4799,
+      "sha256": "a2abc6d2ab76d5b18f80935830654be68d23c0b0d3c18bdfb40823290ba60b26"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5889,
+      "sha256": "41d2196bc0f5854cc6c90a2e69b1ddf0fb36715aa092b5026335a2e760d54392"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6921,
+      "sha256": "9b42c1334cde27c8d957d998adf4496965c15628d45270c9e7784300e0f9844e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-tech-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 16173,
+      "sha256": "99161cee6bf4edc9ba0088c2b370a31aa32c2b548f9a564eadefbff584b276d8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4686,
+      "sha256": "f5c201673194ec2b089a8bb50343b3cb3bdea3ab3f21f5a1aaabd2d3c97097fa"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6510,
+      "sha256": "5e7952fa9471764d6231f76f2f500db7c43118fde6ad1d052d65fad9ad7f9e6e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4661,
+      "sha256": "2f6127c2a78f615a575df69af7f1320469ffbb87f73aaa6cd47bcf87a49fddcf"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8552,
+      "sha256": "5236845b0e7cf11b9877f7ff593507c4dfcf5b4189d2038b96f779e863d8db78"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5018,
+      "sha256": "0e946b694267e14a16552787fc4ce269a06e8c881e7b315cb98397205e27ea35"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 13278,
+      "sha256": "bcfdfdeee142c53cee5023d356f34eb3c8485198e70a478a423137d2aa99f00b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7121,
+      "sha256": "9f409e440e6cfd2f079880110782d036c864681a8ad56a9d5e84d88f113f435b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4554,
+      "sha256": "5ebb0dd25f66bc22165370c8734ac993434061f6b0d851316bad61bc55464b6a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5178,
+      "sha256": "060a40aadbdd124ce330b790da4f7ae3a5298538343b17c4ecffbd0370df3734"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8166,
+      "sha256": "f8239ca6dd9459b168299aba3f25bb5d54d241c5504e70c135e80e5c33c671c6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4803,
+      "sha256": "03d57fb7e4ff95c4e784fd93424e9293d280ed8ac925cf25a5509e7243dda5ec"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4722,
+      "sha256": "3b3da795be00946a2fd492da4e43e2ef19208d4a066e7f6814783b660c18d474"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4771,
+      "sha256": "8b091aa0e238514308d2a9606f8a3ff718968e1215288095a2d71d631a12df3c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4733,
+      "sha256": "939444032402b36f9783c5c96dcf91b3726487cf3e023693d2dfc11423cd21d2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6042,
+      "sha256": "f48e0332939bc2b6092677295e31cb058cda98d970356e9a2094433c6084fbc3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4871,
+      "sha256": "d9942802d0769b38cba1bd7981e9bfd0c0e2e7026c005e67b20f64215ec789f8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5124,
+      "sha256": "0d4c917df22d3d50e3c6af4306880906b3d5d0488a5ae5cc2b541fd18c9f1275"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4970,
+      "sha256": "8eddcdaab8542ef37080b52e1ac6f0458597449ee9c94bd5c045ef36c3847bd9"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6005,
+      "sha256": "45fa9ff9d82904d677b2ba7911a5928532d3e510a6eb45f529ee7b85163523a4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4938,
+      "sha256": "e6372db10602491f7711a2a1dc73e0c7a1707aef8b00921aa91cc4eb199dd07e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6469,
+      "sha256": "766c43681ba9899dc2cf6429ca28fba13413a7a318a2e28009b214aa2eb282c7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8589,
+      "sha256": "95f4d9ca442ec67dde9672312b67efd97ef72ae3fa455b01b277fc784d56af51"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8504,
+      "sha256": "30af2a0ea1b9ba51c7c8be0c3bd8bd90455b697a0af86fdc3f171af244e09be5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4580,
+      "sha256": "d38f876f1dbd3237a469282902ef9f34405ac1af034143d126cca5a4d4f16cd5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4979,
+      "sha256": "cb8cae6c80ad7758a9597eb03e10e69ab8326a23db0d27090d9a0042e781d100"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4984,
+      "sha256": "0f29dfe1579bcf138dda8b7ee491c924852bf73fffd7a936f06c16c507a459cd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8285,
+      "sha256": "429792a04e852beff1cef8ae3e7295c9525bf559b1fcb621fe9aa8537672ee5e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4906,
+      "sha256": "4603d184db9773c37991880a12f4743ffca726a0a6d0e142a8bf383f1532d4f7"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4793,
+      "sha256": "f9cc43b2dfe69e88d5155670c18b4d2ea6492e8d08d0eaa90783e66deb7a0dcd"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8968,
+      "sha256": "bf48d25e2d23a4c462417ddea7c91b8d29fdb1d9234af7c9480b801faae34ffa"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5135,
+      "sha256": "2b5a80df443e84b8faeaba109d67212af3c4338e8645c6a147b31f0ff5914817"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5644,
+      "sha256": "56abed390bc16cd8cd5401b44110aa825e6a863fa8d639c99d836f27968aeb14"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7034,
+      "sha256": "2aac57d97ebf287e5128009d039ab365af29c878efb39ebeab0c5bb18ff16665"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 8792,
+      "sha256": "25d0a4533fc280a178acd9b19edf58a9558d7a64387523d0af6824085880e2ec"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6181,
+      "sha256": "919b5730f7d4dd1cc2f769d81a32913f30434a7691f28cec37ff9d8b74df31ec"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5104,
+      "sha256": "23f12f40044c45c8e753f6fdec71924445eaa5f79d87d4a6df1da2d65fb2e06e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 9254,
+      "sha256": "736352eafcfde07816cb3c33abe9a1528d9e9bb66d0bc8603754ebf09393babb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6297,
+      "sha256": "3b18b9e53c44bcf3ed9f79500b7d65ebac4494c84662eaa596a082c63a4fbe7b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11079,
+      "sha256": "4513540edeb6a9b1ee97b83a92d20823d38382fffd30e329192ee9eed564f31a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-thinking-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5157,
+      "sha256": "59174f0df46014e5a5b8c4e2b9f02961cd45375e3ac1662be81f46dc70063eeb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5084,
+      "sha256": "57c3e29f1a6f2f03ee64a2035ac5327e591908dbf8323feba090b4616d44fc57"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4547,
+      "sha256": "d492b6585f0371fb32c688cbc32ce2476c5ddad4bfabd65b75475eb902d5364a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10046,
+      "sha256": "6bf134119bb156334507eef5047da308b7d0a059bcbb4564cf065109dfa0f517"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4367,
+      "sha256": "ea7420fac45f52f02f91b920c7d89fd96364ff295ffe3c60cb4586f0fb4e30fb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5136,
+      "sha256": "21b6e7cb21619ff23201ea8a5b249f12b0ce6f9a9dfdb5c108243afb9bdf74bc"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6460,
+      "sha256": "76ca5ba9587a05c0f03609da67b5100e65306259c53099075d084c58c7a014ae"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4392,
+      "sha256": "657c128f4bb68395efb419e0cddbaf2959129f7970415aea40ba2e32cd8c35a4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4809,
+      "sha256": "74bf853738dc50591bdbd854e23fde8c068ac5976300319e1f4f2b925bc5e24a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4732,
+      "sha256": "8b580266af5abafa46b9ef6f5663685c28defea47f615f8a8a0db5e1670e34b1"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5117,
+      "sha256": "0be685b29c3bcf8f00d8c95889db4cb4cb0a30f3bc5582fc5df10a5fec7e552a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12788,
+      "sha256": "7d48e87bf590b2baf65a70c75b2be466b7b6a25a9b5a2b550986f4803a690a20"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10051,
+      "sha256": "66d38633bbf5437fb5f6f4a134b31feaa7a43f11d008b4f29993b9825acd4459"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10308,
+      "sha256": "dffb8bda2c43ce50f3b2832355421c878e67da02878e66675e433bea1307f440"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11434,
+      "sha256": "7cad664c5c874430e69c6fd40f133beb029cb449cdb0b63dc2b9b5d719fd642a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-014-2.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4529,
+      "sha256": "3ddb5e980fb7a8a540a2ce634bee4be6ce799351057ffb5dadf9e7f48edf0862"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11852,
+      "sha256": "b59cdc8f970caa7f92b106bc0fa37a4a931f1a08b75f0f83937aa8fad03858fb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4588,
+      "sha256": "1c5fa1a69938b4fea66b1ef3907652e0daf068d1f0af849c56cd570fb08aa0e6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4618,
+      "sha256": "b5efa1a1e169656fb81a386f92a6da7cf882a2bfc7ff5f4df9955ad0d2918649"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 10208,
+      "sha256": "18da9a00a4e5daeb5a75fe2ca3001b5e904e8d7f8b9f9e296dce1def3534cc15"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12068,
+      "sha256": "371f820ddf65505a9df155a5beb286dea0f219c8bb43c80a8291c537b312864a"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11751,
+      "sha256": "9c64c269341ca2ea17b16e94144dd824a531dc0f2e084b2b80ae2b9f05905d42"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5487,
+      "sha256": "a437147b5f726449a99b1e660bd744d711782c20ac17a88515bb4811d97cff30"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 11573,
+      "sha256": "c1f84ec510521cae9bfbe48a1fcdafe0284b8a0ee79c9768a64c184534b0de85"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4747,
+      "sha256": "55806875f6947969fca2d351215d85180c5ae3674064b4bacab607b26e0b6c9d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 12998,
+      "sha256": "c649c2a20cb1da62363eac5ab2d37d576a537298025ebe9af36cedec55e92dfe"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5713,
+      "sha256": "00738d1a4376c2ff91101f12d753ea39da9d85695a190b4b60dce4e3b733e134"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7744,
+      "sha256": "ece4497b132aeee5f3fb3378882a328318665154d64f7ef7898ea0aec45f305d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4994,
+      "sha256": "bee5df888f2cfd704ed8e135e231ef4b81d958daba6e6517d8cd7ee86fe1a190"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6493,
+      "sha256": "83d14eb21211a1eabd27c05f1052714ecea4d898db77e0c469bc09597d91825e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4797,
+      "sha256": "e7b8b049abfc0e1921ae5480d71a27c1aa6e57945add88d555ce6b4ac3affbae"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4397,
+      "sha256": "5247fa591c28541713fd6455618acbe16562bed18a20e55d4ee25fb2a13763a8"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5154,
+      "sha256": "e15fd552dbee8c47c2fe8252bd3da436d90ecea9bd7d237420b9f4f82335ec43"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6010,
+      "sha256": "a6f2ac097108e1a00c22a16c4a290b29a964813d142b1be233d14bc03dce81cb"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4651,
+      "sha256": "2bfcfa5810b0aca9a874ecff1b7717a1c4fc146b2fd7027fa4edcf8bcc6fd9e3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4512,
+      "sha256": "aa558c262e6304bcd3b9477acd4714d70e1c5254c2738a9c3d6db94160adf67c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4913,
+      "sha256": "e553f3b448717a2c7e348da4a2d3ddbfb2c02acd01a5052286755987cb710f18"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5307,
+      "sha256": "70dce3af40ddb0eed1a20d7167bc305b3c35e0e590c401f9f48c12dd7f12f119"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4791,
+      "sha256": "966741650ac0368ebfd8944dc5d754ba444c38e9c0a7264eae4786777c117bba"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5514,
+      "sha256": "6b8670c1dd301b922d8baa117610f308ae6768b7d3b9a607fcd124be6c612e8d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6907,
+      "sha256": "c173afbc7b1692595a0ab5d128f039b52caf03f177553d578e76089b5763f50e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-wellbeing-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5484,
+      "sha256": "cef27ca52760cbde01afaa1f08707d00f837230884396730d04669a500aa9ad5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-001-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4262,
+      "sha256": "0febd2427ac2bc99e28369d963ecc9d4d89e0bfc5cb7f55397cd0a7cc806dba3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-002-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5491,
+      "sha256": "de4f9d1b456fcd6a950e7d60423c117ebc253f80e980ad0f7a414a8737453bf2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-003-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4709,
+      "sha256": "c4f627c72d9d5f7368103ff28296817fcd742a73b52cbde6f298d1ac7255da75"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-004-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6038,
+      "sha256": "cba4dbc844ea2aae6ade13e2f143d9a3a6d10745f38eb6b6fda2d2925cd38271"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-005-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4269,
+      "sha256": "bc53cc00708440b4ed0300ba3e479858b6523669f4a91f018c7f5c506b6f4c98"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-006-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4810,
+      "sha256": "88d5e7972ae94c01a3e21a35e2fb40c082ee8465ddca770fdddfd2f7b0ede181"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-007-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4870,
+      "sha256": "0f9c862e22e645f2c9c17aeef771f0b1221607c564e9db57fdecb25021b749bf"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-008-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5218,
+      "sha256": "20d0c473872d0d7516f5e213d05fd25fbf4874019bac0d807e67823241e5d855"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-009-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4695,
+      "sha256": "eab649813330d51930447be4250b5e68c111987850a0f2d3cb5833d6c3cf511c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-010-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4828,
+      "sha256": "cd88b67f3e31ecc68160db7f33908244c390d3b8e9a8beb6f0bedfcbdb83d191"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-011-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6477,
+      "sha256": "688a4a93cc76343e510395f59b428ca48a2cfe5352e7ffffa33296c5fa2f47d3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-012-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5021,
+      "sha256": "37bcb4124d67514cada103648138fdf58fb34fa27d7ba81dfeae8444bc2dfe95"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-013-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5366,
+      "sha256": "f94301f0625fb7f729b6c1c6b3c35095804eb9eb9379a05445717b74dd883644"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-014-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5331,
+      "sha256": "009f04f37a4575068d61913e03d7a575777a573543ef08c78febb53094996ef3"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-015-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5810,
+      "sha256": "ec6d2e339299f2358581eb2a953a8ec765779fbc677a615841125aa4400d651b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-016-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4701,
+      "sha256": "8b6cd4173a2505bb89e1e75fa4ac9282411cb709066531b7f3f71d22bf46c36e"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-017-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4250,
+      "sha256": "59459ce5159fbd91a58f762e64b6115c075eca4183f97791e664b3b4a3cfaca6"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-018-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6096,
+      "sha256": "d1e516c1a502c3ed24812b20fd46141ac46fbdf225b967e2ff3f24b3bcd71e79"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-019-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4725,
+      "sha256": "a75408734f3da858894d540c2e382e98caee071dd38db10f45db8fee70741a17"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-020-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6156,
+      "sha256": "a5a996f91986d70f721de9e29af31c8d106e39c0aa73377ef3143bca0cedc71d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-021-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4454,
+      "sha256": "c7f1f7e9ffe4eb0b7f260b4eab890bbbfa00a0b681745a1736569aef9faf6f33"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-022-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6051,
+      "sha256": "6bfdbe354bf4c35673b9626ce340c7171f7842dde66509654b7612f18bafdbb2"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-023-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6388,
+      "sha256": "ba48ec3ac0fcbf3f7aa0ee081d537205daf6c2f765406cede066ad40e0b026e4"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-024-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5584,
+      "sha256": "9cf6db5c7d2209a9dcbdc6c33a6282fef8ef1d1bfe8966f3bf3b974b75501375"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-025-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4651,
+      "sha256": "843e0b2a88e1b5bf7afa5e682ccc156f82e2534add485c6a135e838d85f19c1c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-026-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5941,
+      "sha256": "a4431a087f364de2ab8aa2da391f45fd17c5935572b21084eef19490445dc119"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-027-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6037,
+      "sha256": "c5bbc82bb0f9b68c572d3091a62362ab8ab8fee931c446a4bd659808c63bc63b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-028-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6238,
+      "sha256": "b4e00d28f1cbc257cdfaed664cc2abb460f1cdc029b45a0de25b9b5b1fb671fe"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-029-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5155,
+      "sha256": "37f197bb064cae0e8f558daf21d1c2497f25a8d5eb1a47914cb8b0fb359df39b"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-030-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6818,
+      "sha256": "2e6b4f810254e241665f6e0e1e2e0f95bd6fe53feb0c19e33b799acefc3dac9f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-031-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6268,
+      "sha256": "c83e3850abe0492e81c245e1c4d15d8982abe645a1566f93c452ca2a86a33782"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-032-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4709,
+      "sha256": "e5c6de4c85c98e540bffe49863508925020ab0c1c77ae4b29cd8a106e517e61f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-033-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4706,
+      "sha256": "7f53140d19878f618d33d9098601ef6f242fe1213e64294850ff84652189de64"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-034-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7095,
+      "sha256": "b4330da0d34a7a75d12bf0e8f3db9f00a28c399b050a328d1bdabf953d688e6f"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-035-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4863,
+      "sha256": "e5cbba150fc4f8b37f7279b977b99c95478f77abdd1a513149bada264077bd2c"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-036-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7102,
+      "sha256": "9374c60f97b7a0e616d7f6d9a5a3d29024b441c9c9e636392f012622a3f77a4d"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-037-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6274,
+      "sha256": "53a7439af9f1cc5de67fbb8fd4443c8da9313171ccc450e41a187ac9a6d05903"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-038-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 6155,
+      "sha256": "307e923dffd40cbfdbae3c37ce507894b35e391231fa2c61fcac8d82b7e58834"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-039-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 7481,
+      "sha256": "4432c3931277f5f1250cf588ccdb1ceb08ef46b6ebfc645d9595f38c3b7af1f5"
+    },
+    {
+      "file": "lesson-visuals/guided-v1-work-040-1.svg",
+      "source": "Original UNSCROLL explanatory diagram",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5047,
+      "sha256": "eacea80bc2ef94d1ec42ef7394b25a8e08c6ced1b6eb8563ae9881321ece7692"
     }
   ]
 }

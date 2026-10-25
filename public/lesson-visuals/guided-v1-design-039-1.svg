@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="662" viewBox="0 0 720 662" role="img" aria-labelledby="draw-design-039-title draw-design-039-desc">
+  <title id="draw-design-039-title">Check the space between utensils</title>
+  <desc id="draw-design-039-desc">A wooden spoon and slotted spatula cross near the bottoms of their handles. Their inner edges bound a red wedge from an opening at the top to the crossing below. A separate narrow trial has the same opening height and crossing height but steeper boundaries. The dashed top of each wedge checks the opening; it is not another utensil. Compare boundary slopes rather than adding wood grain.</desc>
+  <defs>
+    <marker id="draw-design-039-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="662" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Check the space between utensils</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="109" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Observed arrangement</text>
+    <text x="508" y="109" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Narrow trial</text>
+    <path d="M261 517 L356 300 L333 290 L366 171 Q371 159 384 164 L447 186 Q460 190 455 204 L407 315 L384 308 L287 529 Q280 542 267 534 Q257 528 261 517 Z" fill="#b9ae98" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M382 191 L356 271 M401 198 L374 280 M421 205 L393 287" fill="none" stroke="#f7f4ed" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M293 527 L167 316 C133 321 102 293 88 263 C68 221 83 174 112 164 C148 155 181 188 197 225 C212 258 210 282 202 300 L312 515 Q319 526 307 532 Q299 534 293 527 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M108 198 C80 228 114 291 153 289 C184 286 189 250 168 218" fill="none" stroke="#b7aa91" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M202 300 L285 462 L356 300" fill="#bc2031" stroke="#bc2031" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill-opacity="0.10"/>
+    <path d="M202 300 H356" fill="none" stroke="#bc2031" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 6"/>
+    <circle cx="202" cy="300" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="356" cy="300" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="285" cy="462" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <text x="238" y="275" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Opening</text>
+    <text x="280" y="369" text-anchor="middle" font-size="24" font-weight="400" fill="#bc2031">Gap</text>
+    <text x="240" y="574" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Crossing</text>
+    <path d="M282 548 V478" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M534 300 L560 462 L586 300" fill="#bc2031" stroke="#bc2031" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill-opacity="0.10"/>
+    <path d="M534 300 H586" fill="none" stroke="#bc2031" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 6"/>
+    <circle cx="534" cy="300" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="586" cy="300" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="560" cy="462" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <text x="495" y="518" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Same height</text>
+    <text x="24" y="628" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Check the inner-edge slopes.</text>
+
+  </g>
+</svg>

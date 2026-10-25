@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import { CATEGORY_IDS } from '../types.ts'
+import { lessonGuideSchema } from '../teaching/schema.ts'
 
 export const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
   const date = new Date(`${value}T12:00:00Z`)
@@ -21,7 +22,7 @@ export const lessonSchema = z.object({
   topic: z.string().min(1).max(120),
   title: z.string().min(1).max(180),
   hook: z.string().max(500),
-  body: z.array(z.string().min(1).max(8000)).min(1).max(8),
+  body: z.array(z.string().min(1).max(8000)).min(1).max(16),
   takeaway: z.string().min(1).max(1200),
   action: z.string().min(1).max(1800),
   quiz: z.object({
@@ -32,6 +33,8 @@ export const lessonSchema = z.object({
   }).optional(),
   sources: z.array(z.object({ title: z.string().min(1).max(500), url: httpsUrl, publisher: z.string().min(1).max(300) })).min(1).max(5),
   evidence: z.enum(['research', 'framework', 'reference']),
+  guide: lessonGuideSchema.optional(),
+  revision: z.string().max(60).optional(),
   kind: z.literal('discovery').optional(),
   publishedAt: dateSchema.optional(),
   attribution: z.object({
@@ -52,7 +55,7 @@ export const lessonSchema = z.object({
     if (lesson.sources.some((source) => !articleUrl(source.url))) {
       ctx.addIssue({ code: 'custom', message: 'Discovery sources must be English Wikipedia articles' })
     }
-    if (lesson.evidence !== 'reference' || lesson.quiz) ctx.addIssue({ code: 'custom', message: 'External extracts cannot pose as original research or quizzes' })
+    if (lesson.evidence !== 'reference' || lesson.quiz || lesson.guide || lesson.revision) ctx.addIssue({ code: 'custom', message: 'External extracts cannot pose as original research or illustrated lessons' })
     if (lesson.attribution) {
       let historyValid = false
       try {
@@ -72,7 +75,7 @@ export const lessonSchema = z.object({
 export const stateSchema = z.object({
   version: z.literal(1),
   name: z.string().max(40),
-  goal: z.union([z.literal(3), z.literal(5), z.literal(7)]),
+  goal: z.union([z.literal(1), z.literal(3), z.literal(5), z.literal(7)]),
   interests: z.array(z.enum(CATEGORY_IDS)).min(1).max(CATEGORY_IDS.length),
   completed: z.record(safeId, z.object({ date: dateSchema, correct: z.boolean().nullable() })),
   saved: z.array(safeId).max(10000),
@@ -95,12 +98,15 @@ export const stateSchema = z.object({
   joined: dateSchema,
   reducedMotion: z.boolean(),
   welcomeDismissed: z.boolean(),
+  onboardingVersion: z.literal(1).optional(),
+  readingSize: z.enum(['standard', 'large']).optional(),
   followedPath: safeId.optional(),
   readerDrafts: z.record(safeId, z.object({
     stage: z.enum(['read', 'try', 'recall']),
     choice: z.union([z.literal(0), z.literal(1), z.literal(2), z.null()]),
     revealed: z.boolean(),
     updatedAt: z.string().datetime(),
+    lessonRevision: z.string().max(60).optional(),
   }).strict()).optional(),
   practices: z.record(safeId, z.object({
     status: z.enum(['planned', 'tried']),

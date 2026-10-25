@@ -8,8 +8,9 @@ import { presencePerspectiveLessons, presencePerspectivePaths } from './presence
 import { cinemaLessons, cinemaPaths } from './cinema'
 import { designLessons, designPaths } from './design'
 import { fieldGuideLessons, fieldGuidePaths } from './field-guides'
+import { guideById, TEACHING_REVISION } from '../teaching'
 
-export const lessons: Lesson[] = [
+export const originalLessonMetadata: Lesson[] = [
   ...mindThinkingLessons,
   ...workTechLessons,
   ...moneyLifeLessons,
@@ -20,6 +21,23 @@ export const lessons: Lesson[] = [
   ...designLessons,
   ...fieldGuideLessons,
 ]
+
+export const lessons: Lesson[] = originalLessonMetadata.map((original) => {
+  const guide = guideById.get(original.id)
+  if (!guide) throw new Error(`Missing illustrated teaching for ${original.id}`)
+  return {
+    ...original,
+    title: guide.title ?? original.title,
+    hook: guide.outcome,
+    body: guide.sections.flatMap((section) => section.paragraphs),
+    action: guide.practice.steps.join(' '),
+    takeaway: guide.takeaway,
+    quiz: guide.quiz,
+    sources: guide.sources ?? original.sources,
+    guide,
+    revision: TEACHING_REVISION,
+  }
+})
 
 export const lessonById = new Map(lessons.map((lesson) => [lesson.id, lesson]))
 export const learningPaths = [...fieldcraftPaths, ...presencePerspectivePaths, ...cinemaPaths, ...designPaths, ...fieldGuidePaths]

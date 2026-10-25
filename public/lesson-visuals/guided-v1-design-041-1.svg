@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="849" viewBox="0 0 720 849" role="img" aria-labelledby="draw-design-041-title draw-design-041-desc">
+  <title id="draw-design-041-title">Make parallel edges share a VP</title>
+  <desc id="draw-design-041-desc">Two complete unbranded boxes demonstrate upright linear perspective. In the one-point view, front edges stay horizontal or vertical; three visible depth edges and their red extensions converge at the same marked vanishing point on the horizon. In the corner view, the two horizontal edge families converge at left and right vanishing points on one horizon. All vertical edges remain vertical. The horizons describe the observer&apos;s eye level, not a tabletop edge.</desc>
+  <defs>
+    <marker id="draw-design-041-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="849" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Make parallel edges share a VP</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="105" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">One-point view</text>
+    <text x="24" y="140" text-anchor="start" font-size="22" font-weight="400" fill="#231f20">Horizon</text>
+    <text x="598" y="124" text-anchor="middle" font-size="24" font-weight="700" fill="#bc2031">VP</text>
+    <path d="M24 150 H696" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M331 226.8 L598 150 M446.2 226.8 L598 150 M446.2 313.2 L598 150" fill="none" stroke="#bc2031" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 6"/>
+    <path d="M153 278 L345 278 L446.2 226.8 L331 226.8 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M345 278 L446.2 226.8 L446.2 313.2 L345 422 Z" fill="#aaa18e" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M153 278 H345 V422 H153 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="598" cy="150" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <text x="444" y="393" text-anchor="start" font-size="22" font-weight="400" fill="#231f20">Front plane</text>
+    <path d="M431 385 L317 363" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="456" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Front edges stay parallel.</text>
+    <path d="M24 478 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="515" text-anchor="start" font-size="24" font-weight="700" fill="#231f20">Corner view</text>
+    <text x="58" y="546" text-anchor="middle" font-size="22" font-weight="700" fill="#bc2031">VP 1</text>
+    <text x="662" y="546" text-anchor="middle" font-size="22" font-weight="700" fill="#bc2031">VP 2</text>
+    <text x="360" y="546" text-anchor="middle" font-size="22" font-weight="400" fill="#231f20">Horizon</text>
+    <path d="M24 556 H696" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M209 611 L58 556 M209 671 L58 556 M511 611 L662 556 M511 671 L662 556 M360 592.666667 L58 556 M360 592.666667 L662 556" fill="none" stroke="#bc2031" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 6"/>
+    <path d="M360 666 L209 611 L360 592.666667 L511 611 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M209 611 L360 666 V786 L209 671 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M360 666 L511 611 V671 L360 786 Z" fill="#aaa18e" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="58" cy="556" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/><circle cx="662" cy="556" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <text x="360" y="825" text-anchor="middle" font-size="24" font-weight="400" fill="#231f20">Verticals stay upright</text>
+
+  </g>
+</svg>

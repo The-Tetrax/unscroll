@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="680" viewBox="0 0 720 680" role="img" aria-labelledby="draw-design-048-title draw-design-048-desc">
+  <title id="draw-design-048-title">Let the leaf lead the arrangement</title>
+  <desc id="draw-design-048-desc">An original fallen leaf sits in front of a darker opening in folded unprinted cardboard. A single upper-left light is indicated. The leaf&apos;s pale blade has a clear boundary against that opening; larger cardboard planes remain middle value. A small lower-right pebble has a quiet edge rather than the strongest outline. Gesture, planes, negative space, value grouping, and selective edges support the stated intention to notice the leaf first, without claiming a guaranteed attention result.</desc>
+  <defs>
+    <marker id="draw-design-048-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+
+  </defs>
+  <rect width="720" height="680" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Let the leaf lead the arrangement</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="114" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">One light</text>
+    <path d="M79 135 L225 275" fill="none" stroke="#bc2031" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#draw-design-048-arrow)"/>
+    <path d="M147 395 L338 195 L456 438 Z" fill="#35362F" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M147 395 L338 195 L543 248 L352 448 Z" fill="#ACA18A" stroke="#8d826d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M338 195 L543 248 L661 491 L456 438 Z" fill="#bcb098" stroke="#8d826d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M147 395 L338 195 L456 438 Z" fill="#35362F" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M147 395 L338 195 L456 438" fill="none" stroke="#9b907a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M215 466 C161 391 252 292 357 268 C377 379 330 461 215 466 Z" fill="#EEE6D1" stroke="#595a51" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M200 503 C217 463 258 362 357 268" fill="none" stroke="#8d7656" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M235 419 L205 383 M264 369 L257 333 M287 344 L326 343" fill="none" stroke="#aaa18e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M498 529 C496 508 516 496 538 500 Q569 499 575 523 C577 541 538 553 511 543 Z" fill="#595A51" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M503 521 Q522 501 546 506" fill="none" stroke="#8c8b7c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="479" y="153" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Quiet cardboard</text>
+    <path d="M568 168 L574 296" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="559" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Leaf against dark</text>
+    <path d="M211 537 L266 418" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="500" y="594" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Quiet pebble</text>
+    <path d="M554 571 L544 548" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="642" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Keep contrast with the leaf.</text>
+
+  </g>
+</svg>

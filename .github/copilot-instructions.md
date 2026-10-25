@@ -4,7 +4,7 @@
 - [x] Scaffold the Project
   - Vite React TypeScript scaffold created in the workspace root.
 - [x] Customize the Project
-  - 544 original lessons, ten categories, twenty-two learning paths, local progress, notes, collections, practice, unfinished-bite resume, and spaced recall. Source-attributed daily discoveries are separate from original lessons.
+  - 544 illustrated teaching guides, 604 offline diagrams, ten categories, twenty-two learning paths, local progress, notes, collections, practice, unfinished-bite resume, and spaced recall. Optional onboarding, larger lesson text, one-lesson pacing, cache verification, and safe updates. Daily discoveries stay separate from original lessons.
 - [x] Install Required Extensions
   - No extensions required.
 - [x] Compile the Project
@@ -20,6 +20,9 @@
 - Use accessible semantic HTML, keyboard-accessible interactions, reduced-motion support, and safe-area-aware mobile layouts.
 - Progress is local to the browser. Never send notes, preferences, or progress to the content service.
 - Keep daily sessions finite. Never silently recycle completed lessons or award duplicate completion XP.
+- Follow docs/TEACHING.md: context, plain explanation, worked example, relevant illustration, guided practice with observable results, and transfer reasoning. Do not regress to condensed summaries.
+- Preserve stable IDs and local data across content updates. Revision-reset only incompatible unfinished quiz answers, never notes or completions.
+- Report saved settings only after device storage succeeds. Verify the required cache inventory before claiming offline readiness. Flush writes before any update reload.
 - Practice records are self-reported, capped at five planned experiments, and award no XP. Keep unfinished reader positions separate from completion; preserve both in backups and discovery retention.
 - Original lessons need a practical application, a retrieval question, and source links. Label research, heuristics, and external reference extracts honestly.
 - Netlify functions fetch only allow-listed Wikimedia URLs. No arbitrary URL proxy or client-side secrets.

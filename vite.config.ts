@@ -2,6 +2,36 @@ import react from '@vitejs/plugin-react'
 import { defineConfig, type Plugin } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import { handleDiscoveryRequest } from './netlify/lib/discovery-service.ts'
+import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { resolve } from 'node:path'
+
+const builtAt = new Date().toISOString()
+const buildId = `${process.env.COMMIT_REF?.slice(0, 12) ?? 'local'}-${builtAt.replace(/[^0-9]/g, '').slice(0, 14)}`
+
+function offlineInventory(): Plugin {
+  return {
+    name: 'offline-library-inventory', enforce: 'post',
+    generateBundle(_options, bundle) {
+      const extensions = /\.(?:js|css|html|svg|png|woff2?|json|txt|md)$/i
+      const paths = new Set<string>(['/index.html', '/manifest.webmanifest'])
+      let bytes = 0
+      for (const [name, asset] of Object.entries(bundle)) {
+        if (!extensions.test(name)) continue
+        paths.add(`/${name}`)
+        bytes += Buffer.byteLength(asset.type === 'chunk' ? asset.code : asset.source)
+      }
+      for (const name of readdirSync(resolve('public'), { recursive: true, encoding: 'utf8' })) {
+        const full = resolve('public', name)
+        if (!extensions.test(name) || !statSync(full).isFile()) continue
+        paths.add(`/${name.replaceAll('\\', '/')}`)
+        bytes += statSync(full).size
+      }
+      const visuals = JSON.parse(readFileSync(resolve('src/teaching/visual-assets.json'), 'utf8')) as Record<string, unknown[]>
+      this.emitFile({ type: 'asset', fileName: 'offline-library.json', source: JSON.stringify({ build: buildId, builtAt, lessons: Object.keys(visuals).length,
+        illustrations: Object.values(visuals).reduce((sum, images) => sum + images.length, 0), bytes, paths: [...paths].sort() }) })
+    },
+  }
+}
 
 function localDiscovery(): Plugin {
   const middleware = (server: { middlewares: { use: (path: string, handler: (req: import('node:http').IncomingMessage, res: import('node:http').ServerResponse) => void) => void } }) => {
@@ -22,7 +52,8 @@ function localDiscovery(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [react(), localDiscovery(), VitePWA({
+  define: { __UNSCROLL_BUILD__: JSON.stringify(buildId), __UNSCROLL_BUILT_AT__: JSON.stringify(builtAt) },
+  plugins: [react(), localDiscovery(), offlineInventory(), VitePWA({
     registerType: 'prompt',
     injectRegister: false,
     includeAssets: ['brand-icon.svg', 'icons/*.png', 'licenses/*', 'asset-licenses.json', 'ATTRIBUTION.md'],
@@ -62,10 +93,12 @@ export default defineConfig({
   })],
   build: {
     target: 'es2022',
-    rollupOptions: { output: { manualChunks(id) {
-      if (id.includes('/src/data/')) return 'knowledge'
-      if (id.includes('node_modules/react-dom') || id.includes('node_modules/react/')) return 'react'
-    } } },
+    rolldownOptions: { output: { codeSplitting: { groups: [
+      { debugName: 'lesson-teaching-modules', name: (id) => `teaching-${id.split(/[\\/]/).at(-1)!.replace(/\.ts$/, '')}`, priority: 30,
+        test: /[\\/]src[\\/]teaching[\\/](?!(?:index|types|schema)\.ts$)[^\\/]+\.ts$/ },
+      { name: 'react', test: /node_modules[\\/]react(?:-dom)?[\\/]/, priority: 20 },
+      { name: 'knowledge', test: /[\\/]src[\\/]data[\\/]/, priority: 10 },
+    ] } } },
     chunkSizeWarningLimit: 1800,
   },
   server: { host: '0.0.0.0', port: 5173, strictPort: true },

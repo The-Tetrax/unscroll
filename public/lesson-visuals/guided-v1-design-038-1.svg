@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="677" viewBox="0 0 720 677" role="img" aria-labelledby="draw-design-038-title draw-design-038-desc">
+  <title id="draw-design-038-title">Connect the kettle&apos;s volumes</title>
+  <desc id="draw-design-038-desc">An original tapered kettle is constructed from a rounded body, elliptical lid, loop handle, and tubular spout. The handle is behind the body and has two attachment points; one hidden join is dashed. A central axis passes through the lid and base, and curved cross-contours describe the belly. The spout has an elliptical opening and a direction continuing toward its attachment. Construction lines are scaffolding, not exact product dimensions.</desc>
+  <defs>
+    <marker id="draw-design-038-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#bc2031"/></marker>
+    <clipPath id="draw-design-038-body"><path d="M215 253 C202 304 182 354 190 423 C200 486 462 489 480 428 C489 374 474 298 449 253 Z"/></clipPath>
+  </defs>
+  <rect width="720" height="677" rx="12" fill="#f7f4ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#231f20" font-size="24">
+    <text x="24" y="44" text-anchor="start" font-size="26" font-weight="700" fill="#231f20">Connect the kettle&apos;s volumes</text>
+    <path d="M24 68 H696" fill="none" stroke="#ddd7cc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="24" y="137" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Loop handle</text>
+    <path d="M119 151 L151 287" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="283" y="111" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Lid plane</text>
+    <path d="M332 122 V156" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="499" y="137" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Tube spout</text>
+    <path d="M569 151 V208" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M216 282 C81 228 111 470 198 419" fill="none" stroke="#231f20" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M216 282 C81 228 111 470 198 419" fill="none" stroke="#f7f4ed" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M456 350 C512 347 540 287 546 231 L594 215 C593 315 550 381 478 395 Z" fill="#b9b1a1" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <ellipse cx="570" cy="223" rx="26" ry="12" transform="rotate(-19 570 223)" fill="#f7f4ed" stroke="#231f20" stroke-width="3"/>
+    <path d="M516 338 Q534 346 552 329 M535 294 Q555 303 576 286" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M454 374 Q540 328 570 228" fill="none" stroke="#bc2031" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7"/>
+    <path d="M215 253 C202 304 182 354 190 423 C200 486 462 489 480 428 C489 374 474 298 449 253 Z" fill="#e8e2d6" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <g clip-path="url(#draw-design-038-body)">
+      <ellipse cx="335" cy="367" rx="142" ry="47" fill="none" stroke="#bc2031" stroke-width="2.5" stroke-dasharray="8 7"/>
+      <path d="M194 367 C222 429 450 429 478 367" fill="none" stroke="#bc2031" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <ellipse cx="335" cy="434" rx="135" ry="36" fill="none" stroke="#69635f" stroke-width="2" stroke-dasharray="7 7"/>
+      <path d="M197 389 C219 382 222 423 198 422" fill="none" stroke="#bc2031" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+    </g>
+    <ellipse cx="332" cy="253" rx="117" ry="39" fill="none" stroke="#69635f" stroke-width="2" stroke-dasharray="8 7"/>
+    <path d="M231 238 L241 219 C259 193 413 194 432 220 L441 239 C414 268 260 269 231 238 Z" fill="#f7f4ed" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <ellipse cx="336" cy="219" rx="95" ry="25" fill="#f7f4ed" stroke="#231f20" stroke-width="3"/>
+    <path d="M318 183 V205 C318 219 350 219 350 205 V183 Z" fill="#b9b1a1" stroke="#231f20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <ellipse cx="334" cy="183" rx="16" ry="7" fill="#f7f4ed" stroke="#231f20" stroke-width="3"/>
+    <path d="M334 157 V498" fill="none" stroke="#bc2031" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 8"/>
+    <circle cx="209" cy="284" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <circle cx="198" cy="419" r="4.5" fill="#bc2031" stroke="#f7f4ed" stroke-width="1.5"/>
+    <text x="24" y="541" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Hidden join</text>
+    <path d="M156 533 L194 431" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="257" y="557" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Rounded body</text>
+    <path d="M338 532 V478" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="485" y="534" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Shared axis</text>
+    <path d="M472 527 L346 495" fill="none" stroke="#69635f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="26" y="647" text-anchor="start" font-size="24" font-weight="400" fill="#231f20">Attachments before highlights.</text>
+
+  </g>
+</svg>
