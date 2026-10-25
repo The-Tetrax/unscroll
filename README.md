@@ -55,6 +55,8 @@ Requires Node 24 and npm. Run `npm ci`, then `npm run dev`. Development serves a
 
 Before browser tests, run `npx playwright install chromium webkit`. Build before testing the production preview. CI installs the browser system dependencies on Ubuntu. The VS Code task **UNSCROLL: preview production PWA** runs the built app.
 
+See [QA.md](QA.md) for the 75 passing browser tests, 240 unit/contract tests, actual fixes, and the limits of browser emulation.
+
 ## Content longevity and limits
 
 There is no finite collection that can truthfully be called inexhaustible. The 520 original lessons last about 104 daily sessions at five original bites per day, less if you browse ahead. These are original summaries with linked references, not editorially or clinically certified instruction.

@@ -1,16 +1,20 @@
-<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 - [x] Verify that the copilot-instructions.md file in the .github directory is created.
 - [x] Clarify Project Requirements
   - UNSCROLL is a mobile-first, installable, offline-capable practical learning app. React, TypeScript, Vite, Netlify. Original red/black/ivory manga-inspired art. No paid API required.
 - [x] Scaffold the Project
   - Vite React TypeScript scaffold created in the workspace root.
-- [ ] Customize the Project
+- [x] Customize the Project
+  - 520 original lessons, ten categories, sixteen learning paths, local progress, notes, collections, and spaced recall. Source-attributed daily discoveries are separate from original lessons.
 - [x] Install Required Extensions
   - No extensions required.
-- [ ] Compile the Project
-- [ ] Create and Run Task
-- [ ] Launch the Project
-- [ ] Ensure Documentation is Complete
+- [x] Compile the Project
+  - Production build includes app/server type checking, content validation, icons, fonts, and offline precaching.
+- [x] Create and Run Task
+  - Production preview task in .vscode/tasks.json.
+- [x] Launch the Project
+  - Local production preview at http://localhost:4173. Public Netlify deployment requires the owner's account connection.
+- [x] Ensure Documentation is Complete
+  - README, QA record, content/asset attribution, and Netlify deployment instructions are included.
 
 ## Development rules
 - Use accessible semantic HTML, keyboard-accessible interactions, reduced-motion support, and safe-area-aware mobile layouts.

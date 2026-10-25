@@ -2,7 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { createWriteStream } from 'node:fs'
-import archiver from 'archiver'
+import { ZipArchive } from 'archiver'
 
 const root = process.cwd()
 await fs.mkdir('release', { recursive: true })
@@ -11,7 +11,7 @@ const fullPaths = execFileSync('git', ['ls-files', '--cached', '--others', '--ex
 
 async function zip(filename, append) {
   const output = createWriteStream(path.join(root, 'release', filename))
-  const archive = archiver('zip', { zlib: { level: 9 } })
+  const archive = new ZipArchive({ zlib: { level: 9 } })
   const finished = new Promise((resolve, reject) => {
     output.on('close', resolve)
     output.on('error', reject)

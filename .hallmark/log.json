@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2026-10-25",
+    "scope": "app",
+    "shape": "app screen",
+    "theme": "custom",
+    "axes": "light/condensed-heavy/chromatic-red",
+    "hero": "finite daily queue with original fox brand mark",
+    "nav": "top on desktop, safe-area bottom on phones",
+    "footer": "small brand, privacy-minded line, installation action",
+    "imagery": "original UNSCROLL fox brand artwork, no third-party character images",
+    "photos": [],
+    "entry": "new application",
+    "fingerprint": ["daily queue", "split ink-red surface", "ten topic groups", "sixteen ordered paths", "focus reader", "local vault"],
+    "sections": ["Today", "Explore", "Vault", "Recall", "You"],
+    "signature": "Ink beside a finite daily session",
+    "waived": ["23: user-requested red surface", "39b: entire lesson rows are touch targets", "80: original requested mascot brand identity"],
+    "review": {
+      "kind": "independent subagent",
+      "findings": ["mobile target sizes", "contextual return label", "path-specific artwork", "mobile path readability"],
+      "changes": ["44px minimum compact targets", "return action names origin screen", "poster text follows selected path", "full-width path description at 14px"],
+      "resolved": 4,
+      "partial": 0,
+      "unresolved": 0,
+      "renderAudit": "0 FAIL, 0 WARN, 3 WAIVED, 5 ANSWERED, 4 DISMISSED",
+      "captures": "26 route/reader state captures; 18 phone/desktop images independently reviewed"
+    },
+    "prompt": "Mobile-first practical learning PWA, red black ivory anime-inspired identity, daily finite learning and creative cinema/design hobbies."
+  }
+]

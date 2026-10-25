@@ -32,6 +32,7 @@ export default function App() {
   const main = useRef<HTMLElement>(null)
   const [recoveryError, setRecoveryError] = useState('')
   const [workerError, setWorkerError] = useState('')
+  const [cachedShellReady, setCachedShellReady] = useState(false)
   const { needRefresh: [needRefresh, setNeedRefresh], offlineReady: [offlineReady], updateServiceWorker } = useRegisterSW({
     onRegisterError() { setWorkerError('Offline setup could not finish. Keep your connection on and reload to retry.') },
   })
@@ -39,6 +40,18 @@ export default function App() {
   useEffect(() => {
     document.documentElement.dataset.motion = library.state.reducedMotion ? 'reduce' : 'full'
   }, [library.state.reducedMotion])
+  useEffect(() => {
+    let active = true
+    if ('serviceWorker' in navigator && 'caches' in window) {
+      void navigator.serviceWorker.ready.then(async () => {
+        const names = (await caches.keys()).filter((name) => name.includes('workbox-precache'))
+        const keys = (await Promise.all(names.map(async (name) => (await caches.open(name)).keys()))).flat()
+        const paths = keys.map((key) => new URL(key.url).pathname)
+        if (active) setCachedShellReady(paths.includes('/index.html') && paths.some((path) => /\/assets\/knowledge-.*\.js$/.test(path)))
+      }).catch(() => {})
+    }
+    return () => { active = false }
+  }, [offlineReady])
   useEffect(() => {
     const titles: Record<Page, string> = { today: 'Your daily learning', explore: 'Explore your curiosity', vault: 'Your saved ideas', review: 'Make it stick', profile: 'Your space' }
     document.title = `${titles[route.page]} | UNSCROLL`
@@ -56,7 +69,7 @@ export default function App() {
   const showNext = reviewMode ? Boolean(nextId) : route.page === 'today' && Boolean(nextId) && library.state.daily.ids.includes(activeLesson?.id ?? '')
   const closeReader = () => {
     const params = Object.fromEntries(route.params)
-    delete params.lesson; delete params.mode; delete params.session
+    delete params.lesson; delete params.mode; delete params.session; delete params.stage
     route.navigate(route.page, params, true)
   }
 
@@ -70,16 +83,16 @@ export default function App() {
       {!install.online && <div className="connectivity-notice" role="status"><WifiOff size={17} aria-hidden="true"/>Offline. Your downloaded library and saved ideas are here.</div>}
       {library.storageError && <div className="error-message" role="alert">{library.storageError}<button type="button" className="text-action" onClick={() => { void library.exportBackup().catch(() => {}) }}>Export backup</button></div>}
       {workerError && <p className="inline-notice" role="status">{workerError}</p>}
-      {needRefresh && <div className="update-notice" role="status"><span>A new version is ready. Your saved data stays.</span><button type="button" className="button button-primary" onClick={() => { void updateServiceWorker(true) }}>Update app</button><button type="button" className="text-action" onClick={() => setNeedRefresh(false)}>Later</button></div>}
+      {needRefresh && <div className="update-notice" role="status"><span>A new version is ready. Your saved data stays.</span><button type="button" className="button button-primary" onClick={() => { void library.flushStorage().then(() => updateServiceWorker(true)).catch((error: Error) => setWorkerError(error.message)) }}>Update app</button><button type="button" className="text-action" onClick={() => setNeedRefresh(false)}>Later</button></div>}
       {route.params.has('lesson') && !activeLesson && <div className="inline-notice" role="status">This bite is not on this device. External discoveries must be downloaded first.<button type="button" className="text-action" onClick={closeReader}>Dismiss</button></div>}
       {route.page === 'today' && <Today library={library} route={route}/>}
       {route.page === 'explore' && <Explore library={library} route={route}/>}
       {route.page === 'vault' && <Vault library={library} route={route}/>}
       {route.page === 'review' && <Review library={library} route={route}/>}
       {route.page === 'profile' && <Profile library={library} route={route} install={install}/>}
-      <footer className="app-footer"><Brand compact/><span>Made for your attention, not to take it.</span><button type="button" className="text-action" onClick={() => route.navigate('profile')}>{offlineReady || install.installed ? 'Offline-ready library' : <><Download size={15} aria-hidden="true"/>Put it on your phone</>}</button></footer>
+      <footer className="app-footer"><Brand compact/><span>Made for your attention, not to take it.</span><button type="button" className="text-action" onClick={() => route.navigate('profile')}>{offlineReady || cachedShellReady ? 'Offline-ready library' : <><Download size={15} aria-hidden="true"/>Put it on your phone</>}</button></footer>
     </main>
     <nav className="mobile-nav" aria-label="Main navigation">{navigation.map(({ id, label, icon: Icon }) => <a href={`#/${id}`} key={id} className={route.page === id ? 'is-active' : ''} aria-current={route.page === id ? 'page' : undefined}><span><Icon size={22} strokeWidth={route.page === id ? 2.4 : 1.8} aria-hidden="true"/>{id === 'review' && due.length > 0 && <span className="nav-count" aria-label={`${due.length} due`}>{Math.min(99, due.length)}</span>}</span><span>{label}</span></a>)}</nav>
-    {activeLesson && <Reader key={`${activeLesson.id}:${reviewMode}`} lesson={activeLesson} library={library} reviewMode={reviewMode} onClose={closeReader} onNext={showNext ? () => route.setParam('lesson', nextId!, true) : undefined} nextLabel={reviewMode ? 'Next recall' : 'Next bite'}/>}
+    {activeLesson && <Reader key={`${activeLesson.id}:${reviewMode}:${route.params.get('stage') ?? ''}`} lesson={activeLesson} library={library} reviewMode={reviewMode} initialStage={route.params.get('stage') === 'try' ? 'try' : 'read'} returnLabel={{ today: 'Back to my day', explore: 'Back to Explore', vault: 'Back to Vault', review: 'Back to reviews', profile: 'Back to my profile' }[route.page]} onClose={closeReader} onNext={showNext ? () => route.setParam('lesson', nextId!, true) : undefined} nextLabel={reviewMode ? 'Next recall' : 'Next bite'}/>}
   </MotionConfig>
 }

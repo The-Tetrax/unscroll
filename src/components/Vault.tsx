@@ -5,7 +5,7 @@ import { categoryById } from '../data'
 import type { Library } from '../hooks/useLibrary'
 import type { Route } from '../hooks/useRoute'
 import type { Lesson } from '../types'
-import { EmptyState, LessonCard, SectionHeading } from './shared'
+import { EmptyState, LessonCard } from './shared'
 
 const PAGE_SIZE = 12
 const COLLECTION_LIMIT = 40
@@ -29,7 +29,7 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
   const search = query.trim().toLocaleLowerCase()
   const membership = selectedCollection ? new Set(selectedCollection.lessonIds) : null
   const editingDisabled = !library.ready || Boolean(library.fatal)
-  const sourceIds = view === 'notes' ? noteIds : [...savedIds].reverse()
+  const sourceIds = view === 'notes' ? noteIds : selectedCollection ? [...selectedCollection.lessonIds].reverse() : [...savedIds].reverse()
   const matchingLessons = sourceIds
     .map((id) => library.getLesson(id))
     .filter((lesson): lesson is Lesson => Boolean(lesson))
@@ -156,8 +156,8 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
       </div>
     </div>
 
-    <section className="panel" aria-label="Collections">
-      <SectionHeading title="Collections"><span>{state.collections.length} of {COLLECTION_LIMIT}</span></SectionHeading>
+    <details className="panel collection-manager" aria-label="Collections">
+      <summary><span>Collections</span><span>{state.collections.length} / {COLLECTION_LIMIT}</span></summary>
       <p className="section-description">Open a lesson to add or remove it from a collection. Deleting a collection removes the group, not its lessons or notes.</p>
       <form onSubmit={createCollection} noValidate>
         <div className="form-row">
@@ -183,12 +183,12 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
           })}
         </ul>
       </details>}
-    </section>
+    </details>
 
     <section id={resultsId} aria-labelledby={`${prefix}-results-title`}>
-      <div className="section-heading"><h2 id={`${prefix}-results-title`} ref={resultsHeading} tabIndex={-1}>{view === 'notes' ? 'Your notes' : 'Saved lessons'}</h2></div>
+      <div className="section-heading"><h2 id={`${prefix}-results-title`} ref={resultsHeading} tabIndex={-1}>{view === 'notes' ? 'Your notes' : selectedCollection ? selectedCollection.name : 'Saved lessons'}</h2></div>
       <p className="section-description" role="status" aria-live="polite" aria-atomic="true">{matchingLessons.length
-        ? `Showing ${start + 1} to ${start + visibleLessons.length} of ${matchingLessons.length} ${view === 'notes' ? 'lessons with notes' : 'saved lessons'}${selectedCollection ? ` in ${selectedCollection.name}` : ''}.`
+        ? `Showing ${start + 1} to ${start + visibleLessons.length} of ${matchingLessons.length} ${view === 'notes' ? 'lessons with notes' : selectedCollection ? 'collected lessons' : 'saved lessons'}${selectedCollection ? ` in ${selectedCollection.name}` : ''}.`
         : `No ${view === 'notes' ? 'notes' : 'saved lessons'}${hasFilters ? ' match these filters' : ' to show'}.`}</p>
       {visibleLessons.length > 0 ? <ul className="lesson-list">
         {visibleLessons.map((lesson) => {
@@ -198,7 +198,7 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
             <LessonCard lesson={lesson} saved={savedIds.has(lesson.id)} completed={Boolean(state.completed[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>
             {view === 'notes' && <div className="panel">
               <p className="section-description">{excerpt}</p>
-              <button type="button" className="button button-quiet" aria-label={`Open note for ${lesson.title}`} onClick={() => route.setParam('lesson', lesson.id)}><NotebookPen size={18} aria-hidden="true"/>Open note</button>
+              <button type="button" className="button button-quiet" aria-label={`Open note for ${lesson.title}`} onClick={() => route.navigate('vault', { ...Object.fromEntries(route.params), lesson: lesson.id, stage: 'try' })}><NotebookPen size={18} aria-hidden="true"/>Open note</button>
             </div>}
           </li>
         })}

@@ -94,7 +94,7 @@ export function useLibrary() {
       const latest = [...current.current.discoveries].sort((a, b) => (b.publishedAt ?? '').localeCompare(a.publishedAt ?? ''))[0]?.publishedAt
       const cached = current.current.discoveries.filter((lesson) => lesson.publishedAt === latest).slice(0, 6)
       setEdition({ date: latest ?? editionDay, lessons: cached, status: cached.length ? 'cached' : 'unavailable',
-        message: cached.length ? 'Showing the last downloaded edition. Your saved lessons still work offline.' : 'Daily discoveries need a connection and the Netlify content service. All original lessons are available offline.' })
+        message: cached.length ? 'Showing the last downloaded edition. Your saved lessons still work offline.' : 'Daily discoveries need a connection and the Netlify content service. Your original lessons are still available in the app.' })
     } finally { fetching.current = false; setDiscoveryLoading(false) }
   }, [editionDay, update])
 
@@ -137,6 +137,10 @@ export function useLibrary() {
       return { ...state, notes }
     }),
     exportBackup: async () => { await writes.current; downloadFile(serializeBackup(current.current), `unscroll-backup-${localDate()}.json`) },
+    flushStorage: async () => {
+      await writes.current
+      if (JSON.stringify(current.current) !== checkpoint.current) throw new Error('Export a backup before updating. This tab has changes that are not saved to device storage.')
+    },
     importBackup: async (file: File) => {
       if (file.size > 20_000_000) throw new Error('Choose a backup smaller than 20 MB.')
       const imported = parseBackup(await file.text(), new Set(lessonById.keys()))

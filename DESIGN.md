@@ -26,7 +26,7 @@ The fox brand mark, Ink, is original artwork requested for this app. Its role is
 - All knowledge and numbers have provenance. Original lesson summaries are not quoted source material.
 
 ## Content contract
-Eight categories. Every original lesson has an explanation, takeaway, practical action, retrieval question, and source links. Research, frameworks, and reference material are labeled separately. Live Wikimedia extracts are labeled as outside references and retain author, article/history, and CC BY-SA attribution.
+Ten categories and sixteen learning paths. Every original lesson has an explanation, takeaway, practical action, retrieval question, and source links. Cinema and visual-art paths use existing phones, paper, and ordinary spaces rather than requiring new equipment. Research, frameworks, and reference material are labeled separately. Live Wikimedia extracts are labeled as outside references and retain author, article/history, and CC BY-SA attribution.
 
 ## Privacy and retention
 No account or analytics. Learning data remains on the device. JSON backups carry progress, notes, collections, and saved external lessons. Unseen lessons are not automatically recycled after the curated collection is exhausted. The UI reports finite inventory honestly.

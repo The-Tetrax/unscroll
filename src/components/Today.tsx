@@ -16,6 +16,14 @@ export function Today({ library, route }: { library: Library; route: Route }) {
   const currentPath = learningPaths.find((path) => path.id === state.followedPath)
   const featurePath = currentPath ?? learningPaths.find((path) => path.id === 'phone-eye') ?? learningPaths[0]
   const pathCompleted = featurePath.lessonIds.filter((id) => state.completed[id]).length
+  const pathPosters: Record<string, [string, string]> = {
+    observe: ['LOOK', 'CLOSER.'], reason: ['TEST', 'THE IDEA.'], remember: ['RECALL', 'THEN READ.'],
+    speak: ['SAY IT', 'CLEARLY.'], presence: ['NOTICE', 'THE ROOM.'], perspective: ['CHANGE', 'THE LENS.'],
+    'phone-eye': ['THINK', 'IN SCENES.'], directing: ['DIRECT', 'THE MOMENT.'], light: ['FOLLOW', 'THE LIGHT.'],
+    editing: ['FIND', 'THE CUT.'], sound: ['LISTEN', 'CLOSER.'], 'cinema-study': ['WATCH', 'WITH INTENT.'],
+    colour: ['SEE', 'THE COLOUR.'], 'type-space': ['GIVE TYPE', 'SOME SPACE.'], 'ux-eye': ['QUESTION', 'THE DESIGN.'], draw: ['DRAW', 'THE FORM.'],
+  }
+  const poster = pathPosters[featurePath.id] ?? ['MAKE', 'IT REAL.']
 
   return <>
     <div className="day-heading"><time dateTime={today}>{dateLabel}</time><span className="streak-label"><Flame size={17} aria-hidden="true"/>{streak(state, today)} day streak</span></div>
@@ -43,7 +51,7 @@ export function Today({ library, route }: { library: Library; route: Route }) {
       <aside className="today-aside">
         <section className="path-spotlight">
           <div className="section-heading"><h2>{currentPath ? 'Your current arc' : 'Make something real'}</h2><span aria-hidden="true">↗</span></div>
-          <div className="film-frame" aria-hidden="true"><span className="film-corner corner-a"/><span className="film-corner corner-b"/><span className="film-corner corner-c"/><span className="film-corner corner-d"/><div className="film-composition"><span/><span/><span/></div><span className="frame-copy">THINK<br/>IN SCENES.</span></div>
+          <div className="film-frame" aria-hidden="true"><span className="film-corner corner-a"/><span className="film-corner corner-b"/><span className="film-corner corner-c"/><span className="film-corner corner-d"/><div className="film-composition"><span/><span/><span/></div><span className="frame-copy">{poster[0]}<br/>{poster[1]}</span></div>
           <h3>{featurePath.title}</h3><p>{featurePath.description}</p>
           <div className="path-progress-label"><span>{pathCompleted} of {featurePath.lessonIds.length} learned</span><span>Learning path</span></div>
           <ProgressBar value={pathCompleted} max={featurePath.lessonIds.length} label={`${featurePath.title} progress`}/>

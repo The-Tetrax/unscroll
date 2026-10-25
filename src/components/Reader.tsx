@@ -9,13 +9,14 @@ import { readingMinutes } from '../lib/learning'
 const evidenceLabels = { research: 'Research-informed', framework: 'A useful framework', reference: 'Reference knowledge' }
 type Stage = 'read' | 'try' | 'recall' | 'done'
 
-export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel }: {
-  lesson: Lesson; library: Library; reviewMode: boolean; onClose: () => void; onNext?: () => void; nextLabel?: string
+export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel, returnLabel, initialStage = 'read' }: {
+  lesson: Lesson; library: Library; reviewMode: boolean; onClose: () => void; onNext?: () => void; nextLabel?: string; returnLabel: string; initialStage?: 'read' | 'try'
 }) {
   const dialog = useRef<HTMLDialogElement>(null)
   const scroller = useRef<HTMLDivElement>(null)
+  const feedback = useRef<HTMLDivElement>(null)
   const heading = useRef<HTMLHeadingElement>(null)
-  const [stage, setStage] = useState<Stage>(reviewMode ? 'recall' : 'read')
+  const [stage, setStage] = useState<Stage>(reviewMode ? 'recall' : initialStage)
   const [choice, setChoice] = useState<number | null>(null)
   const [revealed, setRevealed] = useState(false)
   const [copyState, setCopyState] = useState('')
@@ -34,13 +35,21 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
   }, [])
 
   const changeStage = (next: Stage) => { setStage(next); scroller.current?.scrollTo({ top: 0 }); heading.current?.focus({ preventScroll: true }) }
+  useEffect(() => {
+    if (!revealed || stage !== 'recall') return
+    feedback.current?.scrollIntoView({ block: 'nearest' })
+  }, [revealed, stage])
   const finish = () => {
     library.complete(lesson, lesson.quiz ? isCorrect : null)
     changeStage('done')
   }
   const grade = (value: ReviewGrade) => { library.review(lesson.id, value); changeStage('done') }
   const copyLink = async () => {
-    try { await navigator.clipboard.writeText(window.location.href); setCopyState('Link copied') }
+    const url = new URL(window.location.href)
+    // Share only the lesson identity, never a Vault search or note text in the current route.
+    url.search = ''
+    url.hash = `/explore?lesson=${encodeURIComponent(lesson.id)}`
+    try { await navigator.clipboard.writeText(url.href); setCopyState('Link copied') }
     catch { setCopyState('Could not copy. Share the address from your browser.') }
   }
 
@@ -77,7 +86,7 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
         {stage === 'recall' && <div className="quiz-section">
           <p className="reader-hook">{reviewMode ? 'Try recalling before you reveal the explanation.' : 'Close the loop. What stayed with you?'}</p>
           {lesson.quiz ? <fieldset className="quiz-options"><legend>{lesson.quiz.question}</legend>{lesson.quiz.options.map((option, index) => <label key={option} className={`quiz-option${choice === index ? ' is-selected' : ''}${revealed && index === lesson.quiz!.correctIndex ? ' is-correct' : ''}${revealed && choice === index && !isCorrect ? ' is-incorrect' : ''}`}><input type="radio" name="recall-answer" checked={choice === index} disabled={revealed} onChange={() => setChoice(index)}/><span className="option-letter" aria-hidden="true">{String.fromCharCode(65 + index)}</span><span>{option}</span>{revealed && index === lesson.quiz!.correctIndex && <Check size={20} aria-label="Correct answer"/>}</label>)}</fieldset> : <div className="reference-recall"><h2>Explain this idea without looking.</h2><p>What does “{lesson.title}” mean? Name one question you would investigate before applying it.</p></div>}
-          {revealed && <div className={`quiz-feedback${isCorrect || !lesson.quiz ? ' feedback-correct' : ''}`} role="status"><h2>{lesson.quiz ? isCorrect ? 'That’s the distinction.' : 'Here’s the distinction.' : 'Compare your explanation.'}</h2><p>{lesson.quiz?.explanation ?? lesson.takeaway}</p>{!lesson.quiz && <p>{lesson.body[0]}</p>}</div>}
+          {revealed && <div ref={feedback} className={`quiz-feedback${isCorrect || !lesson.quiz ? ' feedback-correct' : ''}`} role="status"><h2>{lesson.quiz ? isCorrect ? 'That’s the distinction.' : 'Here’s the distinction.' : 'Compare your explanation.'}</h2><p>{lesson.quiz?.explanation ?? lesson.takeaway}</p>{!lesson.quiz && <p>{lesson.body[0]}</p>}</div>}
           {!revealed && <button type="button" className="button button-primary" disabled={Boolean(lesson.quiz) && choice === null} onClick={() => setRevealed(true)}>{lesson.quiz ? 'Check my answer' : 'Reveal the reference'}<ArrowRight size={18} aria-hidden="true"/></button>}
           {reviewMode && revealed && <div className="review-grades"><p>How well did you remember?</p><div><button type="button" className="button button-quiet" onClick={() => grade('again')}>Need practice</button><button type="button" className="button button-quiet" onClick={() => grade('good')}>Got it</button><button type="button" className="button button-primary" onClick={() => grade('easy')}>Easy recall</button></div><p className="field-hint">Your next review is spaced by recall, not by a streak deadline.</p></div>}
           {reviewMode && <details className="review-explanation"><summary>Read the original explanation<ChevronDown size={16} aria-hidden="true"/></summary>{lesson.body.map((paragraph, index) => <p key={index}>{paragraph}</p>)}<p><strong>Try it:</strong> {lesson.action}</p></details>}
@@ -89,7 +98,7 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
       </div>
 
       <footer className="reader-footer">
-        {stage === 'done' ? <><button type="button" className="button button-quiet" onClick={onClose}>Back to {reviewMode ? 'reviews' : 'my day'}</button>{onNext && <button type="button" className="button button-primary" onClick={onNext}>{nextLabel ?? 'Next bite'}<ArrowRight size={18} aria-hidden="true"/></button>}</>
+        {stage === 'done' ? <><button type="button" className="button button-quiet" onClick={onClose}>{returnLabel}</button>{onNext && <button type="button" className="button button-primary" onClick={onNext}>{nextLabel ?? 'Next bite'}<ArrowRight size={18} aria-hidden="true"/></button>}</>
           : reviewMode ? <span className="field-hint">Recall first. Then choose your next review interval.</span>
             : <><button type="button" className="button button-quiet" onClick={() => stage === 'read' ? onClose() : changeStage(stage === 'try' ? 'read' : 'try')}><ArrowLeft size={18} aria-hidden="true"/>{stage === 'read' ? 'Not now' : 'Back'}</button><button type="button" className="button button-primary" disabled={stage === 'recall' && !revealed} onClick={() => stage === 'read' ? changeStage('try') : stage === 'try' ? changeStage('recall') : finish()}>{stage === 'read' ? 'Try this idea' : stage === 'try' ? 'Test my recall' : completedBefore ? 'Finish revisit' : 'Complete bite'}<ArrowRight size={18} aria-hidden="true"/></button></>}
       </footer>

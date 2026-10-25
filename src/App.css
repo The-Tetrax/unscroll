@@ -157,3 +157,22 @@
 @media (max-width: 370px) {
   :root { --gutter: 16px; }.hero-copy { padding: var(--space-ml); }.hero-copy h1, .hero-complete .hero-copy h1 { font-size: 3.05rem; }.hero-art { width: 154px; bottom: 80px; right: -15px; }.daily-hero, .hero-copy { min-height: 385px; }.hero-copy > p { max-width: 17ch; }.hero-footnote { font-size: .625rem; }.xp-label { gap: var(--space-2xs); }.header-end { gap: var(--space-xs); }.path-spotlight { gap: var(--space-md); }.frame-copy { font-size: 2.4rem; left: 18px; }.path-tile { padding: var(--space-md); }.reader-content { padding-inline: var(--space-ml); }.review-overview { gap: var(--space-lg); }
 }
+
+.app-header { height: calc(var(--header-height) + env(safe-area-inset-top)); padding-top: env(safe-area-inset-top); }
+.header-inner { padding-left: max(var(--gutter), env(safe-area-inset-left)); padding-right: max(var(--gutter), env(safe-area-inset-right)); }
+.profile-button, .save-button, .welcome-note .icon-button { min-width: 44px; min-height: 44px; }
+.profile-shortcuts { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+.collection-manager > summary { font-weight: 700; }
+.collection-manager > summary > span:last-child { color: var(--color-muted); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
+.collection-manager > summary::after { content: '+'; font-size: var(--text-xl); }
+.collection-manager[open] > summary::after { content: '−'; }
+.frame-copy { right: 28px; font-size: 2.8rem; overflow-wrap: break-word; }
+@media (max-width: 540px) {
+  .path-spotlight { display: block; }
+  .path-spotlight .film-frame { height: 142px; margin-bottom: var(--space-ml); }
+  .path-spotlight .frame-copy { font-size: 2.6rem; left: 24px; right: 24px; bottom: 20px; }
+  .path-spotlight > p { font-size: var(--text-sm); line-height: 1.7; max-width: 60ch; }
+  .path-spotlight > h3 { font-size: var(--text-lg); }
+  .path-spotlight > .path-progress-label, .path-spotlight > .text-action { font-size: var(--text-sm); }
+  .hero-footnote, .lesson-card-meta, .app-footer > span { font-size: var(--text-xs); }
+}

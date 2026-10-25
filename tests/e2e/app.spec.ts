@@ -269,6 +269,8 @@ async function confirmAction(page: Page, action: () => Promise<unknown>, message
 }
 
 async function createCollection(page: Page, name: string) {
+  const manager = page.locator('.collection-manager')
+  if (await manager.getAttribute('open') === null) await manager.locator(':scope > summary').click()
   await page.getByLabel('New collection name', { exact: true }).fill(name)
   await page.getByRole('button', { name: 'Create collection', exact: true }).click()
   await expect(page.getByRole('status').filter({ hasText: `Collection "${name}" created.` })).toBeVisible()
@@ -505,14 +507,15 @@ test('Notes autosave, are searchable in Notes Vault without a bookmark, and surv
   await expect(page.getByRole('heading', { name: 'No matching lessons', exact: true })).toBeVisible()
   await page.getByRole('button', { name: 'Clear search and collection filter', exact: true }).click()
   await page.getByRole('button', { name: `Open note for ${lesson.title}`, exact: true }).click()
-  await (await reader(page, lesson)).getByRole('button', { name: 'Try this idea', exact: true }).click()
+  await reader(page, lesson)
+  await expect(page.getByRole('dialog').getByRole('button', { name: 'Try this idea', exact: true })).toHaveCount(0)
   await expect(page.getByRole('dialog').getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(note)
   await page.getByRole('dialog').getByRole('button', { name: 'Save this bite', exact: true }).click()
   await waitForStored(page, (snapshot) => snapshot.state.saved, [lesson.id])
   await page.getByRole('dialog').getByRole('button', { name: 'Unsave this bite', exact: true }).click()
   await waitForStored(page, (snapshot) => ({ saved: snapshot.state.saved, note: snapshot.state.notes[lesson.id] }), { saved: [], note })
   await page.reload()
-  await (await reader(page, lesson)).getByRole('button', { name: 'Try this idea', exact: true }).click()
+  await reader(page, lesson)
   await expect(page.getByRole('dialog').getByRole('textbox', { name: /Your note or experiment/ })).toHaveValue(note)
   await closeReader(page)
   await expect(page.getByRole('button', { name: 'Saved (0)', exact: true })).toBeVisible()
@@ -553,6 +556,7 @@ test('Collections reject case-insensitive duplicates and confirmed deletion remo
   await page.getByLabel('Collection', { exact: true }).selectOption({ label: 'Field kit' })
   await expect(card(page, lesson.title)).toBeVisible()
   const beforeDelete = await stored(page)
+  await page.locator('.collection-manager > summary').click()
   await page.getByText('Manage existing collections', { exact: true }).click()
   const remove = page.getByRole('button', { name: 'Delete collection Field kit', exact: true })
   await confirmAction(page, () => remove.click(), /^Delete the collection "Field kit"\? This removes only the group\./, false)
@@ -874,8 +878,8 @@ test('Layouts fit 320, 390, 768, 1280, and 1920px with usable primary targets an
       await visit(page, screen)
       await checkHorizontalLayout(page, `${screen} at ${width}px`)
       await checkTargets(page, '#main .button-primary:visible, #main .lesson-card-main:visible', 44, `${screen} at ${width}px`)
-      // Compact bookmarks and the profile avatar are not 44px controls by design. Decorations are not targets.
-      await checkTargets(page, '.profile-button:visible, .icon-button:visible', 24, `compact controls at ${width}px`)
+      // Small glyphs still get full touch targets. Decorative shapes are not controls.
+      await checkTargets(page, '.profile-button:visible, .icon-button:visible', 44, `compact controls at ${width}px`)
       const navigation = page.locator('nav[aria-label="Main navigation"]:visible')
       if (width <= 800) {
         await checkTargets(page, '.mobile-nav > a:visible', 44, `mobile navigation at ${width}px`)

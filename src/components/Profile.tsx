@@ -71,6 +71,13 @@ export function Profile({ library, route, install }: { library: Library; route: 
   const backupFeedbackId = `${prefix}-backup-feedback`
 
   useEffect(() => {
+    const section = route.params.get('section')
+    if (section === 'install' || section === 'backup') {
+      document.getElementById(`${prefix}-${section}-section`)?.scrollIntoView({ block: 'start' })
+    }
+  }, [route.params, prefix])
+
+  useEffect(() => {
     const media = typeof window.matchMedia === 'function' ? window.matchMedia('(display-mode: standalone)') : null
     const update = () => setStandalone(isStandaloneWindow())
     if (typeof media?.addEventListener === 'function') media.addEventListener('change', update)
@@ -211,6 +218,7 @@ export function Profile({ library, route, install }: { library: Library; route: 
       <h1>Your profile</h1>
       <p className="page-intro">Your learning, preferences and backups. No account required.</p>
     </header>
+    <div className="profile-shortcuts"><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'install', true)}><Smartphone size={18} aria-hidden="true"/>Install on my phone</button><button type="button" className="button button-quiet" onClick={() => route.setParam('section', 'backup', true)}><Download size={18} aria-hidden="true"/>Backups and data</button></div>
 
     <section className="panel settings-section" aria-label="Preferences">
       <SectionHeading title="Preferences"/>
@@ -324,7 +332,7 @@ export function Profile({ library, route, install }: { library: Library; route: 
       </> : <EmptyState title="No completed lessons yet" action="Explore lessons" onAction={() => route.navigate('explore')} symbol="">Finish a lesson to record it here. Your completion history stays in this browser.</EmptyState>}
     </section>
 
-    <section className="panel settings-section" aria-label="Backups and clearing data">
+    <section id={`${prefix}-backup-section`} className="panel settings-section" aria-label="Backups and clearing data">
       <SectionHeading title="Backups and local data"/>
       <p className="section-description" id={`${prefix}-backup-hint`}>Export before importing a backup or clearing data. Backups include progress, saved lessons, notes, collections, preferences and retained discoveries. Imports replace your current library, rather than merging it.</p>
       <p className="field-hint">Choose an exported UNSCROLL JSON backup smaller than 20 MB. Files are validated locally before replacement. A backup contains your notes and nickname as readable text, so store it somewhere private.</p>
@@ -347,7 +355,7 @@ export function Profile({ library, route, install }: { library: Library; route: 
       <InlineNotice id={`${prefix}-persistence-feedback`} notice={persistenceNotice}/>
     </section>
 
-    <section className="panel settings-section" aria-label="Install UNSCROLL">
+    <section id={`${prefix}-install-section`} className="panel settings-section" aria-label="Install UNSCROLL">
       <SectionHeading title="Install UNSCROLL"/>
       {standalone ? <p className="section-description">UNSCROLL is running in standalone app mode.</p> : install.installed ? <p className="section-description">Installation has been accepted or reported by your browser. Look for UNSCROLL on your home screen or in your app launcher.</p> : install.available ? <>
         <p className="section-description">Your browser offers installation. Add UNSCROLL to open it from your home screen or app launcher.</p>
