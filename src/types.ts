@@ -80,6 +80,7 @@ export interface AppState {
   joined: string
   reducedMotion: boolean
   welcomeDismissed: boolean
+  followedPath?: string
 }
 
 export interface DiscoveryEdition {
