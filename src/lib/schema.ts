@@ -7,6 +7,7 @@ export const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value)
 }, 'Invalid calendar date')
 
 const safeId = z.string().min(1).max(120).regex(/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/)
+  .refine((value) => !['__proto__', 'constructor', 'prototype'].includes(value), 'Reserved record key')
 const httpsUrl = z.string().max(2000).refine((value) => {
   try {
     const url = new URL(value)
@@ -56,7 +57,7 @@ export const stateSchema = z.object({
   version: z.literal(1),
   name: z.string().max(40),
   goal: z.union([z.literal(3), z.literal(5), z.literal(7)]),
-  interests: z.array(z.enum(CATEGORY_IDS)).min(1).max(8),
+  interests: z.array(z.enum(CATEGORY_IDS)).min(1).max(CATEGORY_IDS.length),
   completed: z.record(safeId, z.object({ date: dateSchema, correct: z.boolean().nullable() })),
   saved: z.array(safeId).max(10000),
   notes: z.record(safeId, z.string().max(5000)),

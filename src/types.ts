@@ -1,4 +1,4 @@
-export const CATEGORY_IDS = ['mind', 'work', 'money', 'life', 'people', 'tech', 'thinking', 'wellbeing'] as const
+export const CATEGORY_IDS = ['mind', 'work', 'money', 'life', 'people', 'tech', 'thinking', 'wellbeing', 'cinema', 'design'] as const
 export type CategoryId = (typeof CATEGORY_IDS)[number]
 
 export interface Source {

@@ -9,6 +9,8 @@ export const categories: Category[] = [
   { id: 'tech', name: 'Tech & systems', subtitle: 'Understand what connects', description: 'Networking, security, and engineering ideas you can use at work.', symbol: '⌘', color: '#accddd' },
   { id: 'thinking', name: 'Clear thinking', subtitle: 'Question the obvious', description: 'Mental models, probabilities, evidence, and better judgment.', symbol: '◇', color: '#d4ceb3' },
   { id: 'wellbeing', name: 'Wellbeing', subtitle: 'Look after the operator', description: 'Evidence-informed basics for sleep, movement, and recovery.', symbol: '≈', color: '#b5d4c6' },
+  { id: 'cinema', name: 'Cinema & photography', subtitle: 'Train your cinematic eye', description: 'Phone filmmaking, directing, light, editing, sound, and cinema literacy.', symbol: '▧', color: '#edb592' },
+  { id: 'design', name: 'Design & drawing', subtitle: 'Learn to see, then make', description: 'Colour, type, spacing, UI critique, and drawing through observation and construction.', symbol: '◒', color: '#c7cdb0' },
 ]
 
 export const categoryById = Object.fromEntries(categories.map((category) => [category.id, category])) as Record<Category['id'], Category>
