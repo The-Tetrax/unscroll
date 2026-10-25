@@ -1,4 +1,4 @@
-import { get, set } from 'idb-keyval'
+import { get, set, update as updateStored } from 'idb-keyval'
 import { z } from 'zod'
 import type { AppState, Lesson } from '../types'
 import { createInitialState } from './learning'
@@ -8,23 +8,32 @@ export const STORAGE_KEY = 'unscroll-library-v1'
 export interface LibrarySnapshot { state: AppState; discoveries: Lesson[] }
 const snapshotSchema = z.object({ state: stateSchema, discoveries: z.array(lessonSchema).max(10000) }).strict()
 
-export async function loadLibrary(): Promise<{ snapshot: LibrarySnapshot; warning: string }> {
+export async function loadLibrary(): Promise<{ snapshot: LibrarySnapshot; warning: string; checkpoint: string | null }> {
   const empty = { state: createInitialState(), discoveries: [] }
   let raw: unknown
   try { raw = await get(STORAGE_KEY) } catch {
-    return { snapshot: empty, warning: 'Device storage is unavailable. Keep this tab open and export a backup before leaving.' }
+    return { snapshot: empty, warning: 'Device storage is unavailable. Keep this tab open and export a backup before leaving.', checkpoint: null }
   }
-  if (raw === undefined) return { snapshot: empty, warning: '' }
+  if (raw === undefined) return { snapshot: empty, warning: '', checkpoint: null }
   const parsed = snapshotSchema.safeParse(raw)
   if (!parsed.success) {
     // Never replace malformed data automatically. Preserve it for recovery.
     throw new Error('Saved data could not be read. Your original data has not been changed. Restore a valid backup, or download the recovery data before resetting.')
   }
-  return { snapshot: parsed.data as LibrarySnapshot, warning: '' }
+  return { snapshot: parsed.data as LibrarySnapshot, warning: '', checkpoint: JSON.stringify(raw) }
 }
 
 export async function persistLibrary(snapshot: LibrarySnapshot): Promise<void> {
   await set(STORAGE_KEY, snapshot)
+}
+
+export async function persistLibraryIfUnchanged(snapshot: LibrarySnapshot, checkpoint: string | null): Promise<void> {
+  // The read and write share one IndexedDB transaction across all tabs.
+  await updateStored(STORAGE_KEY, (stored: unknown) => {
+    const actual = stored === undefined ? null : JSON.stringify(stored)
+    if (actual !== checkpoint) throw new Error('Another tab changed this library. Export this tab’s backup before reloading to see the other tab’s changes. This tab has not overwritten them.')
+    return snapshot
+  })
 }
 
 export function retainDiscoveries(snapshot: LibrarySnapshot, incoming: Lesson[]): Lesson[] {

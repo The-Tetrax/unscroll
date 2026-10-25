@@ -3,7 +3,7 @@ import { lessons, learningPaths, lessonById } from '../data'
 import type { AppState, DiscoveryEdition, Lesson } from '../types'
 import { completeLesson, createInitialState, ensureDaily, localDate, reviewLesson } from '../lib/learning'
 import type { ReviewGrade } from '../lib/learning'
-import { downloadFile, loadLibrary, parseBackup, persistLibrary, retainDiscoveries, serializeBackup } from '../lib/storage'
+import { downloadFile, loadLibrary, parseBackup, persistLibrary, persistLibraryIfUnchanged, retainDiscoveries, serializeBackup } from '../lib/storage'
 import type { LibrarySnapshot } from '../lib/storage'
 import { editionSchema } from '../lib/schema'
 
@@ -13,6 +13,9 @@ export function useLibrary() {
   const [snapshot, setSnapshot] = useState<LibrarySnapshot>(INITIAL)
   const current = useRef(snapshot)
   const writes = useRef<Promise<void>>(Promise.resolve())
+  const checkpoint = useRef<string | null>(null)
+  const replacing = useRef(false)
+  const generation = useRef(0)
   const [ready, setReady] = useState(false)
   const [fatal, setFatal] = useState('')
   const [storageError, setStorageError] = useState('')
@@ -20,15 +23,20 @@ export function useLibrary() {
   const [discoveryLoading, setDiscoveryLoading] = useState(false)
   const fetching = useRef(false)
   const [today, setToday] = useState(localDate)
+  const [editionDay, setEditionDay] = useState(() => new Date().toISOString().slice(0, 10))
 
   const update = useCallback((change: (value: LibrarySnapshot) => LibrarySnapshot) => {
+    if (replacing.current) return
     const next = change(current.current)
     if (next === current.current) return
     current.current = next
     setSnapshot(next)
-    writes.current = writes.current.catch(() => {}).then(() => persistLibrary(next))
-      .then(() => setStorageError(''))
-      .catch(() => setStorageError('This change is only in memory. Device storage could not save it. Export a backup before closing the app.'))
+    writes.current = writes.current.catch(() => {}).then(async () => {
+      await persistLibraryIfUnchanged(next, checkpoint.current)
+      checkpoint.current = JSON.stringify(next)
+      setStorageError('')
+    }).catch((error: unknown) => setStorageError(error instanceof Error && error.message.startsWith('Another tab')
+      ? error.message : 'This change is only in memory. Device storage could not save it. Export a backup before closing the app.'))
   }, [])
 
   const updateState = useCallback((change: (state: AppState) => AppState) => update((old) => {
@@ -38,9 +46,10 @@ export function useLibrary() {
 
   useEffect(() => {
     let active = true
-    void loadLibrary().then(({ snapshot: loaded, warning }) => {
+    void loadLibrary().then(({ snapshot: loaded, warning, checkpoint: storedCheckpoint }) => {
       if (!active) return
       current.current = loaded
+      checkpoint.current = storedCheckpoint
       setSnapshot(loaded)
       setStorageError(warning)
       setReady(true)
@@ -49,11 +58,12 @@ export function useLibrary() {
   }, [])
 
   useEffect(() => {
-    const checkDay = () => setToday(localDate())
+    const checkDay = () => { setToday(localDate()); setEditionDay(new Date().toISOString().slice(0, 10)) }
     const timer = setInterval(checkDay, 30_000)
     document.addEventListener('visibilitychange', checkDay)
     window.addEventListener('focus', checkDay)
-    return () => { clearInterval(timer); document.removeEventListener('visibilitychange', checkDay); window.removeEventListener('focus', checkDay) }
+    window.addEventListener('online', checkDay)
+    return () => { clearInterval(timer); document.removeEventListener('visibilitychange', checkDay); window.removeEventListener('focus', checkDay); window.removeEventListener('online', checkDay) }
   }, [])
 
   useEffect(() => {
@@ -66,7 +76,8 @@ export function useLibrary() {
   }, [ready, today, snapshot.discoveries, update])
 
   const refreshDiscoveries = useCallback(async () => {
-    if (fetching.current) return
+    if (fetching.current || replacing.current) return
+    const startedGeneration = generation.current
     fetching.current = true
     setDiscoveryLoading(true)
     try {
@@ -75,25 +86,43 @@ export function useLibrary() {
       const text = await response.text()
       if (text.length > 300_000) throw new Error('Response too large')
       const parsed = editionSchema.parse(JSON.parse(text)) as DiscoveryEdition
+      if (startedGeneration !== generation.current) return
       setEdition(parsed)
       update((old) => ({ ...old, discoveries: retainDiscoveries(old, parsed.lessons) }))
     } catch {
+      if (startedGeneration !== generation.current) return
       const latest = [...current.current.discoveries].sort((a, b) => (b.publishedAt ?? '').localeCompare(a.publishedAt ?? ''))[0]?.publishedAt
       const cached = current.current.discoveries.filter((lesson) => lesson.publishedAt === latest).slice(0, 6)
-      setEdition({ date: latest ?? today, lessons: cached, status: cached.length ? 'cached' : 'unavailable',
+      setEdition({ date: latest ?? editionDay, lessons: cached, status: cached.length ? 'cached' : 'unavailable',
         message: cached.length ? 'Showing the last downloaded edition. Your saved lessons still work offline.' : 'Daily discoveries need a connection and the Netlify content service. All original lessons are available offline.' })
     } finally { fetching.current = false; setDiscoveryLoading(false) }
-  }, [today, update])
+  }, [editionDay, update])
 
   useEffect(() => {
     if (!ready) return
-    void refreshDiscoveries()
+    // Fetching is an external synchronization, not derived render state.
+    queueMicrotask(() => { void refreshDiscoveries() })
     const online = () => { void refreshDiscoveries() }
     window.addEventListener('online', online)
     return () => window.removeEventListener('online', online)
   }, [ready, refreshDiscoveries])
 
   const allLessons = [...lessons, ...snapshot.discoveries]
+
+  const replaceLibrary = async (replacement: LibrarySnapshot) => {
+    replacing.current = true
+    generation.current += 1
+    try {
+      await writes.current.catch(() => {})
+      await persistLibrary(replacement)
+      checkpoint.current = JSON.stringify(replacement)
+      current.current = replacement
+      setSnapshot(replacement)
+      setFatal('')
+      setStorageError('')
+      setReady(true)
+    } finally { replacing.current = false }
+  }
 
   return {
     state: snapshot.state, allLessons, ready, fatal, storageError, today, edition, discoveryLoading, updateState, refreshDiscoveries,
@@ -111,23 +140,12 @@ export function useLibrary() {
     importBackup: async (file: File) => {
       if (file.size > 20_000_000) throw new Error('Choose a backup smaller than 20 MB.')
       const imported = parseBackup(await file.text(), new Set(lessonById.keys()))
-      await writes.current.catch(() => {})
-      await persistLibrary(imported)
-      current.current = imported
-      setSnapshot(imported)
-      setFatal('')
-      setStorageError('')
-      setReady(true)
+      await replaceLibrary(imported)
     },
     reset: async () => {
       const empty = { state: createInitialState(), discoveries: [] }
-      await writes.current.catch(() => {})
-      await persistLibrary(empty)
-      current.current = empty
-      setSnapshot(empty)
+      await replaceLibrary(empty)
       setEdition(null)
-      setFatal('')
-      setReady(true)
     },
   }
 }

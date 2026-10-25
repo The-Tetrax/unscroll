@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "file": "barlow-condensed-latin-700-normal.woff2",
+      "source": "@fontsource/barlow-condensed/files/barlow-condensed-latin-700-normal.woff2",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/barlow-condensed-OFL.txt",
+      "size": 22444,
+      "sha256": "3787a5a419171630e6890cfa47c4da067474d005cd0ff8dc11ec090fdc3ee2b8"
+    },
+    {
+      "file": "barlow-condensed-latin-700-normal.woff",
+      "source": "@fontsource/barlow-condensed/files/barlow-condensed-latin-700-normal.woff",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/barlow-condensed-OFL.txt",
+      "size": 18824,
+      "sha256": "bd414ee6698edb13ec58b3084b68c1804eeb55acb6b65f628822320dcd1e5431"
+    },
+    {
+      "file": "dm-sans-latin-400-normal.woff2",
+      "source": "@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff2",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/dm-sans-OFL.txt",
+      "size": 14200,
+      "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006"
+    },
+    {
+      "file": "dm-sans-latin-700-normal.woff2",
+      "source": "@fontsource/dm-sans/files/dm-sans-latin-700-normal.woff2",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/dm-sans-OFL.txt",
+      "size": 14348,
+      "sha256": "35c5efa0e5daa52ee5c6500f5be354bf751fb65c4e49e1d6806c6eb5883e8fe9"
+    },
+    {
+      "file": "dm-sans-latin-400-normal.woff",
+      "source": "@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/dm-sans-OFL.txt",
+      "size": 18356,
+      "sha256": "38702875fe179437d200e7ba6f7fab4d497ffe48117ef332029b2081751186ad"
+    },
+    {
+      "file": "dm-sans-latin-700-normal.woff",
+      "source": "@fontsource/dm-sans/files/dm-sans-latin-700-normal.woff",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/dm-sans-OFL.txt",
+      "size": 18504,
+      "sha256": "af422a448ac00679a8dbb13532db3616829c5a35b58d3eeea5903ce17ad2e36a"
+    },
+    {
+      "file": "brand-icon.svg",
+      "source": "Original UNSCROLL artwork",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 346,
+      "sha256": "85bae811d2c5251e254572bf85676a2a2c041b0f2ec9aa4f5fa24a7f0cbefbf9"
+    },
+    {
+      "file": "icons/icon-192.png",
+      "source": "Original UNSCROLL artwork",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 5291,
+      "sha256": "ada16f89262caedf341ab8981d10e3dffe8850dd22cc993b649571ab1be2d1bf"
+    },
+    {
+      "file": "icons/icon-512.png",
+      "source": "Original UNSCROLL artwork",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 19181,
+      "sha256": "8dc4dd0cb85f76a598ed5dbd2a3f9cac4b50187baa00944d1c088701d891691e"
+    },
+    {
+      "file": "icons/apple-touch-icon.png",
+      "source": "Original UNSCROLL artwork",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 4919,
+      "sha256": "8e31475ddf9254169363a7e2b728a08fba3770a66bacdde912b005b9ce1702c9"
+    },
+    {
+      "file": "icons/maskable-512.png",
+      "source": "Original UNSCROLL artwork",
+      "license": "MIT",
+      "licenseFile": "licenses/UNSCROLL-MIT.txt",
+      "size": 14790,
+      "sha256": "159a01ca30a3920d3dbf696de6ab0731fd1c5fe11a4679b075ec5a9fb447f852"
+    }
+  ]
+}

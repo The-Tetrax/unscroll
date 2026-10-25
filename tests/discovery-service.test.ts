@@ -154,11 +154,11 @@ describe('Wikipedia allowlist and transport', () => {
     for (const [input] of fetcher.mock.calls) expect(isAllowedWikipediaUrl(String(input))).toBe(true)
   })
 
-  it('has a rotating live category pool covering all eight requested subject areas', () => {
+  it('has a rotating live category pool covering all ten requested subject areas', () => {
     expect(new Set(CATEGORY_POOL.map((pool) => pool.topic))).toEqual(new Set([
-      'Psychology', 'Reasoning', 'Economics', 'Communication', 'Philosophy', 'Computer networking', 'Decision-making', 'Learning',
+      'Psychology', 'Reasoning', 'Economics', 'Communication', 'Philosophy', 'Computer networking', 'Decision-making', 'Learning', 'Filmmaking', 'Visual design',
     ]))
-    expect(CATEGORY_POOL).toHaveLength(24)
+    expect(CATEGORY_POOL).toHaveLength(30)
     expect(new Set(CATEGORY_POOL.map((pool) => pool.title)).size).toBe(CATEGORY_POOL.length)
   })
 })
@@ -202,7 +202,8 @@ describe('attributed, finite daily editions', () => {
     expect(mustNotFetch).not.toHaveBeenCalled()
     expect(Object.keys((await control(store)).seen)).toHaveLength(6)
     const archive = await store.read(`editions/${DAY}`, signal())
-    expect((archive?.value as DiscoveryEdition).lessons).toEqual(first.lessons)
+    expect(archive).not.toBeNull()
+    expect((archive!.value as DiscoveryEdition).lessons).toEqual(first.lessons)
   })
 
   it('deduplicates pages across categories/days and excludes non-articles, disambiguation, redirects and short/HTML extracts', async () => {
@@ -221,8 +222,11 @@ describe('attributed, finite daily editions', () => {
     expect(next.date).toBe(DAY)
     expect(next.lessons).toEqual(first.lessons)
     expect((await control(store)).seen).toEqual({ '1': DAY })
+    // Each scan is bounded, so drain the expanded category pool before
+    // asserting that a subsequent day performs no network requests.
+    await getDiscoveryEdition(options(fetcher, store, '2026-10-27'))
     fetcher.mockClear()
-    const exhausted = await getDiscoveryEdition(options(fetcher, store, '2026-10-27'))
+    const exhausted = await getDiscoveryEdition(options(fetcher, store, '2026-10-28'))
     expect(exhausted.lessons).toEqual(first.lessons)
     expect(exhausted.message).toContain('exhausted')
     expect(fetcher).not.toHaveBeenCalled()

@@ -20,6 +20,7 @@ test-results
 playwright-report
 release
 .hallmark/screenshots
+.hallmark/shots
 *.tsbuildinfo
 
 # Editor directories and files

@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { CATEGORY_IDS } from '../types'
+import { CATEGORY_IDS } from '../types.ts'
 
 export const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
   const date = new Date(`${value}T12:00:00Z`)

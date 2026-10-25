@@ -1,7 +1,7 @@
 import { getStore, type Store } from '@netlify/blobs'
 import { z } from 'zod'
-import { dateSchema, editionSchema, lessonSchema } from '../../src/lib/schema'
-import type { CategoryId, DiscoveryEdition, Lesson } from '../../src/types'
+import { dateSchema, editionSchema, lessonSchema } from '../../src/lib/schema.ts'
+import type { CategoryId, DiscoveryEdition, Lesson } from '../../src/types.ts'
 
 export const MAX_DAILY_EXTRACTS = 6
 export const UPSTREAM_TIMEOUT_MS = 8_000
@@ -28,6 +28,8 @@ const topics: readonly { topic: string; category: CategoryId; categories: readon
   { topic: 'Computer networking', category: 'tech', categories: ['Computer networking', 'Network protocols', 'Internet protocols'] },
   { topic: 'Decision-making', category: 'work', categories: ['Decision theory', 'Decision-making', 'Problem solving'] },
   { topic: 'Learning', category: 'mind', categories: ['Learning', 'Educational psychology', 'Learning methods'] },
+  { topic: 'Filmmaking', category: 'cinema', categories: ['Cinematography', 'Film techniques', 'Film editing'] },
+  { topic: 'Visual design', category: 'design', categories: ['Graphic design', 'Typography', 'Color theory'] },
 ]
 
 // Interleave topics, then rotate six categories at a time. This is a finite live
@@ -48,6 +50,7 @@ const queryConstants = {
 
 const continuationSchema = z.object({
   continue: z.string().min(1).max(200).regex(/^[a-zA-Z0-9_|-]+$/),
+  // eslint-disable-next-line no-control-regex -- Reject control bytes in untrusted continuation tokens.
   gcmcontinue: z.string().min(1).max(1_024).regex(/^[^\u0000-\u001f\u007f]+$/).optional(),
   excontinue: z.number().int().nonnegative().max(Number.MAX_SAFE_INTEGER).optional(),
 }).strict().refine((value) => value.gcmcontinue !== undefined || value.excontinue !== undefined)
@@ -276,6 +279,7 @@ function toLesson(page: z.infer<typeof pageSchema>, pool: (typeof CATEGORY_POOL)
   const extract = page.extract.replace(/\r\n?/g, '\n').replace(/[\u2013\u2014]/g, '-')
     .replace(/[ \t]+/g, ' ').trim()
   if (extract.length < 240 || extract.length > 6_000 || extract.split(/\s+/).length < 40
+    // eslint-disable-next-line no-control-regex -- Exclude non-text bytes from external extracts.
     || /<\/?[a-z][^>]*>|[\u0000-\u0008\u000b\u000c\u000e-\u001f]/i.test(extract)) return null
   const urls = articleUrls(page.title)
   return lessonSchema.parse({
