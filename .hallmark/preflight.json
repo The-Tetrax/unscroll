@@ -1,0 +1,20 @@
+{
+  "scanned": "2026-10-25",
+  "scope": "app",
+  "findings": {
+    "fonts": "New scaffold; local Barlow Condensed and DM Sans selected for the user's manga-inspired brief.",
+    "palette": "User explicitly requests red, black, and white. Warm ivory replaces harsh white.",
+    "motion": "React Motion for state transitions, reduced motion respected. No video deliverable.",
+    "spacing": "New tokenized spacing system; phone controls at least 44px.",
+    "framework": "React 19, TypeScript, Vite; workspace originally empty."
+  },
+  "preserve": ["Requested red/black/ivory palette", "Original anime-inspired mascot", "Finite daily learning sessions"],
+  "introduce": ["Tokenized app design system", "Mobile bottom navigation", "Focus reader", "Offline saves and spaced review", "Source and content validation"],
+  "material": {
+    "real": "Original lesson collection being authored; all progress starts at zero.",
+    "pictures": "Original UNSCROLL fox brand mark requested by user; no photos or borrowed characters.",
+    "absent": "No testimonials, customer numbers, partner logos, or fabricated progress."
+  },
+  "direction": "Custom manga app: the dealt yellow, green and pharmacy themes conflict with the explicitly requested palette and tone. User brief takes precedence.",
+  "deal": "unscroll-mobile-learning-app-92d7; Hum, Squeeze, Dose"
+}
