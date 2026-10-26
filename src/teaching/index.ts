@@ -27,7 +27,7 @@ export const GUIDED_V2 = 'guided-v2'
 export const VISUAL_REVISION = 'guided-v1'
 
 const modules: [list: LessonGuide[], revision: string][] = [
-  [mindGuides, GUIDED_V1], [thinkingGuides, GUIDED_V1], [workGuides, GUIDED_V1], [techGuides, GUIDED_V2],
+  [mindGuides, GUIDED_V1], [thinkingGuides, GUIDED_V1], [workGuides, GUIDED_V2], [techGuides, GUIDED_V2],
   [moneyGuides, GUIDED_V1], [lifeGuides, GUIDED_V1], [peopleGuides, GUIDED_V1], [wellbeingGuides, GUIDED_V1],
   [observerGuides, GUIDED_V1], [speakerGuides, GUIDED_V1], [presencePerspectiveGuides, GUIDED_V2],
   [cinemaCameraGuides, GUIDED_V1], [cinemaLightEditGuides, GUIDED_V1], [cinemaSoundStudyGuides, GUIDED_V1],
