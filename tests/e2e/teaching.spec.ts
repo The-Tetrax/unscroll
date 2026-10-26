@@ -5,7 +5,6 @@ import { lessonById, lessons, originalLessonMetadata } from '../../src/data'
 import { completeLesson, createInitialState } from '../../src/lib/learning'
 import { backupSchema, editionSchema, stateSchema } from '../../src/lib/schema'
 import type { LibrarySnapshot } from '../../src/lib/storage'
-import { TEACHING_REVISION } from '../../src/teaching'
 import type { LessonGuide } from '../../src/teaching/types'
 import visualAssets from '../../src/teaching/visual-assets.json' with { type: 'json' }
 import type { AppState, Lesson, ReaderDraft } from '../../src/types'
@@ -391,7 +390,7 @@ test('guided text, source overrides, image fallback and every practice field rem
   await input.fill(note)
   const expected: LibrarySnapshot = { ...initial, state: { ...initial.state,
     notes: { ...initial.state.notes, [SOURCED.id]: note },
-    readerDrafts: { [SOURCED.id]: { stage: 'try', choice: null, revealed: false, updatedAt: CLOCK, lessonRevision: TEACHING_REVISION } },
+    readerDrafts: { [SOURCED.id]: { stage: 'try', choice: null, revealed: false, updatedAt: CLOCK, lessonRevision: SOURCED.revision! } },
   } }
   await waitForStored(page, (snapshot) => snapshot, expected)
   await expectCredit(page, initial.state)
@@ -408,7 +407,7 @@ test('guided text, source overrides, image fallback and every practice field rem
 test('a current-revision choice resumes, transfer hints and answers award no credit, and checked feedback survives reopening', async ({ page }) => {
   const initial = issuedSnapshot()
   const choice = ((BOUNCE.quiz.correctIndex + 1) % BOUNCE.quiz.options.length) as 0 | 1 | 2
-  initial.state.readerDrafts = { [BOUNCE.id]: { stage: 'recall', choice, revealed: false, updatedAt: OLD_TIME, lessonRevision: TEACHING_REVISION } }
+  initial.state.readerDrafts = { [BOUNCE.id]: { stage: 'recall', choice, revealed: false, updatedAt: OLD_TIME, lessonRevision: BOUNCE.revision! } }
   await seedAndLoad(page, initial, BOUNCE)
   let dialog = await reader(page, BOUNCE)
   await expectStage(dialog, 'recall')
@@ -439,7 +438,7 @@ test('a current-revision choice resumes, transfer hints and answers award no cre
   await expectAnswer(dialog, BOUNCE, choice, true)
   await expect(dialog.getByRole('button', { name: 'Complete bite', exact: true })).toBeEnabled()
   const expected: LibrarySnapshot = { ...initial, state: { ...initial.state,
-    readerDrafts: { [BOUNCE.id]: { stage: 'recall', choice, revealed: true, updatedAt: CLOCK, lessonRevision: TEACHING_REVISION } },
+    readerDrafts: { [BOUNCE.id]: { stage: 'recall', choice, revealed: true, updatedAt: CLOCK, lessonRevision: BOUNCE.revision! } },
   } }
   await waitForStored(page, (snapshot) => snapshot, expected)
   await expectCredit(page, initial.state)
@@ -461,7 +460,7 @@ test('missing and obsolete draft revisions reset the old quiz without losing not
       const choice = ((BOUNCE.quiz.correctIndex + 1) % BOUNCE.quiz.options.length) as 0 | 1 | 2
       initial.state.readerDrafts = {
         [BOUNCE.id]: { stage: 'recall', choice, revealed: true, updatedAt: OLD_TIME, ...(revision === undefined ? {} : { lessonRevision: revision }) },
-        [SOURCED.id]: { stage: 'try', choice: null, revealed: false, updatedAt: OLD_TIME, lessonRevision: TEACHING_REVISION },
+        [SOURCED.id]: { stage: 'try', choice: null, revealed: false, updatedAt: OLD_TIME, lessonRevision: SOURCED.revision! },
       }
       await seedAndLoad(page, initial, BOUNCE)
       let dialog = await reader(page, BOUNCE)
@@ -474,7 +473,7 @@ test('missing and obsolete draft revisions reset the old quiz without losing not
       await goToStage(dialog, 'recall')
       await expectAnswer(dialog, BOUNCE, null, false)
       await expect(dialog.getByRole('button', { name: 'Complete bite', exact: true })).toBeDisabled()
-      const fresh: ReaderDraft = { stage: 'recall', choice: null, revealed: false, updatedAt: CLOCK, lessonRevision: TEACHING_REVISION }
+      const fresh: ReaderDraft = { stage: 'recall', choice: null, revealed: false, updatedAt: CLOCK, lessonRevision: BOUNCE.revision! }
       await waitForStored(page, (snapshot) => snapshot.state.readerDrafts, { ...initial.state.readerDrafts, [BOUNCE.id]: fresh })
       await waitForStored(page, (snapshot) => withoutDrafts(snapshot.state), withoutDrafts(initial.state))
       await expectCredit(page, initial.state)

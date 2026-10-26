@@ -8,7 +8,7 @@ import { presencePerspectiveLessons, presencePerspectivePaths } from './presence
 import { cinemaLessons, cinemaPaths } from './cinema'
 import { designLessons, designPaths } from './design'
 import { fieldGuideLessons, fieldGuidePaths } from './field-guides'
-import { guideById, TEACHING_REVISION } from '../teaching'
+import { guideById, guideRevisionById } from '../teaching'
 
 export const originalLessonMetadata: Lesson[] = [
   ...mindThinkingLessons,
@@ -24,7 +24,8 @@ export const originalLessonMetadata: Lesson[] = [
 
 export const lessons: Lesson[] = originalLessonMetadata.map((original) => {
   const guide = guideById.get(original.id)
-  if (!guide) throw new Error(`Missing illustrated teaching for ${original.id}`)
+  const revision = guideRevisionById.get(original.id)
+  if (!guide || !revision) throw new Error(`Missing illustrated teaching for ${original.id}`)
   return {
     ...original,
     title: guide.title ?? original.title,
@@ -35,7 +36,7 @@ export const lessons: Lesson[] = originalLessonMetadata.map((original) => {
     quiz: guide.quiz,
     sources: guide.sources ?? original.sources,
     guide,
-    revision: TEACHING_REVISION,
+    revision,
   }
 })
 

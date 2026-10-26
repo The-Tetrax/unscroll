@@ -1,6 +1,6 @@
 # Illustrated lesson authoring contract
 
-Approved 2026-10-25 after the owner rejected the condensed first edition. The approval samples are in lesson-rewrite-samples.md. The owner approved rewriting every original lesson, with varied examples relevant to each topic, a closely relevant visual for each lesson, and verification before publishing. Quantity is not a substitute for clarity.
+Approved 2026-10-25 after the owner rejected the condensed first edition; the approval samples are in lesson-rewrite-samples.md. Revised 2026-10-26 (guided-v2) after the owner found the production rewrite still too compressed: every guided-v1 body landed in a 230-303 word band, stacked several new terms per paragraph, and interrupted explanations with scope hedges. The unit is one idea thoroughly learned, not one minute filled. Quantity is not a substitute for clarity, and a word count is not a substitute for teaching.
 
 ## Structure
 
@@ -8,15 +8,28 @@ Author `LessonGuide[]` using src/teaching/types.ts. Each record keeps its existi
 
 - `id`: exact existing ID.
 - `title`: optional clearer title, at most 80 characters. Preserve the actual concept, not unrelated clickbait.
-- `outcome`: one concrete thing the reader will understand or do, at most 180 characters.
+- `outcome`: one concrete thing the reader will understand or do, at most 180 characters, written in words a beginner understands before reading the lesson. No untaught jargon.
 - `scene`: a short, unique description of this lesson's example setting, for the diversity audit, not an on-screen eyebrow.
-- `sections`: usually 3 sections with 1-3 paragraphs each, roughly 230-420 words combined. A real situation first, a causal/plain-language explanation with terms introduced gently, then a worked application or contrasting outcome. More words are welcome when necessary; do not pad to satisfy a number. Distinct useful section headings. The old lesson's 100-word summary is not sufficient.
-- `visuals`: at least one TeachingVisual, at most three. It must show the SAME objects, people, numbers, or steps explained in the text. Not an unrelated symbol, generic inspirational photo, or repeated concept-map filler. Caption tells the reader what to inspect and discloses hypothetical numbers or schematic simplification. The rendering pipeline turns these into original offline SVG illustrations. Spatial subjects need spatial diagrams rather than text-only comparisons. Use 2-6 items; label <=32 characters, detail <=115 characters. Avoid superfluous words inside the image; the surrounding prose does the teaching.
-- `practice`: minutes are a suggested 3-20 minute budget, not researched efficacy; ordinary materials (`needs`), 3-5 complete guided steps with a visible result, `notice` describes that result, `troubleshooting` says what to adjust when the result is absent. The first attempt must be doable without guessing missing setup details. No artificial timed emergency, intrusive observation, clinical treatment, or production-system changes.
-- `recall`: a NEW situation with an open question (`prompt`), explained example answer (`answer`), and useful `hint`. It must test transfer, not ask the user to copy a definition.
-- `quiz`: exactly three plausible choices and a varied correctIndex (0, 1, or 2). A scenario question, NOT a trivial 'good behavior versus absurd behavior' quiz. Explain why the chosen action fits and what plausible alternative misses. This is an optional recognition check after thinking, not the whole lesson.
+- `sections`: 3-5 sections, 420-900 words combined, usually 450-800. Follow this arc: first a real situation the reader recognizes, including why it matters to them; then build the idea gradually; then walk the worked example slowly with every number restated; finally boundaries and the common mistake. Use as many words as the idea needs within the band; never pad to reach a number, and never compress a hard idea to stay short. Distinct useful section headings.
+- `visuals`: at least one TeachingVisual, at most three. It must show the SAME objects, people, numbers, or steps explained in the text. Not an unrelated symbol, generic inspirational photo, or repeated concept-map filler. Caption tells the reader what to look at first and discloses hypothetical numbers or schematic simplification. The rendering pipeline turns these into original offline SVG illustrations. Spatial subjects need spatial diagrams rather than text-only comparisons. Use 2-6 items; label <=32 characters, detail <=115 characters. Avoid superfluous words inside the image; the surrounding prose does the teaching.
+- `practice`: minutes are a suggested 3-20 minute budget, not researched efficacy; ordinary materials (`needs`), 3-5 complete guided steps with a visible result, `notice` describes that result, `troubleshooting` says what to adjust when the result is absent. Steps state why they matter when the reason is not obvious: hold the phone still so the comparison stays fair. The first attempt must be doable without guessing missing setup details. No artificial timed emergency, intrusive observation, clinical treatment, or production-system changes.
+- `recall`: a NEW situation with an open question (`prompt`), explained example answer (`answer`), and useful `hint`. It must test transfer, not ask the user to copy a definition. The answer walks the reasoning in the same plain register as the lesson, not a compressed verdict.
+- `quiz`: exactly three plausible choices and a varied correctIndex (0, 1, or 2). A scenario question, NOT a trivial 'good behavior versus absurd behavior' quiz. The explanation teaches: why the chosen action fits, what the plausible alternative misses, in plain words. This is an optional recognition check after thinking, not the whole lesson.
 - `takeaway`: short review recap after the teaching.
 - `sourceNote`: scope/limitation in plain English. Do not claim that the exact new exercise or story was experimentally tested. Existing linked sources are inherited unless new `sources` are necessary. Never invent a paper, quotation, statistics, filmmaker intention, or source URL.
+
+## Register: write for a beginner reading on a phone
+
+These rules exist because the guided-v1 edition was technically defensible yet hard to learn from.
+
+- One new term per paragraph. Introduce it with a plain-words definition in its own sentence, give an everyday analogy or comparison when the term names a mechanism, then immediately reuse the term in the running example. Never define a term only inside an appositive clause (a frame, the unit delivered across the link) and move on.
+- Never use a term before the sentence that explains it. If a lesson needs more than four new terms, it is probably two lessons; teach fewer terms more thoroughly.
+- Analogies are required for invisible mechanisms (radio contention, compounding, attention). The analogy comes first, then the real mechanism mapped onto it, then where the analogy stops working if that matters.
+- Target a reading grade of 6-8 (validator rejects worse than 10.5 per lesson). Average sentence length at most 17 words. Prefer two short sentences over one qualified sentence. Concrete nouns over abstractions: the handle on the mug, not the subject detail.
+- Second person where natural. No clipped expert aphorisms that assume the insight (The operation is.). Spell the reasoning out.
+- Scope honesty without interruptions: invented numbers are still labeled where they appear (an illustrative three milliseconds). But research-scope hedges, negative definitions, and what-this-does-not-establish caveats live in the final boundaries section or the sourceNote, never in the middle of the first explanation of an idea.
+- Paragraphs are plain text. The reader renders them without markdown, so no asterisks, backticks, or inline links inside prose.
+- Worked numbers are restated step by step. Never leave arithmetic for the reader to infer; the prose, the visual, and the quiz must agree.
 
 ## Visual formats
 
@@ -50,6 +63,10 @@ The audience is a 23-year-old early-career networking employee and beginner film
 
 Within a batch, vary the example settings and practice outputs. Reusing one object for a tightly connected comparison is useful; copying the same story into unrelated lessons is not. No em or en dashes. No corporate prose. No filler about 'unlocking potential'. No copied external illustrations. All visuals must have alt text and a explanatory caption.
 
+## Revision mechanics
+
+Guides are tagged with a per-module revision in src/teaching/index.ts. A module flips to guided-v2 only when every lesson in it meets this contract; the validator applies the deeper word band and readability gates per revision. Flipping a revision resets only incompatible unfinished quiz drafts, never notes, completions, or collections. The visual asset namespace is pinned separately (VISUAL_REVISION) so unchanged diagrams keep their URLs and are not re-downloaded.
+
 ## Definition of done
 
-Every ID has new teaching, a specific visual, guided practice and transfer reasoning. Audit reading order, new terms, scenario diversity, numerical examples, and source scope. Render every image, check label bounds, inspect representative contact sheets and actual phone reading. Validate all records, preserve existing progress/notes/collections and reset only incompatible unfinished quiz answers from the old edition. Keep private hosting private.
+Every ID has new teaching, a specific visual, guided practice and transfer reasoning. Audit reading order, new terms, scenario diversity, numerical examples, and source scope, plus the depth audit in scripts/analyze-teaching-depth.ts (word band, reading grade, sentence length, hedge placement). Close-read a random sample of every rewritten module rather than trusting aggregate claims. Render every image, check label bounds, inspect representative contact sheets and actual phone reading. Validate all records, preserve existing progress/notes/collections and reset only incompatible unfinished quiz answers from the old edition. Keep private hosting private.

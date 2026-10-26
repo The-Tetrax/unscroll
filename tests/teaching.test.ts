@@ -7,7 +7,7 @@ import { lessonById, lessons, originalLessonMetadata } from '../src/data'
 import { completeLesson, createInitialState, saveReaderDraft } from '../src/lib/learning'
 import { lessonSchema, stateSchema } from '../src/lib/schema'
 import { parseBackup, serializeBackup } from '../src/lib/storage'
-import { guideById, guides, TEACHING_REVISION } from '../src/teaching'
+import { guideById, guideRevisionById, guides, VISUAL_REVISION } from '../src/teaching'
 import { lessonGuideSchema, teachingVisualSchema } from '../src/teaching/schema'
 import type { TeachingVisual } from '../src/teaching/types'
 import type { AppState, ReaderDraft } from '../src/types'
@@ -171,7 +171,8 @@ describe('guided teaching structural and compatibility contracts', () => {
       const lesson = lessonById.get(guide.id)!
       expect(lessonSchema.parse(lesson), guide.id).toEqual(lesson)
       expect(lesson.guide, guide.id).toBe(guide)
-      expect(lesson.revision, guide.id).toBe(TEACHING_REVISION)
+      expect(lesson.revision, guide.id).toBe(guideRevisionById.get(guide.id))
+      expect(lesson.revision, guide.id).toMatch(/^guided-v\d+$/)
       expect(lesson.kind, guide.id).toBeUndefined()
       for (const visual of guide.visuals) expect(teachingVisualSchema.parse(visual), guide.id).toEqual(visual)
     }
@@ -226,13 +227,13 @@ describe('guided teaching structural and compatibility contracts', () => {
     const manifest = z.object({
       revision: z.string(), lessons: z.number().int(), visualCount: z.number().int(), assets: assetMapSchema,
     }).strict().parse(JSON.parse(readFileSync(new URL('../public/lesson-visuals/manifest.json', import.meta.url), 'utf8')))
-    expect(manifest).toEqual({ revision: TEACHING_REVISION, lessons: guides.length, visualCount: 604, assets })
+    expect(manifest).toEqual({ revision: VISUAL_REVISION, lessons: guides.length, visualCount: 604, assets })
     expect(new Set(Object.keys(assets))).toEqual(new Set(guides.map((guide) => guide.id)))
     const paths: string[] = []
     for (const guide of guides) {
       expect(assets[guide.id], guide.id).toHaveLength(guide.visuals.length)
       for (const [index, asset] of assets[guide.id].entries()) {
-        expect(asset.src).toBe(`/lesson-visuals/${TEACHING_REVISION}-${guide.id}-${index + 1}.svg`)
+        expect(asset.src).toBe(`/lesson-visuals/${VISUAL_REVISION}-${guide.id}-${index + 1}.svg`)
         const url = new URL(asset.src, ORIGIN)
         expect(url.origin).toBe(ORIGIN)
         expect(url.pathname).toBe(asset.src)
@@ -400,10 +401,10 @@ describe('guided teaching structural and compatibility contracts', () => {
         ...(lessonRevision === undefined ? {} : { lessonRevision }),
       }
       const state: AppState = { ...history(), readerDrafts: {
-        [TARGET]: oldDraft, [OTHER]: { stage: 'try', choice: null, revealed: false, updatedAt: OLD_TIME, lessonRevision: TEACHING_REVISION },
+        [TARGET]: oldDraft, [OTHER]: { stage: 'try', choice: null, revealed: false, updatedAt: OLD_TIME, lessonRevision: lessonById.get(OTHER)!.revision! },
       } }
       const before = structuredClone(state)
-      const nextDraft = { stage: 'recall', choice: 1, revealed: true, lessonRevision: TEACHING_REVISION } as const
+      const nextDraft = { stage: 'recall', choice: 1, revealed: true, lessonRevision: lessonById.get(TARGET)!.revision! } as const
       const next = saveReaderDraft(state, TARGET, nextDraft, NOW)
       expect(next).not.toBe(state)
       expect(next).toEqual({ ...before, readerDrafts: { ...before.readerDrafts, [TARGET]: { ...nextDraft, updatedAt: NOW } } })
@@ -418,7 +419,7 @@ describe('guided teaching structural and compatibility contracts', () => {
     const legacy = originalLessonMetadata.find((lesson) => lesson.id === TARGET)!
     const current = lessonById.get(TARGET)!
     expect(legacy.guide).toBeUndefined()
-    expect(current.revision).toBe(TEACHING_REVISION)
+    expect(current.revision).toBe(guideRevisionById.get(TARGET))
     const state = completeLesson(history(), legacy, false, OLD_DAY)
     const before = structuredClone(state)
     const document = { app: 'UNSCROLL', version: 1, exportedAt: OLD_TIME, state, discoveries: [] }
@@ -427,7 +428,7 @@ describe('guided teaching structural and compatibility contracts', () => {
     expect(restored.state).not.toHaveProperty('readerDrafts')
     expect(restored.state).not.toHaveProperty('practices')
     expect(completeLesson(restored.state, current, true, DAY)).toBe(restored.state)
-    expect(saveReaderDraft(restored.state, TARGET, { stage: 'recall', choice: 0, revealed: true, lessonRevision: TEACHING_REVISION }, NOW)).toBe(restored.state)
+    expect(saveReaderDraft(restored.state, TARGET, { stage: 'recall', choice: 0, revealed: true, lessonRevision: current.revision! }, NOW)).toBe(restored.state)
     expect(restored.state.notes[TARGET]).toBe(before.notes[legacy.id])
     expect(restored.state.saved).toContain(current.id)
     expect(restored.state.completed[current.id]).toEqual(before.completed[legacy.id])

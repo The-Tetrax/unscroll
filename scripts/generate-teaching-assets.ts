@@ -2,7 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import crypto from 'node:crypto'
 import sharp from 'sharp'
-import { guides, TEACHING_REVISION } from '../src/teaching/index.ts'
+import { guides, VISUAL_REVISION } from '../src/teaching/index.ts'
 import { renderTeachingVisual } from './render-teaching-visual.ts'
 import { lessonGuideSchema } from '../src/teaching/schema.ts'
 import { cameraOverride } from './visual-overrides/camera.ts'
@@ -42,7 +42,7 @@ for (const guide of guides) {
     if (/<script|<foreignObject|\son\w+=|(?:href|src)=["']https?:/i.test(svg)) throw new Error(`Unsafe or remote SVG content for ${guide.id}`)
     // Decode every image, not just a handful of examples, before publishing.
     await sharp(Buffer.from(svg)).resize({ width: 72 }).png().toBuffer()
-    const filename = `${TEACHING_REVISION}-${guide.id}-${index + 1}.svg`
+    const filename = `${VISUAL_REVISION}-${guide.id}-${index + 1}.svg`
     await fs.writeFile(path.join(directory, filename), svg)
     const bytes = Buffer.byteLength(svg)
     const sha256 = crypto.createHash('sha256').update(svg).digest('hex')
@@ -57,10 +57,10 @@ for (const guide of guides) {
 }
 const expected = new Set(Object.values(assets).flat().map((asset) => path.basename(asset.src)))
 for (const name of await fs.readdir(directory)) {
-  if (name.startsWith(`${TEACHING_REVISION}-`) && name.endsWith('.svg') && !expected.has(name)) await fs.unlink(path.join(directory, name))
+  if (name.startsWith(`${VISUAL_REVISION}-`) && name.endsWith('.svg') && !expected.has(name)) await fs.unlink(path.join(directory, name))
 }
 await fs.writeFile('src/teaching/visual-assets.json', JSON.stringify(assets))
-await fs.writeFile(`${directory}/manifest.json`, JSON.stringify({ revision: TEACHING_REVISION, lessons: guides.length, visualCount: report.length, assets }, null, 2))
+await fs.writeFile(`${directory}/manifest.json`, JSON.stringify({ revision: VISUAL_REVISION, lessons: guides.length, visualCount: report.length, assets }, null, 2))
 await fs.mkdir('.hallmark/teaching', { recursive: true })
 await fs.writeFile('.hallmark/teaching/visual-report.json', JSON.stringify(report, null, 2))
 console.log(`Generated and decoded ${report.length} offline explanatory SVGs for ${guides.length} lessons; all text bounds checked.`)
