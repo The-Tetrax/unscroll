@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="color-scheme" content="light">
+    <title>Update app files safely | UNSCROLL</title>
+    <link rel="stylesheet" href="/api/update.css">
+    <script src="/api/update.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" tabindex="0">Skip to update controls</a>
+    <header class="page-header page-width">
+      <a class="wordmark" href="/#/today" target="_top" tabindex="0" aria-label="Open UNSCROLL">UNSCROLL</a>
+      <a class="header-link" href="/#/profile?section=offline" target="_top" tabindex="0">Open app</a>
+    </header>
+
+    <main id="main" class="page-width" tabindex="-1">
+      <div class="introduction">
+        <h1>Keep the old library. Replace only app files.</h1>
+        <p>Update the illustrated lessons, worked examples, and practice without resetting your saved learning.</p>
+      </div>
+
+      <section class="preparation" aria-labelledby="prepare-heading">
+        <h2 id="prepare-heading">Before installing</h2>
+        <ol>
+          <li>In the old app, wait for pending saves, then export your notes or a full backup. If saving fails, export from that tab before closing it.</li>
+          <li>Only after saving or exporting, close other UNSCROLL browser tabs and installed app windows. Keep this update page open.</li>
+        </ol>
+        <p>This page cannot flush another tab's unsaved work. An <a href="#device-backup" tabindex="0">optional device backup</a> reads only data already stored in this browser.</p>
+      </section>
+
+      <div class="update-layout">
+        <section class="update-section" aria-labelledby="update-heading">
+          <h2 id="update-heading">Check the published build</h2>
+          <p id="check-help">Check update reads the published version and requests an app-file download. A waiting update needs your separate approval.</p>
+          <div class="actions">
+            <button id="check-update" class="button button-primary" type="button" aria-describedby="check-help" disabled>Check update</button>
+            <a id="signin-retry" href="/api/update.html?signin=1" target="_top" tabindex="0" referrerpolicy="no-referrer">Sign in and retry</a>
+          </div>
+          <p class="supporting-text">Private Netlify hosting needs an authorized site sign-in. The retry link opens a network page outside the old cached app shell; it does not make the site public.</p>
+
+          <p id="version-status" class="status" role="status" aria-live="polite" aria-atomic="true">The published version has not been checked.</p>
+          <dl id="latest-details" class="version-details" hidden>
+            <div><dt>Published build</dt><dd><code id="latest-build"></code></dd></div>
+            <div><dt>Built at</dt><dd><time id="latest-built-at"></time></dd></div>
+            <div><dt>Teaching lessons</dt><dd id="latest-lessons"></dd></div>
+            <div><dt>Illustrations</dt><dd id="latest-illustrations"></dd></div>
+          </dl>
+
+          <h3>App file status</h3>
+          <p id="worker-status" class="status" role="status" aria-live="polite" aria-atomic="true">No update is started on page load. JavaScript reads the existing worker's state first.</p>
+          <p id="update-status" class="status" role="status" aria-live="polite" aria-atomic="true">Save your work before choosing Check update.</p>
+
+          <fieldset class="apply-controls">
+            <legend>Apply a downloaded update</legend>
+            <label class="confirmation" for="saved-work">
+              <input id="saved-work" type="checkbox" autocomplete="off" aria-describedby="apply-help" disabled>
+              <span>I saved my work and closed other UNSCROLL windows.</span>
+            </label>
+            <p id="apply-help" class="supporting-text">Apply requires a successful check, the same waiting worker, and your confirmation. This page cannot identify the worker's build; compare the build in Profile after opening the app.</p>
+            <button id="apply-update" class="button" type="button" aria-describedby="apply-help" disabled>Apply downloaded update</button>
+          </fieldset>
+
+          <div id="manual-open" class="manual-open" hidden>
+            <p>After saving any remaining work, open the app. Compare its build with the published build if one is shown above; otherwise return here and check again. Opening the app alone does not guarantee an update.</p>
+            <div class="actions">
+              <a href="/#/profile?section=offline" target="_top" tabindex="0">Open app and compare build</a>
+              <a href="/api/update.html" target="_top" tabindex="0">Reload update page</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="device-backup" class="backup-section" aria-labelledby="backup-heading" tabindex="-1">
+          <h2 id="backup-heading">Optional device backup</h2>
+          <p id="backup-help">Download the current persisted library in this browser. It cannot recover unsaved work in another tab or data in a separate browser or installed-app storage area.</p>
+          <button id="download-backup" class="button" type="button" aria-describedby="backup-help" disabled>Download device backup</button>
+          <p id="backup-status" class="status" role="status" aria-live="polite" aria-atomic="true">No library data is read or exported until you choose this button.</p>
+          <p class="supporting-text">The file contains your saved notes. Keep it private. This page checks the basic backup structure; the app validates the full content when restoring.</p>
+        </section>
+      </div>
+
+      <noscript>
+        <p class="script-notice">JavaScript is needed to check the worker and download a backup. No update or backup has been started. You can still use the sign-in and Open app links.</p>
+      </noscript>
+    </main>
+
+    <footer class="page-footer page-width">
+      <p>This page never unregisters workers, clears caches or local storage, or writes to your saved library. It never uploads a backup; only same-site version and app-file requests use the network.</p>
+    </footer>
+  </body>
+</html>

@@ -4,6 +4,23 @@ Verified locally on 25-26 October 2026 against the production build, not just th
 
 ## Results
 
+### Update-recovery follow-up, 26 October
+
+The owner reported that both the installed app and normal browser still showed the old controls after publication. Netlify's deployment API confirmed commit 3e1656a in production, ready and published at 2026-10-25T21:04:37.173Z. Anonymous worker, inventory and app requests returned 401. This verifies publication and authentication gating, not the owner's device session.
+
+GitHub CI for 3e1656a completed after the prior handoff: build, lint and all unit checks passed; browser checks were 188 passed and one failed. The failure observed WebKit's worker still activating, plus one old-document Cache API teardown error. The local 189-pass result below remains accurate for its run, but did not establish a passing Linux CI run.
+
+The follow-up adds a network-only recovery page and version endpoint under the already-excluded API path, authenticated update diagnostics, safe activation waiting, and read-only backup export. Recovery uses an explicit confirmation and preserves IndexedDB. The app quiesces its cache inspection before reload and reports offline readiness only with an activated controller. Version checks run on return online/visible with throttling; installation is still explicit.
+
+The normal updater also observes native controller replacement independently of Workbox's registration-time `isUpdate` flag. That flag can remain false in the document that first installed the app worker. A guarded reload now handles later replacements in that same document, rather than leaving an accepted update showing its old UI. The added first-document browser case does not reload the app before downloading the second worker.
+
+- 926 unit/contract tests passed, including authentication response handling, bounded version metadata and activation-state tests.
+- 33 focused browser cases passed across all three profiles: real legacy-worker recovery, optional backup with full snapshot preservation, 401/403/sign-in HTML rejection, failed SVG download followed by retry, empty storage without database creation, read-only startup, keyboard/320px accessibility, and normal safe worker updates.
+- **216 browser cases passed in one consolidated final run**, 72 scenarios across all three profiles, using two workers with no retries or skips locally (19.1 minutes). The first-document update case is included. An earlier three-worker run reached three execution timeouts; those journeys passed individually and in the two-worker full run without removing assertions or increasing their deadlines. Two workers are now the default.
+- Build, client/server type checking, content validation, lint, and all 926 unit cases passed on the recovery implementation. Recovery does not prove the owner's particular phone has activated the new build; publication and device activation must be checked separately.
+
+### Illustrated release baseline
+
 - **189 browser tests passed in one consolidated run:** 63 cases on mobile Chromium, desktop Chromium, and mobile WebKit. Final run: 13.2 minutes, no retries or skips locally.
 - **913 unit/contract tests passed:** selection, dates, XP, reviews, schemas, backups, drafts, practice, search, bounded external responses, concurrent publication, guide/visual contracts, settings compatibility, offline inventory, and per-file asset hashes/licenses.
 - **Production build, app/server type checking, and lint passed.** The build validates 544 rewritten lessons, 2041 unique teaching paragraphs, 544 distinct scene strings, 604 visual specifications, and twenty-two paths. Distinct strings are a structural check, not proof of semantic variety.

@@ -51,6 +51,20 @@ The release archive contains a production static site for optional Netlify Drop.
 - Load the site once online and wait for **Offline-ready library**. Then test reopening in airplane mode. An HTTP LAN preview is useful for layout testing, but PWA installation requires HTTPS or localhost.
 - **You > Protect browser storage** requests persistent storage where the browser supports it. Browsers can deny it. Clearing site data, private browsing, device loss, or storage eviction can remove progress. Export backups.
 
+### If a published update still looks old
+
+A successful Netlify deploy changes the hosted files, not an already-running cached app. Private-site authentication can expire while the offline shell continues to work, hiding the sign-in page needed to download a replacement worker.
+
+1. In the old app, save any pending work and export a backup before closing it. Do not clear site data or reinstall to force an update.
+2. Open [Update recovery](https://unscrollbytetrax.netlify.app/api/update.html) in the same browser/storage context that has the old app. Sign in to the private site if prompted.
+3. Choose **Check update**. The page reads the published version from the network, checks app-file access, and requests the worker update. HTTP 401/403 or sign-in HTML is not treated as a successful download.
+4. After saving work and closing other UNSCROLL windows, tick the confirmation and choose **Apply downloaded update**. The page waits for activation before opening the app. It never deletes caches, unregisters workers, or writes to the stored library.
+5. Compare **You > Offline and updates > App build** with the published build shown on the recovery page. Check offline files before disconnecting.
+
+The recovery page and version endpoint are outside both the old navigation fallback and the new precache, so an old shell cannot silently replace that page. They remain behind the same Netlify private-site access. Its optional backup reads persisted device data only, not unsaved work in another tab. Browser and installed-app storage can be separate on iOS; a backup from an empty browser does not back up the installed app.
+
+Normal app updates also recheck on return to a visible online app, with a one-minute throttle. Installation still requires approval. A confirmed worker activation and local-storage flush are required before reloading.
+
 ## Local development and checks
 
 Requires Node 24 and npm. Run `npm ci`, then `npm run dev`. Development serves at http://localhost:5173. The local discovery endpoint uses the same fetch/validation code but in-memory storage, not production Blobs.

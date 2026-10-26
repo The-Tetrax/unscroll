@@ -23,6 +23,8 @@
 - Follow docs/TEACHING.md: context, plain explanation, worked example, relevant illustration, guided practice with observable results, and transfer reasoning. Do not regress to condensed summaries.
 - Preserve stable IDs and local data across content updates. Revision-reset only incompatible unfinished quiz answers, never notes or completions.
 - Report saved settings only after device storage succeeds. Verify the required cache inventory before claiming offline readiness. Flush writes before any update reload.
+- Keep the update-recovery page and published-version endpoint under /api/ network-only, outside precache and navigation fallback, with no-store headers. Preserve Netlify private access and never clear user storage to force an update.
+- Wait for actual worker activation and pending cache checks before reloading. Test both already-controlled tabs and the document that installed its first worker.
 - Practice records are self-reported, capped at five planned experiments, and award no XP. Keep unfinished reader positions separate from completion; preserve both in backups and discovery retention.
 - Original lessons need a practical application, a retrieval question, and source links. Label research, heuristics, and external reference extracts honestly.
 - Netlify functions fetch only allow-listed Wikimedia URLs. No arbitrary URL proxy or client-side secrets.

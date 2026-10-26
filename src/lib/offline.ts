@@ -50,7 +50,7 @@ export async function inspectOfflineLibrary(build: string): Promise<OfflineStatu
     if (manifest.build !== build) throw new Error('A different app version is available. Check for updates, then verify the offline files again.')
   }
   const cached = countCachedFiles(manifest, keys.map((key) => key.url), window.location.origin)
-  const ready = cached === manifest.paths.length && Boolean(navigator.serviceWorker.controller)
+  const ready = cached === manifest.paths.length && navigator.serviceWorker.controller?.state === 'activated'
   return { state: ready ? 'ready' : navigator.onLine ? 'preparing' : 'incomplete', cached, total: manifest.paths.length, bytes: manifest.bytes,
     lessons: manifest.lessons, illustrations: manifest.illustrations,
     message: ready ? 'The illustrated library is stored on this device.' : 'Some app files are not stored yet. Keep this page open online until the download finishes.' }

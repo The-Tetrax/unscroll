@@ -31,7 +31,7 @@ export default function App() {
   const library = useLibrary()
   const route = useRoute()
   const install = useInstall()
-  const appStatus = useAppStatus(library.flushStorage, install.online)
+  const appStatus = useAppStatus(library.flushStorage)
   const main = useRef<HTMLElement>(null)
   const [setupOpen, setSetupOpen] = useState(false)
   const [recoveryError, setRecoveryError] = useState('')
@@ -73,6 +73,7 @@ export default function App() {
       {!install.online && <div className="connectivity-notice" role="status"><WifiOff size={17} aria-hidden="true"/>{appStatus.offline.state === 'ready' ? 'Offline. Your downloaded library and saved ideas are here.' : 'Offline. Locally stored lessons are available. Some app files may still need a connection.'}</div>}
       {library.storageError && <div className="error-message" role="alert">{library.storageError}<button type="button" className="text-action" onClick={() => { void library.exportBackup().catch(() => {}) }}>Export backup</button></div>}
       {appStatus.error && <p className="error-message" role="alert">{appStatus.error}</p>}
+      {appStatus.signInRequired && <div className="update-notice" role="status"><span>Site sign-in is needed to download app updates. Your offline library is unchanged.</span><a className="button button-quiet" href="/api/update.html">Sign in and check update</a></div>}
       {appStatus.showUpdate && <div className="update-notice" role="status"><span>A new version is ready. Your saved data stays.</span><button type="button" className="button button-primary" disabled={appStatus.applying} onClick={() => { void appStatus.applyUpdate() }}>{appStatus.applying ? 'Saving before update...' : 'Update app'}</button><button type="button" className="text-action" disabled={appStatus.applying} onClick={appStatus.dismissUpdate}>Later</button></div>}
       {route.params.has('lesson') && !activeLesson && <div className="inline-notice" role="status">This bite is not on this device. External discoveries must be downloaded first.<button type="button" className="text-action" onClick={closeReader}>Dismiss</button></div>}
       {route.page === 'today' && <Today library={library} route={route} onSetup={() => setSetupOpen(true)}/>}

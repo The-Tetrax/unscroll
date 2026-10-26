@@ -43,8 +43,9 @@ interface WaitingWorker {
   document: Document
 }
 
-const test = base.extend<{ production: ProductionServer }>({
-  production: async ({ page, context }, use) => {
+const test = base.extend<{ production: ProductionServer; firstDocument: boolean }>({
+  firstDocument: [false, { option: true }],
+  production: async ({ page, context, firstDocument }, use) => {
     const { state, close } = await startProductionServer()
     const externalRequests: string[] = []
     const pageErrors: string[] = []
@@ -66,9 +67,11 @@ const test = base.extend<{ production: ProductionServer }>({
       await waitForStored(page, (snapshot) => snapshot.state.daily.ids.length > 0, true)
       // Workbox decides isUpdate when registering. Return to an already controlled app
       // before testing updates, rather than faking its first-install lifecycle flags.
-      await page.reload({ waitUntil: 'domcontentloaded' })
-      await expectReady(page, state)
-      await waitForStored(page, (snapshot) => snapshot.state.daily.ids.length > 0, true)
+      if (!firstDocument) {
+        await page.reload({ waitUntil: 'domcontentloaded' })
+        await expectReady(page, state)
+        await waitForStored(page, (snapshot) => snapshot.state.daily.ids.length > 0, true)
+      }
       // eslint-disable-next-line react-hooks/rules-of-hooks -- Playwright fixture continuation, not a React hook.
       await use(state)
       expect(externalRequests, 'Only the per-test loopback origin may be contacted').toEqual([])
@@ -388,6 +391,7 @@ test('The real offline inventory detects one missing SVG, restores readiness, an
   // machinery, but must include every other eligible built file, not just a sample.
   const required = (await distFiles(production.root)).filter((path) =>
     /\.(?:js|css|html|svg|png|woff2?|json|txt|md|webmanifest)$/i.test(path)
+    && !path.startsWith('/api/')
     && !/^\/(?:sw\.js|workbox-[^/]+\.js|offline-library\.json)$/.test(path))
   expect([...manifest.paths].sort()).toEqual(required.sort())
   expect(manifest.paths).toEqual(expect.arrayContaining([
@@ -531,12 +535,12 @@ test('A real waiting update can be deferred and installed from settings without 
     const record = await page.evaluate((key) => sessionStorage.getItem(key), ACTIVATION_RECORD)
     if (!record) throw new Error('No native controllerchange was recorded before the reload')
     expect(JSON.parse(record)).toEqual({ replacedController: true, downloadedWorkerControls: true, previousState: 'redundant' })
-    expect(await page.evaluate(async () => {
+    await expect.poll(() => page.evaluate(async () => {
       const registration = await navigator.serviceWorker.getRegistration()
       return { scope: registration?.scope, script: registration?.active?.scriptURL,
         active: registration?.active?.state, controls: registration?.active === navigator.serviceWorker.controller,
         waiting: Boolean(registration?.waiting), installing: Boolean(registration?.installing) }
-    })).toEqual({ scope: `${production.origin}/`, script: `${production.origin}/sw.js`, active: 'activated', controls: true, waiting: false, installing: false })
+    }), { timeout: WORKER_TIMEOUT }).toEqual({ scope: `${production.origin}/`, script: `${production.origin}/sw.js`, active: 'activated', controls: true, waiting: false, installing: false })
     await expect(page.locator('.update-notice')).toHaveCount(0)
     await expect(offlineSection(page).getByRole('button', { name: 'Install downloaded update', exact: true })).toHaveCount(0)
     await expect(offlineSection(page).locator('.build-details')).toContainText(production.inventory.build)
@@ -608,4 +612,30 @@ test('An unsaved nickname blocks real worker activation and reload, while backup
     try { await failure.evaluate((probe) => probe.restore()) }
     finally { await failure.dispose(); await worker.dispose() }
   }
+})
+
+test.describe('first controlled document', () => {
+  test.use({ firstDocument: true })
+
+  test('an update also reloads the document that installed the very first worker', async ({ page, production }) => {
+    const before = await saveNickname(page, 'First install update keeper')
+    const worker = await downloadUpdate(page, production)
+    try {
+      await expectStillWaiting(worker)
+      await Promise.all([
+        page.waitForEvent('domcontentloaded', { timeout: WORKER_TIMEOUT }),
+        page.waitForRequest((request) => request.isNavigationRequest() && request.frame() === page.mainFrame(), { timeout: WORKER_TIMEOUT }),
+        offlineSection(page).getByRole('button', { name: 'Install downloaded update', exact: true }).click(),
+      ])
+      await expectReady(page, production)
+      await expect.poll(() => page.evaluate(async () => {
+        const registration = await navigator.serviceWorker.getRegistration()
+        return { active: registration?.active?.state, controller: navigator.serviceWorker.controller?.state,
+          waiting: Boolean(registration?.waiting) }
+      }), { timeout: WORKER_TIMEOUT }).toEqual({ active: 'activated', controller: 'activated', waiting: false })
+      await expect(page.locator('.update-notice')).toHaveCount(0)
+      await expect(page.getByRole('textbox', { name: 'Nickname (optional)', exact: true })).toHaveValue(before.state.name)
+      expect(await readStored(page)).toEqual(before)
+    } finally { await worker.dispose() }
+  })
 })

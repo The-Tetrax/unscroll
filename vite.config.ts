@@ -16,17 +16,19 @@ function offlineInventory(): Plugin {
       const paths = new Set<string>(['/index.html', '/manifest.webmanifest'])
       let bytes = 0
       for (const [name, asset] of Object.entries(bundle)) {
-        if (!extensions.test(name)) continue
+        if (name.startsWith('api/') || !extensions.test(name)) continue
         paths.add(`/${name}`)
         bytes += Buffer.byteLength(asset.type === 'chunk' ? asset.code : asset.source)
       }
       for (const name of readdirSync(resolve('public'), { recursive: true, encoding: 'utf8' })) {
         const full = resolve('public', name)
-        if (!extensions.test(name) || !statSync(full).isFile()) continue
+        if (name.replaceAll('\\', '/').startsWith('api/') || !extensions.test(name) || !statSync(full).isFile()) continue
         paths.add(`/${name.replaceAll('\\', '/')}`)
         bytes += statSync(full).size
       }
       const visuals = JSON.parse(readFileSync(resolve('src/teaching/visual-assets.json'), 'utf8')) as Record<string, unknown[]>
+      this.emitFile({ type: 'asset', fileName: 'api/app-version.json', source: JSON.stringify({ build: buildId, builtAt,
+        lessons: Object.keys(visuals).length, illustrations: Object.values(visuals).reduce((sum, images) => sum + images.length, 0) }) })
       this.emitFile({ type: 'asset', fileName: 'offline-library.json', source: JSON.stringify({ build: buildId, builtAt, lessons: Object.keys(visuals).length,
         illustrations: Object.values(visuals).reduce((sum, images) => sum + images.length, 0), bytes, paths: [...paths].sort() }) })
     },
@@ -76,6 +78,7 @@ export default defineConfig({
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,svg,png,woff2,woff,json,txt,md}'],
+      globIgnores: ['**/api/**'],
       maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       cleanupOutdatedCaches: true,
       navigateFallback: '/index.html',

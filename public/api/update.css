@@ -1,0 +1,391 @@
+/* Hallmark: app screen; theme: existing UNSCROLL; signature: preserve the learning library; v2.0.0. */
+/* Design review: existing paper and red tokens, native controls, no animation or invented progress. Runtime checks not executed. */
+:root {
+  color-scheme: light;
+  --color-paper: #f7f4ed;
+  --color-paper-2: #eeebe3;
+  --color-ink: #231f20;
+  --color-ink-2: #423b3b;
+  --color-muted: #69615d;
+  --color-rule: #d7d0c5;
+  --color-input-border: #8a8076;
+  --color-accent: #bc2031;
+  --color-accent-hover: #a01829;
+  --color-accent-ink: #fff8ef;
+  --color-focus: #bb172b;
+  --color-error: #a21c2b;
+  --color-error-paper: #fbe5e2;
+  --color-transparent: transparent;
+  --font-body: 'DM Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', Impact, 'Arial Narrow', sans-serif;
+  --font-code: 'Space Mono', ui-monospace, monospace;
+  --text-sm: .875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-title: 1.5rem;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --radius-input: 6px;
+  --container: 1080px;
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right));
+  padding-bottom: env(safe-area-inset-bottom);
+  font-size: var(--text-md);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.page-width {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+}
+
+a {
+  color: var(--color-accent);
+  text-underline-offset: .2em;
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex="-1"]:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  z-index: 10;
+  inset-block-start: -10rem;
+  inset-inline-start: var(--gutter);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.skip-link:focus-visible {
+  inset-block-start: max(var(--space-md), env(safe-area-inset-top));
+  color: var(--color-paper);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-lg);
+  padding-block: max(var(--space-md), env(safe-area-inset-top)) var(--space-md);
+  border-bottom: 2px solid var(--color-ink);
+}
+
+.wordmark {
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-decoration: none;
+}
+
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+}
+
+.introduction {
+  padding-block: var(--space-xl) var(--space-lg);
+}
+
+h1,
+h2,
+h3 {
+  min-width: 0;
+  margin: 0 0 var(--space-sm);
+  overflow-wrap: break-word;
+  line-height: 1.2;
+}
+
+h1 {
+  max-width: 27ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--text-title);
+}
+
+h3 {
+  margin-top: var(--space-lg);
+  font-size: var(--text-lg);
+}
+
+p {
+  margin: 0 0 var(--space-md);
+  max-width: 72ch;
+  overflow-wrap: break-word;
+}
+
+.introduction > p {
+  max-width: 60ch;
+  font-size: var(--text-lg);
+}
+
+.preparation {
+  padding-block: var(--space-lg);
+  border-top: 1px solid var(--color-rule);
+}
+
+.preparation ol {
+  max-width: 80ch;
+  margin: 0 0 var(--space-md);
+  padding-inline-start: var(--space-lg);
+}
+
+.preparation li + li {
+  margin-top: var(--space-xs);
+}
+
+.preparation p {
+  margin-bottom: 0;
+}
+
+.update-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-xl);
+  padding-block: var(--space-lg) var(--space-xl);
+  border-top: 2px solid var(--color-ink);
+}
+
+.update-section,
+.backup-section {
+  min-width: 0;
+}
+
+.backup-section {
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-rule);
+  scroll-margin-block-start: var(--space-lg);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-lg);
+  margin-block: var(--space-md);
+}
+
+.actions > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 48px;
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-input);
+  background: var(--color-transparent);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.button:not(:disabled):hover {
+  background: var(--color-paper-2);
+}
+
+.button:not(:disabled):active {
+  border-color: var(--color-accent);
+}
+
+.button-primary {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+.button-primary:not(:disabled):hover,
+.button-primary:not(:disabled):active {
+  border-color: var(--color-accent-hover);
+  background: var(--color-accent-hover);
+}
+
+.button:disabled {
+  border-color: var(--color-input-border);
+  background: var(--color-paper-2);
+  color: var(--color-muted);
+  cursor: not-allowed;
+}
+
+.button[aria-busy="true"] {
+  cursor: progress;
+}
+
+.supporting-text {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.status {
+  margin-block: var(--space-md);
+  color: var(--color-ink-2);
+}
+
+.status[data-tone="error"],
+.script-notice {
+  padding: var(--space-sm) var(--space-md);
+  border-inline-start: 3px solid var(--color-error);
+  background: var(--color-error-paper);
+  color: var(--color-error);
+}
+
+.version-details {
+  margin: var(--space-lg) 0;
+  font-size: var(--text-sm);
+}
+
+.version-details > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-2xs) var(--space-md);
+  padding-block: var(--space-sm);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.version-details dt {
+  color: var(--color-muted);
+}
+
+.version-details dd {
+  min-width: 0;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.version-details code {
+  font-family: var(--font-code);
+  font-size: inherit;
+}
+
+.apply-controls {
+  min-width: 0;
+  margin: var(--space-lg) 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.apply-controls legend {
+  padding: 0;
+  font-weight: 700;
+}
+
+.confirmation {
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-sm);
+  min-height: 48px;
+  padding-block: var(--space-md);
+  cursor: pointer;
+}
+
+.confirmation input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: var(--space-2xs) 0 0;
+  accent-color: var(--color-accent);
+}
+
+.confirmation input:disabled + span {
+  color: var(--color-muted);
+}
+
+.manual-open {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-rule);
+}
+
+.page-footer {
+  padding-block: var(--space-lg) var(--space-xl);
+  border-top: 1px solid var(--color-rule);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+@media (min-width: 40rem) {
+  .version-details > div {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
+
+@media (min-width: 58rem) {
+  .update-layout {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+
+  .backup-section {
+    padding-top: 0;
+    padding-inline-start: var(--space-lg);
+    border-top: 0;
+    border-inline-start: 1px solid var(--color-rule);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

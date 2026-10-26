@@ -3,7 +3,9 @@ import { defineConfig, devices } from '@playwright/test'
 export default defineConfig({
   testDir: './tests/e2e',
   fullyParallel: true,
-  workers: 3,
+  // Real precache/install cases download hundreds of files per browser. Limit
+  // concurrency so desktop load does not turn unrelated journeys into timeouts.
+  workers: 2,
   retries: process.env.CI ? 1 : 0,
   timeout: 45_000,
   expect: { timeout: 10_000 },
