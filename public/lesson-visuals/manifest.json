@@ -5521,7 +5521,7 @@
         "bytes": 4325,
         "title": "Match the opening, not a habitual oval",
         "alt": "Three circular-lid profiles have equal drawn major spans and exact minor-to-major ratios 48/60 = 0.8, 30/60 = 0.5, and 12/60 = 0.2. Their actual ellipse heights change in those proportions. Below, an enlarged 60 by 30 example shows perpendicular major and minor axes crossing at the center and four rim landmarks. Millimeters name the lesson's planned drawing spans, not physical screen measurements or conversions to viewing angles.",
-        "caption": "Illustrative axis landmarks, not a traced ellipse or a scale drawing. Follow the dimension labels; the two spans cross at the center."
+        "caption": "Find the two spans first. Left rim to right rim is 60 millimetres, the wide span. Top rim to bottom rim is 30, the narrow span, crossing the first at right angles through the centre. The ratio is 30 over 60, half open. Illustrative landmarks, not a traced ellipse or a scale drawing."
       },
       {
         "src": "/lesson-visuals/guided-v1-fg-017-2.svg",
@@ -5540,7 +5540,7 @@
         "bytes": 32990,
         "title": "Build tone with gaps and layers",
         "alt": "Four original ballpoint-like patches contain actual strokes of equal width: spaced single hatching, closer single hatching, two crossing families, and denser crossing. The open paper gaps decrease rather than the pen stroke becoming heavier. Below, cross-contour strokes curve and change direction around a curled paper ribbon; a light section is left open. Coverage controls tone while direction describes a surface. The strokes are schematic, not calibrated ink or a required crossing angle.",
-        "caption": "Illustrative lightness only, not simulated hatch marks or calibrated ink. Use spacing and layers to approach these differences on your paper."
+        "caption": "Read the four swatches as four settings of the blinds, from open to nearly closed. Each step is reached by less paper showing, closer lines or another crossing layer, never by pressing harder. The tones are lightness targets only, not simulated ink; your paper and pen will land somewhere near them."
       },
       {
         "src": "/lesson-visuals/guided-v1-fg-018-2.svg",
@@ -5559,7 +5559,7 @@
         "bytes": 5585,
         "title": "Suggest ridges with cast shadows",
         "alt": "Two original ridged-cardboard studies compare full ridge outlines with selected narrow cast-shadow shapes on the far side of the ridges. The second deliberately omits neighboring shadows. A lower cross-section explains the cause: parallel light arrows travel down and right, one stopping at a raised ridge and another at exposed paper to its left. A dark receiving patch is behind the ridge on the right. No light arrow continues into that blocked patch. Shadow length is illustrative, not measured.",
-        "caption": "Illustrative cross-section, not measured lighting. Arrows stop at the ridge and exposed paper. The shaded patch lies behind the obstruction, away from the light."
+        "caption": "Follow the two arrows from the light. One stops at the ridge: that is the blocking, and the dark patch at lower right sits in the gap the ridge creates. The other reaches the exposed paper at lower left with nothing in the way. No arrow enters the shaded patch, which is the whole point. Illustrative cross-section, not measured lighting."
       }
     ],
     "fg-020": [
@@ -5571,7 +5571,7 @@
         "bytes": 6189,
         "title": "Scale the leaf, not just the frame",
         "alt": "The same original curved leaf is drawn in a four-by-four grid inside a 4 cm square and an 8 cm square. The target is twice the source width and twice its height, not just a relabeled same-size grid. Source cells are 1 cm and target cells 2 cm. From each upper-left origin, tip (2, 0.5) becomes (4, 1), stem join (2, 3.5) becomes (4, 7), widest left (0.75, 2) becomes (1.5, 4), and widest right (3.25, 2) becomes (6.5, 4). All four landmarks retain their within-cell positions. Screen centimeters are not physically calibrated.",
-        "caption": "Schematic landmarks measured from upper left, not to screen scale. Use the centimeter labels. Arrows give contour order, not straight leaf edges; draw connecting curves on paper."
+        "caption": "Find the four circles and read the centimetre labels: each target coordinate is exactly double its source, tip (2, 0.5) to (4, 1), widest left (0.75, 2) to (1.5, 4), and so on. The arrows only show the order you travel round the contour; the real leaf edge curves between these anchors, so draw those curves on paper from the original. Schematic positions, not to screen scale."
       }
     ],
     "fg-021": [
