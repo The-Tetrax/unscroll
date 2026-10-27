@@ -4619,7 +4619,7 @@
         "bytes": 2908,
         "title": "Keep the pear. Change the field.",
         "alt": "Two identical, unoutlined pear silhouettes are #35654D. The left field is dark green #486754; the right field is pale ivory #F3EBDD. Neither the pear shape nor its color changes. The larger light-dark difference comes from the replacement field.",
-        "caption": "Compare the unchanged pear with each field. These specified screen colors illustrate separation, not calibrated paper or exact grayscale equivalents."
+        "caption": "Look at the pear chip against the middle chip first, then against the right chip. The pear is identical in both pairs; only the field moved. These screen colors illustrate separation, not calibrated paper or exact grayscale equivalents."
       }
     ],
     "design-002": [
@@ -4631,7 +4631,7 @@
         "bytes": 5446,
         "title": "Name the change to the basil",
         "alt": "The same basil sprig and unchanged BASIL RECIPES heading accompany four adjacent screen-color chips. Initial #2F8F57 becomes muted #687A6E, darker #17482C, or blue #2F578F in separate candidates. These selections do not isolate perceptual properties mathematically.",
-        "caption": "Read the intended change under each chip. The values are not perceptually matched; no slider is claimed to produce these exact alternatives."
+        "caption": "Read the label under each chip first, then compare that chip with the starting green on the left. Each chip tests one question: mute, darken, or change family. The values are not perceptually matched, and no slider is claimed to produce exactly these alternatives."
       }
     ],
     "design-003": [
@@ -4643,7 +4643,7 @@
         "bytes": 2177,
         "title": "Same center, different surround",
         "alt": "Two 112 by 112 px centers have identical opaque #808080 fill. The left center is surrounded continuously by #202020; the right by #F2F2F2. Both surrounds measure 304 by 304 px. Compare apparent lightness while holding the target values and sizes fixed.",
-        "caption": "The center is #808080 in both diagrams. Gaps separate labels; the paper experiment can use a continuous surround."
+        "caption": "Look at the gray center first, then let your eye take in the dark flanks on either side. The center is #808080 in both diagrams. Gaps separate the labels here; your paper experiment can use a continuous surround."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-003-2.svg",
@@ -4662,7 +4662,7 @@
         "bytes": 3789,
         "title": "Which blue is warmer than which?",
         "alt": "An original railway-platform drawing uses violet-blue #5869A8 for its roof, green-blue #297E91 for the puddle, and amber #D79A45 for the hanging shelter lamp. Three adjacent chips repeat these exact colors. The roof blue is redder relative to the puddle blue; both are cool relative to the lamp.",
-        "caption": "Compare a named pair. These illustrative colors are not equal-value samples, measured lighting, or a calibrated painting reproduction."
+        "caption": "Look at the two blues first and decide which one leans redder. Then bring in the amber lamp and notice that both blues now sit on the cool side of it. These illustrative colors are not equal-value samples, measured lighting, or a calibrated painting reproduction."
       }
     ],
     "design-005": [
@@ -4674,7 +4674,7 @@
         "bytes": 3383,
         "title": "Give each invitation color a job",
         "alt": "A seed-swap invitation has a #F5EBDD cream field. SEED SWAP, Saturday at 11, and Community room are all dark green #243F35. Three small terracotta #C55A30 seeds supply an optional accent. Covering those seeds does not remove any event information. Adjacent chips repeat the three role colors.",
-        "caption": "The swatches show roles, not area percentages or approved text-contrast pairs. Cover the motif without removing information."
+        "caption": "Read the job under each chip first, then imagine covering the terracotta one. The chips show roles, not area percentages or approved text-contrast pairs. Nothing essential should depend on the motif color."
       }
     ],
     "design-006": [
@@ -4686,7 +4686,7 @@
         "bytes": 5740,
         "title": "Light adds. Pigments absorb.",
         "alt": "Overlapping red, green and blue discs show full-channel additive combinations on black. Red plus green is #FFFF00; all three intersect at #FFFFFF. The key includes #FF0000, #00FF00, #0000FF, #FFFF00, #FFFFFF and zero-channel #000000. Below, irregular paint dabs show red #B44132 plus green #43694A and a possible muted #6A5542 outcome, not a paint recipe.",
-        "caption": "Idealized display codes: red plus green gives yellow; all three give white. Black means zero RGB code, not necessarily zero real display emission."
+        "caption": "Look at the three component chips first, then at the three results they add up to: red plus green gives yellow, and all three give white. These are idealized display codes. Black means a zero RGB code, not necessarily zero real display emission."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-006-2.svg",
@@ -4705,7 +4705,7 @@
         "bytes": 4682,
         "title": "Change the view, not the map file",
         "alt": "The same original walking-map linework appears twice. Stored paper #E8E5DD and pencil #424242 are shown on the left. The right uses explanatory warm-view stand-ins #E8D4AC and #494236. The right-hand colors describe possible appearance, not a saved file edit or a measured display transformation.",
-        "caption": "The warm chips are explanatory stand-ins, not a measured phone transform. The original map values need not change when display warmth changes."
+        "caption": "Look at each stored chip first, then at the warmer chip beside it, and remember that the file still contains the stored value. The warm chips are explanatory stand-ins, not a measured phone transform. The map values need not change when display warmth changes."
       }
     ],
     "design-008": [
@@ -4717,7 +4717,7 @@
         "bytes": 5878,
         "title": "Keep a baseline before choosing a look",
         "alt": "Three copies of an original waiting-room timetable and bench retain the same drawing. The timetable patch changes from unwanted greenish #B6C8B7 to neutral baseline #C4C4C4, then to deliberate warm #D1C4AF. Neutral correction and creative warmth are separate decisions, with the baseline retained.",
-        "caption": "Illustrative timetable colors, not a tested transform. Compare the reason for the neutral change with the reason for the warm change."
+        "caption": "Look at the middle chip first; that is the baseline the other two are judged against. The left chip is the accident, the right chip is the choice. These are illustrative timetable colors, not a tested transform."
       }
     ],
     "design-009": [
@@ -4729,7 +4729,7 @@
         "bytes": 4978,
         "title": "A waveform keeps horizontal position",
         "alt": "Eight equal 80 px wide image blocks contain six dark #333333 blocks at the left and two bright #CCCCCC blocks at the right. Beneath, a schematic waveform stays low over the first six blocks and high over the last two. A separate horizontal histogram has bar lengths 336 and 112 px: six and two blocks, or 75 and 25 percent. Waveform heights are schematic, not an IRE or luminance conversion.",
-        "caption": "Upper items represent image regions; lower items represent waveform traces. Height is schematic signal level, not a measured swatch conversion."
+        "caption": "Look at the two image regions along the top first, then follow each arrow down to its trace. Left stays left and right stays right; only the height changes, and that height is schematic signal level, not a measured swatch conversion."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-009-2.svg",
@@ -4748,7 +4748,7 @@
         "bytes": 4486,
         "title": "Choose the light for your neutral",
         "alt": "An original room diagram separates a #AFCDE5 window lighting folded #C4C4C4 paper from an #E4B55F desk lamp lighting a #D6B47C amber wall. The folded paper has actual crease lines. Adjacent samples show paper before #B8C8BA, target #C4C4C4 and intentionally amber wall #D6B47C. Correcting the chosen paper sample does not require neutralizing the wall.",
-        "caption": "Schematic lighting relationships, not measured beam coverage. Balance for the paper's light without assuming the other region should match."
+        "caption": "Follow the left arrow first, from the window down to the paper; that is the light you balance for. Then follow the right arrow and notice it is a separate light with a separate target. The layout is schematic, not measured beam coverage."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-010-2.svg",
@@ -4767,7 +4767,7 @@
         "bytes": 3352,
         "title": "A darker blank is still blank",
         "alt": "Two featureless rectangular source patches have identical geometry: #FFFFFF before and #BBBBBB after lowering the tone. Neither contains a fold. Below, two folded-program drawings keep identical crisp polygon boundaries. The soft pair is #666666 and #AAAAAA; the harder pair is #222222 and #DDDDDD. Tonal separation changes without changing edge sharpness.",
-        "caption": "Schematic case where source distinctions are absent, not proof that every bright preview is unrecoverable."
+        "caption": "Look for a fold in the left patch, then in the right one. There is none in either, because the right patch is just the left patch turned down. This is a schematic case where the source has no differences left; it is not proof that every bright preview is unrecoverable."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-011-2.svg",
@@ -4786,7 +4786,7 @@
         "bytes": 4154,
         "title": "Follow the paper across the cut",
         "alt": "An original vector wide view of a sewing table shows cream #C8C0AE pattern paper on blue cloth. Two larger views below retain the same pattern shape and cloth color. The close-view paper before is yellower #CFC3A4; the target repeats #C8C0AE. The close crops contain different paper-to-cloth proportions from the wide view. These are explanatory drawings, not sampled footage.",
-        "caption": "Selected teaching colors, not sampled footage. Identical reference and target codes simplify the comparison; real shot matching does not demand pixel equality."
+        "caption": "Look at the middle chip against the left one first; that gap is the jump you see at the cut. The right chip shows where the close view needs to go. These are selected teaching colors, not sampled footage, and the identical reference and target codes simplify the diagram; real shot matching does not demand pixel equality."
       }
     ],
     "design-013": [
@@ -4798,7 +4798,7 @@
         "bytes": 4347,
         "title": "Name the feature in the actual letter",
         "alt": "Large Arial h, e, o and g share a baseline at y = 338. A second dashed guide marks the approximate top of the Arial lowercase body. Callouts point to the h ascender, the open right side of e, the interior counter of o and the descender of g below the baseline. Hedge guide appears below at 56 and 28 px for a real-word inspection. Guides describe the system-font specimen, not every Latin typeface.",
-        "caption": "Inspect the actual letter labels, then the same row in your chosen typeface. This schematic uses the lesson display type, not a recommended font specimen."
+        "caption": "Look at the e first and find its opening; that is the aperture that failed on the shelf. Then read the other three labels. This schematic uses the lesson display type, not a recommended font specimen."
       }
     ],
     "design-014": [
@@ -4810,7 +4810,7 @@
         "bytes": 4829,
         "title": "Equal sizes, unequal lowercase bodies",
         "alt": "Two invented 16-unit design spaces are drawn at 12 SVG px per unit, hence 192 px high. Their baselines sit three units above the bottom. Original x glyphs have exact visible heights 84 and 108 px, representing 7 and 9 units. Below, Arial and Georgia render the same seed sentence at 36 px, without stretching. The named fonts are separate examples, not the sources of the invented metrics.",
-        "caption": "Invented metrics, not real font measurements. Compare each x-height with its own 16-unit nominal size rather than treating size as visible letter height."
+        "caption": "Look at the two tall bars first and notice they are identical at 16: those are the frames. Then compare the two short bars, 7 and 9: those are the pictures inside. These are invented metrics, not real font measurements."
       }
     ],
     "design-015": [
@@ -4822,7 +4822,7 @@
         "bytes": 2386,
         "title": "Read the recipe as a sequence",
         "alt": "The same exact directions appear twice in 30 px Arial: Rinse the beans. Drain them well. Add the tomato. The first is one running block wrapping after well. The second gives each complete action its own line with more space between actions. Wording and glyph size remain unchanged.",
-        "caption": "A short original extract, not a measured readability result. Keep the words unchanged while inspecting the action boundaries."
+        "caption": "Read the left version, look away for a moment, then try to find the second action. Now do the same with the right version. The words are identical; only the action boundaries moved. A short original extract, not a measured readability result."
       }
     ],
     "design-016": [
@@ -4834,7 +4834,7 @@
         "bytes": 4640,
         "title": "Watch where the sentence wraps",
         "alt": "The same two sentences use 32 px Arial and 48 px baseline spacing in both trials: Walk past the old mill. Follow the path. In the 416 px column, each sentence occupies one line. In the 176 px column, the lines are Walk past; the old mill.; Follow the; path. Red return paths show movement back to the next left margin. Widths are construction dimensions, not recommendations.",
-        "caption": "A schematic reading path, not a recommended width. Arrows show reading and returning; labels mark parts of the same sentence."
+        "caption": "Follow the arrows: along the short first line, then back to the margin. Notice the return lands mid-sentence, with the old mill waiting on the next line. A schematic reading path, not a recommended width."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-016-2.svg",
@@ -4853,7 +4853,7 @@
         "bytes": 4967,
         "title": "Move the baselines, not the font size",
         "alt": "Images: Héloise Ng, Sound: Hugo Gill, and Thanks: Jo occupy baselines 206, 266 and 326 SVG px. At the declared schematic scale of 5 SVG px per point, offsets are 0, 12 and 24 pt. A 10 pt body plus 2 pt added leading explains a 12 pt interval. Below, two real 32 px Arial credit blocks have 28 px and 48 px baseline spacing. Accents and g descenders remain present.",
-        "caption": "Enlarged schematic of 12 pt intervals, not actual-size typography. Read the names as well as the repeated distance."
+        "caption": "Read the three names first, then the repeated 12 pt distance between their baselines. The gap is set like a shelf spacing, independent of how tall the letters are. This is an enlarged schematic, not actual-size typography."
       }
     ],
     "design-018": [
@@ -4865,7 +4865,7 @@
         "bytes": 5888,
         "title": "Kerning changes a pair; tracking a run",
         "alt": "Three rows use the same individual 112 px Georgia A, V and A glyphs with explicitly centered positions. A coordinate unit equals 6 SVG px, with a fixed 60 px origin. Initial centers 20,50,80 give 30/30 separations. Pair-adjusted centers 20,44,74 give 24/30: both trailing letters move left 36 px. Tracking centers 14,50,86 give 36/36. These are center placements, not ink-gap or automatic kerning measurements.",
-        "caption": "Center separations are 30 and 30 schematic units. Equal centers do not guarantee equal-looking ink gaps."
+        "caption": "Look at the white space between the first A and the V, then between the V and the second A. The center separations are both 30 schematic units, yet the two gaps need not look the same."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-018-2.svg",
@@ -4891,7 +4891,7 @@
         "bytes": 5031,
         "title": "Give the flyer shared edges",
         "alt": "A 600 px wide screening flyer uses 30 SVG px per squared-paper unit. From left to right its widths are 60,210,60,210,60 px: margins 2 units each, columns 7 units each and a 2-unit gutter, totaling 20. The title spans both columns. An original roof-and-window drawing and its caption start at x = 120; Saturday, 19:15, Library room and Book at desk start at x = 390. The shared edges are shown as vertical guides.",
-        "caption": "Schematic column centers are 27.5 and 72.5 percent. Align actual content edges within the margins and gutter."
+        "caption": "Look down the left column first and notice the drawing and its caption share an edge; then do the same on the right with the details and booking line. The column centers at 27.5 and 72.5 percent are schematic; align actual content edges inside the margins and keep the gutter clear."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-019-2.svg",
@@ -4910,7 +4910,7 @@
         "bytes": 3780,
         "title": "Keep each label nearer its own field",
         "alt": "Two fictional forms show Date with Sat 14 Nov and Venue with Library room. On the left, similar visible gaps leave Venue between fields. On the right, Date moves closer to its field and Venue closer to its own field, while the complete pairs are separated. A third sample wraps Venue and room name over two lines and keeps its field below the whole label. These are drawings, not live programmatic labels.",
-        "caption": "Schematic centers use smaller within-pair than between-pair gaps. Real spacing must also account for text and control boundaries."
+        "caption": "Look at the gap between Date and Sat 14 Nov, then at the larger gap before Venue. The small gap makes a pair; the large gap separates the pairs. The centers are schematic, and real spacing must also account for text and control boundaries."
       }
     ],
     "design-021": [
@@ -4922,7 +4922,7 @@
         "bytes": 3835,
         "title": "Let the entrance question come first",
         "alt": "An original Museum Night ticket gives GATE C the strongest type at 82 px and places it high on the ticket. Admission and 19:15 follow; Museum Night is smaller below. A numbered rail proposes gate, time, then event identity. The rail is an intended scanning order, not eye-tracking evidence.",
-        "caption": "A position-based hierarchy for this task. Compare actual type size, weight, and contrast in the finished ticket; reading order is not guaranteed."
+        "caption": "Read from the top: the gate first, then the time, then the event name. That is the visitor's order at the door, with the brand name moved off the front of the medicine box. Position records the ranking here; the finished ticket also needs its type size, weight, and contrast checked, and the reading order is a proposal, not a guarantee."
       }
     ],
     "design-022": [
@@ -4934,7 +4934,7 @@
         "bytes": 3350,
         "title": "Give display, body and folio distinct jobs",
         "alt": "A chapbook page uses Georgia 64 px for Small Rain, Arial 32 px for The roof holds yesterday's rain., and Arial 24 px for folio 12. Callouts identify actual title, body and page number. Below, the same title appears in Arial bold and Georgia regular at 44 px, labeled sans serif and serif. These are real system-font specimens; only the title family changes in the proposed alternative.",
-        "caption": "A spatial role plan, not a font specimen. Compare real font previews using these words before deciding whether the title needs a second family."
+        "caption": "Read the three labels as three jobs first: introduce, keep reading, navigate quietly. Then ask which of them one family could do on its own. This is a spatial role plan, not a font specimen; compare real previews using these words before deciding the title needs a second family."
       }
     ],
     "design-023": [
@@ -4946,7 +4946,7 @@
         "bytes": 3067,
         "title": "Read the date, not just the heading",
         "alt": "Two original repair-workshop samples use the exact same opaque #FFFFFF background. Both headings stay dark; the date Saturday 14 November and venue Library room change from #777777 to #595959 at the same enlarged display size. Their calculated opaque sRGB contrast ratios are approximately 4.478:1 and 7.005:1. The first is below the ordinary-text 4.5:1 threshold using the unrounded calculation. Sample enlargement does not redefine the large-text threshold or establish overall accessibility.",
-        "caption": "Opaque sRGB examples on #FFFFFF. Approximate displayed ratios are not rounded pass decisions; these chips do not test font size or weight."
+        "caption": "Look at the first chip and read its ratio: about 4.478 to 1, just under the 4.5 line, like a 49.6 against a pass mark of 50. Then compare the darker chip at about 7.005 to 1. These are opaque sRGB examples on #FFFFFF, the displayed ratios are rounded for explanation rather than being pass decisions, and the chips say nothing about font size or weight."
       }
     ],
     "design-024": [
@@ -4958,7 +4958,7 @@
         "bytes": 4105,
         "title": "Make room when the title grows",
         "alt": "A separate text-resize study shows the full title Saturday sketch walk for first-time visitors in two equally wide signup panels. At 32 px with 44 px line spacing it has three lines; at 40 px with 55 px spacing it has four. The 1.375 line-height ratio stays fixed. The last title baseline moves from 302 to 379, so Saturday at 10, Library steps, Join and the panel bottom all move down exactly 77 px. No word is removed and no later text is covered. This is a static reflow plan, not the distinct WCAG spacing-override test or a working signup control.",
-        "caption": "Schematic reflow: title growth moves the date and Join action down without clipping."
+        "caption": "Look at how much height the wrapped title takes first, then notice that the date and the Join button have moved down rather than being covered. This is the bigger lunchbox: schematic reflow where title growth pushes the content below it without clipping anything."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-024-2.svg",
