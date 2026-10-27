@@ -30,7 +30,7 @@ const modules: [list: LessonGuide[], revision: string][] = [
   [mindGuides, GUIDED_V2], [thinkingGuides, GUIDED_V2], [workGuides, GUIDED_V2], [techGuides, GUIDED_V2],
   [moneyGuides, GUIDED_V2], [lifeGuides, GUIDED_V2], [peopleGuides, GUIDED_V2], [wellbeingGuides, GUIDED_V2],
   [observerGuides, GUIDED_V2], [speakerGuides, GUIDED_V2], [presencePerspectiveGuides, GUIDED_V2],
-  [cinemaCameraGuides, GUIDED_V2], [cinemaLightEditGuides, GUIDED_V2], [cinemaSoundStudyGuides, GUIDED_V1],
+  [cinemaCameraGuides, GUIDED_V2], [cinemaLightEditGuides, GUIDED_V2], [cinemaSoundStudyGuides, GUIDED_V2],
   [designColourTypeGuides, GUIDED_V2], [designUxDrawGuides, GUIDED_V2], [fieldGuides, GUIDED_V2],
 ]
 export const guides = modules.flatMap(([list]) => list)
