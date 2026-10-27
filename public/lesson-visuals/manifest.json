@@ -4150,7 +4150,7 @@
         "bytes": 12039,
         "title": "Window fixed, camera position changes",
         "alt": "Three plans share a fixed window and subject position. The person turns toward phone A on the window side, B at the side, or C opposite the window. Corresponding portraits show two readable eyes, a nose shadow on the far cheek, and a backlit outline. Top: the person turns toward each phone position. Solid arrows show light; dashed arrows show the view. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Top view, not measured distances. Light travels from window to person; arrows marked view point from each camera toward the person."
+        "caption": "Follow the light arrow from the window to the person first; that is the line the whole lesson turns on. Then find camera A on the lit side, B off to the side, and C looking back into the window, each turned toward the lit or unlit face of the coin. A top view, not measured distances."
       }
     ],
     "cinema-026": [
@@ -4162,7 +4162,7 @@
         "bytes": 8389,
         "title": "Look at the shadow on the paper",
         "alt": "Two finger tests keep a similar finger-to-paper gap. A small apparent lamp produces an abrupt finger-shadow edge in this example. A broad indirect window produces a continuously graded boundary on the actual white receiving sheet. Both shadows have a dark core; softness is not global dimming. Keep the finger gap similar. Compare the edge width. Illustrative outcomes; not every lamp gives a hard edge. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Side view, not a scale drawing. Keep the finger-to-paper gap alike between recordings; the phone views the receiving surface."
+        "caption": "Follow the light arrow from the broad window to the finger, then notice the gap between finger and paper; that gap must stay the same in both conditions. The phone looks down at the paper, where the edge is. A side view, not a scale drawing."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-026-2.svg",
@@ -4181,7 +4181,7 @@
         "bytes": 3786,
         "title": "Use white paper to return window light to a mug's darker side",
         "alt": "A top-view diagram places a window to the left, a mug in the center, white paper to the right, and a fixed phone below. Light travels from the window toward the mug and paper. Some light reflects from the paper back toward the mug's shadow side. Below, two simplified drawings show the same bright side and a lighter shadow side with paper. These are explanatory drawings, not photographs or measured results.",
-        "caption": "Top view, simplified distances. The window-to-paper arrow clears the mug. Bounce travels from paper toward mug; the phone arrow means view, not illumination."
+        "caption": "Follow the two daylight arrows from the window first: one lands on the mug, the other travels past it to the white paper. Then follow the bounce arrow back from the paper to the mug's dark side. That is the snow lighting your chin. The phone arrow means view, not light. A top view with simplified distances."
       }
     ],
     "cinema-028": [
@@ -4193,7 +4193,7 @@
         "bytes": 10122,
         "title": "Intercept the wall light, not daylight",
         "alt": "Paired top views show an open white paperback, window at left, and pale wall at right. Without a flag, reflected light reaches the crease. With a matte dark cover between wall and book, the returning arrows stop at the cover. Lower drawings retain the same bright left page but deepen the crease. Top views: the main window-to-book path stays open. The dark cover stops returning light; it emits no darkness. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Top view. The returning-light arrow stops at the cover. There is no arrow sending darkness onward; the camera arrow only marks its view."
+        "caption": "Follow the main light arrow from the window to the book first and notice nothing sits in its way. Then follow the light to the wall and watch the return intercepted arrow stop at the dark cover, like the jacket on the tablecloth. No arrow leaves the cover; it emits nothing. The camera arrow marks its view only. A top view."
       }
     ],
     "cinema-029": [
@@ -4205,7 +4205,7 @@
         "bytes": 5921,
         "title": "The lamp stays; the framing changes",
         "alt": "A wide drawing shows an intact desk lamp shining onto a notebook and a pencil held by a hand. The close drawing excludes the lamp but preserves the same left-to-right light and pencil shadow. A visible lamp and its useful illumination are separate things. Move the page into existing light, not toward the fitting. Close view: same light direction, lamp outside the frame. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Top view, not a clearance measurement. Light travels from lamp to page; two view arrows bracket the starting frame. A closer framing can exclude the lamp."
+        "caption": "Follow the lamp light arrow from the fitting to the notebook first; that pool is where the drawing has to happen, the spotlight rather than the candle. The two wide view arrows show the starting frame holding both lamp and page. A closer frame can drop the lamp and keep the direction. A top view, not a clearance measurement."
       }
     ],
     "cinema-030": [
@@ -4217,7 +4217,7 @@
         "bytes": 8587,
         "title": "Move the phone, not the skin-tone goal",
         "alt": "Before: an indoor phone looks toward a person with a bright doorway behind their head. After: the phone moves beside the opening, still indoors, and the person turns toward daylight. The same person is drawn with clearer eyes and mouth against a quieter background, not a different skin identity. Both phone positions stay inside; keep the doorway clear. Compare expression and appearance, not a paler-skin target. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Top view. At A, daylight is behind the camera-facing person. At B, the person turns toward phone and daylight. Both camera positions stay safely inside."
+        "caption": "Look at phone A first and notice the daylight arrives behind the person's head on its way to the lens: the espresso machine behind the voice. Then find phone B beside the opening, where the person turns toward both the camera and the light. Both positions stay safely inside. A top view."
       }
     ],
     "cinema-031": [
@@ -4229,7 +4229,7 @@
         "bytes": 8521,
         "title": "One card under two different lights",
         "alt": "In A, a window and a warm lamp illuminate opposite sides of an actual drawn hand and white card. Both card and hand have a blue-to-amber cast. In B the optional lamp is off and daylight dominates both sides. An overall white-balance change cannot independently adjust the two regions. For B, switch the optional lamp off using its normal control. Compare both sides together; these are not calibrated colors. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Top view. Blue and amber identify the two sources schematically, not measured color values. Switch the optional lamp off for the second recording."
+        "caption": "Follow the two arrows into the page, daylight from the left and lamplight from the right, and notice they land on opposite halves of one sheet: two children on one plank. For the second recording the lamp is switched off and only one arrow remains. Blue and amber are schematic, not measured values. A top view."
       }
     ],
     "cinema-032": [
@@ -4241,7 +4241,7 @@
         "bytes": 7082,
         "title": "Check moving bands in saved playback",
         "alt": "Three successive schematic views of the same instruction card under a room lamp show a dark horizontal band at different heights. A second row, recorded in daylight with optional lamps off, has three stable cards. A single still cannot diagnose flicker; compare saved clips over time. These are schematic playback samples, not measured frames. Use supported timing tests or the daylight alternative. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Top view. A and B are separate recordings, not instructions to use both lights together. Keep card and camera geometry comparable."
+        "caption": "Read the two arrows into the card as two separate recordings, test A under the room lamp and test B in daylight, not as both lights on at once. The card and the camera stay exactly where they are so the only difference between clips is which light has a rhythm. A top view."
       }
     ],
     "cinema-033": [
@@ -4253,7 +4253,7 @@
         "bytes": 8076,
         "title": "Save the shoe position and its shadow",
         "alt": "A plan records the upper-left window, shoe toe pointing toward it, phone on the heel side, and table-edge landmark. A saved wider reference and a close knot drawing show the same lace shadows displaced toward the lower right. Restoring positions does not restore weather or guarantee matching color. In both views, lace shadows fall toward the lower right. Save the clip as well as the map; daylight can change. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Top view, schematic spacing. Restore these relationships, then compare the actual shadow and color in the saved clip. Weather is not encoded by the arrows."
+        "caption": "Read this as the planting plan: window at upper left, toe toward it, phone viewing from the heel side. Restore these three relationships first, then compare the real shadow and color against the saved clip, because the arrows carry positions and not weather. A top view with schematic spacing."
       }
     ],
     "cinema-034": [
@@ -4265,7 +4265,7 @@
         "bytes": 7741,
         "title": "Redesign the shot, not the wiring",
         "alt": "A top-view desk plan shows an intact lamp and an existing socket along the rear wall. Its cord stays behind the desk. The supported phone and notebook are on the desk, while a wide walking route to the exit stays clear. A separate daylight drawing is the alternative when equipment suitability is uncertain. The plan is not a clearance or electrical specification. If suitability is uncertain, stop and choose daylight. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Top view, not certified clearances. The wall arrow marks an existing cord route, not light. No cord crosses the foreground route to the exit."
+        "caption": "Look at the exit approach at lower right first and notice nothing crosses it; that empty route is the point of the whole layout. The cord at wall arrow marks where the existing cord already runs, not light. The spacing is schematic and is not a certified clearance for any fitting. A top view."
       }
     ],
     "cinema-035": [
@@ -4277,7 +4277,7 @@
         "bytes": 16572,
         "title": "Choose the take that reveals the note",
         "alt": "Three takes show an original MEET AFTER CLASS note over a coat pocket. A thumb covers the last word in A. B exposes the whole note. C exposes the note but schematic scraping noise masks required speech. The lower six-second B strip preserves reaching, unfolding, and an open-note pause instead of keeping only the reach. Choose B for the readable reveal and usable words. B times are invented. Keep A and C as alternative takes. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Invented source-clip times, not required performance timings or proportional widths. The reveal and pause are why B is selected."
+        "caption": "Find the two middle and final steps, the unfold and the pause; those four seconds are the candles going out, and they are why B is selected. The reach before them is the back of the head. Invented source-clip times, not required performance timings or proportional widths."
       }
     ],
     "cinema-036": [
@@ -4289,7 +4289,7 @@
         "bytes": 8913,
         "title": "Show the action that connects the views",
         "alt": "The incomplete order jumps from an empty hook above a bench to found headphones. The lower assembly adds the same bench with a hand lifting its scarf, connecting the absence to the headphones underneath. The corrected eight-second strip has two, three, and three seconds of picture with direct cuts. The scarf lift supplies the missing action and location. Invented 8 s assembly; red lines mark picture cuts. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "A hypothetical eight-second assembly. Durations are examples, not a recommended pace or a proportional scale."
+        "caption": "Look at the middle step first; it is the side panel of the wardrobe, and without it the first and last steps do not connect. Read the three jobs as establish, search, reveal. A hypothetical eight-second assembly whose durations are examples, not a recommended pace or a proportional scale."
       }
     ],
     "cinema-037": [
@@ -4301,7 +4301,7 @@
         "bytes": 7591,
         "title": "The cover should keep rising at the cut",
         "alt": "The first pair joins a halfway-open notebook to a closed notebook, restarting the action. The second pair joins the same halfway-wide pose to a slightly later close pose, both raised with the same hand in the same direction. Its output ranges are 0-2 and 2-4 seconds; the cut is instantaneous at 2 seconds. Compare the outgoing last pose with the incoming first pose. Invented timings. Check direction and speed during playback. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Hypothetical output times. The two-second boundary changes viewpoint, not the direction or starting state of the notebook action."
+        "caption": "Look at the middle step first: the cut at two seconds changes only the viewpoint, and the very next frame carries on the rise, the second speaker picking up the next word. Hypothetical output times, not a rule for the speed of an opening."
       }
     ],
     "cinema-038": [
@@ -4313,7 +4313,7 @@
         "bytes": 9041,
         "title": "Forty source seconds, eight on screen",
         "alt": "A source ledger retains seconds 0-4 and 36-40 of an invented forty-second towel recording, omitting the middle thirty-two. The output strip joins one folded towel and two unfolded towels directly to a stack of three. With the camera fixed, the stack visibly jumps. Each timeline row has its own scale. 40 s source = 8 s kept + 32 s omitted. Row scales differ. The fixed-view stack jumps; the middle folds are omitted. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Source-time ledger for the invented recording, not proportional widths. Join the two KEEP sections directly; the middle section is absent from playback."
+        "caption": "Read the middle OMIT step first and notice it is the biggest number on the ledger: thirty-two seconds missing from playback. That is the ellipsis. The two KEEP pieces join directly, and because the camera never moved, the join will look like a jump. A source-time ledger for the invented recording, not proportional widths."
       }
     ],
     "cinema-039": [
@@ -4325,7 +4325,7 @@
         "bytes": 11560,
         "title": "Count time after all words are visible",
         "alt": "Two timelines use the same horizontal time scale. Both take one second to lift a cover and two seconds to withdraw. A leaves USE SIDE DOOR fully exposed for one second and ends at four. B leaves it exposed for three seconds and ends at six. The uncovered interval is longer, not the whole performance. Only the fully readable hold changes. Both rows use one scale. A: 1 + 1 + 2 = 4 s. B: 1 + 3 + 2 = 6 s; examples only. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Hypothetical six-second version B, not a reading-speed prescription. Only the middle interval holds the complete message still."
+        "caption": "Look at the middle step first: that is the only interval in which the menu is open, and it is the only interval that counts as reading time. The reveal before it and the withdrawal after it are unchanged from version A. A hypothetical six-second version B, not a reading-speed prescription."
       }
     ],
     "cinema-040": [
@@ -4337,7 +4337,7 @@
         "bytes": 13946,
         "title": "J-cut: hear the page before seeing it",
         "alt": "An eight-second picture row shows hallway A until output second four, then notebook B. The sound row switches to B at second three, giving a one-second lead. B picture uses source 1-5 seconds while B sound uses source 0-5. At output second four both reach B source second one, remaining synchronized afterward. Incoming B sound starts 1 s before its picture. Source ranges preserve sync; the sound marks are schematic. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Two timeline rows for the invented eight-second edit, not proportional blocks. At output 4 s, both B tracks are at source 1 s."
+        "caption": "Read the sound row first and notice the notebook's sound starts at three, a second before its picture starts at four: the overture before the curtain. Then check the source ranges, 0-5 for sound and 1-5 for picture, so that at output 4 s both are at source 1 s. Two timeline rows for the invented eight-second edit, not proportional blocks."
       }
     ],
     "cinema-041": [
@@ -4349,7 +4349,7 @@
         "bytes": 14600,
         "title": "L-cut: the invitation finishes off screen",
         "alt": "A seven-second picture row shows the speaker for three seconds and an empty cushion for four. The original invitation remains continuous from zero to five, crossing the picture cut by two seconds. Compatible quiet room tone follows from five to seven. Words are not duplicated to create the overlap. From 3-5 s: outgoing voice, incoming cushion picture. Keep the sentence intact and synchronized before the cut. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Hypothetical seven-second timeline. The 3-5 s interval contains the outgoing voice and incoming picture together; rows are not a proportional scale."
+        "caption": "Read the picture row first and find the change at three seconds, then look at the sound row and notice the invitation runs on to five: that two-second stretch is the guide still talking after you have turned to the painting. From five to seven the room's own quiet takes over. A hypothetical seven-second timeline, not a proportional scale."
       }
     ],
     "cinema-042": [
@@ -4361,7 +4361,7 @@
         "bytes": 10722,
         "title": "Change only the neighboring image",
         "alt": "Version A is the same Saturday calendar, a brush tray, then the identical calendar. Version B replaces only the tray with a packed bag. Both have three two-second pictures and no music change. Painting or departure are possible readings, but brushes can mean cleanup and a bag can mean storage. Keep the calendar, 2 s holds, and sound alike in both versions. An association invites a reading; it does not prove an event. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Invented six-second order. A painting plan is one possible reading, not a fact established by these images."
+        "caption": "Look at the middle step first: the brush tray is the word beside pass, and the identical calendar on either side is the word that never changes. A painting plan is one reading; cleaning up after painting is another. An invented six-second order."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-042-2.svg",
@@ -4380,7 +4380,7 @@
         "bytes": 9136,
         "title": "Match first, then test a shared look",
         "alt": "A six-second check shows the same hand and marked white page as daylight A, warmer B, and corrected B for two seconds each. The corrected card and hand reduce the unwanted amber difference without changing their shapes or creases. Below, an optional restrained warm treatment is applied to both already matched shots. Compare the hand and page together, keeping detail visible. Page colors are illustrative, not calibrated skin-tone targets. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Invented comparison sequence, not a finished story or proportional timeline. Compare the same page and hand."
+        "caption": "Watch the join between the first two steps and then the join into the third: the first is the table rocking, the third is the napkin under the leg. Compare the same page and the same hand across all three. An invented comparison sequence, not a finished story or a proportional timeline."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-043-2.svg",
@@ -4399,7 +4399,7 @@
         "bytes": 6695,
         "title": "A flat picture does not identify log",
         "alt": "Three alternative picture tracks cover the same 0-3 source seconds, viewed one at a time. The original blue folder and a neutral saved copy retain separate crease lines and marks on the white page. An illustrative failed guessed conversion merges dark creases into the folder and light marks into the page. Compare one alternative at a time, not three stacked effects. Input format unknown? Leave unverified transforms off. All objects are original schematic drawings, not photographed frames. Colors and spacing are illustrative, not measurements.",
-        "caption": "Compare one row at a time, not stacked effects. The failed result is hypothetical; it does not describe every transform or device."
+        "caption": "Read the rows one at a time, not stacked. The first two should look nearly alike; the third is the wool cycle on a cotton jumper, where creases and page marks merge. The failed result is hypothetical and does not describe every transform or device."
       }
     ],
     "cinema-045": [
