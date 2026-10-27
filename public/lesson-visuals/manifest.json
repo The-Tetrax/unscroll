@@ -4977,7 +4977,7 @@
         "bytes": 9248,
         "title": "Review the date before confirming",
         "alt": "Three fictional booking components show Saturday with Change date, a selected Sunday, and Review change with Confirm and Cancel. Sunday is only proposed; no booking has been changed, and Cancel keeps Saturday.",
-        "caption": "Fictional interface states. The last state reviews the proposed date; it has not changed the booking."
+        "caption": "Read the three states left to right and notice that the last one is a review, not a confirmation. Sunday is proposed there; the booking has not changed. These are fictional interface states."
       }
     ],
     "design-026": [
@@ -4989,7 +4989,7 @@
         "bytes": 5240,
         "title": "Name the two gallery actions",
         "alt": "An original Bent stem leaf drawing and a separate title sit above a View study link and a Keep offline button with distinct targets. Numbered focus stops put the outlined link first and the button second; this is a focus plan, not tested keyboard or storage behavior.",
-        "caption": "Card contents only, without browser decoration. Separate hit areas support two different actions."
+        "caption": "Look at the two controls along the bottom first. One says where you will go and the other says what will change, and each has its own area to tap and its own focus stop. The card is shown without browser decoration."
       }
     ],
     "design-027": [
@@ -5001,7 +5001,7 @@
         "bytes": 23101,
         "title": "A download is not an offline copy",
         "alt": "The same original park sketch appears in ready, downloading, interrupted-update and available-offline components. The pending state gives no percentage or duplicate action; Retry retains an older saved map, while Open saved map follows confirmed storage in this fictional example.",
-        "caption": "Fictional state diagram. Only the confirmed storage branch earns the offline label."
+        "caption": "Start at Download area and follow the arrow to Downloading, then notice that two arrows leave it. Only the Stored branch earns the Available offline label; the Failure branch keeps the old saved map and offers Retry. A fictional state diagram."
       }
     ],
     "design-028": [
@@ -5013,7 +5013,7 @@
         "bytes": 8777,
         "title": "Repair the email. Keep the basket.",
         "alt": "The first fictional checkout retains two leaf prints, pickup name Lee and lee@ while adding the nearby error Add the part after @. The corrected review retains the same basket and name with the example address lee@example.test; no order is placed and deliverability is not asserted.",
-        "caption": "Paper checkout states, not a payment flow. Valid entries survive every step."
+        "caption": "Follow the three states and watch what stays constant: the basket and pickup name survive every step while only the email changes. The middle state is the circled sum with a note beside it. These are paper checkout states, not a payment flow."
       }
     ],
     "design-029": [
@@ -5025,7 +5025,7 @@
         "bytes": 6204,
         "title": "Two menus, the same eight commands",
         "alt": "The flat alphabetical menu and the expanded File and Edit groups contain exactly the same eight commands, with Resize highlighted in both. File and Edit are shown open to expose their contents; the drawings predict no speed advantage and supply no measured search result.",
-        "caption": "Same commands, different search routes. Neither layout has a predicted speed advantage here."
+        "caption": "Find Resize in the left version, then find it in the right one and notice the extra step: you have to guess which heading holds it first. The commands are identical; only the search route differs. Neither layout has a predicted speed advantage here."
       }
     ],
     "design-030": [
@@ -5037,7 +5037,7 @@
         "bytes": 7991,
         "title": "Contrast at the actual caption",
         "alt": "Identical captions use #777777 and #595959 on opaque #FFFFFF beside the same original leaf print. Their approximate ratios are 4.478:1 and 7.005:1; the unrounded values respectively fail and pass the ordinary-text AA threshold of 4.5:1, without establishing full WCAG conformance.",
-        "caption": "Specified opaque sRGB colors. Ratios are approximate labels, not rounded pass criteria or calibrated screen samples."
+        "caption": "Read the ratio under Caption A first and notice it sits just under the 4.5 mark, like a child at 119.5 beside a 120 sign. Then compare Caption B. Both are measured against the same white surface. These are specified opaque sRGB colors, and the ratios are approximate labels, not rounded pass decisions or calibrated screen samples."
       }
     ],
     "design-031": [
@@ -5049,7 +5049,7 @@
         "bytes": 7175,
         "title": "Give each route a named status",
         "alt": "An original fictional map forks beside a pond: Riverside is dashed, crossed and labeled closed, while Garden is labeled open, with the same statuses repeated in a text list. Open does not assert safety or accessibility, and this invented drawing is not navigation advice.",
-        "caption": "Fictional map, not navigation advice. Read the words even when all colors are removed."
+        "caption": "Start at the entrance, follow the arrow to the pond fork, and read the words on each route before you notice the colors. Then find the route list in the corner saying the same things in text. A fictional map, not navigation advice; the words should work even when all color is removed."
       }
     ],
     "design-032": [
@@ -5061,7 +5061,7 @@
         "bytes": 5905,
         "title": "Keep the label, not the row height",
         "alt": "Both component drawings contain Email me about changes to this journey at the same enlarged lettering and available width. An actual SVG clip cuts the fixed row; the taller row shows the complete wrapped label and moves Reminder help down, without claiming a live 200 percent resize test.",
-        "caption": "Schematic component comparison, not an enlarged screenshot or proof of a live resize test."
+        "caption": "Read the label in the fixed row first and notice it stops at about; the rest is below the edge. Then read the growing row, where the table has been extended and every word is present beside its checkbox. A schematic comparison, not an enlarged screenshot or proof of a live resize test."
       }
     ],
     "design-033": [
@@ -5073,7 +5073,7 @@
         "bytes": 9197,
         "title": "Measure targets, not icon strokes",
         "alt": "At four SVG units per stated CSS pixel, 20-by-20 targets with a 2-pixel gap have centers 22 apart and overlapping 24-diameter spacing circles; 32-by-32 targets with an 8-pixel gap have centers 40 apart and meet the basic size check. The Save and Remove artwork is unchanged; this scaled diagram is not a CSS-pixel ruler, comfort study or full assessment of the criterion and its exceptions.",
-        "caption": "Hypothetical aligned square targets in CSS pixels. Text describes geometry; the illustration is not a pixel ruler."
+        "caption": "Read the center distance in each case first: 22 on the left, 40 on the right. On the left, two 12 pixel radii add to 24, more than 22, so the circles overlap. These are hypothetical aligned square targets in CSS pixels; the text describes the geometry and the illustration is not a pixel ruler."
       }
     ],
     "design-034": [
@@ -5085,7 +5085,7 @@
         "bytes": 9883,
         "title": "Disclosure without hiding the result",
         "alt": "The same original basil seed-packet design appears with a checkerboard representing transparent surroundings and with the white surroundings of a JPEG copy. Filename, format, destination, conversion notice, unchanged-original summary and Save a copy remain visible while Image quality options is collapsed; no export is performed.",
-        "caption": "Fictional export panel contents. Optional settings do not conceal format consequences or the destination."
+        "caption": "Look at everything except the middle box first: filename, format with its white-background consequence, the note that the original is unchanged, and the action. That is the dashboard. The middle box is the only thing folded away, and its label says what is inside. Fictional export panel contents."
       }
     ],
     "design-035": [
@@ -5097,7 +5097,7 @@
         "bytes": 20247,
         "title": "Prepare the staircase states",
         "alt": "Four prepared fictional components show an original staircase sketch in Gallery, Study detail, Kept for later and Saved items, including controls for opening and keeping it. These are author-prepared responses to possible actions, not participant instructions, observed behavior or evidence of successful usability testing.",
-        "caption": "Author preparation, not instructions to read to the participant. Respond only to their chosen actions."
+        "caption": "Read these four states as the examiner's map, prepared before the drive, not as directions to read aloud. Each one is what you show in response to an action the participant chooses, and only then."
       }
     ],
     "design-036": [
@@ -5109,7 +5109,7 @@
         "bytes": 8386,
         "title": "Put pickup details before Continue",
         "alt": "Both fictional pickup panels use identical print artwork, quotation, Saturday date, 14:00-16:00 time and Continue label. The proposed panel moves the date-and-time group before Continue; whether readers find the time or expect a review rather than confirmation remains untested.",
-        "caption": "Fictional interface excerpts. The revision is a hypothesis to check, not a proven universal layout."
+        "caption": "Read the order of items in the current panel first and notice the action comes before the time. In the proposed version only that one relationship has moved, like changing a single step in a recipe. Fictional interface excerpts; the revision is a hypothesis to check, not a proven universal layout."
       }
     ],
     "design-037": [
@@ -5121,7 +5121,7 @@
         "bytes": 3861,
         "title": "Build the bend before the outline",
         "alt": "Two original leaf studies contrast a rigid upright symbol with the lesson's drooping leaf. At left, attachment, blade, and tip keep rising. At right, the stem rises from a visible attachment, turns at a high bend, and connects to a blade hanging right. Red paths trace proposed gesture, not measured forces. The stretched outer curve and compressed inner curve belong to the same blade.",
-        "caption": "Simplified comparison drawing. Arrows trace the proposed gesture, not physical forces."
+        "caption": "Follow the arrows from attachment to tip and notice they never change direction. This is the leaf drawn from memory, the route with no turns. A simplified comparison drawing; the arrows trace the proposed gesture, not physical forces."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-037-2.svg",
@@ -5140,7 +5140,7 @@
         "bytes": 5816,
         "title": "Connect the kettle's volumes",
         "alt": "An original tapered kettle is constructed from a rounded body, elliptical lid, loop handle, and tubular spout. The handle is behind the body and has two attachment points; one hidden join is dashed. A central axis passes through the lid and base, and curved cross-contours describe the belly. The spout has an elliptical opening and a direction continuing toward its attachment. Construction lines are scaffolding, not exact product dimensions.",
-        "caption": "Schematic volumes and attachments, not exact contours or ellipse proportions."
+        "caption": "Find the body first and follow the Axis arrow up to the lid, which shares its orientation. Then follow the Attachment arrow to the spout and notice it comes out of the body rather than sitting beside it. Schematic volumes and attachments, not exact contours or ellipse proportions."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-038-2.svg",
@@ -5166,7 +5166,7 @@
         "bytes": 4245,
         "title": "Check the space between utensils",
         "alt": "A wooden spoon and slotted spatula cross near the bottoms of their handles. Their inner edges bound a red wedge from an opening at the top to the crossing below. A separate narrow trial has the same opening height and crossing height but steeper boundaries. The dashed top of each wedge checks the opening; it is not another utensil. Compare boundary slopes rather than adding wood grain.",
-        "caption": "Top-view checkpoint drawing. The upper connector measures the opening, not a third utensil."
+        "caption": "Look at the Opening arrow across the top first; that width is the measurement. Then follow each side down to the crossing and notice those sides are the utensils' inner edges. A top-view checkpoint drawing; the upper connector measures the hole, it is not a third utensil."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-039-2.svg",
@@ -5185,7 +5185,7 @@
         "bytes": 5612,
         "title": "Check the shoe's outer extent",
         "alt": "An original side-view shoe sits inside a five-checkpoint envelope: heel top, high opening, furthest toe, lowest sole, and heel base. A faint trial puts the toe too high; a short red arrow lowers it before lace detail. The lower study deliberately raises the ankle into a boot while retaining a shoe-like foot and sole. These are construction comparisons, not standard shoe proportions.",
-        "caption": "An original envelope, not a shoe outline to trace. Check its slopes against your own view."
+        "caption": "Find the highest and the furthest-forward checkpoints first, Opening and Toe, because those two set the tilt of the whole box. Then follow the arrows round the polygon. An original envelope, not a shoe outline to trace; check its slopes against your own view."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-040-2.svg",
@@ -5204,7 +5204,7 @@
         "bytes": 4639,
         "title": "Make parallel edges share a VP",
         "alt": "Two complete unbranded boxes demonstrate upright linear perspective. In the one-point view, front edges stay horizontal or vertical; three visible depth edges and their red extensions converge at the same marked vanishing point on the horizon. In the corner view, the two horizontal edge families converge at left and right vanishing points on one horizon. All vertical edges remain vertical. The horizons describe the observer's eye level, not a tabletop edge.",
-        "caption": "Projected plane only. Near and far widths stay horizontal; both depth-edge families share the marked horizon point."
+        "caption": "Find the vanishing point at the top first, then follow both depth edges back to it like two car-park lines sharing one destination. The near and far widths stay horizontal because they run across the view. Projected plane only; the marked point sits on eye level."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-041-2.svg",
@@ -5223,7 +5223,7 @@
         "bytes": 9121,
         "title": "Group light before texture",
         "alt": "Side light reaches a folded white napkin and brown cardboard. The facing napkin plane is light, the lit cardboard is middle value, and a continuous sheltered white fold is dark. The three colors follow the lesson's illustrative value plan, not material names or measured brightness. Below, the same little fold is drawn with uniform hatch texture and with a connected shadow group. Texture alone leaves the inward plane poorly separated.",
-        "caption": "Schematic arrangement. The two napkin patches share a material but not the same illumination."
+        "caption": "Follow the Light arrow to the facing plane first, then find the inward fold below it, which the light never reaches. The two napkin patches share a material and not an illumination, like the white car in the sun and the one under the bridge. A schematic arrangement."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-042-2.svg",
@@ -5242,7 +5242,7 @@
         "bytes": 4612,
         "title": "Let the towel's edges differ",
         "alt": "An original partly rolled towel contains three different transitions. A light hem meets its darker overlap abruptly without an extra black border. The broad roll changes gradually from light to shade. Its loose tail fades to the exact gray of the backdrop, so part of the boundary is genuinely absent; a neighboring visible segment still explains the tail. Equal tail and backdrop values illustrate a lost edge, not a claim that every real towel has one.",
-        "caption": "Schematic towel parts. Compare an overlap, a turning volume, and a boundary against its neighbor."
+        "caption": "Find the three labeled places first: the hem overlap is the cliff, the rounded roll is the beach, and the loose tail against the backdrop is the marsh. Schematic towel parts, arranged so you can compare an overlap, a turning volume, and a boundary against a matching neighbor."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-043-2.svg",
@@ -5261,7 +5261,7 @@
         "bytes": 3883,
         "title": "Two shadows, two surfaces",
         "alt": "An orange rests on a sheet of paper. The upper-left light corresponds to a bright upper-left fruit surface and a darker turning surface on the right. That form shadow stays on the orange. A separate connected cast shadow extends away toward lower right across the receiving paper, beginning at the contact. Red light arrows stop at the fruit. The drawing does not assert a shadow length, fixed darkness, or automatic bright reflected-light rim.",
-        "caption": "Oblique setup schematic. The aligned arrows show the main light direction, not a measured shadow length."
+        "caption": "Follow the Light arrow from the lamp to the orange first, then the Blocked path arrow from the orange to the shadow on the paper. The two arrows line up because the orange is the hill standing in the sun's way. An oblique setup schematic; the arrows show direction, not a measured shadow length."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-044-2.svg",
@@ -5280,7 +5280,7 @@
         "bytes": 6970,
         "title": "Observe, recall, redesign the pouch",
         "alt": "An original zip pouch appears in three labeled studies. Observation shows a top opening on the top plane, a side plane, and an attached loop. The memory trial intentionally loses the thickness and misplaces the opening on the front. An invented version restores the volume and adds an upward-opening pocket attached to the right face. The pocket has its own top and side planes; red marks identify the structural change rather than decorative stitching.",
-        "caption": "Simplified front-view construction. Study thickness from your own object rather than tracing these symbols."
+        "caption": "Look at where the top opening sits first: on the top plane, not across the front. Then find the side loop and the point where it attaches. A simplified front-view construction; study thickness from your own pouch rather than tracing these symbols."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-045-2.svg",
@@ -5299,7 +5299,7 @@
         "bytes": 5944,
         "title": "Compare three boat arrangements",
         "alt": "Three original composition thumbnails contain a folded paper boat, a stone, and a broad cloth fold. The first places the boat low left and the stone high right along a diagonal fold. The second moves the boat centrally and crops the stone near the upper-right edge. The third leaves a larger quiet region by keeping the boat left, reducing the fold, and cropping most of the stone. These test placement and crop, not progressively more finished drawings or a universally best composition.",
-        "caption": "Picture-plane mass placement. Shapes stand for observed or invented forms, not a finished river illustration."
+        "caption": "Look at where the three masses sit before you think about what they are: low left, high right, and a fold running between them. This is one floor plan for the picture. Shapes stand for observed or invented forms, not a finished river illustration."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-046-2.svg",
@@ -5318,7 +5318,7 @@
         "bytes": 6306,
         "title": "Study bands, matte tone, and folds",
         "alt": "Three original surface drawings share a steady light: a polished spoon with curved adjacent bright and dark reflected bands; unprinted matte paper with a broad, low-contrast tonal change; and folded cloth whose larger shadow shapes precede a little woven texture. Below, two bowl details keep the shape fixed while shifting a bright band for a separate viewpoint test. These are example reflection maps, not measured materials or permanent painted spoon markings.",
-        "caption": "Setup map. Keep objects and light fixed; move only the eye for the separate reflection check."
+        "caption": "Notice first that one light reaches all three surfaces, then find the eye at the bottom, which is the only thing that moves during the reflection check. A setup map: objects and lamp stay fixed, the viewpoint shifts a little, like stepping beside a puddle."
       },
       {
         "src": "/lesson-visuals/guided-v1-design-047-2.svg",
@@ -5337,7 +5337,7 @@
         "bytes": 4089,
         "title": "Let the leaf lead the arrangement",
         "alt": "An original fallen leaf sits in front of a darker opening in folded unprinted cardboard. A single upper-left light is indicated. The leaf's pale blade has a clear boundary against that opening; larger cardboard planes remain middle value. A small lower-right pebble has a quiet edge rather than the strongest outline. Gesture, planes, negative space, value grouping, and selective edges support the stated intention to notice the leaf first, without claiming a guaranteed attention result.",
-        "caption": "Original schematic and illustrative value plan, not finished artwork. Inspect the leaf against the darker opening behind it."
+        "caption": "Find the leaf first and notice what sits directly behind it: the darker fold opening that makes it separate. Then see how the cardboard planes and pebble stay quieter, like props around the boots in a shop window. An original schematic and illustrative value plan, not finished artwork."
       }
     ],
     "fg-001": [
