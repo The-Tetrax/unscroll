@@ -172,7 +172,7 @@ describe('guided teaching structural and compatibility contracts', () => {
       expect(lessonSchema.parse(lesson), guide.id).toEqual(lesson)
       expect(lesson.guide, guide.id).toBe(guide)
       expect(lesson.revision, guide.id).toBe(guideRevisionById.get(guide.id))
-      expect(lesson.revision, guide.id).toMatch(/^guided-v\d+$/)
+      expect(lesson.revision, guide.id).toBe('guided-v2')
       expect(lesson.kind, guide.id).toBeUndefined()
       for (const visual of guide.visuals) expect(teachingVisualSchema.parse(visual), guide.id).toEqual(visual)
     }
@@ -204,10 +204,13 @@ describe('guided teaching structural and compatibility contracts', () => {
     expect(lessonGuideSchema.parse(withoutSources)).not.toHaveProperty('sources')
   })
 
-  it('keeps at least 200 body words and distinct nonblank section headings per guide', () => {
+  it('keeps every guide inside the guided-v2 body band with four distinct nonblank section headings', () => {
     for (const guide of guides) {
       const body = guide.sections.flatMap((section) => section.paragraphs).join(' ').trim()
-      expect(body.split(/\s+/u).length, guide.id).toBeGreaterThanOrEqual(200)
+      const words = body.split(/\s+/u).length
+      expect(words, guide.id).toBeGreaterThanOrEqual(420)
+      expect(words, guide.id).toBeLessThanOrEqual(900)
+      expect(guide.sections, guide.id).toHaveLength(4)
       const headings = guide.sections.map((section) => normalize(section.title))
       expect(headings.every(Boolean), guide.id).toBe(true)
       expect(new Set(headings).size, guide.id).toBe(headings.length)

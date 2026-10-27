@@ -15,6 +15,6 @@ export function AppStatus({ status, online }: { status: Status; online: boolean 
     <p className="inline-notice" role="status">{status.message}</p>
     <p className="field-hint">{status.signInRequired ? 'Your cached app can open while private-site access has expired. ' : 'Still seeing an older version? '}<a href="/api/update.html">Open update recovery</a>. This network page checks site sign-in and app files without clearing notes or progress.</p>
     {status.error && <p className="error-message" role="alert">{status.error}</p>}
-    <dl className="build-details"><div><dt>Content edition</dt><dd>Illustrated lessons, guided-v1</dd></div><div><dt>App build</dt><dd>{__UNSCROLL_BUILD__}</dd></div><div><dt>Built</dt><dd><time dateTime={__UNSCROLL_BUILT_AT__}>{new Date(__UNSCROLL_BUILT_AT__).toLocaleString()}</time></dd></div></dl>
+    <dl className="build-details"><div><dt>Content edition</dt><dd>Illustrated lessons, guided-v2</dd></div><div><dt>App build</dt><dd>{__UNSCROLL_BUILD__}</dd></div><div><dt>Built</dt><dd><time dateTime={__UNSCROLL_BUILT_AT__}>{new Date(__UNSCROLL_BUILT_AT__).toLocaleString()}</time></dd></div></dl>
   </>
 }
