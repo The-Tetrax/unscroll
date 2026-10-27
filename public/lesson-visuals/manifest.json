@@ -3771,7 +3771,7 @@
         "bytes": 10645,
         "title": "Compare the saved doorway view",
         "alt": "Two matching doorway drawings retain the same shoes, laces, OUT card and door edge. Ghost door edges in the unsupported example indicate possible drift, not measured footage. Below, hands support a phone over a table.",
-        "caption": "Keep these positions for both takes. This is a schematic layout, not a measured floor plan."
+        "caption": "Find the phone first and follow the aim arrow to the shoes; then notice the card and the door edge, which are the three things you will inspect. Keep every position identical for both takes. This is a schematic layout, not a measured floor plan."
       }
     ],
     "cinema-002": [
@@ -3783,7 +3783,7 @@
         "bytes": 9430,
         "title": "Fit the entire note delivery",
         "alt": "A true 16:9 frame contains a sideways folded-note delivery; a 9:16 frame contains a near-to-far route. A tall crop of the original wide view excludes the starting hand and landing square.",
-        "caption": "Top view: both ends of this route need to fit the recording."
+        "caption": "Look at the two ends of the slide arrow first, the note and the landing square; both have to sit inside the recording. Then notice the phone stays put below them. A top view, not a measured layout."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-002-2.svg",
@@ -3802,7 +3802,7 @@
         "bytes": 8793,
         "title": "Three views, three readable facts",
         "alt": "A wide view shows a teal bag by a doorway. A medium view shows a right hand opening its red pocket. A close view shows the same empty paper sleeve marked PASS, including its open mouth.",
-        "caption": "Schematic positions are separate takes, not simultaneous cameras or measured distances."
+        "caption": "Look at the three camera positions along the route first and read the question beside each one; then notice the bag never moves. These are separate takes at three zoom levels, not three cameras at once, and the distances are schematic."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-003-2.svg",
@@ -3821,7 +3821,7 @@
         "bytes": 5703,
         "title": "Give rightward travel usable room",
         "alt": "Equal-sized paper arrows start at exactly one half and one third of equal frames. The drawn doorway stays near the right edge. Thirds guides divide each frame equally; the second start leaves a longer route ahead.",
-        "caption": "Compare the open area to the right of the icon. Positions are schematic frame percentages."
+        "caption": "Look at the open area to the right of the icon in each panel first; that gap is where the journey has to fit. The left-third start has parked with room on the side where the door will open. Positions are schematic frame percentages."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-004-2.svg",
@@ -3840,7 +3840,7 @@
         "bytes": 8841,
         "title": "Paper brightness is not letter focus",
         "alt": "Four BUS 4 card views separate a brightness change from a focus change. A near dark sleeve enters without covering the card. The out-of-plane card is actually blurred with an SVG filter while the sleeve remains sharp.",
-        "caption": "Top-view distances are schematic. The sleeve changes both scene content and a possible focus target."
+        "caption": "Follow the intended focus arrow from the phone to the card first, then notice the sleeve sitting between them, nearer the lens. The sleeve can steal the focus distance and darken the frame at the same time, which is two faults from one event. Top-view distances are schematic."
       }
     ],
     "cinema-006": [
@@ -3852,7 +3852,7 @@
         "bytes": 6903,
         "title": "A larger BASIL label can be softer",
         "alt": "Far, middle and near trials show the same handwritten BASIL label increasing in size. Far and middle lettering is sharp; the largest near label is blurred with an SVG filter. A separate distance sketch shows the fixed phone and trial positions.",
-        "caption": "The label appears three times to show separate trials. Spacing is schematic, not a recommended focusing distance."
+        "caption": "Start at the far test and follow the arrow toward the camera; that is the order of the trials. The label appears three times to show three separate recordings, not three labels at once, and the spacing is schematic rather than a recommended distance."
       }
     ],
     "cinema-007": [
@@ -3864,7 +3864,7 @@
         "bytes": 7689,
         "title": "White folds need distinct recorded tones",
         "alt": "The same towel outline contains a flat clipped white patch in one view and distinct ridges, creases and weave lines in another. A dimmed copy of the clipped patch remains featureless. A top view locates window, towel and alternative camera positions.",
-        "caption": "Camera icons mark separate takes. The second position faces the lit towel, not the bright window."
+        "caption": "Find the backlit camera at the bottom first and notice it is aiming straight through the towel at the window. Then find the light-side camera and follow its new view arrow: it faces the lit towel with the room behind. The two camera icons are separate takes."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-007-2.svg",
@@ -3883,7 +3883,7 @@
         "bytes": 11893,
         "title": "Match the front house; compare the rear",
         "alt": "Pinhole-projected equal-height paper houses compare an original view, a digital crop and a nearer viewpoint. Actual rear-to-front drawing heights are one half, one half and one third. Camera positions at zero and twenty centimeters face houses at forty and eighty centimeters. A small fixed lateral offset keeps both houses visible.",
-        "caption": "Schematic top view of the hypothetical 40/80 centimeter setup and a 20 centimeter move."
+        "caption": "Read the two distances on the original camera first, 40 to the front house and 80 to the rear, then follow the move arrow and read the new pair, 20 and 60. The front distance halved while the rear only shrank by a quarter, which is the near tree looming. A schematic top view of the hypothetical setup."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-008-2.svg",
@@ -3902,7 +3902,7 @@
         "bytes": 7157,
         "title": "Raise the view above the blocking wall",
         "alt": "A low view of a shallow box hides its folded message behind the front wall. A higher view reveals the same message inside. In a side elevation the lower sightline hits the wall, while the higher sightline clears it.",
-        "caption": "Side elevation, not a floor plan. Rays show the intended visibility difference; icon sizes are schematic."
+        "caption": "Follow the blocked arrow from the lower camera first and notice it stops at the front wall, like a view stopped by a tall person in a crowd. Then follow the clear sightline from the higher camera over the wall to the message. This is a side elevation, not a floor plan, and the icon sizes are schematic."
       }
     ],
     "cinema-010": [
@@ -3914,7 +3914,7 @@
         "bytes": 8800,
         "title": "Separate the post, plant and paper hill",
         "alt": "The same sharp foreground paper post, middle plant and folded background hill are initially aligned. A sideways camera change shifts the post most, the plant less and the hill least, revealing the plant outline without a blur effect.",
-        "caption": "Top view: this alignment can hide the plant. Symbols do not depict actual screen sizes."
+        "caption": "Follow the aligned view arrow from Phone A and notice that the post, the plant, and the hill all sit on it; from here the post can hide the plant. A top view in which the symbols do not depict actual screen sizes."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-010-2.svg",
@@ -3933,7 +3933,7 @@
         "bytes": 10413,
         "title": "Steady hands still need safe frame margins",
         "alt": "Closed books and a paper marker appear in a full source view. A dashed inner crop excludes the marker. Two proportional saved-view examples compare that loss with a wider capture that retains the same marker. The crop amount is illustrative, not a phone specification.",
-        "caption": "Support relationships are schematic. Keep the phone in your hands rather than balancing a tall stack."
+        "caption": "Follow the two arrows upward: the table supports the forearms, and the forearms steady the phone, like elbows on a fence under a pair of binoculars. The relationships are schematic; keep the phone in your hands rather than balancing it on a tall stack."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-011-2.svg",
@@ -3952,7 +3952,7 @@
         "bytes": 13385,
         "title": "A slower pan makes smaller sample steps",
         "alt": "Triangle, square and circle mark a shelf pan from left to right. At the same illustrative 30 fps, four consecutive triangle views shift left twice as far in the four-second pan as in the eight-second pan. Sample displacement is enlarged for legibility, not drawn to the shelf overview scale. Counts are 120 and 240 movement frames, excluding one-second endpoint holds.",
-        "caption": "Use this order for both takes. Diagram spacing is not proportional to time."
+        "caption": "Read the middle step first: it is the only part that changes between the two takes, four seconds and then eight. The holds at each end stay at one second so the comparison is about pan speed alone. Diagram spacing is not proportional to time."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-012-2.svg",
@@ -3971,7 +3971,7 @@
         "bytes": 12758,
         "title": "The reminder changes where the book lands",
         "alt": "Four original tabletop storyboard panels follow a red book toward an open bag, discovery of a slip, the readable message LEAVE FOR JO, and the book left away from the bag. Suggested phases last one, two, two and two seconds.",
-        "caption": "Original seven-second sketch. Durations are adjustable and spacing is not a proportional time scale."
+        "caption": "Read the first and last steps before the middle two: the book heads toward the bag, then ends up away from it. The two middle steps are the shutter on the shop, the reason for the turn. An original seven-second sketch with adjustable durations; the spacing is not a time scale."
       }
     ],
     "cinema-014": [
@@ -3983,7 +3983,7 @@
         "bytes": 12709,
         "title": "Open a visible gap for the handoff",
         "alt": "Top views compare an aligned camera, nearer Giver and farther Receiver with the same camera facing separated stand-ins. Lower camera-view drawings show the aligned Giver concealing the note and the spread Giver on the left handing a note across a visible gap to Receiver on the right.",
-        "caption": "Top view: the camera must look past the nearer stand-in. This is a schematic rehearsal layout."
+        "caption": "Follow the obstructed view arrow from the camera and notice it has to pass through the Giver to reach the Receiver; the nearer body is the tall uncle in the group photo. A top view of the rehearsal layout, schematic rather than measured."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-014-2.svg",
@@ -4002,7 +4002,7 @@
         "bytes": 12318,
         "title": "Map the cameras and the resulting eyelines",
         "alt": "Top view: A is left and B right on a horizontal conversation axis. The lower-left camera aims at B; the lower-right camera aims at A. Both are below the axis. The crossed camera is above it. Lower screen views show A looking right, B looking left, and a crossed shared view with B left and A right.",
-        "caption": "Top view of alternative takes. The upper camera crosses the axis; the lower pair does not."
+        "caption": "Find the conversation axis arrow between A and B first; that is the net. The two cameras below it are the broadcast cameras staying on one side of the court. The single camera above has crossed the net, and from there A and B swap sides of the screen. A top view of alternative takes."
       }
     ],
     "cinema-016": [
@@ -4014,7 +4014,7 @@
         "bytes": 7722,
         "title": "Give each plant shot an information job",
         "alt": "A wide table view separates a plant from its FOR JO label. A closer label view makes the recipient readable. A medium view shows the right hand returning the label to a visible position beside the plant. The three proposed durations total eight seconds.",
-        "caption": "Schematic table plan. The return must be visible from the planned camera position."
+        "caption": "Follow the return label arrow from the loose label to its landing spot beside the plant, then check that the whole route is visible from the phone at the table end. The position is on the list for exactly this reason. A schematic table plan."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-016-2.svg",
@@ -4033,7 +4033,7 @@
         "bytes": 16532,
         "title": "Both views need the same lift",
         "alt": "Two rows depict separate wider and closer performances of a right-handed empty plastic cup lift between the same paper marks. Selected moments show reach, shared mid-lift and placement. Cup sleeve dot, right hand and marks retain their orientation. Handles and all intervening phases are required in both takes.",
-        "caption": "Suggested 1 + 2 + 2 + 2 + 1 seconds equals eight per take. Spacing is not proportional."
+        "caption": "Find the Lift step in the middle first: that is the exchange zone where both takes must overlap. The still second at each end is the runner starting early and finishing late. Suggested 1 + 2 + 2 + 2 + 1 seconds makes eight per take; the spacing is not proportional."
       }
     ],
     "cinema-018": [
@@ -4045,7 +4045,7 @@
         "bytes": 11678,
         "title": "Match the envelope at the same story moment",
         "alt": "Three states show a closed right-arrow envelope, a raised flap with the card hidden, and a partly visible HELLO card. A lower pair compares a correct raised-flap reset with an incorrect left arrow and prematurely visible card. Right hands are not mirrored.",
-        "caption": "Original five-second sketch. Match the corresponding state across views, not every take's first frame."
+        "caption": "Read the three states as three positions of a board game in progress, and notice the right hand appears in every one; that is the detail that must not change between takes. Match the corresponding state across views, not every take's first frame. An original five-second sketch."
       }
     ],
     "cinema-019": [
@@ -4057,7 +4057,7 @@
         "bytes": 8156,
         "title": "Same words, different playable invitations",
         "alt": "Both tabletop views use the line Have a look at this and the same original unfinished landscape sketch. In the welcome option the page is available; in the delay option a hand and pencil attend to its unfinished corner. A lower drawing shows a no-contact table placement rather than a compulsory handoff.",
-        "caption": "Original rehearsal dialogue, not a quotation from an actor or filmmaker."
+        "caption": "Read the director's first line and notice it names a task, invite, not a feeling. Then watch the performer propose a different way to do it and the director keep the objective while dropping the contact. Original rehearsal dialogue, not a quotation from any actor or filmmaker."
       }
     ],
     "cinema-020": [
@@ -4069,7 +4069,7 @@
         "bytes": 10940,
         "title": "Change only the open-card hold",
         "alt": "Two rows contain identical unfold, readable MEET AT SIX, and refold drawings. Below, proportional one-second-unit bars show take A lasting one plus one plus one seconds, and take B one plus three plus one seconds. Only the middle hold grows.",
-        "caption": "Illustrative takes total three and five seconds. The diagram shows order, not proportional duration."
+        "caption": "Read the middle step first and notice it is the only one with two different numbers; the unfold and refold are identical in both takes. That is the saddle raised one notch with everything else left alone. Illustrative takes total three and five seconds, and the spacing shows order rather than duration."
       }
     ],
     "cinema-021": [
@@ -4081,7 +4081,7 @@
         "bytes": 12031,
         "title": "Keep the look and pause; change the object",
         "alt": "Two three-panel sequences repeat identical original downward-right-looking and response faces. The first insert is a THANK YOU card on a low table; the second is a blank envelope from the same downward direction. A side elevation aligns drawn eyes and an insert camera above the low object. Neither sequence proves a real emotion.",
-        "caption": "Schematic compatible height and direction. This insert is not a measured reproduction of the character's exact viewpoint."
+        "caption": "Follow the look arrow from the eyes down to the card, then the object view arrow from the insert camera to the same card, and notice they aim the same way from similar heights. That agreement is what lets the caption attach to the face. A schematic, not a measured reproduction of the character's exact viewpoint."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-021-2.svg",
@@ -4100,7 +4100,7 @@
         "bytes": 8056,
         "title": "Hear the rustle before revealing its source",
         "alt": "A top-view table plan places an empty drawn square left and a paper parcel right. A phone turns in place from left to right. Three lower frames first show only the square, keep the same square during an offscreen rustle, then reveal the parcel. The sound cue is notation, not embedded audio.",
-        "caption": "Top view. Arrows show starting and ending viewing directions, not a path for walking."
+        "caption": "Follow the start view arrow to the empty square first and notice the parcel sits outside that view, just past the edge. Then follow the end view arrow. The phone turns from one fixed spot; the arrows show viewing directions, not a path for walking. A top view."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-022-2.svg",
@@ -4119,7 +4119,7 @@
         "bytes": 14432,
         "title": "Recording yes does not mean posting yes",
         "alt": "Four illustrated panels show an agreed five-minute hands-only paper-folding recording, review by the two participants today, a separately declined public post, and tonight’s deletion plan for controlled copies. The same folded-paper image appears on each phone. Text warns that sound, reflections and backups need checking.",
-        "caption": "Original example dialogue. Use it only after checking that the proposed storage and deletion scope is feasible."
+        "caption": "Notice that the filmmaker asks two separate questions and gets two separate answers, like asking to borrow the book and then, separately, to copy it. The narrower answer is the one that stands. Original example dialogue; use it only after checking that the storage and deletion scope is something your device can honor."
       }
     ],
     "cinema-024": [
@@ -4131,7 +4131,7 @@
         "bytes": 13652,
         "title": "Let the paper train leave; keep the figure still",
         "alt": "Three equal fixed-camera storyboard frames keep a paper figure and drawn platform in the same place while the same folded train moves right. A hand is openly visible during the slide. The final frame holds an increased gap, with all action remaining inside the tabletop.",
-        "caption": "Top view of an original paper model. All action stays on a stable tabletop, not near transport."
+        "caption": "Follow the slide right arrow from where the train starts to where it ends, then notice the waiting figure has not moved; the growing distance between them is the whole shot. Magnets on a whiteboard, with every piece safely on a stable tabletop and nowhere near real transport. A top view of an original paper model."
       },
       {
         "src": "/lesson-visuals/guided-v1-cinema-024-2.svg",
