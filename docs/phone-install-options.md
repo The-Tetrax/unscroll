@@ -129,7 +129,7 @@ The 20 deploys were used within 44 hours because every checkpoint commit was pus
 
 | Method | Label | Effect |
 | --- | --- | --- |
-| Put `[skip netlify]` in the commit message of the newest commit in a push | Documented | Netlify does not build that push. GitHub Actions still runs, so [ci.yml](../.github/workflows/ci.yml) keeps testing every checkpoint. `[skip ci]` also stops Netlify, but GitHub documents it as one of its own skip keywords, so CI would not run either. |
+| Put `[skip netlify]` in the commit message of the newest commit in a push | Documented | Netlify does not build that push. GitHub Actions still runs, so [ci.yml](../.github/workflows/ci.yml) keeps testing every checkpoint. `[skip ci]` also stops Netlify, but GitHub documents it as one of its own skip keywords, so CI would not run either. **Verified** once on 2026-11-18: commit `3aee002` carried the marker, Netlify's log gained no entry for it, and GitHub Actions ran and passed. The unmarked push before it did get an entry, a skipped one. The credits were already used up that day, so this shows that Netlify honors the marker, not what a marked push costs while credits remain. |
 | Push checkpoints to a branch other than `main`, merge when you want a phone build | Documented | Only the production branch produces a production deploy. Branch deploys cost 0 credits if you enable them. |
 | Set **Build status** to **Stopped builds** (Project configuration > Developer settings > Continuous deployment > Build settings > Configure) | Documented | Netlify builds nothing: no pushes, no build hooks, and **Trigger deploy** is unavailable. To release, switch back to **Active builds**, then push or use **Trigger deploy**. Activating does not start a build by itself. |
 | Lock auto publishing | Unverified for credits | Builds still run. I did not find a statement on whether a locked build is charged, so do not rely on it to save credits. |
@@ -547,6 +547,7 @@ Run on this PC on 2026-11-18:
 - Capacitor 8.6.2 Android source read for download, file chooser, back button, service worker and external link behaviour.
 - `winget search` for the JDK and platform-tools package IDs.
 - One push of commit `5c593bc` to `main` at 16:08 UTC. Netlify skipped it, and the deploy log was read again afterwards.
+- One push of commit `3aee002` to `main` at 16:27 UTC with `[skip netlify]` in its message. The deploy log, read at 16:41 UTC, still held 26 entries and none for that commit. GitHub Actions ran for it. The commit that added this line was pushed the same way.
 
 Not run:
 
