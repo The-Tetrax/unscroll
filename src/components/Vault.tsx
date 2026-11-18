@@ -201,7 +201,7 @@ export function Vault({ library, route }: { library: Library; route: Route }) {
         {visibleLessons.map((lesson) => {
           const excerpt = noteExcerpt(state.notes[lesson.id] ?? '')
           return <li key={lesson.id}>
-            <LessonCard lesson={lesson} saved={savedIds.has(lesson.id)} completed={Boolean(state.completed[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>
+            <LessonCard lesson={lesson} saved={savedIds.has(lesson.id)} completed={Boolean(state.completed[lesson.id])} inProgress={Boolean(state.readerDrafts?.[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>
             {view === 'practice' && <div className="practice-entry"><p>{lesson.action}</p><PracticeActions library={library} lesson={lesson}/><button type="button" className="text-action" onClick={() => route.navigate('vault', { ...Object.fromEntries(route.params), lesson: lesson.id, stage: 'try' })}>Record what you noticed<NotebookPen size={17} aria-hidden="true"/></button></div>}
             {view === 'unfinished' && <div className="unfinished-entry"><span className="field-hint">Resume at {state.readerDrafts?.[lesson.id].stage === 'try' ? 'Put it to use' : state.readerDrafts?.[lesson.id].stage === 'recall' ? 'Make it stick' : 'Understand'}. No completion XP yet.</span><button type="button" className="text-action" onClick={() => { library.discardDraft(lesson.id); resultsHeading.current?.focus() }}>Forget this position</button></div>}
             {view === 'notes' && <div className="panel">

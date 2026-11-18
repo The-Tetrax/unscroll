@@ -100,6 +100,7 @@ export interface AppState {
   welcomeDismissed: boolean
   onboardingVersion?: 1
   readingSize?: 'standard' | 'large'
+  theme?: 'system' | 'light' | 'dark'
   followedPath?: string
   readerDrafts?: Record<string, ReaderDraft>
   practices?: Record<string, Practice>

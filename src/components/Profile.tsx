@@ -6,6 +6,7 @@ import type { Install } from '../hooks/useInstall'
 import type { Library } from '../hooks/useLibrary'
 import type { Route } from '../hooks/useRoute'
 import { addDays, levelFor, streak } from '../lib/learning'
+import { themeOptions } from '../lib/theme'
 import type { AppState, CategoryId } from '../types'
 import { EmptyState, ProgressBar, SectionHeading } from './shared'
 import { AppStatus } from './AppStatus'
@@ -286,6 +287,16 @@ export function Profile({ library, route, install, appStatus, onSetup }: { libra
         }}/>
       </div>
       <fieldset className="field" disabled={disabled} aria-describedby={`${prefix}-reading-hint`}><legend className="field-label">Lesson text size</legend><p className="field-hint" id={`${prefix}-reading-hint`}>Change explanations, practice, questions and diagram captions. You can also use your browser's zoom.</p><div className="filter-row">{(['standard', 'large'] as const).map((readingSize) => <label className={`chip${(state.readingSize ?? 'standard') === readingSize ? ' is-active' : ''}`} key={readingSize}><input type="radio" name={`${prefix}-reading-size`} checked={(state.readingSize ?? 'standard') === readingSize} onChange={() => { void updatePreferences((current) => ({ ...current, readingSize }), readingSize === 'large' ? 'Larger lesson text saved.' : 'Standard lesson text saved.') }}/>{readingSize === 'large' ? 'Larger text' : 'Standard text'}</label>)}</div><p className="reading-preview">Read the example, try one change, and look for what is different.</p></fieldset>
+      <fieldset className="field" disabled={disabled} aria-describedby={`${prefix}-theme-hint`}>
+        <legend className="field-label">Appearance</legend>
+        <p className="field-hint" id={`${prefix}-theme-hint`}>Match device follows the light or dark setting of this phone or computer. Diagrams keep their light paper in the dark theme.</p>
+        <div className="filter-row">
+          {themeOptions.map(({ id, label, saved }) => <label className={`chip${(state.theme ?? 'system') === id ? ' is-active' : ''}`} key={id}>
+            <input type="radio" name={`${prefix}-theme`} checked={(state.theme ?? 'system') === id} onChange={() => { void updatePreferences((current) => ({ ...current, theme: id }), saved) }}/>
+            {label}
+          </label>)}
+        </div>
+      </fieldset>
       <InlineNotice id={preferencesFeedbackId} notice={preferencesNotice}/>
     </section>
 

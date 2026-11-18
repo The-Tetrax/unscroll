@@ -4,7 +4,7 @@
 - [x] Scaffold the Project
   - Vite React TypeScript scaffold created in the workspace root.
 - [x] Customize the Project
-  - 544 illustrated teaching guides, 604 offline diagrams, ten categories, twenty-two learning paths, local progress, notes, collections, practice, unfinished-bite resume, and spaced recall. Optional onboarding, larger lesson text, one-lesson pacing, cache verification, and safe updates. Daily discoveries stay separate from original lessons.
+  - 544 illustrated teaching guides, 604 offline diagrams, ten categories, twenty-two learning paths, local progress, notes, collections, practice, unfinished-bite resume, and spaced recall. Optional onboarding, larger lesson text, a dark theme that follows the device, in-lesson reading settings, one-lesson pacing, cache verification, and safe updates. Daily discoveries stay separate from original lessons.
 - [x] Install Required Extensions
   - No extensions required.
 - [x] Compile the Project
@@ -31,5 +31,8 @@
 - Validate backups and third-party responses. Preserve saved discoveries offline and in backups.
 - Use local dates for daily progress and review dates; use UTC only for the server discovery edition.
 - Keep all fonts and artwork local. Original SVG artwork must not imitate an existing anime character.
+- Take every color from src/tokens.css. A new color needs a value in the dark block, and a new text and surface pair belongs in tests/theme.test.ts. Use the inverse and mascot tokens for surfaces and artwork that must look the same in both themes.
+- The theme choice lives in the saved library. The localStorage hint read by public/theme.js only prevents a first-paint flash and is never the source of truth.
+- A push to main is one Netlify production deploy, 15 of the 300 monthly credits. Put [skip netlify] in the message of every checkpoint commit. Leave it out only for a build meant for the phone. See docs/phone-install-options.md.
 - Do not use em dashes in copy or comments.
 - Verify with type checking, content validation, unit tests, production build, and mobile browser tests.

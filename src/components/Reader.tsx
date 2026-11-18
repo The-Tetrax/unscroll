@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowLeft, ArrowRight, ArrowUpRight, Bookmark, Check, CheckCircle2, ChevronDown, Copy, Lightbulb, X } from 'lucide-react'
+import { ALargeSmall, ArrowLeft, ArrowRight, ArrowUpRight, Bookmark, Check, CheckCircle2, ChevronDown, Copy, Lightbulb, X } from 'lucide-react'
 import { categoryById } from '../data'
 import type { Lesson, ReaderDraft } from '../types'
 import type { Library } from '../hooks/useLibrary'
 import type { ReviewGrade } from '../lib/learning'
 import { readingMinutes } from '../lib/learning'
+import { themeOptions } from '../lib/theme'
 import { PracticeActions } from './PracticeActions'
 import { TeachingContent, GuidedPractice } from './TeachingContent'
 
@@ -18,6 +19,8 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
   const scroller = useRef<HTMLDivElement>(null)
   const feedback = useRef<HTMLDivElement>(null)
   const heading = useRef<HTMLHeadingElement>(null)
+  const position = useRef<HTMLSpanElement>(null)
+  const [settingsOpen, setSettingsOpen] = useState(false)
   const [previousDraft] = useState(() => !reviewMode && !library.state.completed[lesson.id] ? library.state.readerDrafts?.[lesson.id] : undefined)
   const draftChanged = Boolean(previousDraft && previousDraft.lessonRevision !== lesson.revision)
   const draft = draftChanged ? undefined : previousDraft
@@ -33,6 +36,8 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
   const saved = library.state.saved.includes(lesson.id)
   const category = categoryById[lesson.category]
   const isCorrect = choice === lesson.quiz?.correctIndex
+  const readingSize = library.state.readingSize ?? 'standard'
+  const theme = library.state.theme ?? 'system'
 
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null
@@ -55,6 +60,34 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
     if (!revealed || stage !== 'recall') return
     feedback.current?.scrollIntoView({ block: 'nearest' })
   }, [revealed, stage])
+  useEffect(() => {
+    const content = scroller.current
+    const bar = position.current
+    const track = bar?.parentElement
+    if (!content || !bar || !track) return
+    let frame = 0
+    const update = () => {
+      frame = 0
+      const range = content.scrollHeight - content.clientHeight
+      // A step that fits on screen has no position to report.
+      track.hidden = range < 24
+      bar.style.transform = `scaleX(${range < 24 ? 0 : Math.min(1, Math.max(0, content.scrollTop / range))})`
+    }
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(update) }
+    update()
+    content.addEventListener('scroll', schedule, { passive: true })
+    // Diagrams finishing their load and details opening change the scroll range without a scroll event.
+    content.addEventListener('load', schedule, true)
+    content.addEventListener('toggle', schedule, true)
+    window.addEventListener('resize', schedule)
+    return () => {
+      cancelAnimationFrame(frame)
+      content.removeEventListener('scroll', schedule)
+      content.removeEventListener('load', schedule, true)
+      content.removeEventListener('toggle', schedule, true)
+      window.removeEventListener('resize', schedule)
+    }
+  }, [stage, revealed, recallAnswerShown, settingsOpen, readingSize])
   const finish = () => {
     library.complete(lesson, lesson.quiz ? isCorrect : null)
     changeStage('done')
@@ -80,7 +113,11 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
     if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus() }
   }}>
     <div className="reader-shell">
-      <header className="reader-toolbar"><button type="button" className="icon-button" aria-label="Close lesson" onClick={onClose}><X size={23} aria-hidden="true"/></button><span>{reviewMode ? 'Recall practice' : category.name}</span><div className="reader-tools"><button type="button" className={`icon-button${saved ? ' is-saved' : ''}`} aria-label={saved ? 'Unsave this bite' : 'Save this bite'} aria-pressed={saved} onClick={() => library.toggleSave(lesson.id)}><Bookmark size={21} fill={saved ? 'currentColor' : 'none'} aria-hidden="true"/></button><button type="button" className="icon-button" aria-label="Copy lesson link" onClick={() => { void copyLink() }}><Copy size={19} aria-hidden="true"/></button></div></header>
+      <header className="reader-toolbar"><button type="button" className="icon-button" aria-label="Close lesson" onClick={onClose}><X size={23} aria-hidden="true"/></button><span>{reviewMode ? 'Recall practice' : category.name}</span><div className="reader-tools"><button type="button" className="icon-button" aria-label="Reading settings" aria-expanded={settingsOpen} aria-controls="reader-settings" onClick={() => setSettingsOpen(!settingsOpen)}><ALargeSmall size={22} aria-hidden="true"/></button><button type="button" className={`icon-button${saved ? ' is-saved' : ''}`} aria-label={saved ? 'Unsave this bite' : 'Save this bite'} aria-pressed={saved} onClick={() => library.toggleSave(lesson.id)}><Bookmark size={21} fill={saved ? 'currentColor' : 'none'} aria-hidden="true"/></button><button type="button" className="icon-button" aria-label="Copy lesson link" onClick={() => { void copyLink() }}><Copy size={19} aria-hidden="true"/></button></div></header>
+      {settingsOpen && <div id="reader-settings" className="reader-settings" role="group" aria-label="Reading settings">
+        <fieldset><legend>Text size</legend><div className="filter-row">{(['standard', 'large'] as const).map((size) => <label key={size} className={`chip${readingSize === size ? ' is-active' : ''}`}><input type="radio" name="reader-text-size" checked={readingSize === size} onChange={() => library.updateState((old) => ({ ...old, readingSize: size }))}/>{size === 'large' ? 'Larger text' : 'Standard text'}</label>)}</div></fieldset>
+        <fieldset><legend>Appearance</legend><div className="filter-row">{themeOptions.map(({ id, label }) => <label key={id} className={`chip${theme === id ? ' is-active' : ''}`}><input type="radio" name="reader-theme" checked={theme === id} onChange={() => library.updateState((old) => ({ ...old, theme: id }))}/>{label}</label>)}</div></fieldset>
+      </div>}
       {!reviewMode && stage !== 'done' && <nav className="reader-steps" aria-label="Lesson stages">{(['read', 'try', 'recall'] as const).map((step, index) => <button type="button" key={step} className={stage === step ? 'is-active' : ''} aria-current={stage === step ? 'step' : undefined} onClick={() => changeStage(step)}><span>{index + 1}</span>{step === 'read' ? 'Understand' : step === 'try' ? 'Put it to use' : 'Make it stick'}</button>)}</nav>}
       <div ref={scroller} className="reader-content">
         {copyState && <p className="inline-notice" role="status">{copyState}</p>}
@@ -120,6 +157,7 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
         {(stage === 'read' || (reviewMode && revealed)) && <details className="sources"><summary>Sources & context<ChevronDown size={16} aria-hidden="true"/></summary><p className="field-hint">{lesson.kind === 'discovery' ? 'External text, shown as plain-text reference material.' : lesson.guide?.sourceNote ?? 'Original UNSCROLL explanation and exercise. The sources explain the underlying concepts; examples are ours.'}</p><ul>{lesson.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}<ArrowUpRight size={15} aria-label="Opens a new tab"/></a><span>{source.publisher}</span></li>)}</ul>{lesson.attribution && <p className="attribution">By {lesson.attribution.author}. <a href={lesson.attribution.licenseUrl} target="_blank" rel="noopener noreferrer">{lesson.attribution.license}</a>. Plain-text excerpt; truncated if indicated. <a href={lesson.attribution.historyUrl} target="_blank" rel="noopener noreferrer">Article history and authors</a>.</p>}{lesson.category === 'money' && <p className="field-hint">General financial education, not a personal investment recommendation. Rules and protections vary by country.</p>}{lesson.category === 'wellbeing' && <p className="field-hint">General wellbeing information, not diagnosis or personal medical advice.</p>}</details>}
       </div>
 
+      <div className="reader-progress" aria-hidden="true"><span ref={position}/></div>
       <footer className="reader-footer">
         {stage === 'done' ? <><button type="button" className="button button-quiet" onClick={onClose}>{returnLabel}</button>{onNext && <button type="button" className="button button-primary" onClick={onNext}>{nextLabel ?? 'Next bite'}<ArrowRight size={18} aria-hidden="true"/></button>}</>
           : reviewMode ? <span className="field-hint">Recall first. Then choose your next review interval.</span>

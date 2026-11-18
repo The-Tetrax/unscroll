@@ -54,7 +54,7 @@ export function Today({ library, route, onSetup }: { library: Library; route: Ro
     <div className="today-columns">
       <section className="daily-lineup" aria-labelledby="lineup-heading">
         <div className="section-heading"><h2 id="lineup-heading">Today’s lineup</h2><span>{queue.length} chosen for today</span></div>
-        <div className="lesson-list">{queue.map((lesson, index) => <LessonCard key={lesson.id} lesson={lesson} index={index} saved={state.saved.includes(lesson.id)} completed={Boolean(state.completed[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>)}</div>
+        <div className="lesson-list">{queue.map((lesson, index) => <LessonCard key={lesson.id} lesson={lesson} index={index} saved={state.saved.includes(lesson.id)} completed={Boolean(state.completed[lesson.id])} inProgress={Boolean(state.readerDrafts?.[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>)}</div>
         {!queue.length && <EmptyState title="You’ve reached the end of new bites." action="Choose something to review" onAction={() => route.navigate('review')}>Previously delivered lessons stay in Explore. New discoveries appear when the content service finds them. Completed lessons are never disguised as new.</EmptyState>}
         {done && <div className="session-finish"><Check size={22} aria-hidden="true"/><p><strong>You showed up. That counts.</strong><br/>Pick one experiment from today and put the phone down.</p></div>}
       </section>
@@ -77,7 +77,7 @@ export function Today({ library, route, onSetup }: { library: Library; route: Ro
       <p className="section-description">A daily selection of Wikipedia reference extracts. Different from our original, practical lessons.</p>
       {library.discoveryLoading && !library.edition && <div className="discovery-skeleton" role="status"><span/><span/><span/><p>Finding today’s references…</p></div>}
       {library.edition && <p className="edition-status" role="status">{library.edition.status === 'fresh' ? `Edition ${library.edition.date} (UTC)` : library.edition.message ?? `Downloaded edition ${library.edition.date} (UTC).`}</p>}
-      <div className="discovery-grid">{library.edition?.lessons.filter((lesson) => !state.completed[lesson.id]).map((lesson) => <LessonCard key={lesson.id} lesson={lesson} saved={state.saved.includes(lesson.id)} completed={false} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>)}</div>
+      <div className="discovery-grid">{library.edition?.lessons.filter((lesson) => !state.completed[lesson.id]).map((lesson) => <LessonCard key={lesson.id} lesson={lesson} saved={state.saved.includes(lesson.id)} completed={false} inProgress={Boolean(state.readerDrafts?.[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>)}</div>
       {library.edition?.lessons.length !== 0 && library.edition?.lessons.every((lesson) => state.completed[lesson.id]) && <p className="inline-notice">You’ve read this edition. No need to repeat it.</p>}
     </section>
     <p className="page-end">A little wiser. A little more present.</p>

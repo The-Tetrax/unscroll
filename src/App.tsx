@@ -16,6 +16,7 @@ import { Onboarding } from './components/Onboarding'
 import { StartupScreen } from './components/StartupScreen'
 import { downloadRecovery } from './lib/storage'
 import { dueReviewIds } from './lib/learning'
+import { resolveTheme, THEME_COLORS, THEME_HINT_KEY } from './lib/theme'
 import type { Page } from './types'
 import './App.css'
 
@@ -42,6 +43,25 @@ export default function App() {
   useEffect(() => {
     document.documentElement.dataset.readingSize = library.state.readingSize ?? 'standard'
   }, [library.state.readingSize])
+  useEffect(() => {
+    // Until the library has loaded, keep whatever public/theme.js painted first.
+    if (!library.ready) return
+    const choice = library.state.theme ?? 'system'
+    const media = typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-color-scheme: dark)') : null
+    const apply = () => {
+      const theme = resolveTheme(choice, Boolean(media?.matches))
+      document.documentElement.dataset.theme = theme
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', THEME_COLORS[theme])
+    }
+    apply()
+    try {
+      if (choice === 'system') window.localStorage.removeItem(THEME_HINT_KEY)
+      else window.localStorage.setItem(THEME_HINT_KEY, choice)
+    } catch { /* The saved library still holds the choice. Only the first paint falls back to the device setting. */ }
+    if (choice !== 'system' || !media) return
+    media.addEventListener('change', apply)
+    return () => media.removeEventListener('change', apply)
+  }, [library.ready, library.state.theme])
   useEffect(() => {
     const titles: Record<Page, string> = { today: 'Your daily learning', explore: 'Explore your curiosity', vault: 'Your saved ideas', review: 'Make it stick', profile: 'Your space' }
     document.title = `${titles[route.page]} | UNSCROLL`

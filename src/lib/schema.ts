@@ -100,6 +100,7 @@ export const stateSchema = z.object({
   welcomeDismissed: z.boolean(),
   onboardingVersion: z.literal(1).optional(),
   readingSize: z.enum(['standard', 'large']).optional(),
+  theme: z.enum(['system', 'light', 'dark']).optional(),
   followedPath: safeId.optional(),
   readerDrafts: z.record(safeId, z.object({
     stage: z.enum(['read', 'try', 'recall']),

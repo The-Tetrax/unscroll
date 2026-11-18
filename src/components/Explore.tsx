@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Search, X } from 'lucide-react'
 import { categories, categoryById, learningPaths, newFieldGuides } from '../data'
 import type { CategoryId } from '../types'
@@ -16,6 +16,7 @@ for (const path of learningPaths) for (const id of path.lessonIds) {
 
 export function Explore({ library, route }: { library: Library; route: Route }) {
   const resultsHeading = useRef<HTMLHeadingElement>(null)
+  const [allPaths, setAllPaths] = useState(false)
   const { state } = library
   const category = route.params.get('category') ?? ''
   const query = (route.params.get('q') ?? '').slice(0, 200)
@@ -44,6 +45,8 @@ export function Explore({ library, route }: { library: Library; route: Route }) 
   const topics = [...new Set(base.filter((lesson) => !category || lesson.category === category).map((lesson) => lesson.topic))].sort()
   const completed = path?.lessonIds.filter((id) => state.completed[id]).length ?? 0
   const showPaths = !path && !query && !category && view === 'all'
+  // The followed path leads, so the shortened grid never hides it.
+  const orderedPaths = [...learningPaths].sort((left, right) => Number(right.id === state.followedPath) - Number(left.id === state.followedPath))
 
   return <>
     <header className="page-header"><h1>{path ? path.title : 'FIND YOUR NEXT OBSESSION.'}</h1><p className="page-intro">{path ? path.description : 'Useful ideas. Unexpected connections. Something you can actually do.'}</p></header>
@@ -55,9 +58,9 @@ export function Explore({ library, route }: { library: Library; route: Route }) 
       <div className="filter-options"><div className="segmented-control" aria-label="Learning status">{[['all', 'All bites'], ['unread', 'Not learned'], ['learned', 'Learned']].map(([id, label]) => <button type="button" key={id} className={view === id ? 'is-active' : ''} aria-pressed={view === id} onClick={() => updateFilter('view', id)}>{label}</button>)}</div><label className="topic-select"><span className="sr-only">Focus topic</span><select aria-label="Focus topic" value={topic} onChange={(event) => updateFilter('topic', event.target.value)}><option value="">Every subtopic</option>{topics.map((entry) => <option key={entry} value={entry}>{entry}</option>)}</select></label></div>
     </div>
 
-    {showPaths && <section className="learning-paths"><SectionHeading title="Go deeper, one step at a time"><span>{learningPaths.length} learning paths</span></SectionHeading><div className="paths-grid">{learningPaths.map((entry) => <button type="button" className={`path-tile${state.followedPath === entry.id ? ' is-following' : ''}`} key={entry.id} onClick={() => route.navigate('explore', { path: entry.id })}><span className="path-tile-symbol" aria-hidden="true">{pathSymbols[entry.id] ?? '◇'}</span><span className="path-tile-copy"><h3>{entry.title}</h3><span>{entry.lessonIds.length} bites{state.followedPath === entry.id ? ' / Following' : ''}</span></span><ArrowUpRight size={20} aria-hidden="true"/></button>)}</div></section>}
+    {showPaths && <section className="learning-paths"><SectionHeading title="Go deeper, one step at a time"><span>{learningPaths.length} learning paths</span></SectionHeading><div id="learning-path-list" className={`paths-grid${allPaths ? ' is-expanded' : ''}`}>{orderedPaths.map((entry) => <button type="button" className={`path-tile${state.followedPath === entry.id ? ' is-following' : ''}`} key={entry.id} onClick={() => route.navigate('explore', { path: entry.id })}><span className="path-tile-symbol" aria-hidden="true">{pathSymbols[entry.id] ?? '◇'}</span><span className="path-tile-copy"><h3>{entry.title}</h3><span>{entry.lessonIds.length} bites{state.followedPath === entry.id ? ' / Following' : ''}</span></span><ArrowUpRight size={20} aria-hidden="true"/></button>)}</div><button type="button" className="button button-quiet paths-toggle" aria-expanded={allPaths} aria-controls="learning-path-list" onClick={() => setAllPaths(!allPaths)}>{allPaths ? 'Show fewer paths' : `Show all ${learningPaths.length} paths`}</button></section>}
 
-    <section className="explore-results"><div className="section-heading"><h2 ref={resultsHeading} tabIndex={-1}>{category ? categoryById[category as CategoryId]?.name ?? 'Lessons' : path ? 'Your path, in order' : 'The whole collection'}</h2><span role="status">{filtered.length} {filtered.length === 1 ? 'bite' : 'bites'}</span></div>{query && <p className="search-summary">Results for “{query}”<button type="button" className="icon-button" aria-label="Clear search" onClick={() => updateFilter('q', '')}><X size={16} aria-hidden="true"/></button></p>}<div className="explore-lesson-grid">{visible.map((lesson) => <LessonCard key={lesson.id} lesson={lesson} saved={state.saved.includes(lesson.id)} completed={Boolean(state.completed[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>)}</div>
+    <section className="explore-results"><div className="section-heading"><h2 ref={resultsHeading} tabIndex={-1}>{category ? categoryById[category as CategoryId]?.name ?? 'Lessons' : path ? 'Your path, in order' : 'The whole collection'}</h2><span role="status">{filtered.length} {filtered.length === 1 ? 'bite' : 'bites'}</span></div>{query && <p className="search-summary">Results for “{query}”<button type="button" className="icon-button" aria-label="Clear search" onClick={() => updateFilter('q', '')}><X size={16} aria-hidden="true"/></button></p>}<div className="explore-lesson-grid">{visible.map((lesson) => <LessonCard key={lesson.id} lesson={lesson} saved={state.saved.includes(lesson.id)} completed={Boolean(state.completed[lesson.id])} inProgress={Boolean(state.readerDrafts?.[lesson.id])} onOpen={() => route.setParam('lesson', lesson.id)} onSave={() => library.toggleSave(lesson.id)}/>)}</div>
       {!visible.length && <EmptyState title="Try a different angle." action="Clear filters" onAction={() => route.navigate('explore')}>No bites match these filters. Search a broader idea or switch topics.</EmptyState>}
       {pages > 1 && <nav className="pagination" aria-label="Lesson pages"><button type="button" className="button button-quiet" disabled={currentPage === 1} onClick={() => updateFilter('page', String(currentPage - 1))}><ArrowLeft size={18} aria-hidden="true"/>Previous</button><span>{currentPage} / {pages}</span><button type="button" className="button button-quiet" disabled={currentPage === pages} onClick={() => updateFilter('page', String(currentPage + 1))}>Next<ArrowRight size={18} aria-hidden="true"/></button></nav>}
     </section>

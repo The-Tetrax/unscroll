@@ -15,9 +15,13 @@
   --color-field: #cd2a39;
   --color-field-ink: #fff8ef;
   --color-focus: #bb172b;
+  --color-inverse: #231f20;
+  --color-on-inverse: #f7f4ed;
   --color-on-dark-muted: #d0c4bf;
   --color-on-dark-rule: #5e4e50;
   --color-mascot-line: #ea8490;
+  --color-mascot-paper: #f7f4ed;
+  --color-mascot-ink: #231f20;
   --color-success: #315d3d;
   --color-success-paper: #e2eadf;
   --color-error: #a21c2b;
@@ -77,4 +81,37 @@
   --ease-out: cubic-bezier(.16, 1, .3, 1);
   --ease-in: cubic-bezier(.7, 0, .84, 0);
   --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+}
+
+/* Dark theme. Surfaces get lighter as they rise, text is ivory rather than white,
+   and the red accent is lightened so it stays readable as text on dark paper. */
+:root[data-theme='dark'] {
+  --color-paper: #1a1617;
+  --color-paper-2: #262021;
+  --color-paper-3: #362e2f;
+  --color-ink: #f1ece4;
+  --color-ink-2: #d9d1c9;
+  --color-muted: #b0a69f;
+  --color-rule: #40383a;
+  --color-input-border: #8c8279;
+  --color-accent: #f47983;
+  --color-accent-hover: #ff8f98;
+  --color-accent-ink: #1d1415;
+  --color-focus: #ff9aa2;
+  --color-inverse: #352d2e;
+  --color-success: #9fd4ac;
+  --color-success-paper: #1d3324;
+  --color-error: #ff9aa2;
+  --color-error-paper: #3f1a1f;
+  --color-overlay: #000000b8;
+  --color-cat-mind: #3b3350;
+  --color-cat-work: #4a3d1f;
+  --color-cat-money: #2c4030;
+  --color-cat-life: #4b3526;
+  --color-cat-people: #4a2f38;
+  --color-cat-tech: #29414a;
+  --color-cat-thinking: #45402a;
+  --color-cat-wellbeing: #294235;
+  --color-cat-cinema: #523624;
+  --color-cat-design: #3d4229;
 }

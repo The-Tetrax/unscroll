@@ -13,6 +13,8 @@ A mobile-first, installable learning app with an original red, ink, and ivory vi
 - A daily mix of 1, 3, 5, or 7 lessons. Today's issued queue stays fixed after completion, reload, and preference changes. Completed or previously delivered lessons are not silently relabeled as new. Unfinished older lessons remain available in Explore.
 - Optional three-step onboarding explains a real lesson and helps choose topics and pace. Reopen it anytime in **You > Help and privacy**. Cancelling does not save unfinished preference changes.
 - **Standard or larger lesson text**, system-aware reduced motion, and direct settings navigation. Preference success is reported only after device storage confirms it.
+- **Light and dark themes.** The app follows the device setting unless you choose Light or Dark in **You > Preferences > Appearance**. A **Reading settings** button inside every lesson changes text size and theme without leaving the page. Diagrams keep their light paper in the dark theme.
+- A thin bar above the lesson buttons shows how far the current step has been scrolled. Lesson cards show **In progress** when a position is saved. Explore lists six learning paths on phones and eight on wider screens until you choose **Show all 22 paths**.
 - Save bites, write notes, organize collections, search by category and topic, and follow a learning path.
 - **Unfinished bites** retain their step, selected answer, and revealed feedback without awarding completion XP. Resume from Today or **Vault > Unfinished**, or forget a saved position without deleting notes.
 - **Practice** separates reading from trying. Plan up to five experiments, mark attempts, undo, or remove them in **Vault > Practice**. This is a self-reported log, not another source of points or a measured skill rating.
@@ -36,6 +38,8 @@ A mobile-first, installable learning app with an original red, ink, and ivory vi
 
 Subsequent pushes to main deploy automatically once the repository is connected. Function and storage usage is subject to your Netlify plan; this app does not promise unlimited free hosting.
 
+On Netlify's Free plan each production deploy costs 15 of the 300 monthly credits, so a billing cycle has room for 20 deploys at most and later pushes to main are skipped. Put `[skip netlify]` in the message of commits that do not need to reach the phone. [docs/phone-install-options.md](docs/phone-install-options.md) records the deploy log that showed this and the alternatives.
+
 ### Existing private deployment
 
 The owner's site is [unscrollbytetrax.netlify.app](https://unscrollbytetrax.netlify.app). Keep its Netlify visibility **Private** and protect both production and previews. Anonymous requests to the app, manifest, worker, and discovery endpoint were rejected with HTTP 401 during this revision. The shared Netlify session was signed out, so a source push must not be mistaken for verified publication. Check the deployed commit in Netlify and **You > Offline and updates > App build** after signing in.
@@ -45,6 +49,8 @@ Private hosting restricts online access; it does not bind the app to one physica
 The release archive contains a production static site for optional Netlify Drop. That mode has the full curated offline app but **does not deploy server functions**. Use repository import for daily discoveries and scheduled refreshes.
 
 ## Install on your phone
+
+[docs/phone-install-options.md](docs/phone-install-options.md) compares four ways to get a build onto one Android phone without paid hosting: staying on Netlify, installing over USB from a PC, free hosting on Cloudflare Pages, and a real APK. Each step there is marked as run, documented by the vendor, or unverified.
 
 - **Android Chrome:** open the HTTPS site, use **Install app** in the browser menu, or the app's **You > Install UNSCROLL** action when available.
 - **iPhone/iPad Safari:** open the HTTPS site, choose **Share > Add to Home Screen**, and keep **Open as Web App** enabled if offered.
@@ -118,6 +124,8 @@ See [public/ATTRIBUTION.md](public/ATTRIBUTION.md) and [LICENSE](LICENSE). Fonts
 - [src/teaching/index.ts](src/teaching/index.ts): the 544 complete guides and their teaching revision.
 - [scripts/generate-teaching-assets.ts](scripts/generate-teaching-assets.ts): deterministic SVG generation, decoding, manifests and contact sheets.
 - [src/hooks/useAppStatus.ts](src/hooks/useAppStatus.ts): cache verification and safe update handling.
+- [src/tokens.css](src/tokens.css): every color for the light and dark themes. [tests/theme.test.ts](tests/theme.test.ts) checks their contrast.
+- [docs/ux-plan-2026-11.md](docs/ux-plan-2026-11.md): the audit, the evidence for each interface change, and what is left.
 - [src/lib/learning.ts](src/lib/learning.ts): local dates, finite selection, XP, and review scheduling.
 - [src/lib/storage.ts](src/lib/storage.ts): IndexedDB persistence, retention, and backups.
 - [src/lib/schema.ts](src/lib/schema.ts): shared validation contracts.

@@ -442,6 +442,7 @@ test('Explore filters cinema and subtopics, clears empty searches, and preserves
   await expect(page.getByLabel('Focus topic', { exact: true })).toHaveValue('')
 
   const path = learningPaths.find((entry) => entry.id === 'phone-eye')!
+  await page.getByRole('button', { name: `Show all ${learningPaths.length} paths`, exact: true }).click()
   await page.locator('button.path-tile').filter({ has: page.getByRole('heading', { level: 3, name: path.title, exact: true }) }).click()
   await expect(page.getByRole('heading', { level: 1, name: path.title, exact: true })).toBeVisible()
   await expect(page.locator('.explore-results .lesson-card-main h3')).toHaveText(path.lessonIds.slice(0, 12).map((id) => original(id).title))

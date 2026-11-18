@@ -4,6 +4,9 @@
 
 * { box-sizing: border-box; }
 html { overflow-x: clip; font-size: 16px; color-scheme: light; scroll-padding-top: var(--header-height); background: var(--color-paper); scrollbar-color: var(--color-muted) var(--color-paper-2); }
+html[data-theme='dark'] { color-scheme: dark; }
+/* In the installed app a pull at the top of the page would reload it mid-lesson. Browser tabs keep their refresh gesture. */
+@media (display-mode: standalone) { html, body { overscroll-behavior-y: contain; } }
 body { overflow-x: clip; margin: 0; min-width: 320px; color: var(--color-ink); background: var(--color-paper); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.55; font-synthesis: none; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 button, input, select, textarea { font: inherit; }
 button, a, input, select, textarea, summary { -webkit-tap-highlight-color: var(--color-transparent); }

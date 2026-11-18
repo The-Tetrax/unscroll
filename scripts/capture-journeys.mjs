@@ -1,12 +1,14 @@
 import { chromium } from '@playwright/test'
 import fs from 'node:fs/promises'
 
-const out = '.hallmark/journeys'
+// Pass --dark to capture the same journeys with a dark device setting, which the app follows by default.
+const dark = process.argv.includes('--dark')
+const out = dark ? '.hallmark/journeys-dark' : '.hallmark/journeys'
 await fs.mkdir(out, { recursive: true })
 const browser = await chromium.launch()
 let captures = 0
 for (const [name, width, height] of [['phone', 390, 844], ['desktop', 1280, 900]]) {
-  const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce', serviceWorkers: 'allow', locale: 'en-US' })
+  const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce', serviceWorkers: 'allow', locale: 'en-US', colorScheme: dark ? 'dark' : 'light' })
   const page = await context.newPage()
   await page.route('**/.netlify/functions/discover', (route) => route.fulfill({ status: 503, contentType: 'application/json', body: JSON.stringify({ error: 'Offline visual-review fixture' }) }))
   const shot = async (label, fullPage = true) => { await page.screenshot({ path: `${out}/${name}-${label}.png`, fullPage }); captures += 1 }
@@ -24,6 +26,9 @@ for (const [name, width, height] of [['phone', 390, 844], ['desktop', 1280, 900]
   const dialog = page.getByRole('dialog')
   await dialog.waitFor()
   await shot('reader-understand', false)
+  await dialog.getByRole('button', { name: 'Reading settings', exact: true }).click()
+  await shot('reader-settings', false)
+  await dialog.getByRole('button', { name: 'Reading settings', exact: true }).click()
   await dialog.getByRole('button', { name: 'Try this idea', exact: true }).click()
   await dialog.getByRole('textbox', { name: /Your note or experiment/ }).fill('Visual review sample: compare the same doorway from two camera heights.')
   await dialog.getByRole('button', { name: 'Plan this experiment', exact: true }).click()
@@ -85,4 +90,4 @@ for (const [name, width, height] of [['phone', 390, 844], ['desktop', 1280, 900]
   await context.close()
 }
 await browser.close()
-console.log(`Captured ${captures} desktop/phone route and reader-state images in .hallmark/journeys. Sample notes are only in isolated review contexts.`)
+console.log(`Captured ${captures} desktop/phone route and reader-state images in ${out}. Sample notes are only in isolated review contexts.`)

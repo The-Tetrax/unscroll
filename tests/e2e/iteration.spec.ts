@@ -394,7 +394,7 @@ async function expectMobileReader(page: Page, dialog: Locator, label: string) {
   expect.soft(Math.abs(shell.width - viewport.width), `${label}: full viewport width`).toBeLessThanOrEqual(1)
   expect.soft(Math.abs(shell.height - viewport.height), `${label}: full viewport height`).toBeLessThanOrEqual(1)
   const controls = dialog.locator('.reader-toolbar .icon-button, .reader-footer .button')
-  await expect(controls, `${label}: three toolbar controls and two footer actions`).toHaveCount(5)
+  await expect(controls, `${label}: four toolbar controls and two footer actions`).toHaveCount(6)
   for (const control of await controls.all()) {
     await expect(control, `${label}: toolbar and footer controls must stay on screen`).toBeInViewport({ ratio: 1 })
     const box = (await control.boundingBox())!
