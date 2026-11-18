@@ -25,7 +25,7 @@ Nothing here has been tried on the phone. The phone was not connected, this PC h
 
 ## Short answer
 
-Netlify did not break. The Free plan gives 300 credits a month and a production deploy costs 15, so the 20th deploy used the last credit. Five later pushes were skipped. The phone can be at build `85a5bd6` at the newest.
+Netlify did not break. The Free plan gives 300 credits a month and a production deploy costs 15, so the 20th deploy used the last credit. Every push since then has been skipped: five on 27 October, and the one that added this document on 18 November. The phone can be at build `85a5bd6` at the newest.
 
 | | Route 0: Netlify | Route B: PWA over USB | Route C: Cloudflare Pages | Route A: APK |
 | --- | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ Netlify did not break. The Free plan gives 300 credits a month and a production 
 
 My recommendation, in order:
 
-1. **Do nothing new first.** The push that carries this document triggers one Netlify build. If the credits have reset it deploys and the phone offers the update with all data kept. If not, wait for the reset date shown on Netlify's billing page.
+1. **Wait for Netlify's credits, then deploy once.** The commit that added this document, `5c593bc`, was pushed on 2026-11-18 at 16:08 UTC and Netlify skipped it, so the credits had not come back by then. Read the reset date on Netlify's billing page. Once credits are available, **Deploys > Trigger deploy** builds the newest commit without a new push, and the phone offers the update with all data kept.
 2. **Adopt the checkpoint rule in Route 0** so 300 credits cover releases, not work-in-progress commits.
 3. **If 20 deploys a month is still too few, use Route C.** It is the only alternative that keeps HTTPS, private access and updates from anywhere with no code change.
 4. **Use Route B when you want a build on the phone today and have the cable.** It needs no account and no code change. Its limits are in its own section.
@@ -69,7 +69,9 @@ My recommendation, in order:
 
 The arithmetic matches the log: the 20th successful deploy was the last, and every push after it was skipped.
 
-What the phone is missing: the four modules rewritten after `85a5bd6` (design UX and drawing, cinema camera, cinema light and edit, cinema sound and study) and the final-gates commit `3cde874`.
+**Verified** again at 16:08 UTC the same day, after `5c593bc` was pushed: Netlify recorded that push as `state: error`, `skipped: true`, the same as the five before it, with no reason in the public record. The log then held 26 deploys, 20 successful and 6 skipped. Netlify's public site record names `85a5bd6` as the published deploy, published on 2026-10-27 at 10:03 UTC.
+
+What the phone is missing: the four modules rewritten after `85a5bd6` (design UX and drawing, cinema camera, cinema light and edit, cinema sound and study), the final-gates commit `3cde874`, and `5c593bc` with the dark theme and the other changes listed in [ux-plan-2026-11.md](ux-plan-2026-11.md).
 
 Two things I could not see without your Netlify login:
 
@@ -147,7 +149,7 @@ Chrome treats `http://localhost` as a secure context, so service workers and ins
 ### What you need
 
 - The phone, a USB data cable, and Chrome on both the phone and this PC.
-- On the phone: **Settings > About phone**, tap **Build number** seven times, then **Settings > System > Developer options > USB debugging**. **Documented.**
+- On the phone: **Settings > About phone**, tap **Build number** seven times, then **Settings > System > Developer options > USB debugging**. **Documented.** The menu path differs by phone maker; Google's developer-options page lists the common ones.
 - Nothing new on the PC if you use Chrome's built-in port forwarding. adb is optional.
 
 ### Steps
@@ -165,7 +167,7 @@ Chrome treats `http://localhost` as a secure context, so service workers and ins
 
 2. **Documented.** Connect the phone by USB. Unlock it and accept **Allow USB debugging?**.
 
-3. **Documented.** In desktop Chrome open `chrome://inspect/#devices`. Tick **Discover USB devices**. The phone appears under **Remote Target** within a few seconds.
+3. **Documented.** In desktop Chrome open `chrome://inspect/#devices`. Tick **Discover USB devices**. The phone appears under **Remote Target** once the prompt on the phone has been accepted.
 
 4. **Documented.** Click **Port forwarding**. Enter port `4173` on the left and `localhost:4173` on the right. Tick **Enable port forwarding**, then **Done**. Keep this tab open.
 
@@ -544,13 +546,14 @@ Run on this PC on 2026-11-18:
 - Capacitor: `npm install`, `cap init`, `cap add android`, `cap sync android`, `cap doctor android` in a scratch folder; generated files read.
 - Capacitor 8.6.2 Android source read for download, file chooser, back button, service worker and external link behaviour.
 - `winget search` for the JDK and platform-tools package IDs.
+- One push of commit `5c593bc` to `main` at 16:08 UTC. Netlify skipped it, and the deploy log was read again afterwards.
 
 Not run:
 
 - Anything on the phone: USB debugging, port forwarding, PWA installation, WebAPK check, APK installation.
 - JDK and Android SDK installation, any Gradle build, key creation, signing.
 - Any Cloudflare step: account, wrangler login, upload, Access.
-- Any GitHub Pages or GitHub Actions step.
+- Any GitHub Pages deploy, and any GitHub Actions workflow that builds an APK.
 - The five app changes for Route A.
 
 ## Sources
