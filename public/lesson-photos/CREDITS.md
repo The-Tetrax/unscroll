@@ -1,6 +1,6 @@
 # Lesson picture credits
 
-UNSCROLL shows 106 pictures by other people in 99 lessons. Each one is in the public domain or under a Creative Commons license that allows reuse with credit. They are not covered by the project's MIT license, and each keeps the license named here. Every file comes from Wikimedia Commons and was changed only as stated. A credit does not mean that the author endorses UNSCROLL.
+UNSCROLL shows 133 pictures by other people in 124 lessons. Each one is in the public domain or under a Creative Commons license that allows reuse with credit. They are not covered by the project's MIT license, and each keeps the license named here. Every file comes from Wikimedia Commons and was changed only as stated. A credit does not mean that the author endorses UNSCROLL.
 
 This file is generated from src/teaching/photos.json by npm run assets.
 
@@ -132,7 +132,7 @@ This file is generated from src/teaching/photos.json by npm run assets.
 
 - File: lesson-photos/cinema-018-1.webp
   Work: Film and Photography during the Second World War H21451
-  Author: War Office official photographer, Malindine E G (Lt), Puttnam L (Lt)
+  Author: War Office official photographer, Malindine E G (Lt), Puttnam L (Lt); Imperial War Museums collection
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Film_and_Photography_during_the_Second_World_War_H21451.jpg
   Changes: Converted to WebP.
@@ -145,6 +145,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Backstage_photograph_on_the_set_of_When_Tomorrow_Comes.jpg
   Changes: Converted to WebP.
+
+## cinema-023: Agree on recording and sharing separately
+
+- File: lesson-photos/cinema-023-1.webp
+  Work: Filming notice at the Sony Interactive Entertainment Taiwan booth, Taipei Game Show 2026
+  Author: Solomon203
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:SIET_Filming_Notice_20260201.jpg
+  Changes: Cropped, resized and converted to WebP.
 
 ## cinema-024: Replace risky locations with safe screen geography
 
@@ -222,7 +231,7 @@ This file is generated from src/teaching/photos.json by npm run assets.
 
 - File: lesson-photos/cinema-035-1.webp
   Work: Toni Frissell, fashion model near tidal basin, Washington, D.C., ca. 1946
-  Author: Toni Frissell
+  Author: Toni Frissell, Library of Congress Prints & Photographs Division
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Toni_Frissell,_fashion_model_near_tidal_basin,_Washington,_D.C.,_ca._1946.jpg
   Changes: Resized and converted to WebP.
@@ -253,6 +262,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Cinema_etiquette_title_card.jpg
   Changes: Resized and converted to WebP.
+
+## cinema-041: Keep the invitation audible while the picture moves on
+
+- File: lesson-photos/cinema-041-1.webp
+  Work: Kdenlive L-cut (the first clip is named after PRISM: Snowden Interview, a film by Laura Poitras / Praxis Films)
+  Author: Macchrissli
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Kdenlive_lcut.png
+  Changes: Converted to WebP.
 
 ## cinema-043: Match the shots before choosing a shared color treatment
 
@@ -308,6 +326,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Clipping_1KHz_10V_DIV_clip_A_5ohms-1-.jpg
   Changes: Converted to WebP.
 
+## cinema-056: Read the arrangement before explaining the dialogue
+
+- File: lesson-photos/cinema-056-1.webp
+  Work: The Cardsharps (I bari)
+  Author: Caravaggio
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Caravaggio_-_The_Cardsharps_(1596-97)_Kimbell_Art_Museum.jpg
+  Changes: Resized and converted to WebP.
+
 ## cinema-059: Storyboard an original action with simple shapes
 
 - File: lesson-photos/cinema-059-1.webp
@@ -315,6 +342,22 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Tom Ray
   License: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0
   Source: https://commons.wikimedia.org/wiki/File:Storyboard_for_The_Radio_Adventures_of_Dr._Floyd.jpg
+  Changes: Resized and converted to WebP.
+
+## design-001: Make the pear visible before choosing its green
+
+- File: lesson-photos/design-001-1.webp
+  Work: Impression, Sunrise (Impression, soleil levant), 1872
+  Author: Claude Monet
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg
+  Changes: Resized and converted to WebP.
+
+- File: lesson-photos/design-001-2.webp
+  Work: Impression, Sunrise (Impression, soleil levant), 1872, digitally desaturated copy
+  Author: Claude Monet
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Claude_Monet,_Impression,_soleil_levant,_1872_BW.jpg
   Changes: Resized and converted to WebP.
 
 ## design-002: Specify whether the green needs darkening or muting
@@ -369,6 +412,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:CMY.jpg
   Changes: Resized and converted to WebP.
 
+## design-007: Check the viewing conditions before cooling the scan
+
+- File: lesson-photos/design-007-1.webp
+  Work: ColourIllusion2
+  Author: Mike Young
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:ColourIllusion2.jpg
+  Changes: Resized and converted to WebP.
+
 ## design-010: Choose which light your neutral sample represents
 
 - File: lesson-photos/design-010-1.webp
@@ -394,6 +446,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Blythwood
   License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
   Source: https://commons.wikimedia.org/wiki/File:General_x-height_sample_image.png
+  Changes: Cropped, resized and converted to WebP.
+
+## design-015: Read the recipe as instructions, not an alphabet sample
+
+- File: lesson-photos/design-015-1.webp
+  Work: A Specimen by William Caslon, Letter-Founder (1734)
+  Author: William Caslon
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:A_Specimen_by_William_Caslon.jpg
   Changes: Cropped, resized and converted to WebP.
 
 ## design-016: Give the eye a line it can return from
@@ -448,6 +509,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Signs-1160236,_Dingle_Peninsula,_Co._Kerry,_Ireland.jpg
   Changes: Resized and converted to WebP.
 
+## design-030: Check the colors behind the actual caption
+
+- File: lesson-photos/design-030-1.webp
+  Work: You cannot be taller than this to ride sign
+  Author: Rick Obst
+  License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0
+  Source: https://commons.wikimedia.org/wiki/File:You_cannot_be_taller_than_this_to_ride_sign.jpg
+  Changes: Cropped, resized and converted to WebP.
+
 ## design-031: Keep a route status understandable without its color
 
 - File: lesson-photos/design-031-1.webp
@@ -464,6 +534,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Rembrandt
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Rembrandt_-_Two_women_teaching_a_child_to_walk;_one_bending_over_and_pointing._c.1635-1637,_1910,0212.187.jpg
+  Changes: Resized and converted to WebP.
+
+## design-038: Build a kettle from connected volumes you can turn
+
+- File: lesson-photos/design-038-1.webp
+  Work: Plate from Bizzarie di varie figure (1624)
+  Author: Giovanni Battista Bracelli; National Gallery of Art, Washington
+  License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+  Source: https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Bracelli,_From_%22Bizzarie_di_varie_Figure%22,_1624,_NGA_46318.jpg
   Changes: Resized and converted to WebP.
 
 ## design-039: Use the gap between utensils to check their angles
@@ -633,6 +712,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:HVAC_air_filter.webp
   Changes: Resized and converted to WebP.
 
+## life-002: Give a leak a location, not a guessed diagnosis
+
+- File: lesson-photos/life-002-1.webp
+  Work: Ceiling water damage
+  Author: Atomicdragon136
+  License: CC BY 3.0, https://creativecommons.org/licenses/by/3.0
+  Source: https://commons.wikimedia.org/wiki/File:Ceiling_water_damage.jpg
+  Changes: Resized and converted to WebP.
+
 ## life-003: Keep the dryer air path clear without servicing it
 
 - File: lesson-photos/life-003-1.webp
@@ -659,6 +747,24 @@ This file is generated from src/teaching/photos.json by npm run assets.
   License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
   Source: https://commons.wikimedia.org/wiki/File:Mazda_3_Fuel_Gauge_Showing_Empty.jpg
   Changes: Resized and converted to WebP.
+
+## life-021: Find the wear part behind the durability claim
+
+- File: lesson-photos/life-021-1.webp
+  Work: Tire-code
+  Author: Chrismeraz
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Tire-code.jpg
+  Changes: Resized and converted to WebP.
+
+## life-023: Measure the space an object uses when it opens
+
+- File: lesson-photos/life-023-1.webp
+  Work: Dishwasher in a modern kitchen with opened door showing dishes inside
+  Author: Shixart1985
+  License: CC BY 2.0, https://creativecommons.org/licenses/by/2.0
+  Source: https://commons.wikimedia.org/wiki/File:Dishwasher_in_a_modern_kitchen_with_opened_door_showing_dishes_inside.jpg
+  Changes: Cropped, resized and converted to WebP.
 
 ## life-024: Turn watts and hours into a usable estimate
 
@@ -723,14 +829,30 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Spot_the_difference.png
   Changes: Converted to WebP.
 
+## mind-022: Put the needed explanation beside its object
+
+- File: lesson-photos/mind-022-1.webp
+  Work: Exploded diagram of a three-speed hub, from a Sears bicycle owner's manual (1977)
+  Author: Sears Sports Center
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Internal_hub_3_speed_Shimano.jpg
+  Changes: Resized and converted to WebP.
+
+- File: lesson-photos/mind-022-2.webp
+  Work: Bicycle diagram
+  Author: Al2
+  License: CC BY 3.0, https://creativecommons.org/licenses/by/3.0
+  Source: https://commons.wikimedia.org/wiki/File:Bicycle_diagram.svg
+  Changes: Rendered from SVG and converted to WebP.
+
 ## mind-028: Give learning another encounter after a gap
 
 - File: lesson-photos/mind-028-1.webp
-  Work: ForgettingCurve
-  Author: Icez
-  License: Public domain
-  Source: https://commons.wikimedia.org/wiki/File:ForgettingCurve.svg
-  Changes: Rendered from SVG and converted to WebP.
+  Work: Ebbinghaus' savings data with a fitted model, from Fig 3 of Replication and Analysis of Ebbinghaus' Forgetting Curve, PLOS ONE 10(7): e0120644 (2015)
+  Author: Jaap M. J. Murre and Joeri Dros
+  License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Ebbinghaus_curve.png
+  Changes: Resized and converted to WebP.
 
 ## money-006: Calculate interest on earlier interest
 
@@ -745,9 +867,18 @@ This file is generated from src/teaching/photos.json by npm run assets.
 
 - File: lesson-photos/money-009-1.webp
   Work: Reichsbanknote, 50 Milliarden Mark, 10 October 1923
-  Author: Reichsbankdirektorium Berlin
+  Author: Reichsbankdirektorium Berlin; image by Godot13, National Numismatic Collection, National Museum of American History
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:GER-119c-Reichsbanknote-50_Billion_Mark_(1923).jpg
+  Changes: Resized and converted to WebP.
+
+## money-026: Include the costs after checkout
+
+- File: lesson-photos/money-026-1.webp
+  Work: Nespresso coffee machine and coffee capsules on kitchen counter during midday
+  Author: Shixart1985
+  License: CC BY 2.0, https://creativecommons.org/licenses/by/2.0
+  Source: https://commons.wikimedia.org/wiki/File:Nespresso_coffee_machine_and_coffee_capsules_on_kitchen_counter_during_midday.jpg
   Changes: Resized and converted to WebP.
 
 ## money-031: Verify a money request on a separate channel
@@ -759,6 +890,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:PhishingTrustedBank.png
   Changes: Converted to WebP.
 
+## money-032: Treat payment instructions as evidence
+
+- File: lesson-photos/money-032-1.webp
+  Work: Roblox gift cards
+  Author: 3df
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Roblox_gift_cards.jpg
+  Changes: Cropped, resized and converted to WebP.
+
 ## money-034: Do not hand remote control to a pop-up
 
 - File: lesson-photos/money-034-1.webp
@@ -766,6 +906,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Pahunkat
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Example_of_a_technical_support_scam_popup.png
+  Changes: Resized and converted to WebP.
+
+## money-035: Separate a secure connection from an honest seller
+
+- File: lesson-photos/money-035-1.webp
+  Work: HTTPS and padlock in website address bar
+  Author: Santeri Viinamäki
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:HTTPS_and_padlock_in_website_address_bar.jpg
   Changes: Resized and converted to WebP.
 
 ## money-036: Split a repayment into interest and principal
@@ -786,6 +935,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Darwin_Tree_1837.png
   Changes: Cropped, resized and converted to WebP.
 
+## observer-002: Describe where things are, not just what is there
+
+- File: lesson-photos/observer-002-1.webp
+  Work: FBI Honolulu Adopt-a-School evidence scene sketch
+  Author: Federal Bureau of Investigation
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:FBI_Honolulu_Adopt-a-School_Evidence_Scene_Sketch_(36318511795).jpg
+  Changes: Cropped, resized and converted to WebP.
+
 ## observer-004: Could that detail be seen from there?
 
 - File: lesson-photos/observer-004-1.webp
@@ -793,6 +951,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Steve Daniels
   License: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0
   Source: https://commons.wikimedia.org/wiki/File:Bench-blocking_bush_-_geograph.org.uk_-_2082039.jpg
+  Changes: Resized and converted to WebP.
+
+## observer-021: Use chance instead of a predictable pattern
+
+- File: lesson-photos/observer-021-1.webp
+  Work: Penalty save on the match of UEFA league
+  Author: Giggi12
+  License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0
+  Source: https://commons.wikimedia.org/wiki/File:Penalty_save_on_the_match_of_UEFA_league.jpg
   Changes: Resized and converted to WebP.
 
 ## tech-006: A DHCP offer is not the completed lease exchange
@@ -822,6 +989,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:1901_Eastern_Telegraph_cables.png
   Changes: Resized and converted to WebP.
 
+## tech-012: A packet-loss number needs a measurement boundary
+
+- File: lesson-photos/tech-012-1.webp
+  Work: Cmd-ping
+  Author: Cristianzambrano
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Cmd-ping.png
+  Changes: Cropped and converted to WebP.
+
 ## tech-014: Path MTU is constrained by the smallest link
 
 - File: lesson-photos/tech-014-1.webp
@@ -838,6 +1014,24 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Pauli_Exclusion_Principle_-_Flickr_-_Bistrosavage.jpg
   Changes: Resized and converted to WebP.
 
+## tech-020: A timeout leaves the remote outcome uncertain
+
+- File: lesson-photos/tech-020-1.webp
+  Work: Two Generals' Problem
+  Author: Jens Erat
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:2-generals.svg
+  Changes: Rendered from SVG and converted to WebP.
+
+## tech-024: Multiplexing does not remove every source of blocking
+
+- File: lesson-photos/tech-024-1.webp
+  Work: HTTP/1.1 vs. HTTP/2 vs. HTTP/3 protocol stack
+  Author: Sedrubal, adapted by Anton.bersh
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:HTTP-1.1_vs._HTTP-2_vs._HTTP-3_Protocol_Stack.svg
+  Changes: Rendered from SVG and converted to WebP.
+
 ## thinking-004: Check the rule that admitted each example
 
 - File: lesson-photos/thinking-004-1.webp
@@ -847,6 +1041,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Survivorship-bias.svg
   Changes: Rendered from SVG and converted to WebP.
 
+## thinking-007: Subtract the change that might have happened anyway
+
+- File: lesson-photos/thinking-007-1.webp
+  Work: Parallel Trend Assumption
+  Author: Masalih
+  License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0
+  Source: https://commons.wikimedia.org/wiki/File:Parallel_Trend_Assumption.png
+  Changes: Converted to WebP.
+
 ## thinking-015: Read the slow requests behind the average
 
 - File: lesson-photos/thinking-015-1.webp
@@ -855,6 +1058,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0
   Source: https://commons.wikimedia.org/wiki/File:Comparison_mean_median_mode.svg
   Changes: Rendered from SVG and converted to WebP.
+
+## thinking-016: An interval for an average is not a deadline promise
+
+- File: lesson-photos/thinking-016-1.webp
+  Work: CurveWeightHeight
+  Author: Mathieu Rouaud
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:CurveWeightHeight.png
+  Changes: Resized and converted to WebP.
 
 ## thinking-018: Knowing the average does not stop the variation
 
@@ -899,13 +1111,31 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Optimizing-different-parts.svg
   Changes: Rendered from SVG and converted to WebP.
 
+## thinking-039: Look for the cause that can disable both copies
+
+- File: lesson-photos/thinking-039-1.webp
+  Work: US Airways Flight 1549 (N106US) after crashing into the Hudson River
+  Author: Greg L
+  License: CC BY 2.0, https://creativecommons.org/licenses/by/2.0
+  Source: https://commons.wikimedia.org/wiki/File:US_Airways_Flight_1549_(N106US)_after_crashing_into_the_Hudson_River_(crop_2).jpg
+  Changes: Converted to WebP.
+
 ## thinking-040: Let the units check the estimate
 
 - File: lesson-photos/thinking-040-1.webp
   Work: Artist's rendering of the Mars Climate Orbiter
-  Author: NASA/JPL/Corby Waste
+  Author: NASA/JPL-Caltech, Corby Waste
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Mars_Climate_Orbiter_2.jpg
+  Changes: Resized and converted to WebP.
+
+## wellbeing-020: Keep nighttime lighting safe and modest
+
+- File: lesson-photos/wellbeing-020-1.webp
+  Work: LED nightlight with switch
+  Author: Tetris L
+  License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0
+  Source: https://commons.wikimedia.org/wiki/File:LED_nightlight_with_switch.JPG
   Changes: Resized and converted to WebP.
 
 ## wellbeing-029: Recognize pulses as a protein food
@@ -933,6 +1163,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Henrikbothe
   License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
   Source: https://commons.wikimedia.org/wiki/File:Henrik_Bothe_plate_spinning.jpg
+  Changes: Resized and converted to WebP.
+
+## work-018: Separate a forecast from a commitment
+
+- File: lesson-photos/work-018-1.webp
+  Work: Hurricane Sergio 5-day cone forecast, advisory 30
+  Author: National Hurricane Center
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Hurricane_Sergio_5-day_cone_forecast.png
   Changes: Resized and converted to WebP.
 
 ## work-026: Put a checklist at a decision point

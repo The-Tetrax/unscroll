@@ -32,6 +32,8 @@ const lessonById = new Map(lessons.map((lesson) => [lesson.id, lesson]))
 interface Found {
   file: string; width: number; height: number; mime: string; thumb: string; page: string
   license: string; licenseUrl?: string; author: string; work: string; description: string; date: string; restrictions: string; rejected?: string
+  // Where the uploader says the file came from: their own work, or another website whose own terms must be read.
+  source?: string
 }
 interface Candidate extends Found { n: number }
 interface Pick {
@@ -146,7 +148,7 @@ async function imageInfo(titles: string[], width: number): Promise<Map<string, F
         license: terms?.name ?? `not accepted (${meta.License || meta.LicenseShortName || 'no license data'})`, ...(terms?.url ? { licenseUrl: terms.url } : {}),
         author: plain(meta.Artist) || plain(meta.Credit) || 'Unknown author',
         work: plain(meta.ObjectName) || page.title.replace(/^File:/, '').replace(/\.[a-z0-9]+$/i, '').replace(/[\u2013\u2014]/g, '-'),
-        description: plain(meta.ImageDescription), date: plain(meta.DateTimeOriginal), restrictions: meta.Restrictions ?? '',
+        description: plain(meta.ImageDescription), date: plain(meta.DateTimeOriginal), restrictions: meta.Restrictions ?? '', source: plain(meta.Credit),
       }
       if (!terms) entry.rejected = `license ${meta.License || meta.LicenseShortName || 'unknown'}`
       else if (!/^image\/(?:jpeg|png|webp|tiff|svg\+xml)$/.test(info.mime)) entry.rejected = `type ${info.mime}`
@@ -286,6 +288,7 @@ async function show(batch: string, tokens: string[], columns: number) {
     console.log(`${id}:${candidate.n}  ${candidate.file}`)
     console.log(`   ${candidate.width}x${candidate.height}  ${candidate.license}  by ${candidate.author.slice(0, 110)}${candidate.restrictions ? `  [${candidate.restrictions}]` : ''}`)
     console.log(`   ${candidate.description.slice(0, 300) || '(no description)'}`)
+    console.log(`   source: ${info.get(candidate.file)?.source?.slice(0, 200) || '(none given)'}`)
   }
   const groups = []
   const perSheet = columns * (columns === 2 ? 2 : 3)
@@ -405,7 +408,8 @@ async function review(prefixes: string[], columns: number) {
 }
 
 // Looking at a picture cannot confirm a name, a place or a date. This prints what the source page says about each
-// recorded picture, and the license it carries today, so those claims can be checked against it.
+// recorded picture, where the uploader says it came from, and the license it carries today, so those claims can be
+// checked against it. A source that is another website has terms of its own, which this tool does not read.
 async function sources(prefixes: string[], length: number) {
   const data = await readData()
   const entries = Object.entries(data).filter(([id]) => !prefixes.length || prefixes.some((prefix) => id.startsWith(prefix)))
@@ -419,6 +423,7 @@ async function sources(prefixes: string[], length: number) {
     console.log(`\n${id} / ${index + 1}  ${file}`)
     console.log(`   LICENSE: ${found ? `${found.license}${same ? '' : `  (RECORDED AS ${photo.credit.license})`}` : 'NOT FOUND ON COMMONS'}  BY: ${(found?.author ?? '').slice(0, 100)}${found?.date ? `  DATED: ${found.date.slice(0, 50)}` : ''}`)
     console.log(`   PAGE SAYS: ${found?.description.slice(0, length) || '(no description)'}`)
+    console.log(`   SOURCE: ${found?.source?.slice(0, 240) || '(none given)'}`)
   }
   console.log(`\n${entries.length} pictures checked, ${changed} with a missing page or a license that differs from the record.`)
 }

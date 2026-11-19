@@ -317,7 +317,7 @@
       "caption": "Look at what she is doing while the director watches: writing. Her job on this wartime set at Pinewood Studios in England was continuity, a written record of how props, clothes and positions stood in each take, so that the next take could start from the same state. Your reset record is the same idea, cut down to the few details a viewer actually follows.",
       "credit": {
         "work": "Film and Photography during the Second World War H21451",
-        "author": "War Office official photographer, Malindine E G (Lt), Puttnam L (Lt)",
+        "author": "War Office official photographer, Malindine E G (Lt), Puttnam L (Lt); Imperial War Museums collection",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Film_and_Photography_during_the_Second_World_War_H21451.jpg",
         "changes": "Converted to WebP."
@@ -342,6 +342,28 @@
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Backstage_photograph_on_the_set_of_When_Tomorrow_Comes.jpg",
         "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-023": [
+    {
+      "src": "/lesson-photos/cinema-023-1.webp",
+      "width": 880,
+      "height": 653,
+      "bytes": 62846,
+      "sha256": "cde59258c6a78c693dff869747dcfefb6e1f6267e5daeaa2c0c19aed6ded8d54",
+      "kind": "photo",
+      "after": 1,
+      "title": "One notice, every permission at once",
+      "alt": "The English half of a white notice card headed FILMING NOTICE. It says that Sony Interactive Entertainment Taiwan Limited will be filming in this area today, and that anyone who enters or remains consents irrevocably to being filmed, photographed and recorded, for use worldwide, royalty-free, for any purpose whatsoever, in perpetuity, on any media. Two last lines in capitals tell anyone who objects to stay out.",
+      "caption": "A real notice from a booth at the 2026 Taipei Game Show. Read what one step into the area is taken to mean: you may be filmed, and the footage may be used for any purpose, anywhere, on any media, forever. The only way to say no is to stay out. Notices like this are common where a crowd is filmed, and whether they hold up is a legal question this lesson leaves alone. A friend at your table is a different case. Your proposal names one action, one audience, where the files live and a deletion date, and asks about wider sharing as a separate question.",
+      "credit": {
+        "work": "Filming notice at the Sony Interactive Entertainment Taiwan booth, Taipei Game Show 2026",
+        "author": "Solomon203",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:SIET_Filming_Notice_20260201.jpg",
+        "changes": "Cropped, resized and converted to WebP."
       }
     }
   ],
@@ -530,7 +552,7 @@
       "caption": "Twelve attempts at one picture, printed together on a single sheet. The photographer Toni Frissell made them around 1946 for a fashion advertisement, with the Washington Monument behind the model. Compare the frames: the pose and the model's position against the monument change from one to the next. A sheet like this exists so that one frame can be chosen for what it contains. Your three recordings of the coat pocket are the same kind of sheet.",
       "credit": {
         "work": "Toni Frissell, fashion model near tidal basin, Washington, D.C., ca. 1946",
-        "author": "Toni Frissell",
+        "author": "Toni Frissell, Library of Congress Prints & Photographs Division",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Toni_Frissell,_fashion_model_near_tidal_basin,_Washington,_D.C.,_ca._1946.jpg",
         "changes": "Resized and converted to WebP."
@@ -598,6 +620,28 @@
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Cinema_etiquette_title_card.jpg",
         "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-041": [
+    {
+      "src": "/lesson-photos/cinema-041-1.webp",
+      "width": 802,
+      "height": 426,
+      "bytes": 16604,
+      "sha256": "92831c3757b6387f0dfed245d98639f726cc2696ca7ecc91df16126a7ba6fdf3",
+      "kind": "diagram",
+      "after": 1,
+      "title": "An L-cut on a real editing timeline",
+      "alt": "A video editing timeline. A ruler along the top is marked 00:01:30:00 and 00:01:35:00, with a tick per second. On the upper track a clip named PRISM- Snowden Interview-HD.mp4 ends shortly before the second mark and a blue clip begins, its first part inside a dashed outline. On the lower track a sound clip with the same name, drawn as a waveform, runs on as far as that outline. Each picture clip shows a small frame.",
+      "caption": "A screenshot from the free editor Kdenlive. The upper row is picture and the lower row is sound. Time runs left to right, one tick a second. Find the place where the first picture clip ends and the blue one begins. Now look straight down. The first clip's sound keeps going beneath the new picture for nearly three seconds, as far as the dashed outline reaches. That overhang is the L-cut of this lesson: the guide still talking while you look at the painting. Draw your own two rows the same way and mark the second at which the voice really ends.",
+      "credit": {
+        "work": "Kdenlive L-cut (the first clip is named after PRISM: Snowden Interview, a film by Laura Poitras / Praxis Films)",
+        "author": "Macchrissli",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kdenlive_lcut.png",
+        "changes": "Converted to WebP."
       }
     }
   ],
@@ -730,6 +774,27 @@
       }
     }
   ],
+  "cinema-056": [
+    {
+      "src": "/lesson-photos/cinema-056-1.webp",
+      "width": 880,
+      "height": 633,
+      "bytes": 40056,
+      "sha256": "d19f03f276d64d16cc673d72a9cf60a43a21d62060cc3a060a17bacb44215db1",
+      "kind": "artwork",
+      "after": 1,
+      "title": "Who can see the cards, and who can reach them",
+      "alt": "A painting of three people at a table with a dark red patterned cloth. At the left a young man in dark clothes looks down at the cards he holds close. Behind him an older man leans in, looks at those cards and raises two fingers of a gloved hand. At the right a second young man in a yellow and black striped doublet leans on the table, facing the first. His other hand is behind his back, drawing a card from his belt.",
+      "caption": "Caravaggio painted The Cardsharps in the 1590s. It is a staged scene, like the marker one, so read it by access. The player on the left looks only at his own cards. The man behind him can see them too, and he holds up two fingers where the player opposite can see them and the first player cannot. The player on the right can reach cards tucked at his back, where the first player cannot see them. Those are statements about seeing and reaching, and none says what anyone is like. The painting then goes one step past placement, as the lesson does: it shows the actions, and they narrow the reading.",
+      "credit": {
+        "work": "The Cardsharps (I bari)",
+        "author": "Caravaggio",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Caravaggio_-_The_Cardsharps_(1596-97)_Kimbell_Art_Museum.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
   "cinema-059": [
     {
       "src": "/lesson-photos/cinema-059-1.webp",
@@ -748,6 +813,46 @@
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
         "source": "https://commons.wikimedia.org/wiki/File:Storyboard_for_The_Radio_Adventures_of_Dr._Floyd.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-001": [
+    {
+      "src": "/lesson-photos/design-001-1.webp",
+      "width": 880,
+      "height": 682,
+      "bytes": 35996,
+      "sha256": "bdf314b506d0b9e36e990e5d7cd8df851ac416f24850ed8102b8d6568850ebbd",
+      "kind": "artwork",
+      "after": 1,
+      "title": "An orange sun on a blue-gray sky",
+      "alt": "A painting of a misty harbor at sunrise in blue-gray and green. A small, vivid orange sun stands in the sky to the right of the middle, with orange strokes of reflection on the water below it. A dark rowing boat with two figures floats low in the middle, and a fainter boat is behind it to the left. Pale masts and cranes show through the mist.",
+      "caption": "Claude Monet's Impression, Sunrise, dated 1872. Finding the sun takes no effort. It is the one orange thing in a blue-gray picture, the largest hue difference on the canvas. Now ask this lesson's question instead. Is the sun lighter than the sky around it, or only a different color? Squint until the detail blurs and decide. Then decide the same thing about the dark boat and the water. The next picture shows what a gray copy answers.",
+      "credit": {
+        "work": "Impression, Sunrise (Impression, soleil levant), 1872",
+        "author": "Claude Monet",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    },
+    {
+      "src": "/lesson-photos/design-001-2.webp",
+      "width": 880,
+      "height": 677,
+      "bytes": 108420,
+      "sha256": "5e1d18f1a3f938833e6d73e7bc88b7673a190c83507181523b067f0f69657cf7",
+      "kind": "artwork",
+      "after": 1,
+      "title": "The same painting with the hue removed",
+      "alt": "A gray copy of the same harbor painting. The rowing boat and the fainter boat behind it are still clear dark shapes on lighter water. Where the orange sun stood, the gray is almost the same as the sky around it, and the disc is hard to find. Only faint strokes remain of its reflection.",
+      "caption": "The same painting with its hue taken away. The boat is as clear as before, because it is much darker than the water: a value difference. Now look for the sun. Measured on this copy, the spot where it stood is about as light as the sky around it, so without its orange the disc nearly vanishes. Orange against blue-gray was a hue difference with almost no value difference. That is the green pear on the green field. One caution from the lesson applies here too: a gray conversion is one way of ranking colors, and your eye may rank them a little differently.",
+      "credit": {
+        "work": "Impression, Sunrise (Impression, soleil levant), 1872, digitally desaturated copy",
+        "author": "Claude Monet",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Claude_Monet,_Impression,_soleil_levant,_1872_BW.jpg",
         "changes": "Resized and converted to WebP."
       }
     }
@@ -881,6 +986,27 @@
       }
     }
   ],
+  "design-007": [
+    {
+      "src": "/lesson-photos/design-007-1.webp",
+      "width": 521,
+      "height": 880,
+      "bytes": 25540,
+      "sha256": "216572fb8e941e40df1d9dc4c7ad66d447a3921a957bb12dba6f7123ef704283",
+      "kind": "photo",
+      "after": 1,
+      "title": "The same card under two color casts",
+      "alt": "Two photographs, one above the other, of the same man on a sofa holding a fan of five colored cards toward the camera. The upper photograph has a cool blue-green cast, and the second card from the left looks pink. The lower photograph has a strong pink cast over everything, and the second card looks pale gray with a hint of lilac.",
+      "caption": "Look at the second card from the left in each photograph. In the upper one it looks pink. In the lower one it looks close to gray. Yet the two patches are the same color in the file: sampled, their values are almost identical. What differs is everything around them. The lower photograph is tinted pink all over, your eye allows for the tint, and the card loses its pink along with it. That is this lesson in one picture. How a stored color looks depends on the view around it, so test the view before you change the file.",
+      "credit": {
+        "work": "ColourIllusion2",
+        "author": "Mike Young",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:ColourIllusion2.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
   "design-010": [
     {
       "src": "/lesson-photos/design-010-1.webp",
@@ -941,6 +1067,27 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:General_x-height_sample_image.png",
+        "changes": "Cropped, resized and converted to WebP."
+      }
+    }
+  ],
+  "design-015": [
+    {
+      "src": "/lesson-photos/design-015-1.webp",
+      "width": 880,
+      "height": 760,
+      "bytes": 108732,
+      "sha256": "a12f89a88b8a5fc306dbfbbd249ccf1073a75e839ce1bb82f834949241d74ac6",
+      "kind": "scan",
+      "after": 1,
+      "title": "A type founder's sheet shows letters and a passage",
+      "alt": "Part of a printed type specimen sheet. At the left are seven rows of roman capitals in falling sizes, from ABCD to ABCDEFGHIKLMN, and under them, very large, the Latin words Quousque tandem abutere, Catilina. At the right is a column of short blocks of running Latin text headed Double Pica Roman, Great Primer Roman, English Roman and Pica Roman, each smaller than the one above.",
+      "caption": "Part of the sheet on which the London type founder William Caslon showed his types in 1734. The left column is the alphabet sample of this lesson's title: rows of capitals, enough to check that one letter can be told from another. Beside it, each size is also set as a few lines of a passage, which lets you try the second job: following connected text. Try both. In Quousque, the letter that looks like an f is a long s, an old form of the letter. Telling those two apart is a legibility question. Keeping your place in the smallest block is a readability one.",
+      "credit": {
+        "work": "A Specimen by William Caslon, Letter-Founder (1734)",
+        "author": "William Caslon",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:A_Specimen_by_William_Caslon.jpg",
         "changes": "Cropped, resized and converted to WebP."
       }
     }
@@ -1074,6 +1221,29 @@
       }
     }
   ],
+  "design-030": [
+    {
+      "src": "/lesson-photos/design-030-1.webp",
+      "width": 880,
+      "height": 560,
+      "bytes": 28234,
+      "sha256": "b98867e4920989c075e27e682082a1a6564f5e693c66bf6009573f0d4545f914",
+      "kind": "meme",
+      "after": 3,
+      "title": "The line at a fairground ride",
+      "alt": "Part of a black board at a fairground ride. A yellow double-headed arrow with a red line through it stretches across the board. Under it, in large capitals, are the words YOU MUST BE THIS TALL TO RIDE THIS RIDE, with the word MUST in red and the rest in white. A strip of blurred colors shows above the arrow.",
+      "caption": "A memory hook. This is part of a board that stood at a county fair in Oregon in 2019, and the red line is the height mark of this lesson. A child a finger's width under it does not ride, and nobody at the gate rounds up to be kind. For ordinary text your line is 4.5 to 1, and a calculated 4.499 is under it. Remember the other half too. The board settles one question only. It says nothing about whether the ride is any fun, just as a passing ratio says nothing about whether the caption is worth reading.",
+      "punchline": "The line does not round up.",
+      "credit": {
+        "work": "You cannot be taller than this to ride sign",
+        "author": "Rick Obst",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:You_cannot_be_taller_than_this_to_ride_sign.jpg",
+        "changes": "Cropped, resized and converted to WebP."
+      }
+    }
+  ],
   "design-031": [
     {
       "src": "/lesson-photos/design-031-1.webp",
@@ -1113,6 +1283,28 @@
         "author": "Rembrandt",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Two_women_teaching_a_child_to_walk;_one_bending_over_and_pointing._c.1635-1637,_1910,0212.187.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-038": [
+    {
+      "src": "/lesson-photos/design-038-1.webp",
+      "width": 880,
+      "height": 672,
+      "bytes": 127564,
+      "sha256": "64ddfd6dc041e8770625473fd634dff8e33e570d8c66140e2067ecb5d6c75bc2",
+      "kind": "artwork",
+      "after": 1,
+      "title": "Two figures built from boxes, 1624",
+      "alt": "An old etching of two standing figures made entirely of open box frames. Each has a box for a head, a stack of boxes for the trunk, and a long narrow box for each upper arm, forearm, thigh and shin, hinged at elbows and knees. The left figure has one hand on its hip and a long pole across its shoulder. The right figure has one hand on its hip, holds a strap and wears a sword. Short shadows lie under the feet.",
+      "caption": "An etching from Giovanni Battista Bracelli's book of invented figures, published in 1624. Each body is nothing but volumes: a box for the head, a stack for the trunk, a long box for every part of an arm or leg, joined at shoulder, elbow, hip and knee. Because each part is a volume with a join, you can predict a turn. An arm swung toward you would look shorter, and a chest box would show its side. That is the rolled snowman of this lesson and not the sticker. Your kettle needs fewer boxes and the same order of work: connected volumes first, the outline after.",
+      "credit": {
+        "work": "Plate from Bizzarie di varie figure (1624)",
+        "author": "Giovanni Battista Bracelli; National Gallery of Art, Washington",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Bracelli,_From_%22Bizzarie_di_varie_Figure%22,_1624,_NGA_46318.jpg",
         "changes": "Resized and converted to WebP."
       }
     }
@@ -1521,6 +1713,28 @@
       }
     }
   ],
+  "life-002": [
+    {
+      "src": "/lesson-photos/life-002-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 69612,
+      "sha256": "ccc96a93d7710e64ff62ae7412cfc46185c0875bb18a4a98d61b4d7dee08fb1c",
+      "kind": "photo",
+      "after": 1,
+      "title": "Where the water stopped, not where it started",
+      "alt": "The corner of a room seen from below. The ceiling is made of white speckled tiles held in a metal grid, and the walls are covered in pale square tiles. One ceiling tile has a large brown stain with a wavy edge, darker along its rim, that spreads from the corner across much of the tile.",
+      "caption": "A stain on a ceiling tile. The person who photographed it records that a leaking pipe was the cause. Look at what the picture can and cannot tell you. It shows exactly where the water came to rest: this tile, in this corner, over about this much of it. It does not show the pipe, the joint or the route the water took above the tiles. That is the marble in the corner. A report made from this picture would name the room, the tile and the size of the patch, and leave the cause to whoever can lift the tile and look.",
+      "credit": {
+        "work": "Ceiling water damage",
+        "author": "Atomicdragon136",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ceiling_water_damage.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
   "life-003": [
     {
       "src": "/lesson-photos/life-003-1.webp",
@@ -1584,6 +1798,50 @@
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Mazda_3_Fuel_Gauge_Showing_Empty.jpg",
         "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "life-021": [
+    {
+      "src": "/lesson-photos/life-021-1.webp",
+      "width": 880,
+      "height": 495,
+      "bytes": 30600,
+      "sha256": "6e8eaeca95cfef5b0a2bc922796cbcad97c68efe964b55a21e9075ffe3292cbf",
+      "kind": "diagram",
+      "after": 1,
+      "title": "The code on a tyre wall, part by part",
+      "alt": "A drawing of the upper part of a black tyre. Large white characters on its side read P 185 / 75 R14 82 S, with smaller lines of text above and below them. Seven red pointers lead from the parts of that code up to labels: Tire Type, Tread Width, Aspect Ratio, Radial, Diameter, Load Rating and Speed Rating.",
+      "caption": "An example of the code this lesson mentions, with a pointer to each part. Read the big figures from the left: 185 is the width in millimetres, 75 is the profile, the height of the wall compared with its width, and 14 is the rim diameter in inches. Width, profile and rim are the three things the lesson names. A tyre marked 195 or R15 can look the same on the shelf and is a different part. Your lunchbox ring has no code moulded into it, which is why its model number and the maker's parts list have to do this job.",
+      "credit": {
+        "work": "Tire-code",
+        "author": "Chrismeraz",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tire-code.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "life-023": [
+    {
+      "src": "/lesson-photos/life-023-1.webp",
+      "width": 836,
+      "height": 880,
+      "bytes": 35208,
+      "sha256": "e36ae8760a3af6041b9de87767e3bab71674d77e08785de38467f0e99f576323",
+      "kind": "photo",
+      "after": 1,
+      "title": "The size a dishwasher is when someone uses it",
+      "alt": "A kitchen seen from low down. At the left a dishwasher stands open, with its door folded down flat into the room and its lower rack, loaded with pink crockery, pulled out over the door. A pale wooden floor with a patterned rug lies beyond it. White cupboards and a worktop are out of focus behind.",
+      "caption": "A dishwasher is sold by its closed size, the outline that fits under the worktop. Here it is in use. The door lies flat, the loaded rack is drawn out over it, and together they cover a stretch of floor that the closed machine leaves free. Someone still has to stand beside it and bend. That is the open footprint of this lesson, the tilted bin of the shoe cabinet in another room. Before you buy anything with a door, drawer, lid or flap, draw it open and then add the person using it.",
+      "credit": {
+        "work": "Dishwasher in a modern kitchen with opened door showing dishes inside",
+        "author": "Shixart1985",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dishwasher_in_a_modern_kitchen_with_opened_door_showing_dishes_inside.jpg",
+        "changes": "Cropped, resized and converted to WebP."
       }
     }
   ],
@@ -1739,24 +1997,66 @@
       }
     }
   ],
+  "mind-022": [
+    {
+      "src": "/lesson-photos/mind-022-1.webp",
+      "width": 880,
+      "height": 352,
+      "bytes": 29892,
+      "sha256": "0bde3e75e44db14448a35bf46ab9894151cb18760093fa675b937d30e7c369de",
+      "kind": "scan",
+      "after": 1,
+      "title": "Forty-five numbers and no names",
+      "alt": "A technical drawing of a bicycle gear hub taken apart, with its small parts spread out in a row along one axis: nuts, washers, rings, a ribbed shell, toothed wheels, a sprocket and a long axle, and a small lever below. Each part carries a number, from 1 to 45. There are no part names anywhere on the drawing.",
+      "caption": "From the 1977 owner's manual of a Sears bicycle: a three-speed gear hub drawn in pieces. Every part has a number and nothing else. Enlarge the drawing and try to say what number 33 is. To find out you would leave the drawing, go to the parts list, look up 33, and carry the answer back before you forget where 33 was. It is the sprocket. That trip is the A, B and C of the community-centre map, forty-five times over. Nothing is missing from the manual. The layout charges you a commute to use it.",
+      "credit": {
+        "work": "Exploded diagram of a three-speed hub, from a Sears bicycle owner's manual (1977)",
+        "author": "Sears Sports Center",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Internal_hub_3_speed_Shimano.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    },
+    {
+      "src": "/lesson-photos/mind-022-2.webp",
+      "width": 880,
+      "height": 440,
+      "bytes": 31108,
+      "sha256": "844d3b39d4a9ea682a8e3e010d371e330f35ce050f2bd71c526a1b5f2d124e53",
+      "kind": "diagram",
+      "after": 1,
+      "title": "The name travels to the part",
+      "alt": "A side view of a bicycle with part names placed around it in small groups headed Saddle area, Frame, Front set and Wheel. A thin blue line runs from each name to a red dot on the part it names, among them the saddle, top tube, fork, spokes, hub, rim, chain and pedal.",
+      "caption": "A bicycle drawn the other way. Each name is joined to its part by a line that ends in a dot on the part. There is no number to hold in your head and no second page to visit. Enlarge it and follow one: hub, along the line, to the middle of the wheel. It is not perfect. Some lines are long and cross the frame, and with this many labels the lesson's warning about crowding begins to apply. When you draw for someone else, write the one thing they must know about each object on the object, and leave the rest somewhere they can choose to visit.",
+      "credit": {
+        "work": "Bicycle diagram",
+        "author": "Al2",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Bicycle_diagram.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
   "mind-028": [
     {
       "src": "/lesson-photos/mind-028-1.webp",
-      "width": 720,
-      "height": 617,
-      "bytes": 15978,
-      "sha256": "9ee6acd62c36e242a8cf816348f8a0b00d674c81795cb353c3d66c95bb6ce70b",
+      "width": 880,
+      "height": 486,
+      "bytes": 10262,
+      "sha256": "3cf2aac127261c201b6734f510a5596061f7acfe11d3168f289b9475c9f37421",
       "kind": "diagram",
-      "after": 1,
-      "title": "A sketch of forgetting and reviewing",
-      "alt": "A chart titled The Forgetting Curve, with Memory on the vertical axis and days 1 to 6 on the horizontal axis. A red curve falls steeply from the top left. Green curves start again from the top at day 1, day 2 and day 3, and each one falls more slowly than the one before.",
-      "caption": "The red curve is memory after a single study session: a steep drop, then a long slow tail. Each green curve starts at a later review. It begins at the top again and falls more slowly than the curve before it. That is the idea behind spacing: a later encounter restores the memory and also makes the next gap safer. Read this as a sketch, not as a measurement. The curves are smooth because they were drawn that way, and no chart can tell you the right number of days for your own words.",
+      "after": 0,
+      "title": "A forgetting curve from real measurements",
+      "alt": "A chart on a white ground. The upright scale is labelled Savings and runs from 0 to 0.7. The scale along the bottom is labelled Retention Inverval (log days), spelled that way, with marks at 0.01, 0.1, 1, 10 and 100. Seven black diamonds, named Ebbinghaus in the key, step down from about 0.58 at the far left to about 0.21 near the right. A thin line, named MCM Fit, runs close to them.",
+      "caption": "Hermann Ebbinghaus did what your ten minutes with lundi did not: he let lists go cold, then checked. Each diamond is one wait, from about 20 minutes at the far left to 31 days at the right, and each mark along the bottom is ten times the one before. More falls away before the fourth diamond, one day, than in the thirty days after it. Read the shape, not the numbers: this is one man around 1880 with nonsense syllables, not French words, and the scale is the share of study time he was spared on relearning, not words recalled. A study published in 2015 repeated the experiment and drew this chart.",
       "credit": {
-        "work": "ForgettingCurve",
-        "author": "Icez",
-        "license": "Public domain",
-        "source": "https://commons.wikimedia.org/wiki/File:ForgettingCurve.svg",
-        "changes": "Rendered from SVG and converted to WebP."
+        "work": "Ebbinghaus' savings data with a fitted model, from Fig 3 of Replication and Analysis of Ebbinghaus' Forgetting Curve, PLOS ONE 10(7): e0120644 (2015)",
+        "author": "Jaap M. J. Murre and Joeri Dros",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ebbinghaus_curve.png",
+        "changes": "Resized and converted to WebP."
       }
     }
   ],
@@ -1797,9 +2097,31 @@
       "punchline": "Count in loaves, not in coins.",
       "credit": {
         "work": "Reichsbanknote, 50 Milliarden Mark, 10 October 1923",
-        "author": "Reichsbankdirektorium Berlin",
+        "author": "Reichsbankdirektorium Berlin; image by Godot13, National Numismatic Collection, National Museum of American History",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:GER-119c-Reichsbanknote-50_Billion_Mark_(1923).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "money-026": [
+    {
+      "src": "/lesson-photos/money-026-1.webp",
+      "width": 660,
+      "height": 880,
+      "bytes": 59562,
+      "sha256": "2b568d08628f0002b666dcef586c46b420eeb7249ee6475451053784306e9dc4",
+      "kind": "photo",
+      "after": 1,
+      "title": "Bought once, and bought every week",
+      "alt": "A kitchen counter under a window. At the left stands a pale blue pod coffee machine. Beside it lies an open cardboard box holding twelve domed coffee capsules in gold, bronze, blue, purple, brown and grey, in four rows of three. The inside of the lid is printed with a guide to the capsules.",
+      "caption": "This lesson's own example on a kitchen counter: a pod machine and a box of twelve capsules. At two cups a day the box lasts six days. The machine is paid for once. A box like this is paid for again and again, and that repeating row is the one the machine's price tag leaves out. Count cups over a year before you compare machines, exactly as you count pages for the two printers. The photograph shows one maker's products. The pattern is the point, not the brand.",
+      "credit": {
+        "work": "Nespresso coffee machine and coffee capsules on kitchen counter during midday",
+        "author": "Shixart1985",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Nespresso_coffee_machine_and_coffee_capsules_on_kitchen_counter_during_midday.jpg",
         "changes": "Resized and converted to WebP."
       }
     }
@@ -1825,6 +2147,28 @@
       }
     }
   ],
+  "money-032": [
+    {
+      "src": "/lesson-photos/money-032-1.webp",
+      "width": 594,
+      "height": 880,
+      "bytes": 36064,
+      "sha256": "05b7352ba51da90d622e96aa17e0bbbddbdaa80e948b2cf5ce8e576db4ee42a3",
+      "kind": "photo",
+      "after": 0,
+      "title": "The card the caller sends you to buy",
+      "alt": "A gift card hanging on a hook on a black pegboard rack in a shop. The card is black and printed ROBLOX in white above a tilted silver square. The price $25 is printed in its top corner and the line Discover Millions of Worlds along the bottom. The small pictures on the card have been blurred.",
+      "caption": "A gift card on a rack in a grocery shop, the kind of rack the caller sends you to. The card is worth the sum printed in its corner, 25 dollars here, to whoever holds its code. That is what makes it a handy present, and it is also why the caller wants it: once a code is read out, the value has moved and carries no name. Nothing about the card is suspicious. The warning sign is a stranger who rang you asking to be paid this way.",
+      "credit": {
+        "work": "Roblox gift cards",
+        "author": "3df",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Roblox_gift_cards.jpg",
+        "changes": "Cropped, resized and converted to WebP."
+      }
+    }
+  ],
   "money-034": [
     {
       "src": "/lesson-photos/money-034-1.webp",
@@ -1842,6 +2186,28 @@
         "author": "Pahunkat",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Example_of_a_technical_support_scam_popup.png",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "money-035": [
+    {
+      "src": "/lesson-photos/money-035-1.webp",
+      "width": 880,
+      "height": 495,
+      "bytes": 9998,
+      "sha256": "e9071b9375fadeabcc07096f4926658181d2c0bace1d3f0a3147874c3392cc74",
+      "kind": "photo",
+      "after": 0,
+      "title": "The seal on the envelope",
+      "alt": "A close photograph of a screen showing an address bar. A green padlock symbol is followed by the characters https, a colon and two slashes, in black typewriter-style letters. The rest of the bar is empty.",
+      "caption": "A padlock and the letters https in an address bar, photographed from a screen in 2016. Some browsers have changed the symbol since. Say what it means in this lesson's words: the envelope was sealed. What you type travels encrypted between your browser and the site. Now notice how little else is in the picture. No business name, no address, no delivery or return terms. Those are the other four rows of the grid, and nothing in the address bar can fill them in.",
+      "credit": {
+        "work": "HTTPS and padlock in website address bar",
+        "author": "Santeri Viinamäki",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:HTTPS_and_padlock_in_website_address_bar.jpg",
         "changes": "Resized and converted to WebP."
       }
     }
@@ -1889,6 +2255,27 @@
       }
     }
   ],
+  "observer-002": [
+    {
+      "src": "/lesson-photos/observer-002-1.webp",
+      "width": 880,
+      "height": 600,
+      "bytes": 64796,
+      "sha256": "3104963f2bc6efb74a4113dec743dc0519bb69ab9710afcefe86bd75d6f0b939",
+      "kind": "photo",
+      "after": 1,
+      "title": "A sketch that says where, not only what",
+      "alt": "A printed sketch form on a wooden desk, with a pen and a short wooden ruler lying across it. Drawn on it by hand are a car seen from above, marked Interior, with small numbered circles inside it, and boxes marked Exterior and Evidence car. Two handwritten lists headed Legend name each number, such as hat, pamphlet, folder, umbrella, water bottle and bag. A line on the form reads Not drawn to scale.",
+      "caption": "A sketch from an FBI school programme in Honolulu, in which students work on a made-up case. See what turns a list into a record of a scene. Every object in the legend has a number, and the number sits on the plan at the place where the object lay: at the front of the car, in the middle, at the back. Box, card, pen could not do that. Now enlarge it and look for what this lesson adds. The line for Compass Orientation, at the top right, is empty, so the plan has no fixed reference. And a view from above cannot say how tall anything was, or what it hid from a seated eye.",
+      "credit": {
+        "work": "FBI Honolulu Adopt-a-School evidence scene sketch",
+        "author": "Federal Bureau of Investigation",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:FBI_Honolulu_Adopt-a-School_Evidence_Scene_Sketch_(36318511795).jpg",
+        "changes": "Cropped, resized and converted to WebP."
+      }
+    }
+  ],
   "observer-004": [
     {
       "src": "/lesson-photos/observer-004-1.webp",
@@ -1908,6 +2295,29 @@
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
         "source": "https://commons.wikimedia.org/wiki/File:Bench-blocking_bush_-_geograph.org.uk_-_2082039.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "observer-021": [
+    {
+      "src": "/lesson-photos/observer-021-1.webp",
+      "width": 880,
+      "height": 549,
+      "bytes": 79350,
+      "sha256": "dd577558f25001370e226ffe95c2113f88b3c2a37841cf1b26b9fcbdec935e16",
+      "kind": "meme",
+      "after": 3,
+      "title": "One dive at a penalty",
+      "alt": "Seen through the net from behind a goal: a goalkeeper in yellow lies stretched out low at one side of the goal with the ball beside his gloves. Players in red and black and players in green stand around the penalty area, a referee in blue stands at the right, and a stand rises behind the pitch.",
+      "caption": "A memory hook. A goalkeeper at full stretch, in a photograph its uploader titles a penalty save. The picture shows one dive. It cannot show the thing this lesson is about, which is whether the taker could have known the side in advance. A keeper who always goes the same way hands every taker the answer before the run-up. A choice made fresh each time, by something as blind as your die, takes that answer away. It promises nothing about any single kick, this one included.",
+      "punchline": "Any pattern can be answered.",
+      "credit": {
+        "work": "Penalty save on the match of UEFA league",
+        "author": "Giggi12",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Penalty_save_on_the_match_of_UEFA_league.jpg",
         "changes": "Resized and converted to WebP."
       }
     }
@@ -1976,6 +2386,27 @@
       }
     }
   ],
+  "tech-012": [
+    {
+      "src": "/lesson-photos/tech-012-1.webp",
+      "width": 641,
+      "height": 223,
+      "bytes": 21310,
+      "sha256": "741cc80559c29ef1b428afb4ba3a8db59485f2276f9b1d4da6a3b5ecf7700568",
+      "kind": "diagram",
+      "after": 3,
+      "title": "Zero percent loss, and what it leaves out",
+      "alt": "A black command window with white text. It shows the command ping www.youtube.com, four lines that each begin Reply from 74.125.127.113 with times between 53 and 55 milliseconds, and a summary that reads Packets: Sent = 4, Received = 4, Lost = 0 (0% loss), followed by the minimum, maximum and average round trip times.",
+      "caption": "A loss figure as a common tool prints it. Enlarge the picture and find the line that says Lost = 0 (0% loss), then read its passport. What was counted: four echo requests of 32 bytes. Direction: out to one address and back, so a missing reply could have been lost either way. Where: from this one computer. Window: the few seconds the test took. The deadline is the part you cannot find, because the screen never says how long the tool waited for each reply. Zero percent of four probes is a true statement about those four probes and about very little else.",
+      "credit": {
+        "work": "Cmd-ping",
+        "author": "Cristianzambrano",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Cmd-ping.png",
+        "changes": "Cropped and converted to WebP."
+      }
+    }
+  ],
   "tech-014": [
     {
       "src": "/lesson-photos/tech-014-1.webp",
@@ -2018,6 +2449,50 @@
       }
     }
   ],
+  "tech-020": [
+    {
+      "src": "/lesson-photos/tech-020-1.webp",
+      "width": 880,
+      "height": 271,
+      "bytes": 10440,
+      "sha256": "4ebcec2767b0088353142c4b2ac194abd1a78607c2cb60ca2f0caec75cd0d875",
+      "kind": "diagram",
+      "after": 1,
+      "title": "Two camps, one valley, no certain reply",
+      "alt": "A line drawing. A black curve dips three times, with a hill between each dip and the next. Three red dots lie in the left dip under the red label A1, and three more in the right dip under the red label A2. Five blue dots lie in the middle dip, between the two hills, under the blue label B.",
+      "caption": "The classic picture of this lesson, known as the Two Generals' Problem. A1 and A2 are allies who must act together, and every message between them has to cross the valley held by B, where a messenger can be caught. A1 sends its plan and hears nothing back. Three stories fit, the same three as the dropped pizza call: the message never arrived, it arrived and the answer is still on its way, or it arrived and the answer was caught. Silence looks identical in all three, and sending the plan again does not tell A1 which one happened. A timeout is that silence.",
+      "credit": {
+        "work": "Two Generals' Problem",
+        "author": "Jens Erat",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2-generals.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
+  "tech-024": [
+    {
+      "src": "/lesson-photos/tech-024-1.webp",
+      "width": 880,
+      "height": 605,
+      "bytes": 14804,
+      "sha256": "8e5701ef48fd4e9201299dc5199df029e89fe7432cfafc98c150ea126f9e0bec",
+      "kind": "diagram",
+      "after": 2,
+      "title": "Where HTTP/2 and HTTP/3 part company",
+      "alt": "A diagram of three protocol stacks on one wide blue base labeled IPv4 / IPv6, under one wide bar labeled HTTP Semantics. At the left, HTTP 1.1 stands on TLS/SSL (optional), which stands on TCP. In the middle, HTTP/2 stands on TLS 1.2+, which stands on TCP. At the right, HTTP/3 stands on a yellow block that holds TLS 1.3 and QUIC, and that block stands on UDP.",
+      "caption": "Read the middle column downward: HTTP/2, then TLS, then TCP. That TCP block is the single ordered conveyor belt of this lesson. Every stream above it shares it, which is why one gap can hold up a chat message that has already arrived. Now read the right column. HTTP/3 stands on QUIC, QUIC stands on UDP, and there is no TCP in the stack. The bar across the top says the requests mean the same in all three. The change is underneath. The drawing shows layers only. It does not show the belt per stream that QUIC adds, or the shared congestion control that remains.",
+      "credit": {
+        "work": "HTTP/1.1 vs. HTTP/2 vs. HTTP/3 protocol stack",
+        "author": "Sedrubal, adapted by Anton.bersh",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:HTTP-1.1_vs._HTTP-2_vs._HTTP-3_Protocol_Stack.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
   "thinking-004": [
     {
       "src": "/lesson-photos/thinking-004-1.webp",
@@ -2040,6 +2515,28 @@
       }
     }
   ],
+  "thinking-007": [
+    {
+      "src": "/lesson-photos/thinking-007-1.webp",
+      "width": 640,
+      "height": 400,
+      "bytes": 9326,
+      "sha256": "ef890c3e944b2517eec90ce4aa3c5b57abbf7a9c401060c87b0cdf365863fef0",
+      "kind": "diagram",
+      "after": 2,
+      "title": "The dashed line nobody measured",
+      "alt": "A simple graph with time along the bottom, marked 1 and 2. A red line labelled s=1 falls from left to right. A solid blue line labelled s=2 and (observed) stays nearly level. A dashed blue line labelled (assumed counterfactual) starts where the solid blue line starts and falls parallel to the red line. A brace at time 2, between the ends of the dashed and the solid blue lines, is labelled treatment effect.",
+      "caption": "The usual drawing of this lesson's subtraction. Red is the comparison group, the West branch, measured twice. Solid blue is the group that got the change, East, as it was observed. The dashed line is the one nobody measured: where East would have ended if it had moved the way West moved. It runs parallel to red because that is exactly what is being assumed, and the drawing says so in brackets. The brace is the estimate, the lesson's 26 against 18. Here the treated group ends above its dashed line and in the library East ends below it. The reasoning is the same.",
+      "credit": {
+        "work": "Parallel Trend Assumption",
+        "author": "Masalih",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parallel_Trend_Assumption.png",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
   "thinking-015": [
     {
       "src": "/lesson-photos/thinking-015-1.webp",
@@ -2059,6 +2556,28 @@
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "source": "https://commons.wikimedia.org/wiki/File:Comparison_mean_median_mode.svg",
         "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
+  "thinking-016": [
+    {
+      "src": "/lesson-photos/thinking-016-1.webp",
+      "width": 880,
+      "height": 541,
+      "bytes": 29426,
+      "sha256": "e7743eb8798473514b96a21e8cebcca20b5c061860e6a87e0c93f0e5ae9f023b",
+      "kind": "diagram",
+      "after": 1,
+      "title": "One line, two bands, two questions",
+      "alt": "A graph of weight against height with four measured points marked by crosses. A grey straight line rises through them. Two orange curves lie on either side of the line, closest to it in the middle of the graph. Two blue curves lie much farther out on either side. Two red dashed straight lines, one steep and one nearly flat, cross at the middle of the grey line.",
+      "caption": "A line fitted to four measurements of height and weight. Look at the two pairs of curves. The orange pair, close in, marks how well the fitted value is known at each height: the average. The blue pair, far out, marks where one new measurement could fall. That is the print shop's 38 to 42 against its 20 to 60. Both pairs sit around the same line, and they answer different questions. If you are the one new person, the orange curves were never about you. The red dashed lines are what the author calls the two extreme lines.",
+      "credit": {
+        "work": "CurveWeightHeight",
+        "author": "Mathieu Rouaud",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CurveWeightHeight.png",
+        "changes": "Resized and converted to WebP."
       }
     }
   ],
@@ -2167,6 +2686,28 @@
       }
     }
   ],
+  "thinking-039": [
+    {
+      "src": "/lesson-photos/thinking-039-1.webp",
+      "width": 816,
+      "height": 482,
+      "bytes": 21516,
+      "sha256": "c92441c674d8254ebcab78a97f742fd5a53280f08df0a7c7d2fd8757d9f11925",
+      "kind": "photo",
+      "after": 2,
+      "title": "One flock, both engines",
+      "alt": "An airliner floats on grey water, seen from a distance, with its nose to the left and a dark tail fin standing up at the right. People stand in rows along both wings.",
+      "caption": "US Airways Flight 1549 on the Hudson River in New York on 15 January 2009. An airliner like this one has two engines and is built to keep flying if one of them fails. Shortly after take-off this aircraft met a flock of geese, and both engines lost power. One cause had reached both copies. The crew put the aircraft down on the river and everyone on board survived. For this lesson the point comes earlier. The engines were independent against a fault inside either one. They shared the air they flew through, and that was the lockbox. Count what your copies share before you count the copies.",
+      "credit": {
+        "work": "US Airways Flight 1549 (N106US) after crashing into the Hudson River",
+        "author": "Greg L",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:US_Airways_Flight_1549_(N106US)_after_crashing_into_the_Hudson_River_(crop_2).jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
   "thinking-040": [
     {
       "src": "/lesson-photos/thinking-040-1.webp",
@@ -2181,9 +2722,31 @@
       "caption": "This is an artist's picture of NASA's Mars Climate Orbiter, which was lost as it arrived at Mars in September 1999. The investigation found a unit mismatch. One piece of software reported the push of the thrusters in pound-force seconds, and the navigation software read the same numbers as newton seconds, which made them wrong by a factor of about 4.45. It is the megabyte and megabit mistake of this lesson with another pair of units. Writing the unit beside every quantity is aimed at exactly this kind of handover.",
       "credit": {
         "work": "Artist's rendering of the Mars Climate Orbiter",
-        "author": "NASA/JPL/Corby Waste",
+        "author": "NASA/JPL-Caltech, Corby Waste",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Mars_Climate_Orbiter_2.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "wellbeing-020": [
+    {
+      "src": "/lesson-photos/wellbeing-020-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 12904,
+      "sha256": "edd0d330e841f3c15c77a54ca89dc63be2fa9cb48aa4c419a3cc6a75af368b5a",
+      "kind": "photo",
+      "after": 0,
+      "title": "A one-watt light for the route",
+      "alt": "A close view of a small cream plug-in night light in a white wall socket. A frosted window at its top glows green. Its body is printed 220V 50~60Hz 1W and RoHS, and a small rocker switch with a red dot sits below the print.",
+      "caption": "A plug-in night light of the kind this lesson's door light could be. The print on it says 1 W, a very small lamp. What the photograph cannot show is the part that matters most here: where the light sits and where it lands. Low on the wall, lighting the floor by the door, it does the cinema-aisle job and should stay. At pillow height, facing the bed, the same lamp would be one more glow to deal with. Ask what a light is for before you ask how bright it is.",
+      "credit": {
+        "work": "LED nightlight with switch",
+        "author": "Tetris L",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:LED_nightlight_with_switch.JPG",
         "changes": "Resized and converted to WebP."
       }
     }
@@ -2249,6 +2812,27 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Henrik_Bothe_plate_spinning.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "work-018": [
+    {
+      "src": "/lesson-photos/work-018-1.webp",
+      "width": 880,
+      "height": 722,
+      "bytes": 56928,
+      "sha256": "83fe695bbcacb4b6790f9b1be985fcec14b98c93670d87c13761750381b56343",
+      "kind": "diagram",
+      "after": 1,
+      "title": "A forecast drawn with its uncertainty",
+      "alt": "A forecast map of the sea west of Mexico. A cross in an orange disc marks the position at 2 PM Sat. A black track with dots labeled from 11 AM Sun to 11 AM Thu runs west, then north, then northeast. A white cone around the track grows wider toward the later dots, and its last part is stippled. A banner says the cone contains the probable path of the storm center. A panel below reads Hurricane Sergio, Advisory 30.",
+      "caption": "A forecast that shows its own uncertainty. This is the United States National Hurricane Center's map for Hurricane Sergio on Saturday, October 6, 2018. The black line is the forecast track. The white cone is where the center will probably be, and it widens with every day, most of all in the stippled part for days four and five. Read the words Advisory 30 too: this map replaced an earlier one and would be replaced in turn. Nobody reads the Thursday dot as a promise. Give your estimate the same shape: a line, a range that widens, and the time of the next update.",
+      "credit": {
+        "work": "Hurricane Sergio 5-day cone forecast, advisory 30",
+        "author": "National Hurricane Center",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Hurricane_Sergio_5-day_cone_forecast.png",
         "changes": "Resized and converted to WebP."
       }
     }
