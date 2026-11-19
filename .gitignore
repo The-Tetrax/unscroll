@@ -24,6 +24,7 @@ release
 .hallmark/journeys
 .hallmark/journeys-dark
 .hallmark/teaching
+.hallmark/photos
 *.tsbuildinfo
 
 # Editor directories and files

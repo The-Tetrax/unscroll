@@ -44,3 +44,22 @@ export interface LessonGuide {
   sourceNote: string
   sources?: Source[]
 }
+
+// A real photograph, artwork, film frame or diagram by someone else, shown beside the original teaching.
+// Records live in photos.json and are written by scripts/lesson-photos.ts.
+export interface LessonPhoto {
+  src: string
+  width: number
+  height: number
+  bytes: number
+  sha256: string
+  kind: 'photo' | 'artwork' | 'frame' | 'scan' | 'diagram' | 'meme'
+  after: number
+  title: string
+  alt: string
+  caption: string
+  punchline?: string
+  credit: { work: string; author: string; license: string; licenseUrl?: string; source: string; changes: string }
+}
+
+export interface LessonLink { id: string; why: string }

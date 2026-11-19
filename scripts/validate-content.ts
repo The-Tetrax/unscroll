@@ -3,6 +3,7 @@ import { lessons, categories, learningPaths } from '../src/data/index.ts'
 import { lessonSchema } from '../src/lib/schema.ts'
 import { guides, guideRevisionById, GUIDED_V2 } from '../src/teaching/index.ts'
 import { lessonGuideSchema } from '../src/teaching/schema.ts'
+import { checkConnections, checkPhotos } from './lesson-extras.ts'
 
 // Approximate Flesch-Kincaid grade; the fixed heuristic keeps the gate deterministic.
 function readingGrade(prose: string): number {
@@ -76,3 +77,6 @@ for (const category of categories) {
   console.log(`${category.name}: ${count}`)
 }
 console.log(`Validated ${lessons.length} rewritten lessons, ${learningPaths.length} paths, ${scenes.size} distinct scenes, ${visualCount} visuals and ${paragraphs.size} unique teaching paragraphs.`)
+const pictures = checkPhotos()
+const connections = checkConnections()
+console.log(`Validated ${pictures.photos} credited pictures in ${pictures.lessons} lessons (${(pictures.bytes / 1048576).toFixed(1)} MiB) and ${connections.pairs} connections between ${connections.lessons} lessons.`)

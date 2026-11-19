@@ -1,0 +1,1415 @@
+{
+  "cinema-002": [
+    {
+      "src": "/lesson-photos/cinema-002-1.webp",
+      "width": 880,
+      "height": 495,
+      "bytes": 30188,
+      "sha256": "ae170e0922a428074fd17e017cc39735f2085f4cc080c28fc93e2c16811eb44c",
+      "kind": "photo",
+      "after": 1,
+      "title": "A tall recording inside a wide frame",
+      "alt": "A tall, narrow photograph sits in the middle of a wide black rectangle, with black bars filling the space on both sides. It shows a gravel track beside a grass verge, a stack of logs and trees under a blue sky.",
+      "caption": "Look at the black bars. This picture was recorded tall and is being shown in a wide frame, so the bars take up about two thirds of the width and the image cannot grow to use them. The shape is fixed at the moment of recording. That is why this lesson has you choose it first and then fit the whole movement inside it.",
+      "credit": {
+        "work": "Example vertical video on widescreen",
+        "author": "Santeri Viinamäki",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Example_vertical_video_on_widescreen.JPG",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-003": [
+    {
+      "src": "/lesson-photos/cinema-003-1.webp",
+      "width": 480,
+      "height": 351,
+      "bytes": 19276,
+      "sha256": "a5a8e355cae6c0d9fc280b8200e057593256a838a6735644a332e2716dc7072c",
+      "kind": "frame",
+      "after": 1,
+      "title": "A wider view answers what is happening",
+      "alt": "A black and white film still. A man in a light shirt stands on a flat rail wagon and leans one elbow on the muzzle of a large mortar, resting his head on his hand. Cannonballs are stacked at his feet, and a fence and a field lie behind.",
+      "caption": "This still from The General, a 1926 film, shows the whole man, the mortar and the wagon they stand on. At this size you can read the situation: he is leaning on the gun with his head resting on his hand, beside a pile of cannonballs. You cannot read much of his face, and the picture does not need you to. The next still comes from another moment in the same film.",
+      "credit": {
+        "work": "The General (1926 film), still with the mortar",
+        "author": "Buster Keaton",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:The_General,_mortar.jpg",
+        "changes": "Converted to WebP."
+      }
+    },
+    {
+      "src": "/lesson-photos/cinema-003-2.webp",
+      "width": 480,
+      "height": 368,
+      "bytes": 19330,
+      "sha256": "d5b3d034a7b43c99a71ed150bd79db43341632264802af94b7b59e16f216ed45",
+      "kind": "frame",
+      "after": 1,
+      "title": "A closer view makes the face readable",
+      "alt": "A black and white film still. A man with wide eyes leans forward over the front of a steam locomotive, gripping its lowest bar with both hands. His face is near the middle of the picture.",
+      "caption": "Now the camera is close enough to make one thing readable: his face. The wide eyes and the grip on the bar are the information, and the locomotive shrinks to a background. Both stills are sharp and well lit. They differ in the fact each one makes readable, which is how this lesson asks you to choose a shot size.",
+      "credit": {
+        "work": "The General (1926 film), still on the locomotive",
+        "author": "Buster Keaton",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:The_General,_front.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-004": [
+    {
+      "src": "/lesson-photos/cinema-004-1.webp",
+      "width": 880,
+      "height": 586,
+      "bytes": 90502,
+      "sha256": "e206562bc150ba93def90790eb10339fdbaf0e09141b130890a1221ee9977a01",
+      "kind": "photo",
+      "after": 1,
+      "title": "A thirds grid on a real photograph",
+      "alt": "A road runs from the bottom edge of the picture toward a bright, misty opening in a dark forest. Red lines divide the picture into thirds each way, and the opening lies close to where the upper and right lines cross.",
+      "caption": "Look at the bright opening first. It lies close to the point where two grid lines cross, and the road runs up from the bottom edge to meet it. The grid did not make the picture work. The road gives the bright space a job, as the route into it, which is the test this lesson asks you to apply. The red lines were drawn on afterwards to demonstrate the idea.",
+      "credit": {
+        "work": "Rule of thirds photo",
+        "author": "John R. Daily",
+        "license": "CC BY-SA 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Rule_of_thirds_photo.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-007": [
+    {
+      "src": "/lesson-photos/cinema-007-1.webp",
+      "width": 587,
+      "height": 880,
+      "bytes": 72066,
+      "sha256": "abe8be1faa5d4f1059c34e59c057dd6db02085f8f0f3ab7747fab75a6e31eae8",
+      "kind": "photo",
+      "after": 1,
+      "title": "Clipped highlights, marked in red",
+      "alt": "Two copies of one photograph, stacked. A man leans in beside a heavy metal press while an older man in a pale jacket and a younger man stand behind him. In the lower copy the brightest areas are painted red: the bright background at the upper left, parts of the pale jacket and a patch of the metal table.",
+      "caption": "Compare the two copies. The upper one is the photograph as recorded. In the lower one every pixel that reached pure white has been painted red. Those red patches hold no detail at all, so no slider can bring the folds of the pale jacket or the surface of the table back. This is a different scene from the towel, and the same kind of loss.",
+      "credit": {
+        "work": "Blown-out highlights",
+        "author": "Daniel Schwen",
+        "license": "CC BY-SA 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Blown-out_highlights.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-008": [
+    {
+      "src": "/lesson-photos/cinema-008-1.webp",
+      "width": 660,
+      "height": 880,
+      "bytes": 40332,
+      "sha256": "c3ae7b5b9b3935b88e0e0509d2f1ff73ba8537b7e5a4016eebd5e0e2de5f3465",
+      "kind": "photo",
+      "after": 2,
+      "title": "What a very close camera does to sizes",
+      "alt": "A dog's face photographed from very close with a wide lens. The nose fills the middle of the picture and looks far larger than the eyes and ears behind it.",
+      "caption": "Look at the nose, then the eyes and ears. The camera was very close to the nose, so the eyes and ears were much farther from the lens than the nose was, and they are drawn much smaller. Enlarging a picture taken from across the room would grow the nose and ears together and keep their real proportions. It is the two paper houses again, with a much bigger distance ratio.",
+      "credit": {
+        "work": "Dog pictured from very close with a 0.5x lens",
+        "author": "Jsw618",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Dog_pictured_from_very_close_with_a_0.5x_lens.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-009": [
+    {
+      "src": "/lesson-photos/cinema-009-1.webp",
+      "width": 880,
+      "height": 586,
+      "bytes": 50350,
+      "sha256": "d539f69ccd2f5cbfd9a4a573247cfc47daeaf7aa9024ba8f92a5939201d215f6",
+      "kind": "photo",
+      "after": 2,
+      "title": "A low camera changes what rises above what",
+      "alt": "A bronze monument of two figures with a flag, photographed from near the ground, so that it towers against a blue sky beside a brick church spire.",
+      "caption": "Look at what this low camera can and cannot see. It is close to the monument and far below it, so the top of the flag reaches almost as high in the picture as the church spire. The top of the stone base is hidden. Lift the camera and that surface would come into view, as the inside of the box does in this lesson. Describe that visible change first. Calling a low view powerful is a reading added afterwards. The monument stands in Overmere, Belgium.",
+      "credit": {
+        "work": "Low-angle shot of Onze-Lieve-Vrouw-Hemelvaartkerk and Boerenkrijgmonument, Overmere, 2026",
+        "author": "DimiTalen",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Low-angle_shot_of_Onze-Lieve-Vrouw-Hemelvaartkerk_and_Boerenkrijgmonument,_Overmere,_2026.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-010": [
+    {
+      "src": "/lesson-photos/cinema-010-1.webp",
+      "width": 880,
+      "height": 493,
+      "bytes": 29100,
+      "sha256": "64233a284ffb097e3a37456ba4df2f7cbd1412ba52ff4efc0bdb3499fdbfcd0c",
+      "kind": "photo",
+      "after": 1,
+      "title": "Depth from overlap, with nothing blurred",
+      "alt": "Dark trees stand in the foreground. Behind them a valley lies in haze, and a faint mountain rises beyond it under a bright, hazy sky.",
+      "caption": "Count the layers. Dark trees overlap a hazy valley, and beyond the valley a faint mountain stands against the sky. Near, middle and far are easy to tell apart without any background blur, because each layer covers part of the next and has its own tone. This view over the Kathmandu Valley gets its separation from haze. Your tabletop gets it from where you put the camera.",
+      "credit": {
+        "work": "Kathmandu Valley and hillside pine trees from Shivapuri",
+        "author": "Krishna k. sahh",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Kathmandu_Valley_and_hillside_pine_trees_from_Shivapuri.png",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-011": [
+    {
+      "src": "/lesson-photos/cinema-011-1.webp",
+      "width": 800,
+      "height": 636,
+      "bytes": 45454,
+      "sha256": "9faf152fc3d1565883683e34df592751ffb1c7ced9cf4894cccf4d409acf707d",
+      "kind": "photo",
+      "after": 1,
+      "title": "The same keys, shaken and steadied",
+      "alt": "Two photographs of the same calculator keypad. In the upper one, labeled IS Off, the numbers are smeared. In the lower one, labeled IS On, the numbers are crisp.",
+      "caption": "Compare the number 5 in each half. Both pictures show the same keys at the same size. In the upper one the camera moved while the picture was being recorded, so every edge is smeared. In the lower one the lens stabilizer was switched on and countered that movement. Resting your arms on something solid attacks the same problem earlier, before any shake reaches the camera.",
+      "credit": {
+        "work": "ISComparison",
+        "author": "Dave.Hulick",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:ISComparison.png",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-012": [
+    {
+      "src": "/lesson-photos/cinema-012-1.webp",
+      "width": 880,
+      "height": 550,
+      "bytes": 19964,
+      "sha256": "fdeeebc714a6108c5d35d4b5366cc838c4d56ec6d04d073e3333724dc57b52b2",
+      "kind": "photo",
+      "after": 1,
+      "title": "One picture that gathered light during a pan",
+      "alt": "A dark blue-green racing car with an orange nose, number 2, is sharp, while the grass and track around it are smeared into horizontal streaks. The driver wears a white helmet.",
+      "caption": "Look at the streaks behind the car. The photographer swung the camera with the car while this single picture was gathering light. The car stayed in one place in the frame, so it is sharp. The grass crossed the frame during that time, so it smeared. The length of that smear depends on how long each picture gathers light. How many pictures are taken each second is a separate setting.",
+      "credit": {
+        "work": "1961 Cooper T53 Donington Park 2023 01",
+        "author": "Julian Herzog",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:1961_Cooper_T53_Donington_Park_2023_01.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-014": [
+    {
+      "src": "/lesson-photos/cinema-014-1.webp",
+      "width": 880,
+      "height": 498,
+      "bytes": 39078,
+      "sha256": "7a49c3e7303b69a976255951f664c1c79eddc9ff5446481c921b564ae5090b6a",
+      "kind": "photo",
+      "after": 1,
+      "title": "Blocking on a stage",
+      "alt": "A theater stage seen from the audience. At the center a man in gray and a woman in a red dress face each other, with a hand raised to a face between them. Seven other actors stand spread out to the left and right, none of them in front of the pair.",
+      "caption": "Find the pair at the center, then check who stands in front of them: nobody. A theater audience cannot move, so where the actors stand decides what it can see. Here the central exchange is open to every seat and the other actors stand to the sides. Your lens is that audience. This is a university production of Macbeth. Arranging the people before any camera decision is what film crews also call blocking.",
+      "credit": {
+        "work": "Macbeth (32280144787)",
+        "author": "Uark Theatre",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Macbeth_(32280144787).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-016": [
+    {
+      "src": "/lesson-photos/cinema-016-1.webp",
+      "width": 880,
+      "height": 603,
+      "bytes": 36194,
+      "sha256": "fcc407fa24810aecc95e55968a4f1be75acc2d6a183ab047b100efab013dd091",
+      "kind": "photo",
+      "after": 1,
+      "title": "A slate ties each recording to the list",
+      "alt": "A hand holds up a film slate with its clapper arm raised. Its top boxes read 2, 1 and 12, above a red timecode display and the handwritten title Follow Me.",
+      "caption": "Read the numbers along the top. The first box is the roll, 2, and the last is the take, 12. The number between them identifies the shot. A crew films this board at the start of every recording, so that each clip can be matched to its line in the shot list later. The board says which shot this is. Only the list says what the shot is for, and that is the entry this lesson asks you to write.",
+      "credit": {
+        "work": "Clapperboard, O2 film, September 2008",
+        "author": "Mattbr",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Clapperboard,_O2_film,_September_2008.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-017": [
+    {
+      "src": "/lesson-photos/cinema-017-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 82440,
+      "sha256": "4e6c09ae5425fbdbe2c1f0d3f6aeedbd8b2b7b9df3a6ee037558cee07f6d6dc3",
+      "kind": "photo",
+      "after": 1,
+      "title": "Several cameras share one moment",
+      "alt": "A large television news studio seen from a balcony. One presenter sits at a round desk in the middle. Five studio cameras on wheeled stands face the desk, and staff sit at monitors in the foreground.",
+      "caption": "Count the cameras pointed toward the one presenter. Running together, they record the same moment, so any two of their views show the same stage of every gesture, and a cut between them always has somewhere to land. With one phone you build that overlap yourself: perform the whole movement again, start to finish, for each view. This is the Al Jazeera English news studio in Doha.",
+      "credit": {
+        "work": "Al Jazeera English Newsdesk (cropped)",
+        "author": "Wittylama",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Al_Jazeera_English_Newsdesk_(cropped).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-018": [
+    {
+      "src": "/lesson-photos/cinema-018-1.webp",
+      "width": 800,
+      "height": 797,
+      "bytes": 28752,
+      "sha256": "890b9958bcb552b7d0a5355a5368418ef087947d1d9f2ac78fcbb3183f46d765",
+      "kind": "photo",
+      "after": 1,
+      "title": "Continuity has long been a job on set",
+      "alt": "A black and white photograph on a film set. A woman in uniform writes on a large board resting on her lap, seated beside a man in uniform who leans forward watching. Two soldiers sit behind them, and dark film equipment stands at the upper left.",
+      "caption": "Look at what she is doing while the director watches: writing. Her job on this wartime set at Pinewood Studios in England was continuity, a written record of how props, clothes and positions stood in each take, so that the next take could start from the same state. Your reset record is the same idea, cut down to the few details a viewer actually follows.",
+      "credit": {
+        "work": "Film and Photography during the Second World War H21451",
+        "author": "War Office official photographer, Malindine E G (Lt), Puttnam L (Lt)",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Film_and_Photography_during_the_Second_World_War_H21451.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-019": [
+    {
+      "src": "/lesson-photos/cinema-019-1.webp",
+      "width": 764,
+      "height": 601,
+      "bytes": 70184,
+      "sha256": "68dd58a9f062fdb5e88c46243c7a4f3b346de7fe07b13e00b874bb995cfc7b7d",
+      "kind": "photo",
+      "after": 2,
+      "title": "Direction happens in conversation",
+      "alt": "A black and white photograph of three people standing close together and smiling: a woman in a polka dot blouse raising one finger, a man in a dark suit with clasped hands, and an older man in a hat and a tweed suit.",
+      "caption": "This was taken during the filming of When Tomorrow Comes in 1939. The actors Irene Dunne and Charles Boyer are talking with the director, John M. Stahl, on the right. A photograph cannot tell you what was said. It does show where direction happens: in a conversation before the camera runs, where a performer can be handed something to try and can answer back.",
+      "credit": {
+        "work": "Backstage photograph on the set of When Tomorrow Comes",
+        "author": "Unknown author",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Backstage_photograph_on_the_set_of_When_Tomorrow_Comes.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-024": [
+    {
+      "src": "/lesson-photos/cinema-024-1.webp",
+      "width": 880,
+      "height": 633,
+      "bytes": 59486,
+      "sha256": "e30273499f2c58b00672f6f31a71935744634f11fb16aa6d1767db07b56faf90",
+      "kind": "photo",
+      "after": 1,
+      "title": "A harbor small enough to wade through",
+      "alt": "A black and white photograph of a model harbor built in shallow water. One man stands on a small raft holding a long pole and others stand in the water among model warships. Model docks and buildings line the shore behind.",
+      "caption": "Use the men for scale. They are standing in a model of Pearl Harbor built in Japan for a 1942 film about the attack. A Japanese studio could not film the real harbor. On screen the ships and the shoreline kept their positions relative to each other, and that relationship was all the audience needed. Your paper train on a table is the same decision at a smaller size.",
+      "credit": {
+        "work": "PearlHarborMockUp",
+        "author": "Unknown author",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:PearlHarborMockUp.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-025": [
+    {
+      "src": "/lesson-photos/cinema-025-1.webp",
+      "width": 783,
+      "height": 880,
+      "bytes": 35308,
+      "sha256": "0cdf511dbd366c1866254e4dd3a8765a6225d884f1ac198732d84f2a14d17ca8",
+      "kind": "artwork",
+      "after": 1,
+      "title": "Window light in Vermeer's The Milkmaid",
+      "alt": "A painting of a woman in a yellow bodice and blue apron pouring milk at a table. Daylight enters by a window at the upper left and lights her forehead, her forearms and the bread.",
+      "caption": "Find the window at the upper left, then follow its light. It reaches her forehead, her near forearm and the bread first, and the side of her face turned from the window falls into shade. Vermeer painted this around 1660, long before cameras, and faced your problem: the window stays where it is, so the choice left is where to stand.",
+      "credit": {
+        "work": "The Milkmaid (Het melkmeisje)",
+        "author": "Johannes Vermeer",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-026": [
+    {
+      "src": "/lesson-photos/cinema-026-1.webp",
+      "width": 880,
+      "height": 528,
+      "bytes": 15444,
+      "sha256": "7fb501c5ddefcba8b6c1a2353635fdc281bb3e7d4a8f40229aba82ff952186ca",
+      "kind": "diagram",
+      "after": 1,
+      "title": "Why a shadow has a soft edge at all",
+      "alt": "A diagram of the Sun, the Earth and the Earth's shadow. A dark cone behind the Earth is labeled Umbra. A paler region around it is labeled Penumbra. Small inset pictures show the Sun fully hidden, partly hidden, and showing as a ring.",
+      "caption": "Find the dark core behind the Earth, then the paler band around it. In the core the Earth hides the whole Sun. In the band it hides only part of the Sun, so some light still arrives. That band is the gradual edge this lesson has you judge. A wide light source makes the band wide, and a small one leaves almost none. Astronomers call the core the umbra and the band the penumbra.",
+      "credit": {
+        "work": "Diagram of umbra, penumbra & antumbra",
+        "author": "Qarnos",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Diagram_of_umbra,_penumbra_%26_antumbra.png",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-027": [
+    {
+      "src": "/lesson-photos/cinema-027-1.webp",
+      "width": 880,
+      "height": 858,
+      "bytes": 60826,
+      "sha256": "38ed5b11d917c8299b9d66f7bc17e6b868e6fdd2ba7caa3dd0e3439c53039213",
+      "kind": "photo",
+      "after": 2,
+      "title": "The same trick with a bigger sheet",
+      "alt": "A photo shoot on a rocky shore with bright surf behind. A young woman in a sleeveless top and short skirt stands by dark rocks on the left. Beside her a person in a dark jacket holds up a large round reflector, and a photographer crouches on the right.",
+      "caption": "Find the large round disc held up beside the model. It is a folding reflector, positioned to bounce sunlight onto her. Notice how dark the two crew members look against the bright surf, while the model beside the disc is easy to see. The disc does the job of your sheet of paper, at a larger size.",
+      "credit": {
+        "work": "Photographing a model",
+        "author": "Brocken Inaglory",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Photographing_a_model.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-029": [
+    {
+      "src": "/lesson-photos/cinema-029-1.webp",
+      "width": 880,
+      "height": 725,
+      "bytes": 22800,
+      "sha256": "895fa0898228f45dc6471d3229b2b69ddfa935bde65b5836f70766c99abe375b",
+      "kind": "artwork",
+      "after": 1,
+      "title": "A light source you can place without seeing it",
+      "alt": "A painting of two women and a swaddled newborn in darkness. The woman on the left raises one hand, which hides a candle. Its light falls on the baby held by the woman on the right and on both women's faces.",
+      "caption": "Find the light source before you read on. It is a candle, hidden behind the raised hand of the woman on the left. You cannot see the flame, yet you can tell where it is: the baby and both faces are bright on the sides turned toward that hand and dark on the sides turned away. Georges de La Tour painted this in the 1640s. A lamp in your shot explains the light only when the page sits where that light really lands.",
+      "credit": {
+        "work": "The Newborn Child (Le Nouveau-né)",
+        "author": "Georges de La Tour",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Georges_de_La_Tour_-_Newlyborn_infant_-_Mus%C3%A9e_des_Beaux-Arts_de_Rennes.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-030": [
+    {
+      "src": "/lesson-photos/cinema-030-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 106106,
+      "sha256": "e50f5bb3277ef15e3b90995c3cf7ae914cc4c0037f6b6ffe5dde923aa6b3b4dd",
+      "kind": "photo",
+      "after": 1,
+      "title": "Bright steps behind, no faces in front",
+      "alt": "Three stone arches seen from inside a dark arcade. Through them, sunlit steps rise in bright light. Three people, one taller and two smaller, stand inside the arcade in front of the arches as black shapes with no visible features.",
+      "caption": "Look at the three people standing in front of the arches. The sunlit steps behind them are far brighter than the shade they stand in. The brightness of this picture suits the steps, so the people became black shapes with no faces. It is the bright doorway behind your head, at the size of a building. The fix in this lesson applies here too: bring light onto the face, or change what sits behind it. This is the arcade below Bethesda Terrace in Central Park, New York.",
+      "credit": {
+        "work": "Below Bethesda Terrace in the Central Park",
+        "author": "Jorge Quinteros from Brooklyn, USA",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Below_Bethesda_Terrace_in_the_Central_Park.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-031": [
+    {
+      "src": "/lesson-photos/cinema-031-1.webp",
+      "width": 462,
+      "height": 374,
+      "bytes": 9860,
+      "sha256": "17b716f662ade746eea184daa1ace01e15e10047aa1be6a66ccce26cf791514a",
+      "kind": "photo",
+      "after": 1,
+      "title": "Three lamps, one camera setting",
+      "alt": "Three lit lamps in one ceiling fitting. The one at the upper left glows warm yellow and is labeled about 2700 K, 60 W incandescent. The one on the right is a paler warm white, labeled 3500 K, 13 W fluorescent. The one at the bottom is the whitest, labeled 5500 K, 13 W fluorescent.",
+      "caption": "Three lamps share one fitting, and one camera setting recorded all three. The lamp at the upper left looks warm yellow, the one on the right a paler warm white, and the one at the bottom the whitest of the three. The camera could treat only one of them as white. The numbers are color temperatures in kelvin, and a lower number means a warmer, more orange light. Your window and your desk lamp differ in the same way.",
+      "credit": {
+        "work": "Incand-3500-5500-color-temp-comparison",
+        "author": "Yerocus",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Incand-3500-5500-color-temp-comparison.png",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-032": [
+    {
+      "src": "/lesson-photos/cinema-032-1.webp",
+      "width": 660,
+      "height": 880,
+      "bytes": 5178,
+      "sha256": "1068fe86f25a3f36caa0a0da1b5245c608cb50051218d993203ed0969b0e1525",
+      "kind": "photo",
+      "after": 1,
+      "title": "Bands that exist only in the recording",
+      "alt": "A close view of a glowing lamp against black. Narrow light and dark stripes run across the whole lit surface.",
+      "caption": "Look at the stripes across this lamp. They are not on the lamp. It is an LED bulb dimmed to its lowest setting, and its light is pulsing faster than the eye can follow. A phone camera records a picture line by line, each a moment after the last, so some lines caught the lamp brighter and others caught it dimmer. The same disagreement in timing is what puts moving bands across your instruction card.",
+      "credit": {
+        "work": "Flickering LED lamp visible via rolling shutter",
+        "author": "Ragesoss",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Flickering_LED_lamp_visible_via_rolling_shutter.jpeg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-035": [
+    {
+      "src": "/lesson-photos/cinema-035-1.webp",
+      "width": 880,
+      "height": 676,
+      "bytes": 64688,
+      "sha256": "f25ae456036037947445c5c5297dce37be386e56b10ce87cef30580a7db0ed5d",
+      "kind": "photo",
+      "after": 1,
+      "title": "Twelve attempts on one sheet",
+      "alt": "A sheet of twelve small black and white photographs in three rows. Each shows the same woman in a dress with a full skirt, hands on her hips, posing by water with the Washington Monument behind her. Some frames show her full length and others closer.",
+      "caption": "Twelve attempts at one picture, printed together on a single sheet. The photographer Toni Frissell made them around 1946 for a fashion advertisement, with the Washington Monument behind the model. Compare the frames: the pose and the model's position against the monument change from one to the next. A sheet like this exists so that one frame can be chosen for what it contains. Your three recordings of the coat pocket are the same kind of sheet.",
+      "credit": {
+        "work": "Toni Frissell, fashion model near tidal basin, Washington, D.C., ca. 1946",
+        "author": "Toni Frissell",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Toni_Frissell,_fashion_model_near_tidal_basin,_Washington,_D.C.,_ca._1946.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-036": [
+    {
+      "src": "/lesson-photos/cinema-036-1.webp",
+      "width": 880,
+      "height": 577,
+      "bytes": 41404,
+      "sha256": "cae9f74f9daeb95a9b7f83e644e6aee86b17acfd329cd21f6fe9e1610f366c7f",
+      "kind": "photo",
+      "after": 1,
+      "title": "When every join was a real cut",
+      "alt": "A man sits at a large flatbed film editing table. Reels of film lie flat on round plates and the film runs across the table past a small tilted screen. A lamp on an arm stands over the table, a rack of hanging film strips stands by the wall behind him, and a telephone sits in the foreground.",
+      "caption": "This is a flatbed editing table. Film runs across it from one plate to another, past a small screen, and the editor cuts the strip and joins it by hand. Fades and dissolves could not be made here. They were made later at a laboratory, so editors first got the order right with plain cuts and watched the result. Editing apps make effects instant, but that order of work still holds.",
+      "credit": {
+        "work": "Françoise Foliot - Table de montage 03",
+        "author": "Françoise Foliot",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7oise_Foliot_-_Table_de_montage_03.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-037": [
+    {
+      "src": "/lesson-photos/cinema-037-1.webp",
+      "width": 880,
+      "height": 542,
+      "bytes": 69474,
+      "sha256": "894dace67a29c9a93bddac51d8510215e4fb6f012fe6af9e0f611093383f2b10",
+      "kind": "photo",
+      "after": 1,
+      "title": "One stride, cut into stages",
+      "alt": "A printed card of twelve small photographs in three rows, titled The Horse in Motion. Eleven show a horse and rider in silhouette at successive moments of a gallop. The twelfth shows the horse standing still.",
+      "caption": "Read the pictures in order, left to right and row by row. The first eleven show one gallop, each a little further on than the one before, and the twelfth shows the horse standing. Now suppose you cut to another camera in the middle of this run. The first picture of the new view has to show the stride at the stage where the old view left it, or the horse seems to jump back. Eadweard Muybridge took these in California in 1878.",
+      "credit": {
+        "work": "Sallie Gardner au galop",
+        "author": "Eadweard Muybridge",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Horse_in_Motion_high_res.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-039": [
+    {
+      "src": "/lesson-photos/cinema-039-1.webp",
+      "width": 880,
+      "height": 734,
+      "bytes": 29830,
+      "sha256": "ecf9524d6579f70d03a6317ee4a7ae94184af02921a04480357f3b9bb3e1f892",
+      "kind": "artwork",
+      "after": 1,
+      "title": "A card that had to be read to work",
+      "alt": "A black and white cinema card in a decorative frame. A woman in a very large feathered hat faces the viewer while a man and a woman peer around it from behind her, with more faces in the dark behind them. The lettering reads: Madam, how would you like to sit behind the hat you are wearing.",
+      "caption": "Read the card, and notice how long it takes you. Cards like this were shown on cinema screens around 1912. Everything it has to say is in the lettering, so it was worth nothing unless it stayed up long enough to be read to the last word. Your doorstep note works the same way: the clock for the viewer's response starts when the words can be read, not when the card first appears.",
+      "credit": {
+        "work": "Cinema etiquette title card",
+        "author": "Scott and Van Altena",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Cinema_etiquette_title_card.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-043": [
+    {
+      "src": "/lesson-photos/cinema-043-1.webp",
+      "width": 538,
+      "height": 439,
+      "bytes": 31836,
+      "sha256": "509f318d4b1e66c44731a1329fae8132150f783029a36e213ad4df0c9d8b435c",
+      "kind": "photo",
+      "after": 1,
+      "title": "A reference that is the same in every shot",
+      "alt": "Two hands hold a card of 24 colored squares in front of a checked shirt. The bottom row of squares runs from white through grays to black.",
+      "caption": "This card is a color reference. Its 24 squares have known colors, and the bottom row runs from white through grays to black. Film crews record a card like it for a moment in each setup. Later, two shots can be matched by making the same squares look the same in both. Your white page does that job with a single patch, and it costs nothing.",
+      "credit": {
+        "work": "Gretag-Macbeth ColorChecker",
+        "author": "Richard F. Lyon",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Gretag-Macbeth_ColorChecker.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-045": [
+    {
+      "src": "/lesson-photos/cinema-045-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 109912,
+      "sha256": "f346e7cd65cc478ddde7facd9e02c6497ecd28f682f4c051a9feb47679ce3814",
+      "kind": "photo",
+      "after": 1,
+      "title": "A crew pays for closeness",
+      "alt": "A small film crew on the deck of a boat beside a stone bridge. One man carries a large camera on a body harness. A second man in headphones holds a long pole level, and the gray, furry microphone at its end hangs toward a seated man in a blue jacket.",
+      "caption": "Follow the pole from the man in headphones to its furry gray tip. That tip is a microphone, and he is holding it out over the deck toward the seated man who is being filmed. Crews go to this trouble for the reason in this lesson: the nearer a microphone is to the mouth, the more voice it records compared with the room, the water and the traffic. This crew is filming on a boat on the Seine in Paris.",
+      "credit": {
+        "work": "Tournage de film",
+        "author": "PRA",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tournage_de_film.JPG",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-048": [
+    {
+      "src": "/lesson-photos/cinema-048-1.webp",
+      "width": 700,
+      "height": 469,
+      "bytes": 29260,
+      "sha256": "6570d781dee277b89315105861b8140fb67f0c28b23d2548c06eaf4d76e32eea",
+      "kind": "photo",
+      "after": 1,
+      "title": "A room built for replacing a voice",
+      "alt": "A man sits at a mixing desk with two screens, one showing an audio timeline and one showing a cartoon. A window above the desk looks into a recording booth that has its own screen showing the same cartoon.",
+      "caption": "A dubbing studio. Through the window is the recording booth, with its own screen, where a performer watches the picture while speaking the line. At the desk, an engineer plays the same picture and records each attempt. The whole room is built around one problem from this lesson: a new voice has to land on the starts, pauses and endings of a picture that already exists.",
+      "credit": {
+        "work": "Cabin dubbing",
+        "author": "arceus555",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cabin_dubbing.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-049": [
+    {
+      "src": "/lesson-photos/cinema-049-1.webp",
+      "width": 880,
+      "height": 618,
+      "bytes": 28920,
+      "sha256": "c6ab393d7c235bfaad5e29676cef1c64eb8756dc3a8728895ebee3ad71a73be0",
+      "kind": "photo",
+      "after": 1,
+      "title": "A sound effect being performed",
+      "alt": "A black and white photograph. A man in a hat and waistcoat saws a plank on a wooden crate with a bow saw. Beside him a man in a white coat holds a microphone toward the saw.",
+      "caption": "One man saws a plank while another holds a microphone toward the cut. They are recording a sound effect for Finnish radio, probably in the 1930s. Look at what is controlled: the action is performed on purpose, the microphone is pointed at the contact that makes the sound, and the take can be repeated until it is right. Your shoe on two surfaces is the same method with a quieter prop.",
+      "credit": {
+        "work": "A man is recording sound effects, 1930s",
+        "author": "Archives of the Finnish Broadcasting Company Yle",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:A_man_is_recording_sound_effects,_1930s.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-051": [
+    {
+      "src": "/lesson-photos/cinema-051-1.webp",
+      "width": 640,
+      "height": 639,
+      "bytes": 99510,
+      "sha256": "3a1bd852511c710b3c10641656ef8c4f365dffd146ca15f4f487f4ab707d9808",
+      "kind": "photo",
+      "after": 1,
+      "title": "Two names on one disc",
+      "alt": "A close view of an early flat gramophone disc. Lettering stamped into it reads E. Berliner's Gramophone, Blue Bells of Scotland, Trombone Solo by Mr. Arthur Pryor, with a date in August 1897.",
+      "caption": "Read the lettering stamped into this disc. One line names the tune, Blue Bells of Scotland. Another names the player and carries a date: a trombone solo by Mr. Arthur Pryor, August 1897. Those are two different things. Someone wrote the tune. This disc holds one performance of it, by one player, on one day. A soundtrack note has to check both, even when the title on your screen shows only one.",
+      "credit": {
+        "work": "Blue Bells of Scotland, trombone solo",
+        "author": "Arthur Pryor, Berliner Gramophone Co.",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Blue_Bells_of_Scotland,_trombone_solo.png",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "cinema-052": [
+    {
+      "src": "/lesson-photos/cinema-052-1.webp",
+      "width": 544,
+      "height": 408,
+      "bytes": 17106,
+      "sha256": "12cf71dc76a669bea7147be581094b5ccaab6736af7681df0d15689c5c5fb0f9",
+      "kind": "photo",
+      "after": 1,
+      "title": "What a clipped peak looks like",
+      "alt": "The screen of an oscilloscope showing a bright wave. The wave rises and falls smoothly, but each top and each bottom is cut off flat.",
+      "caption": "The line on this screen should be a smooth wave with rounded tops and bottoms. Look at the flat ends instead. The equipment could go no higher and no lower, so it cut the wave off there, and the shape that belonged beyond the flat part is gone. This is clipping, and you hear it as harsh distortion. Notice what it cannot tell you: a signal can avoid clipping while the words in it are still buried under another sound.",
+      "credit": {
+        "work": "Clipping 1KHz 10V DIV clip A 5ohms-1-",
+        "author": "Lgreen",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Clipping_1KHz_10V_DIV_clip_A_5ohms-1-.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "cinema-059": [
+    {
+      "src": "/lesson-photos/cinema-059-1.webp",
+      "width": 880,
+      "height": 680,
+      "bytes": 49500,
+      "sha256": "d81336d27e7e732d6869da83ec8a13b7d16c4a2693be0cdf77640d051b461b38",
+      "kind": "scan",
+      "after": 1,
+      "title": "A working storyboard is rough",
+      "alt": "A storyboard page with six boxes. Each holds a quick sketch of cartoon characters in blue line, with a handwritten scene number and background note above it and typed lines of dialogue below it.",
+      "caption": "Look at how rough these panels are. Each one is a quick sketch in blue line, with a scene number, a note about the background, and the dialogue typed underneath. Nobody would frame it, and it does its job: anyone can see who is on screen, how large, and what is said. Tom Ray drew this page for an episode of The Radio Adventures of Dr. Floyd. Your scarf and tote need even less drawing.",
+      "credit": {
+        "work": "Storyboard for The Radio Adventures of Dr. Floyd",
+        "author": "Tom Ray",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Storyboard_for_The_Radio_Adventures_of_Dr._Floyd.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-002": [
+    {
+      "src": "/lesson-photos/design-002-1.webp",
+      "width": 880,
+      "height": 880,
+      "bytes": 29996,
+      "sha256": "689770e286b687fb30457b49e6a7b5e0244ef9d8f95cd00a01ca7501ac40d9f4",
+      "kind": "diagram",
+      "after": 1,
+      "title": "Three directions a color can move",
+      "alt": "A diagram titled Munsell Color System. A vertical column of grays runs from black at 0 to white at 10. A ring of ten named hues surrounds its middle, from red through yellow, green and blue to purple. One purple-blue arm reaches outward from the column, numbered from 0 to 12. A small key at the upper left names the three directions: value, hue and chroma.",
+      "caption": "This diagram gives every color three addresses. Going around the ring changes the hue: red, yellow, green, blue, purple. Going up the middle column changes the value, from black at 0 to white at 10. Going outward along the purple-blue arm makes the color stronger, from gray at the column to vivid at the tip. This system calls that chroma, and this lesson calls it saturation. Darkening your basil green is a move down the column. Muting it is a move inward toward the gray. Those are different directions.",
+      "credit": {
+        "work": "Munsell color system",
+        "author": "Jacob Rus",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Munsell-system.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
+  "design-003": [
+    {
+      "src": "/lesson-photos/design-003-1.webp",
+      "width": 642,
+      "height": 480,
+      "bytes": 1296,
+      "sha256": "9a946bfd19a2210c38659fefac2b7267b4a106f7de0fba8a0dcfed6e542fbc2d",
+      "kind": "diagram",
+      "after": 1,
+      "title": "One gray that looks like a fade",
+      "alt": "A horizontal gray bar lies across a background that fades from black on the left to white on the right. The bar looks lighter at its left end and darker at its right end.",
+      "caption": "Look along the gray bar from left to right. It seems to fade from a light gray to a darker one. It does not. The bar is one flat gray along its whole length, and only the background changes, from black to white. Cover the background above and below the bar with two strips of paper and the fade disappears. Your drawing between two mounts is this bar: the sample stays the same and the surround does the changing.",
+      "credit": {
+        "work": "Relcontrastrp",
+        "author": "Anton",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Relcontrastrp.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "design-004": [
+    {
+      "src": "/lesson-photos/design-004-1.webp",
+      "width": 880,
+      "height": 495,
+      "bytes": 71298,
+      "sha256": "b27bbd787162edf9a763d04e29ca3543500713f96eab30de32e6c9799048559e",
+      "kind": "photo",
+      "after": 1,
+      "title": "Every blue beside an amber window",
+      "alt": "A snow-covered old town in dim light. The sky, the hills and the snow are all shades of blue, and small windows and one stone tower glow amber.",
+      "caption": "Start with the lit windows and the glowing tower. Beside that amber, every blue in this picture looks cool. Now hide the windows with a finger and compare the blue of the sky with the blue of the snow. Is one of them warmer than the other? You can only answer by naming both, which is how this lesson asks you to use the words. This is the old town of Zug in Switzerland at blue hour, the short time when the sun is just below the horizon.",
+      "credit": {
+        "work": "CH.ZG.Zug View from Guggi 01 16x9+R 8192x4608 Br058 gp denoising Br075",
+        "author": "Roy Egloff",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CH.ZG.Zug_View_from_Guggi_01_16x9%2BR_8192x4608_Br058_gp_denoising_Br075.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-005": [
+    {
+      "src": "/lesson-photos/design-005-1.webp",
+      "width": 613,
+      "height": 880,
+      "bytes": 23680,
+      "sha256": "313e34bb6f31622d1c9a6667473c2cc3a944fb289bd1309fe6d616d4649a1f41",
+      "kind": "artwork",
+      "after": 3,
+      "title": "Is the red an accent here?",
+      "alt": "A poster with a gray-blue panel between cream margins. The word PET is brushed in red at the top. Below it are the heads of two dogs in black line with white patches, and the word SHOW in yellow outline slants across the lower half. Small lettering at the bottom reads WPA Recreation Project, Dist. No. 2.",
+      "caption": "Count the colors on this poster from 1939: a gray-blue panel on cream, black and white for the two dogs, red for one word and yellow for the other. Now run this lesson's check and cover the red with a finger. The word PET is gone, and only the two dogs still hint at what kind of show this is. So the red is not an accent here. It carries information, and the design depends on it. The poster was printed by silkscreen, a process that lays down one flat color at a time.",
+      "credit": {
+        "work": "Pet show, WPA recreation project poster (1939)",
+        "author": "Work Projects Administration Poster Collection",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Pet_show_-_WPA_recreation_project,_Dist._No._2_LCCN98509537.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-006": [
+    {
+      "src": "/lesson-photos/design-006-1.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 26056,
+      "sha256": "1e32c01a63aa7b52d8aec0b40ab63786d21328319265018eeacf136446b83be7",
+      "kind": "photo",
+      "after": 1,
+      "title": "Red, green and blue light on one wall",
+      "alt": "Three overlapping pools of colored light on a brick wall in a dark room: green at the upper left, blue at the upper right and red at the bottom. Where two pools overlap the wall looks cyan, yellow or magenta, and where all three overlap it looks nearly white.",
+      "caption": "Three lamps shine on one wall: red, green and blue. Find the place where the red pool and the green pool overlap. The wall there looks yellow, and in the middle, where all three overlap, it looks nearly white. Each lamp adds its light to the wall, so the overlaps are brighter than the single colors. A screen makes its yellow this way, from red light and green light together.",
+      "credit": {
+        "work": "RGB combination on wall",
+        "author": "DemonDays64",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:RGB_combination_on_wall.png",
+        "changes": "Resized and converted to WebP."
+      }
+    },
+    {
+      "src": "/lesson-photos/design-006-2.webp",
+      "width": 880,
+      "height": 586,
+      "bytes": 16366,
+      "sha256": "407b8fb75da8fdc25b245057acef90f50574a0d4e51989e9b654484110b5d153",
+      "kind": "photo",
+      "after": 2,
+      "title": "Three colored sheets over a white screen",
+      "alt": "A laptop showing a plain white screen. A hand holds a yellow transparent sheet against it, overlapping a cyan sheet and a magenta sheet. Where two sheets overlap the color is darker, and where all three overlap it is very dark.",
+      "caption": "Now the opposite process. The screen behind is plain white, and each transparent sheet takes some of that light away. Where the yellow sheet crosses the cyan sheet, the light that gets through both looks green. Where all three sheets cross, very little gets through and the patch is very dark. Paint and ink work on this side. Every pigment you add removes more light, so a mixture gets darker, never brighter.",
+      "credit": {
+        "work": "CMY",
+        "author": "Zátonyi Sándor, (ifj.) Fizped",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CMY.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-010": [
+    {
+      "src": "/lesson-photos/design-010-1.webp",
+      "width": 801,
+      "height": 600,
+      "bytes": 36562,
+      "sha256": "6e55bb487637c983d9de0874caadf6dbd1feca76c5f59cde1964ebe20f870529",
+      "kind": "photo",
+      "after": 1,
+      "title": "One correction moves the whole picture",
+      "alt": "Two versions of one photograph of a white lily with dark red spots, side by side. In the left version the petals look cool white and the leaves behind are a dark blue-green. In the right version the petals look creamy and the leaves and background are a warmer green and brown.",
+      "caption": "Two versions of one photograph. On the left it is as the camera recorded it, and everything leans blue: the petals, the leaves and the dark background. For the version on the right, the photographer photographed a gray surface in the same light, found the adjustment that made that gray come out gray, and applied the same adjustment here. Look at what moved: the whole picture, not only the flower. That is what a white balance correction does, and it is why this lesson has you choose which light your neutral sample stands for first.",
+      "credit": {
+        "work": "Lily-M7292-As-shot-and-manual",
+        "author": "Fg2",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Lily-M7292-As-shot-and-manual.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "design-013": [
+    {
+      "src": "/lesson-photos/design-013-1.webp",
+      "width": 880,
+      "height": 237,
+      "bytes": 12298,
+      "sha256": "3221434d3baf23fd1e0dd7baf92d3a433eea420c6dc5af5c2558fbf0ad1c1403",
+      "kind": "diagram",
+      "after": 1,
+      "title": "The lines that letters hang on",
+      "alt": "The word Sphinx in large type on a red baseline. Thin gray lines mark the ascender height, the cap height, the mean line and the descender height, and a small arrow at the right marks the x-height.",
+      "caption": "The word Sphinx sits on the red baseline. Find the h. Its tall stroke rises above the small letters n and x, and that part is the ascender. Find the p. Its tail drops below the baseline, and that part is the descender. The height that n and x share is the x-height, marked by the small arrow on the right. This diagram names heights. The spaces inside letters, the counter and the aperture, are named in the diagram above.",
+      "credit": {
+        "work": "Typography Line Terms",
+        "author": "Max Naylor",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Typography_Line_Terms.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
+  "design-014": [
+    {
+      "src": "/lesson-photos/design-014-1.webp",
+      "width": 718,
+      "height": 282,
+      "bytes": 9876,
+      "sha256": "95c36fdcd360225537388d9e12b4627eb6972c330b3d5fdb2a30093ed7bf5f5f",
+      "kind": "diagram",
+      "after": 1,
+      "title": "Two typefaces, two lowercase heights",
+      "alt": "The word Haxey set twice on one orange baseline. The first is in a light typeface labeled Cochin, display use and headings. The second is in heavy narrow letters labeled Impact, display and headings.",
+      "caption": "Compare the lowercase letters a, x and e in these two typefaces. In Cochin, on the left, they are small beside the capital H. In Impact they come most of the way up the H. That lowercase height is called the x-height, and each typeface has its own. It is why two typefaces can share one size setting and still look like different sizes, as the booklet in this lesson did.",
+      "credit": {
+        "work": "General x-height sample image",
+        "author": "Blythwood",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:General_x-height_sample_image.png",
+        "changes": "Cropped, resized and converted to WebP."
+      }
+    }
+  ],
+  "design-016": [
+    {
+      "src": "/lesson-photos/design-016-1.webp",
+      "width": 574,
+      "height": 880,
+      "bytes": 83470,
+      "sha256": "c80d166180b3a2be3345f7e56937f140748caf2bc685e9649457c6759aeff458",
+      "kind": "scan",
+      "after": 1,
+      "title": "Two narrow columns, printed in the 1450s",
+      "alt": "A page from an early printed Bible. Dense black text is set in two narrow columns side by side, with one red initial and a heading in red and blue letters, on a pale, worn page.",
+      "caption": "Look at how this page is set: two narrow columns side by side, not one wide block. Each line holds only a few words, so the eye has a short trip back to the start of the next one. This is a page of the Bible that Johannes Gutenberg printed in Mainz in the 1450s, with 42 lines to a column. Whatever the printer's reasons were, the effect is the one this lesson tests: a short line gives the eye an easy return.",
+      "credit": {
+        "work": "Gutenberg Bible, 42-line edition, part 2, leaf 36",
+        "author": "Johannes Gutenberg (printer)",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:42-zeilige_Gutenbergbibel,_Teil_2,_Blatt_36.tif",
+        "changes": "Cropped, resized and converted to WebP."
+      }
+    }
+  ],
+  "design-017": [
+    {
+      "src": "/lesson-photos/design-017-1.webp",
+      "width": 880,
+      "height": 802,
+      "bytes": 10630,
+      "sha256": "d1b22420ed9a2380d5ec214ae885240ddcd63b9d94712ea0eedd1d6fab4343c7",
+      "kind": "diagram",
+      "after": 1,
+      "title": "The letter and its block are separate sizes",
+      "alt": "Four gray blocks of metal type side by side, numbered 1 to 4, each with a raised white letter H on its front. Blocks 1 and 4 carry a large H and blocks 2 and 3 a smaller H. Blocks 1 and 3 are taller than blocks 2 and 4.",
+      "caption": "These are four pieces of metal type, each a block with a raised H on it. Compare blocks 2 and 3. They carry the same small H, but block 3 is cast on a taller block. Lines set from block 3 would sit farther apart, although no letter grew. Blocks 1 and 4 show the reverse: the same large H, with a shorter block under number 4. In metal type the block set the distance between lines, and the letter was a separate size. That is the split this lesson asks you to keep.",
+      "credit": {
+        "work": "Metal types called bastard types",
+        "author": "Любослов Езыкин",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Metal_types_called_bastard_types.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
+  "design-018": [
+    {
+      "src": "/lesson-photos/design-018-1.webp",
+      "width": 880,
+      "height": 613,
+      "bytes": 17910,
+      "sha256": "d6ba49571740a4dd23c1e90ab257a73ee978a800a54a13bbf72d47a0604d48f6",
+      "kind": "diagram",
+      "after": 1,
+      "title": "Kerning moves one pair",
+      "alt": "The letter pairs AV and Wa set twice. In the upper row, labeled No kerning, one thin blue line separates the two letters of each pair. In the lower row, labeled Kerning applied, the letters sit closer together and two blue lines show their boxes overlapping.",
+      "caption": "Compare the two rows. In the upper row each letter keeps to its own box, and the slanted sides of the A and the V leave a wide wedge of white between them. In the lower row the second letter of each pair has moved left until its box overlaps the first, and the wedge has closed. Nothing else about the letters changed. That local move is kerning. Tracking would have changed every gap in a word by the same amount.",
+      "credit": {
+        "work": "Kerning EN",
+        "author": "Sherbyte",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Kerning_EN.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    },
+    {
+      "src": "/lesson-photos/design-018-2.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 9882,
+      "sha256": "e5bf564ea4a1cb0e2b43ad05fffb7697584d73a2e5f9c8ee8d5380e77d4a3e3a",
+      "kind": "meme",
+      "after": 3,
+      "title": "When two letters get too close",
+      "alt": "Three numbered rows of large letters. Row 1 reads morn. Row 2 shows the word twice: first with its r and n in gray, pushed close together, then in black with the two letters touching. Row 3 reads mom.",
+      "caption": "A memory hook. Row 1 is the word morn. In row 2 its r and n are pushed together, first in gray and then in black, until they touch. Row 3 is the word mom. The last line of row 2 is hard to tell from row 3, because a touching r and n make the shape of an m. A gap that is too wide is not the only way a letter pair can fail.",
+      "punchline": "Kern too tight and morn turns into mom",
+      "credit": {
+        "work": "Morn vs. Mom",
+        "author": "Yaqubroli",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Morn_vs._Mom.png",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "design-021": [
+    {
+      "src": "/lesson-photos/design-021-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 28878,
+      "sha256": "d0a1eb3efee18177d90e97e51f501d538f520cd5e27fc2425d1805275e7cb8be",
+      "kind": "photo",
+      "after": 1,
+      "title": "A sign ranked for someone in a hurry",
+      "alt": "A blue airport sign hanging from a ceiling. Each line starts with an arrow and a small symbol. It reads Gates 25-40 with an arrow pointing left and Gates 7-16 with an arrow pointing up. Below, on a gray band, it reads Multi faith area with an arrow pointing left. The gate numbers are set larger than the word Gates.",
+      "caption": "Read this sign the way a hurrying passenger would. The arrows come first, at the left edge. Then compare the type sizes: the gate numbers are larger and heavier than the word Gates in front of them. The number is the thing a passenger is hunting for, so it gets the most weight, and the word everyone expects gets less. Your ticket needs the same ranking, with Gate C in the place of these numbers. The sign hangs in a London airport.",
+      "credit": {
+        "work": "Gates Signage",
+        "author": "PaulSyms22",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Gates_Signage.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-026": [
+    {
+      "src": "/lesson-photos/design-026-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 42206,
+      "sha256": "57d3a3193bc1f18c247347ac9eef2da9d1568d45e077ecebf6c92144938e1ec9",
+      "kind": "photo",
+      "after": 1,
+      "title": "A cue placed where the hand goes",
+      "alt": "Two wooden door edges meeting in the middle of the picture. Each carries a dark square plate with two words in pale letters: Bruigh, with an accent on the u, and Push.",
+      "caption": "Each of these doors carries a plate with one instruction on it, written twice: Brúigh, which is Irish, and Push. The cue sits on the door itself, at the place where you would act, and it names the action. Nobody has to try the door to find out what it does. Your gallery card needs the same thing for each of its two actions: a visible cue, at the control, that says what will happen. These doors are at a visitor centre on the Dingle Peninsula in Ireland.",
+      "credit": {
+        "work": "Signs-1160236, Dingle Peninsula, Co. Kerry, Ireland",
+        "author": "Mucklagh",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Signs-1160236,_Dingle_Peninsula,_Co._Kerry,_Ireland.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-031": [
+    {
+      "src": "/lesson-photos/design-031-1.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 49272,
+      "sha256": "7307d76a388379426c9fc4f8c045c2cad9251508e475e91dc1e497abb9a2defe",
+      "kind": "photo",
+      "after": 1,
+      "title": "A signal that does not rely on color",
+      "alt": "A horizontal traffic signal on a pole in front of trees. Its lights have different shapes: a red square on the left, which is lit, a diamond in the middle and a third light on the right.",
+      "caption": "Look at the shapes of the lights. The red one, which is lit, is a square, and the one beside it is a diamond. This signal was designed in Canada for drivers who cannot tell the colors apart. Each color has its own shape, so the lit square says stop even to someone who cannot see that it is red. The shape is a second channel for the same meaning. On your map the second channel is words, and the test is the same: take the color away and check that the status survives.",
+      "credit": {
+        "work": "Colourblind traffic signal",
+        "author": "Sprocket",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Colourblind_traffic_signal.JPG",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "design-037": [
+    {
+      "src": "/lesson-photos/design-037-1.webp",
+      "width": 880,
+      "height": 722,
+      "bytes": 148926,
+      "sha256": "ce737467a174913c892f5ca6231e7a00ac140d649e74dc9ae3e1140dd8fba625",
+      "kind": "artwork",
+      "after": 1,
+      "title": "Direction before detail",
+      "alt": "A quick red chalk sketch on brown paper. A woman on the left bends far forward and points with one outstretched arm. A small child in a padded hat stands in the middle, held by a second woman who stoops on the right.",
+      "caption": "Rembrandt drew this in red chalk around 1635: two women helping a small child to walk. Look at the woman on the left. Her bent back is one long curve, and her pointing arm carries it on in a straight line. There are almost no details. The faces are a few marks and the hands are barely there. Yet you can tell who is leaning, who is steadying, and where the weight is. The directions were set down first, and they carry the drawing.",
+      "credit": {
+        "work": "Two women teaching a child to walk (red chalk, about 1635 to 1637)",
+        "author": "Rembrandt",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Two_women_teaching_a_child_to_walk;_one_bending_over_and_pointing._c.1635-1637,_1910,0212.187.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-039": [
+    {
+      "src": "/lesson-photos/design-039-1.webp",
+      "width": 671,
+      "height": 880,
+      "bytes": 5642,
+      "sha256": "d4203326f5ff6eed4da062b00e3e60354766ff6e97f328ee5db1e3df8a6476db",
+      "kind": "diagram",
+      "after": 1,
+      "title": "One edge, two shapes",
+      "alt": "A pale vase shape on a black background. The black areas on each side of it have the outline of a human face in profile, so that two faces look at each other across the vase.",
+      "caption": "Look at the pale shape and you see a vase. Look at the black areas and you see two faces in profile, nose to nose. Nothing moved. The edge of the vase is the edge of each face. The space between two things is a shape with real edges, and those edges belong to the things as well. That is why the wedge between your spoon and your spatula can tell you which of their angles is wrong.",
+      "credit": {
+        "work": "Face or vase",
+        "author": "Nevit Dilmen",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Face_or_vase_ata_01.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
+  "design-040": [
+    {
+      "src": "/lesson-photos/design-040-1.webp",
+      "width": 580,
+      "height": 440,
+      "bytes": 3994,
+      "sha256": "80c7590b1d9f5aae515788ebce16a6faa85d232e172113befd42957f4f52a8be",
+      "kind": "artwork",
+      "after": 1,
+      "title": "A drawing course that starts with the envelope",
+      "alt": "A faint printed plate showing the same head in profile three times. On the left it is a few straight lines with short cross marks. In the middle the outline is made of shorter straight lines. On the right it is a finished, shaded profile of a bearded man.",
+      "caption": "Read this plate from left to right. It comes from a drawing course published in Paris in the late 1860s. On the left the head is only a few straight lines: its overall height, the slope of the face, and short marks where the features will fall. In the middle those lines are broken into shorter ones. Curves, hair and shading appear only on the right. Every later stage sits inside the first envelope. Your shoe starts the same way.",
+      "credit": {
+        "work": "Drawing Course (Cours de dessin), plate 32",
+        "author": "Charles Bargue",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Bargue_I_-_0032.png",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "design-041": [
+    {
+      "src": "/lesson-photos/design-041-1.webp",
+      "width": 495,
+      "height": 880,
+      "bytes": 65768,
+      "sha256": "2391bfd5943825376a83ea594a2bae0692de6b0eed2f5ad82a4cabd3db9ccabc",
+      "kind": "photo",
+      "after": 1,
+      "title": "Parallel rails meeting at one point",
+      "alt": "A straight railway track seen from between the rails. The two rails and the gravel bed narrow into the distance and meet at a single point on a flat horizon, under a pale sky.",
+      "caption": "Follow the two rails away from you. They stay the same distance apart all the way along, yet in the picture they close in on each other and meet at one point on the horizon. The edges of the gravel bed run the same way as the rails, and they head for that same point. A drawn box works like this. Each family of parallel edges gets one meeting point, and the points all sit on one eye level.",
+      "credit": {
+        "work": "Railroad tracks (with vanishing point)",
+        "author": "Stephen R. Gilman",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Railroad_tracks_(with_vanishing_point).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    },
+    {
+      "src": "/lesson-photos/design-041-2.webp",
+      "width": 880,
+      "height": 531,
+      "bytes": 114920,
+      "sha256": "9d3c2cbef9a205ef7c9a44b144ed51eb473c4fbdd664a9a89f35535c64953366",
+      "kind": "artwork",
+      "after": 2,
+      "title": "A painted square built on one point",
+      "alt": "A wide fresco. A row of robed figures stands across the front of a large paved square. Pale lines in the paving run back toward a domed building in the middle, with an arch on each side and small figures in the distance.",
+      "caption": "Look at the pale lines in the paving. The ones that run away from you all aim at one point, at the doorway of the building in the middle. Pietro Perugino painted this fresco in the Sistine Chapel in 1481 and 1482. The large figures in front, the small ones far back and the paving all agree with that one point, and that agreement is what makes the square look deep.",
+      "credit": {
+        "work": "Delivery of the Keys (Consegna delle chiavi)",
+        "author": "Pietro Perugino",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-042": [
+    {
+      "src": "/lesson-photos/design-042-1.webp",
+      "width": 500,
+      "height": 557,
+      "bytes": 29224,
+      "sha256": "a803d453408925cb0ee54bc84527d4bd89f5cf59bb398bf0371692be2da99d46",
+      "kind": "artwork",
+      "after": 1,
+      "title": "One cloth sorted into light and dark",
+      "alt": "A gray monochrome study of heavy cloth draped over the knees of a seated figure. Broad folds catch pale light on top and fall into deep dark hollows between them.",
+      "caption": "This study of cloth over a seated figure is attributed to Leonardo da Vinci and was made around 1470. Squint at it. It shows one piece of cloth, a single material, yet some parts are painted almost white and others nearly black. The folds look solid because the patches fall into a few clear groups, light, middle and dark, and each patch sits in the group its light earned. That is the sorting this lesson asks for before any texture.",
+      "credit": {
+        "work": "Drapery Study for a Seated Figure",
+        "author": "Attributed to Leonardo da Vinci",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Drapery_Study_for_a_Seated_Figure_c1470_Leonardo_da_Vinci.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "design-043": [
+    {
+      "src": "/lesson-photos/design-043-1.webp",
+      "width": 743,
+      "height": 880,
+      "bytes": 69504,
+      "sha256": "a28100537a63fa3da3485daa5de0882999ddc00a23128d1f1ddeb6483d9e6ab3",
+      "kind": "artwork",
+      "after": 1,
+      "title": "Three kinds of edge in one painting",
+      "alt": "A painting of a girl looking over her shoulder against a dark background. She wears a blue and yellow headscarf, a pearl earring, a white collar and a yellow-brown jacket. Light falls on her face from the left.",
+      "caption": "Vermeer painted this around 1665. Find three kinds of edge. The white collar stops sharply against the jacket, like the cliff in this lesson. On her cheek the light fades into shade with no line at all, like the beach. Then look below the hanging end of the scarf, on the right. The shaded jacket and the dark background are so close in value that the boundary between them disappears. Each edge was chosen from the values on either side of it.",
+      "credit": {
+        "work": "Girl with a Pearl Earring (Meisje met de parel)",
+        "author": "Johannes Vermeer",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "design-047": [
+    {
+      "src": "/lesson-photos/design-047-1.webp",
+      "width": 880,
+      "height": 600,
+      "bytes": 58988,
+      "sha256": "647ac625b908059df2c304efd12cc04731298f5e2c8cc5dc1c37a3b2b2a27f5b",
+      "kind": "artwork",
+      "after": 1,
+      "title": "Three materials under one light",
+      "alt": "A still life painting of a table with a dark green cloth. On it are gray metal plates holding oysters and a half-peeled lemon, a tall green-stemmed glass of wine, an overturned glass, and an ornate silver dish on a stem lying on its side.",
+      "caption": "Three kinds of surface share one light on this table: dull gray metal plates, a clear glass and a polished silver dish lying on its side. Willem Claesz. Heda painted them in 1635. Compare how the light ends on each. On the plates it spreads into broad, soft grays. On the glass and the silver it shrinks to small, hard-edged spots. No single mark means shiny. Each material is told by the size of its light patches and by how sharply they stop.",
+      "credit": {
+        "work": "Still life (Stilleben), 1635",
+        "author": "Willem Claesz. Heda",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:1635_Claesz_Heda_Stilleben_anagoria.JPG",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "fg-002": [
+    {
+      "src": "/lesson-photos/fg-002-1.webp",
+      "width": 880,
+      "height": 587,
+      "bytes": 13440,
+      "sha256": "6b46bc73db81e87e70ab8c62708cf235ccc29905a3d3de43f4f6d034e24ed72b",
+      "kind": "diagram",
+      "after": 1,
+      "title": "Each group rises, the total falls",
+      "alt": "A chart with four blue points rising along a blue line at the upper left and four red points rising along a red line at the lower right. A dashed black line through all eight points slopes downward.",
+      "caption": "A different drawing of the same trap. The four blue points rise from left to right, and so do the four red points. Now fit one line to all eight together. It is the dashed line, and it falls. Each group says up and the pooled data says down. Neither reading is a mistake. The two groups sit in different places, and the pooled line mostly measures the gap between them. At your repair desk the mixture of jobs plays the part of that gap.",
+      "credit": {
+        "work": "Simpson's paradox continuous",
+        "author": "Schutz",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Simpson%27s_paradox_continuous.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
+  "fg-013": [
+    {
+      "src": "/lesson-photos/fg-013-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 28090,
+      "sha256": "909e16719a94acefda670786da47a1d95b63cf625adbd49d4c03ee5a18706988",
+      "kind": "photo",
+      "after": 1,
+      "title": "Blades bent by the camera",
+      "alt": "An aircraft propeller seen from a cabin window against blue sky, with the ground far below. Its dark blades appear as long curved hooks of different shapes in front of a gray engine housing.",
+      "caption": "A phone took this through an aircraft window. The blades look like long curved hooks, and no two of them have the same shape. The strong curves were made by the camera. It recorded the picture row by row, each row a moment after the one before, and the blades kept turning. Every row caught each blade at a slightly different angle, and the stacked rows drew a curve. Notice that the blades are bent but not smeared. Bending comes from the timing of the rows. Smearing comes from how long each row gathers light.",
+      "credit": {
+        "work": "Propellor with rolling-shutter artifact",
+        "author": "Dicklyon",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Propellor_with_rolling-shutter_artifact.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "fg-014": [
+    {
+      "src": "/lesson-photos/fg-014-1.webp",
+      "width": 205,
+      "height": 250,
+      "bytes": 12998,
+      "sha256": "0134efde33db397d6cfa80cf677e92240c81dfead872b1143cddc823cb8ea6c8",
+      "kind": "photo",
+      "after": 1,
+      "title": "Bands the wall does not have",
+      "alt": "A small photograph of a red brick wall with a concrete pillar on the left, a bare tree at its foot and one curved shadow. Several slanted bands of lighter and darker tone cross the brickwork to the right of the shadow.",
+      "caption": "Look at the brickwork to the right of the curved shadow. Slanted bands cross it from the lower left to the upper right. The wall has no such bands. This is a photograph of a brick wall that was reduced to a very small size, and the fine, regular rows of bricks could not survive the reduction. A false pattern, far coarser than any brick, took their place. The curved dark shape on the left is a real shadow. The next picture shows the same wall larger.",
+      "credit": {
+        "work": "Moire pattern of bricks small",
+        "author": "Cburnett",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Moire_pattern_of_bricks_small.jpg",
+        "changes": "Converted to WebP."
+      }
+    },
+    {
+      "src": "/lesson-photos/fg-014-2.webp",
+      "width": 622,
+      "height": 756,
+      "bytes": 67492,
+      "sha256": "4476c32e5d550c80829fb696c333479fa4c435edc16233ed22ce13915e44d0f3",
+      "kind": "photo",
+      "after": 1,
+      "title": "The same wall with enough detail",
+      "alt": "The same red brick wall at a larger size, with the concrete pillar on the left, the bare tree and the one curved shadow. The rows of bricks are distinct and no slanted bands cross them.",
+      "caption": "This is the same photograph at a larger size. Each row of bricks is distinct, and the slanted bands are gone. The curved shadow is still there, because it was really on the wall. That is the test this lesson gives you: a pattern that appears or disappears when only the size of the picture changes was made by the sampling. If you see faint bands here as well, your own screen added them while fitting the picture, which is why the lesson has you record the viewing stage.",
+      "credit": {
+        "work": "Moire pattern of bricks",
+        "author": "Cburnett",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Moire_pattern_of_bricks.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "fg-015": [
+    {
+      "src": "/lesson-photos/fg-015-1.webp",
+      "width": 880,
+      "height": 567,
+      "bytes": 18052,
+      "sha256": "43cccd2d7a67116c5f940afd9996af69f29bfc36fbc7089fbe3dccf7dc1f7b01",
+      "kind": "photo",
+      "after": 1,
+      "title": "Equal time, unequal gaps",
+      "alt": "A single photograph on a black background showing a yellow basketball many times over, along two arcs of a bounce. The images of the ball are crowded together at the top of each arc and spread far apart near the floor.",
+      "caption": "A flash fired 25 times a second while this ball bounced, so each image of the ball comes the same slice of time after the last. Now read the gaps. Near the top of each arc the images crowd together, because the ball was moving slowly there. Near the floor they are far apart, because it was moving fast. The time step never changed and the spacing did. Your paper counter slows down the same way: one picture per position, with the positions drawn closer together.",
+      "credit": {
+        "work": "Bouncing ball strobe edit",
+        "author": "MichaelMaggs, edited by Richard Bartz",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Bouncing_ball_strobe_edit.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "fg-016": [
+    {
+      "src": "/lesson-photos/fg-016-1.webp",
+      "width": 712,
+      "height": 547,
+      "bytes": 17224,
+      "sha256": "e0644a710bee40e588efa4db52e6b41ba2fa4a6294276515a02e20d45dc88866",
+      "kind": "frame",
+      "after": 1,
+      "title": "A caption for a sound, not a line",
+      "alt": "A black and white film frame of two men in suits standing in a sitting room, one wearing a bowler hat. A caption across the lower part of the picture reads KNOCKING ON DOOR in square brackets.",
+      "caption": "The picture alone does not explain what these two men will do next. The caption does: someone is knocking at the door. The square brackets mark the words as a sound and not as a line of speech. A viewer who cannot hear the soundtrack gets the same information as one who can, at the moment it matters. The frame is from Unaccustomed As We Are, a Laurel and Hardy film from 1929.",
+      "credit": {
+        "work": "Unaccustomed As We Are (1929 film), frame with a closed caption",
+        "author": "Lewis R. Foster",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Closed_captions,_knocking_on_door.png",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "fg-018": [
+    {
+      "src": "/lesson-photos/fg-018-1.webp",
+      "width": 864,
+      "height": 880,
+      "bytes": 162478,
+      "sha256": "1f44c637744f670d16aad10243e1bd5ba524e54059b6d04bd8b47d1b9e54c9be",
+      "kind": "artwork",
+      "after": 1,
+      "title": "Every gray here is made of black lines",
+      "alt": "A greatly enlarged detail of an old engraving showing folds of cloth around a small tablet marked with the letter A. The folds are built from fine parallel black lines. In the darker areas a second set of lines crosses the first.",
+      "caption": "This is a small detail of an engraving by Albrecht Dürer, greatly enlarged. No gray ink was used. Every tone is made of black lines on white paper. Find a light fold: the lines there are thin and widely spaced. Find a dark hollow: a second set of lines crosses the first, and the white gaps shrink to specks. Notice also that the lines bend with the cloth. Their spacing sets the tone, and their direction describes the surface.",
+      "credit": {
+        "work": "Detail of an engraving, showing hatching",
+        "author": "Albrecht Dürer",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Veronica_detail.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "fg-020": [
+    {
+      "src": "/lesson-photos/fg-020-1.webp",
+      "width": 580,
+      "height": 880,
+      "bytes": 92110,
+      "sha256": "8a1c4118621c8c1cd97030cb321a64c00120f971b386fbc1d951f51eeb64ff71",
+      "kind": "artwork",
+      "after": 1,
+      "title": "A drawing ruled into squares",
+      "alt": "An old pen drawing of a monument: a rider on a horse on top of a tall pedestal, with figures seated and standing around its base. Faint ruled lines divide the whole sheet into squares.",
+      "caption": "Look for the faint ruled lines that divide this whole sheet into squares. The drawing is a design for a monument, made around 1735. A grid like this was the usual way to copy a drawing at another size. The same number of squares is ruled on the new surface, larger or smaller, and the drawing is carried across one square at a time. Inside each square there is only a little to place. Your leaf goes from 4 centimeters to 8 by the same method.",
+      "credit": {
+        "work": "Design for a Monument to Emperor Charles VI of Naples (about 1735)",
+        "author": "Unknown artist",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Drawing,_Design_for_a_Monument_to_Emperor_Charles_VI_of_Naples,_ca._1735_(CH_18539831).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ]
+}

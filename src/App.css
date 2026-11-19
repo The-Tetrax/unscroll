@@ -184,11 +184,11 @@
 .teaching-section { margin-top: var(--space-xl); }
 .teaching-section > h2 { font-family: var(--font-body); font-size: var(--text-xl); line-height: 1.45; max-width: 40ch; }
 .reader-prose .teaching-section > p { margin-top: var(--space-md); }
-.teaching-visual { margin: var(--space-xl) 0; padding: 0; }
-.teaching-visual-heading { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); padding-bottom: var(--space-sm); }
-.teaching-visual-heading h3 { font-size: var(--text-md); font-family: var(--font-body); }
+.teaching-visual, .lesson-photo { margin: var(--space-xl) 0; padding: 0; }
+.teaching-visual-heading, .lesson-photo-heading { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); padding-bottom: var(--space-sm); }
+.teaching-visual-heading h3, .lesson-photo-heading h3 { font-size: var(--text-md); font-family: var(--font-body); }
 .teaching-image { width: 100%; height: auto; border-radius: var(--radius-input); }
-.teaching-visual figcaption { padding-block: var(--space-md); line-height: 1.65; font-size: var(--text-sm); color: var(--color-ink-2); }
+.teaching-visual figcaption, .lesson-photo figcaption { padding-block: var(--space-md); line-height: 1.65; font-size: var(--text-sm); color: var(--color-ink-2); }
 .visual-description { border-top: 1px solid var(--color-rule); font-size: var(--text-sm); }
 .visual-description li { margin-block: var(--space-sm); }
 .visual-viewer { inset: 0; margin: auto; width: min(940px, calc(100% - 24px)); max-width: 100%; height: min(94dvh, 1000px); max-height: 94dvh; padding: 0; border: 0; border-radius: var(--radius-panel); color: var(--color-ink); background: var(--color-paper); }
@@ -221,7 +221,7 @@
   .reader-content { padding-inline: var(--space-ml); }
   .teaching-section > h2 { font-size: 1.15rem; }
   .teaching-image { width: calc(100% + 16px); max-width: none; margin-inline: calc(-1 * var(--space-xs)); }
-  .teaching-visual-heading h3 { font-size: var(--text-sm); }
+  .teaching-visual-heading h3, .lesson-photo-heading h3 { font-size: var(--text-sm); }
   .visual-viewer { width: 100%; height: 100dvh; max-height: 100dvh; border-radius: 0; }
   .visual-viewer header { padding-top: max(var(--space-md), env(safe-area-inset-top)); }
   .visual-viewer > p { padding-bottom: max(var(--space-md), env(safe-area-inset-bottom)); }
@@ -306,6 +306,7 @@ html[data-reading-size='large'] .practice-troubleshooting p,
 html[data-reading-size='large'] .transfer-question > p:not(.field-hint),
 html[data-reading-size='large'] .transfer-answer p { font-size: var(--text-xl); line-height: 1.85; }
 html[data-reading-size='large'] .teaching-visual figcaption,
+html[data-reading-size='large'] .lesson-photo figcaption,
 html[data-reading-size='large'] .visual-description,
 html[data-reading-size='large'] .practice-materials,
 html[data-reading-size='large'] .reader-dialog .field-hint { font-size: var(--text-lg); }
@@ -331,9 +332,38 @@ html[data-reading-size='large'] .teaching-section > h2 { font-size: var(--text-t
 @media (max-width: 800px) { .paths-grid:not(.is-expanded) > .path-tile:nth-child(n + 7) { display: none; } }
 @media (max-width: 540px) { .reader-settings { padding-inline: var(--space-sm); } .paths-toggle { width: 100%; } }
 
+/* Pictures by other people sit beside the original diagrams. Each one keeps a small credit line. */
+.lesson-photo-image { display: block; width: auto; max-width: 100%; height: auto; max-height: min(62dvh, 560px); margin-inline: auto; border-radius: var(--radius-input); background: var(--color-paper-2); }
+.reader-prose .lesson-photo figcaption { padding-block: var(--space-md) var(--space-xs); }
+.reader-prose .photo-credit, .photo-viewer-notes .photo-credit { margin-top: 0; max-width: none; font-size: var(--text-xs); line-height: 1.6; color: var(--color-muted); }
+.photo-credit a { color: inherit; text-underline-offset: 2px; }
+.lesson-photo-meme .lesson-photo-image { width: 100%; max-height: none; border-radius: var(--radius-input) var(--radius-input) 0 0; }
+.reader-prose .photo-punchline { margin-top: 0; max-width: none; padding: var(--space-sm) var(--space-md); border-radius: 0 0 var(--radius-input) var(--radius-input); background: var(--color-inverse); color: var(--color-on-inverse); font-family: var(--font-display); font-size: var(--text-title); line-height: 1.15; text-align: center; text-transform: uppercase; }
+.photo-viewer .visual-viewer-scroll img { min-width: 0; margin-inline: auto; display: block; }
+.photo-viewer-notes { flex-shrink: 0; max-height: 34dvh; overflow: auto; padding: var(--space-md); border-top: 1px solid var(--color-rule); font-size: var(--text-sm); line-height: 1.65; }
+.photo-viewer-notes .photo-credit { margin-top: var(--space-xs); }
+html[data-reading-size='large'] .photo-credit { font-size: var(--text-sm); }
+.photo-credit-list { margin-top: var(--space-sm); }
+.photo-credit-list ul { list-style: none; margin: var(--space-sm) 0 0; padding: 0; display: grid; gap: var(--space-sm); font-size: var(--text-sm); line-height: 1.6; }
+.photo-credit-list li > strong, .photo-credit-list li > span { display: block; overflow-wrap: anywhere; }
+.photo-credit-list li > span { color: var(--color-ink-2); }
+.connected-lessons { margin-top: var(--space-xl-s); padding-top: var(--space-lg); border-top: 1px solid var(--color-rule); }
+.connected-lessons h2 { font-family: var(--font-body); font-size: var(--text-lg); }
+.connected-lessons > p { margin-top: var(--space-2xs); font-size: var(--text-sm); color: var(--color-muted); }
+.connected-lessons ul { list-style: none; margin: var(--space-md) 0 0; padding: 0; display: grid; gap: var(--space-sm); }
+.connected-lessons a { display: block; padding: var(--space-md); border: 1px solid var(--color-rule); border-radius: var(--radius-input); background: var(--color-paper-2); color: var(--color-ink); text-decoration: none; }
+.connected-lessons a:hover { border-color: var(--color-input-border); }
+.connected-lessons a > strong { display: block; font-size: var(--text-md); line-height: 1.4; }
+.connected-lessons a > span { display: block; margin-top: var(--space-2xs); font-size: var(--text-sm); line-height: 1.6; color: var(--color-ink-2); }
+.connected-lessons a > small { display: block; margin-top: var(--space-xs); font-size: var(--text-xs); font-weight: 700; color: var(--color-muted); }
+html[data-reading-size='large'] .connected-lessons a > span { font-size: var(--text-md); }
+@media (max-width: 540px) { .photo-viewer-notes { padding-bottom: max(var(--space-md), env(safe-area-inset-bottom)); } }
+
 /* Dark theme adjustments that tokens alone cannot express. */
 html[data-theme='dark'] .segmented-control > .is-active { background: var(--color-paper-3); }
 /* The poster stays brand red. The lightened accent would be a large bright block on a dark page. */
 html[data-theme='dark'] .film-frame { background: var(--color-field); --color-accent-ink: var(--color-field-ink); }
 /* Diagrams are drawn on light paper. Dim them slightly so they do not glare beside dark surfaces. */
 html[data-theme='dark'] .teaching-image, html[data-theme='dark'] .setup-sample img { filter: brightness(.88); }
+/* The same for diagrams and scanned pages by other people. Photographs and paintings keep their own tones. */
+html[data-theme='dark'] .lesson-photo:is([data-kind='diagram'], [data-kind='scan'], [data-kind='meme']) .lesson-photo-image { filter: brightness(.88); }

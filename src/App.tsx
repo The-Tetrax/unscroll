@@ -104,7 +104,13 @@ export default function App() {
       <footer className="app-footer"><Brand compact/><span>Made for your attention, not to take it.</span><button type="button" className="text-action" onClick={() => route.navigate('profile', { section: 'offline' })}>{appStatus.offline.state === 'ready' ? 'Offline-ready library' : <><Download size={15} aria-hidden="true"/>Check offline download</>}</button></footer>
     </main>
     <nav className="mobile-nav" aria-label="Main navigation">{navigation.map(({ id, label, icon: Icon }) => <a href={`#/${id}`} key={id} className={route.page === id ? 'is-active' : ''} aria-current={route.page === id ? 'page' : undefined}><span><Icon size={22} strokeWidth={route.page === id ? 2.4 : 1.8} aria-hidden="true"/>{id === 'review' && due.length > 0 && <span className="nav-count" aria-label={`${due.length} due`}>{Math.min(99, due.length)}</span>}</span><span>{label}</span></a>)}</nav>
-    {activeLesson && <Reader key={`${activeLesson.id}:${reviewMode}:${route.params.get('stage') ?? ''}`} lesson={activeLesson} library={library} reviewMode={reviewMode} initialStage={route.params.get('stage') === 'try' ? 'try' : 'read'} returnLabel={{ today: 'Back to my day', explore: 'Back to Explore', vault: 'Back to Vault', review: 'Back to reviews', profile: 'Back to my profile' }[route.page]} onClose={closeReader} onNext={showNext ? () => route.setParam('lesson', nextId!, true) : undefined} nextLabel={reviewMode ? 'Next recall' : 'Next bite'}/>}
+    {activeLesson && <Reader key={`${activeLesson.id}:${reviewMode}:${route.params.get('stage') ?? ''}`} lesson={activeLesson} library={library} reviewMode={reviewMode} initialStage={route.params.get('stage') === 'try' ? 'try' : 'read'} returnLabel={{ today: 'Back to my day', explore: 'Back to Explore', vault: 'Back to Vault', review: 'Back to reviews', profile: 'Back to my profile' }[route.page]} onClose={closeReader} onNext={showNext ? () => route.setParam('lesson', nextId!, true) : undefined} nextLabel={reviewMode ? 'Next recall' : 'Next bite'} lessonHref={(id) => {
+      // A connected lesson opens on the same page, at its first step, and outside any review session.
+      const params = new URLSearchParams(route.params)
+      for (const key of ['mode', 'session', 'stage']) params.delete(key)
+      params.set('lesson', id)
+      return `#/${route.page}?${params}`
+    }}/>}
     {setupOpen && !activeLesson && <Onboarding library={library} onClose={() => setSetupOpen(false)}/>}
   </MotionConfig>
 }

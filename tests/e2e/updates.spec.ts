@@ -390,7 +390,7 @@ test('The real offline inventory detects one missing SVG, restores readiness, an
   // The inventory excludes its own subsequently emitted file and generated worker
   // machinery, but must include every other eligible built file, not just a sample.
   const required = (await distFiles(production.root)).filter((path) =>
-    /\.(?:js|css|html|svg|png|woff2?|json|txt|md|webmanifest)$/i.test(path)
+    /\.(?:js|css|html|svg|png|webp|woff2?|json|txt|md|webmanifest)$/i.test(path)
     && !path.startsWith('/api/')
     && !/^\/(?:sw\.js|workbox-[^/]+\.js|offline-library\.json)$/.test(path))
   expect([...manifest.paths].sort()).toEqual(required.sort())

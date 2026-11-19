@@ -3,6 +3,7 @@ import { lessonById, lessons } from '../../src/data'
 import { editionSchema } from '../../src/lib/schema'
 import type { LibrarySnapshot } from '../../src/lib/storage'
 import type { DiscoveryEdition, Lesson } from '../../src/types'
+import { lessonPhotos } from '../../src/teaching/photo-records'
 
 const FALLBACK_URL = 'http://localhost:4173'
 const CLOCK = '2030-06-15T18:25:00.000Z'
@@ -159,6 +160,8 @@ async function waitForPrecache(page: Page) {
   }).sort()
   expect(visualPaths.length, 'The visual precache assertion must not be empty').toBeGreaterThan(0)
   expect(new Set(visualPaths).size, 'Each manifest diagram must have its own asset URL').toBe(visualPaths.length)
+  const photoPaths = Object.values(lessonPhotos).flat().map((photo) => photo.src).sort()
+  expect(photoPaths.length, 'The picture precache assertion must not be empty').toBeGreaterThan(0)
   // clientsClaim is part of the production PWA configuration. Do not skip WebKit here.
   await page.waitForFunction(() => navigator.serviceWorker?.controller?.state === 'activated', undefined, { timeout: 45_000 })
   const state = await page.evaluate(async () => (await navigator.serviceWorker.ready).active?.state)
@@ -178,10 +181,11 @@ async function waitForPrecache(page: Page) {
       maskable: paths.includes('/icons/maskable-512.png'),
       visualManifest: paths.includes('/lesson-visuals/manifest.json'),
       visuals: paths.filter((path) => path.startsWith('/lesson-visuals/') && path.endsWith('.svg')).sort(),
+      photos: paths.filter((path) => path.startsWith('/lesson-photos/') && path.endsWith('.webp')).sort(),
     }
-  }), { message: `Wait for the actual production shell, knowledge chunk, fonts, CSS, icons, and all ${visualPaths.length} manifest diagrams in Cache Storage`, timeout: 45_000 })
+  }), { message: `Wait for the actual production shell, knowledge chunk, fonts, CSS, icons, all ${visualPaths.length} manifest diagrams and all ${photoPaths.length} lesson pictures in Cache Storage`, timeout: 45_000 })
     .toEqual({ shell: true, knowledge: true, entry: true, css: true, fonts: true, icon192: true, icon512: true, maskable: true,
-      visualManifest: true, visuals: visualPaths })
+      visualManifest: true, visuals: visualPaths, photos: photoPaths })
 }
 
 async function expectReaderBody(dialog: Locator, lesson: Lesson) {
@@ -212,6 +216,21 @@ async function expectOfflineIllustrations(dialog: Locator, lesson: Lesson) {
         width: element.naturalWidth, height: element.naturalHeight }
     })
     expect(decoded, `Offline decoding of ${asset.src}`).toEqual({ complete: true, src: asset.src, width: asset.width, height: asset.height })
+  }
+  // Pictures by other people are part of the same offline promise as the diagrams.
+  const photos = lessonPhotos[lesson.id] ?? []
+  const pictures = dialog.locator('.lesson-photo > img.lesson-photo-image')
+  await expect(pictures).toHaveCount(photos.length)
+  for (const [index, photo] of photos.entries()) {
+    const picture = pictures.nth(index)
+    await picture.scrollIntoViewIfNeeded()
+    await expect(picture).toHaveAttribute('alt', photo.alt)
+    const decoded = await picture.evaluate(async (element) => {
+      if (!(element instanceof HTMLImageElement)) throw new Error('Expected a real lesson picture')
+      await element.decode()
+      return { src: new URL(element.currentSrc).pathname, width: element.naturalWidth, height: element.naturalHeight }
+    })
+    expect(decoded, `Offline decoding of ${photo.src}`).toEqual({ src: photo.src, width: photo.width, height: photo.height })
   }
 }
 
@@ -359,6 +378,14 @@ test('The installed worker cold-reloads offline with all 544 original lessons, s
   await expect(unopenedDialog.locator('.resume-notice')).toHaveCount(0)
   await expectReaderBody(unopenedDialog, unopened)
   await expectOfflineIllustrations(unopenedDialog, unopened)
+  await closeReader(page)
+  // A lesson with a picture by someone else, opened for the first time while offline.
+  const pictured = lessonById.get(Object.keys(lessonPhotos).find((id) => id !== original.id && id !== unopened.id)!)!
+  await page.goto(appUrl(`/explore?lesson=${encodeURIComponent(pictured.id)}`))
+  const picturedDialog = page.getByRole('dialog', { name: pictured.title, exact: true })
+  await expect(picturedDialog).toBeVisible()
+  expect(lessonPhotos[pictured.id].length).toBeGreaterThan(0)
+  await expectOfflineIllustrations(picturedDialog, pictured)
   await closeReader(page)
   await navigate(page, 'review')
   await expect(page.getByRole('heading', { level: 1, name: /DON’T JUST READ IT\./ })).toBeVisible()

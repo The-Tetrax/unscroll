@@ -12,7 +12,7 @@ function offlineInventory(): Plugin {
   return {
     name: 'offline-library-inventory', enforce: 'post',
     generateBundle(_options, bundle) {
-      const extensions = /\.(?:js|css|html|svg|png|woff2?|json|txt|md)$/i
+      const extensions = /\.(?:js|css|html|svg|png|webp|woff2?|json|txt|md)$/i
       const paths = new Set<string>(['/index.html', '/manifest.webmanifest'])
       let bytes = 0
       for (const [name, asset] of Object.entries(bundle)) {
@@ -77,7 +77,7 @@ export default defineConfig({
       ],
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,svg,png,woff2,woff,json,txt,md}'],
+      globPatterns: ['**/*.{js,css,html,svg,png,webp,woff2,woff,json,txt,md}'],
       globIgnores: ['**/api/**'],
       maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       cleanupOutdatedCaches: true,

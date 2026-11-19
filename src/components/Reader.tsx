@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { ALargeSmall, ArrowLeft, ArrowRight, ArrowUpRight, Bookmark, Check, CheckCircle2, ChevronDown, Copy, Lightbulb, X } from 'lucide-react'
-import { categoryById } from '../data'
+import { categoryById, lessonById } from '../data'
+import { linksById } from '../teaching/connections'
 import type { Lesson, ReaderDraft } from '../types'
 import type { Library } from '../hooks/useLibrary'
 import type { ReviewGrade } from '../lib/learning'
@@ -12,8 +13,8 @@ import { TeachingContent, GuidedPractice } from './TeachingContent'
 const evidenceLabels = { research: 'Research-informed', framework: 'A useful framework', reference: 'Reference knowledge' }
 type Stage = 'read' | 'try' | 'recall' | 'done'
 
-export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel, returnLabel, initialStage = 'read' }: {
-  lesson: Lesson; library: Library; reviewMode: boolean; onClose: () => void; onNext?: () => void; nextLabel?: string; returnLabel: string; initialStage?: 'read' | 'try'
+export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel, returnLabel, initialStage = 'read', lessonHref }: {
+  lesson: Lesson; library: Library; reviewMode: boolean; onClose: () => void; onNext?: () => void; nextLabel?: string; returnLabel: string; initialStage?: 'read' | 'try'; lessonHref?: (id: string) => string
 }) {
   const dialog = useRef<HTMLDialogElement>(null)
   const scroller = useRef<HTMLDivElement>(null)
@@ -38,6 +39,10 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
   const isCorrect = choice === lesson.quiz?.correctIndex
   const readingSize = library.state.readingSize ?? 'standard'
   const theme = library.state.theme ?? 'system'
+  const connected = reviewMode || !lessonHref ? [] : (linksById.get(lesson.id) ?? []).flatMap(({ id, why }) => {
+    const other = lessonById.get(id)
+    return other ? [{ other, why }] : []
+  })
 
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null
@@ -130,6 +135,7 @@ export function Reader({ lesson, library, reviewMode, onClose, onNext, nextLabel
           <p className="reader-hook">{lesson.hook}</p>
           <TeachingContent lesson={lesson}/>
           <div className="takeaway"><Lightbulb size={22} aria-hidden="true"/><p>{lesson.takeaway}</p></div>
+          {connected.length > 0 && lessonHref && <section className="connected-lessons" aria-labelledby="connected-title"><h2 id="connected-title">Connected ideas</h2><p>Optional. Each one explains this idea from another side.</p><ul>{connected.map(({ other, why }) => <li key={other.id}><a href={lessonHref(other.id)}><strong>{other.title}</strong><span>{why}</span><small>{categoryById[other.category].name}{library.state.completed[other.id] ? ', completed' : ''}</small></a></li>)}</ul></section>}
           {lesson.kind === 'discovery' && <p className="field-hint">This is an external reference, not an expert-reviewed practical lesson. Check the article’s sources and context before applying it.</p>}
         </>}
 

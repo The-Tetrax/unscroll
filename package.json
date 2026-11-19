@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node --use-system-ca node_modules/vite/bin/vite.js",
     "build": "npm run assets && npm run typecheck && npm run validate:content && vite build",
-    "assets": "tsx scripts/generate-teaching-assets.ts && node scripts/generate-assets.mjs",
+    "assets": "tsx scripts/generate-teaching-assets.ts && tsx scripts/generate-photo-credits.ts && node scripts/generate-assets.mjs",
     "review:visuals": "tsx scripts/generate-teaching-assets.ts --review",
     "typecheck": "tsc -b",
     "validate:content": "tsx scripts/validate-content.ts",
@@ -15,6 +15,7 @@
     "test:e2e": "playwright test",
     "test:watch": "vitest",
     "check:discovery": "node --use-system-ca --import tsx scripts/check-discovery.ts",
+    "photos": "node --use-system-ca --import tsx scripts/lesson-photos.ts",
     "package": "npm run build && node scripts/package-release.mjs",
     "lint": "oxlint",
     "preview": "node --use-system-ca node_modules/vite/bin/vite.js preview"

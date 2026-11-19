@@ -10,6 +10,7 @@ import { themeOptions } from '../lib/theme'
 import type { AppState, CategoryId } from '../types'
 import { EmptyState, ProgressBar, SectionHeading } from './shared'
 import { AppStatus } from './AppStatus'
+import { PhotoCredits } from './PhotoCredits'
 import type { AppStatus as PwaStatus } from '../hooks/useAppStatus'
 
 type Notice = { kind: 'info' | 'success' | 'error'; message: string } | null
@@ -431,6 +432,8 @@ export function Profile({ library, route, install, appStatus, onSetup }: { libra
         <h3>Sources and licenses</h3>
         <p>Original UNSCROLL lessons link to supporting sources. Those source pages retain their own copyrights and licenses; a link does not grant permission to reuse their content.</p>
         <p>Wikipedia extracts are external reference material, credited to Wikipedia contributors under Creative Commons Attribution-ShareAlike (CC BY-SA). Each discovery includes its attribution, license link and article history. Follow the linked license terms when sharing or adapting an extract.</p>
+        <p>Some lessons show a photograph, artwork, film frame or diagram made by someone else. Each one is in the public domain or under a Creative Commons license that allows reuse with credit. The credit sits under the picture, with links to its license and its source on Wikimedia Commons. These pictures keep their own licenses, and a credit does not mean the author endorses UNSCROLL.</p>
+        <PhotoCredits/>
         <h3>Educational use</h3>
         <p>Lessons are educational, not personal financial, medical or mental health advice. They do not diagnose conditions or replace advice from a qualified professional.</p>
       </details>

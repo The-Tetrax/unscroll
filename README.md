@@ -10,6 +10,8 @@ A mobile-first, installable learning app with an original red, ink, and ivory vi
 - **22 sequenced learning paths** covering observation, reasoning, memory, speaking, presence, philosophy, phone photography, directing, lighting, editing, sound, cinema study, colour, typography, UI/UX, drawing, and six focused field guides.
 - Every original lesson is a **guided-v2** teaching guide of 420-900 words (most 650-800) in four sections: the real situation and why it matters, an everyday analogy that introduces the mechanism and its term, a walked example with the numbers restated, and the boundaries and common mistake, closing with two habits. Reading grade is at most 10.5 and sentences average under 17 words. Each guide carries guided practice with materials and troubleshooting, a transfer question with a hint and explained answer, and supporting sources. Research, reference material, and practical frameworks have different labels.
 - **604 original offline diagrams**, with enlargement, captions, and text descriptions. Camera, lighting, typography, UI/UX, and drawing lessons include bespoke demonstrations, not decorative stock images.
+- **Credited pictures by other people** beside the diagrams where a real photograph, artwork or public-domain film frame shows what a drawing cannot. Each is stored in the app, works offline, and carries a small credit with its author, license and source. Only public-domain and Creative Commons BY, BY-SA and CC0 files from Wikimedia Commons are used. The current count and every credit are in [public/lesson-photos/CREDITS.md](public/lesson-photos/CREDITS.md) and in **You > Help and privacy**.
+- **Connected ideas** at the end of a lesson link it to lessons in other topics that explain the same mechanism from another side, each with a one-line reason.
 - A daily mix of 1, 3, 5, or 7 lessons. Today's issued queue stays fixed after completion, reload, and preference changes. Completed or previously delivered lessons are not silently relabeled as new. Unfinished older lessons remain available in Explore.
 - Optional three-step onboarding explains a real lesson and helps choose topics and pace. Reopen it anytime in **You > Help and privacy**. Cancelling does not save unfinished preference changes.
 - **Standard or larger lesson text**, system-aware reduced motion, and direct settings navigation. Preference success is reported only after device storage confirms it.
@@ -84,6 +86,7 @@ Requires Node 24 and npm. Run `npm ci`, then `npm run dev`. Development serves a
 | `npm test` | Learning, schema, backup, attribution, and discovery unit tests |
 | `npm run test:e2e` | Phone Chrome, desktop Chrome, and phone WebKit flows |
 | `npm run check:discovery` | Read-only live Wikipedia smoke check, in-memory ledger |
+| `npm run photos -- <command>` | Authoring tool for lesson pictures: search Wikimedia Commons, preview, add, remove, review. Needs the network and is not part of the build |
 | `npm run package` | Rebuild and create static and full-source release archives |
 
 Before browser tests, run `npx playwright install chromium webkit`. Build before testing the production preview. CI installs the browser system dependencies on Ubuntu. The VS Code task **UNSCROLL: preview production PWA** runs the built app.
@@ -116,13 +119,14 @@ Normal writes compare the previous IndexedDB snapshot in one transaction. If two
 
 ## Source and asset licenses
 
-See [public/ATTRIBUTION.md](public/ATTRIBUTION.md) and [LICENSE](LICENSE). Fonts, install icons, and every generated teaching diagram have per-file byte counts and SHA-256 values in [public/asset-licenses.json](public/asset-licenses.json), verified by tests. Wikipedia extracts retain CC BY-SA attribution, source, and article-history links, including in backups. No borrowed anime characters, film stills, paid stock imagery, or speech excerpts are bundled.
+See [public/ATTRIBUTION.md](public/ATTRIBUTION.md) and [LICENSE](LICENSE). Fonts, install icons, and every generated teaching diagram have per-file byte counts and SHA-256 values in [public/asset-licenses.json](public/asset-licenses.json), verified by tests. Wikipedia extracts retain CC BY-SA attribution, source, and article-history links, including in backups. Pictures by other people are limited to public-domain and openly licensed files from Wikimedia Commons. They keep their own licenses, outside the project's MIT license, and their records in [src/teaching/photos.json](src/teaching/photos.json) are verified by tests. No borrowed anime characters, copyrighted film stills, meme templates, paid stock imagery, or speech excerpts are bundled.
 
 ## Project map
 
 - [src/data/index.ts](src/data/index.ts): all original lessons and path registrations.
 - [src/teaching/index.ts](src/teaching/index.ts): the 544 complete guides and their teaching revision.
 - [scripts/generate-teaching-assets.ts](scripts/generate-teaching-assets.ts): deterministic SVG generation, decoding, manifests and contact sheets.
+- [scripts/lesson-photos.ts](scripts/lesson-photos.ts): finds, converts and records pictures by other people. [src/teaching/photos.json](src/teaching/photos.json) holds the records and [src/teaching/connections.ts](src/teaching/connections.ts) the pairs of connected lessons. [tests/photos.test.ts](tests/photos.test.ts) and [tests/e2e/pictures.spec.ts](tests/e2e/pictures.spec.ts) check both.
 - [src/hooks/useAppStatus.ts](src/hooks/useAppStatus.ts): cache verification and safe update handling.
 - [src/tokens.css](src/tokens.css): every color for the light and dark themes. [tests/theme.test.ts](tests/theme.test.ts) checks their contrast.
 - [docs/ux-plan-2026-11.md](docs/ux-plan-2026-11.md): the audit, the evidence for each interface change, and what is left.
