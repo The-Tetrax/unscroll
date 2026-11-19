@@ -61,7 +61,7 @@ Added 2026-11-18. The owner asked for photographs, memes and images from any sou
 - At most three pictures per lesson, usually one. View every picture at reading size before writing its caption. If no openly licensed picture fits, the lesson gets none: a decorative or loosely related photograph is worse than no photograph.
 - Checking after a picture is added: compare the stored file with its words (`npm run photos -- review <id>` draws the stored files and prints each alt text and caption), and compare every name, place and date in the caption with the source page (`npm run photos -- sources <id>` prints the Commons description, date, author and current license). The alt text states only what can be seen in the stored file. A faint scan can be added with `contrast: true`, and its credit then says that the contrast was raised.
 - People: prefer pictures without identifiable private individuals. Performers on stage, crews at work and historical figures are acceptable. Never use a picture of a person to illustrate a trait, a mistake or a condition.
-- Memory hooks (`kind: meme`): an original one-line caption over a public-domain or openly licensed picture, placed after the last section. The line restates the lesson's point, never mocks a person or group, and is never the only place an idea appears.
+- Memory hooks (`kind: meme`): one original line of UNSCROLL text shown under a public-domain or openly licensed picture, placed after the last section. The line is not drawn into the file. It restates the lesson's point, never mocks a person or group, and is never the only place an idea appears.
 - Adding a picture does not change the lesson's revision, so unfinished drafts, notes and completions are untouched.
 
 ## Connected lessons

@@ -1,6 +1,6 @@
 # Lesson picture credits
 
-UNSCROLL shows 84 pictures by other people in 77 lessons. Each one is in the public domain or under a Creative Commons license that allows reuse with credit. They are not covered by the project's MIT license, and each keeps the license named here. Every file comes from Wikimedia Commons and was changed only as stated. A credit does not mean that the author endorses UNSCROLL.
+UNSCROLL shows 106 pictures by other people in 99 lessons. Each one is in the public domain or under a Creative Commons license that allows reuse with credit. They are not covered by the project's MIT license, and each keeps the license named here. Every file comes from Wikimedia Commons and was changed only as stated. A credit does not mean that the author endorses UNSCROLL.
 
 This file is generated from src/teaching/photos.json by npm run assets.
 
@@ -100,6 +100,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   License: CC BY 2.0, https://creativecommons.org/licenses/by/2.0
   Source: https://commons.wikimedia.org/wiki/File:Macbeth_(32280144787).jpg
   Changes: Resized and converted to WebP.
+
+## cinema-015: Map eyelines with the 180-degree convention
+
+- File: lesson-photos/cinema-015-1.webp
+  Work: 180 degree rule
+  Author: Grm wnr
+  License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
+  Source: https://commons.wikimedia.org/wiki/File:180_degree_rule.svg
+  Changes: Rendered from SVG and converted to WebP.
 
 ## cinema-016: Write the information job beside each shot
 
@@ -509,6 +518,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg
   Changes: Resized and converted to WebP.
 
+## design-044: Give the orange and the table different kinds of shadow
+
+- File: lesson-photos/design-044-1.webp
+  Work: Point light source sharp shadow
+  Author: Timrb
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Point_light_source_sharp_shadow.png
+  Changes: Converted to WebP.
+
 ## design-047: Draw what the spoon reflects, not a symbol for shiny
 
 - File: lesson-photos/design-047-1.webp
@@ -570,6 +588,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Closed_captions,_knocking_on_door.png
   Changes: Converted to WebP.
 
+## fg-017: Match the ellipse opening to the circular face you see
+
+- File: lesson-photos/fg-017-1.webp
+  Work: Della pittura, diagram of a circle in perspective
+  Author: Leon Battista Alberti
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Della_Pittura_Alberti_perspective_circle_to_ellipse.jpg
+  Changes: Converted to WebP.
+
 ## fg-018: Build tone from line spacing and crossing layers
 
 - File: lesson-photos/fg-018-1.webp
@@ -579,6 +606,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Veronica_detail.jpg
   Changes: Resized and converted to WebP.
 
+## fg-019: Suggest ridges with selected cast shadows
+
+- File: lesson-photos/fg-019-1.webp
+  Work: Ripples and worm-cast
+  Author: Jonathan Wilkins
+  License: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0
+  Source: https://commons.wikimedia.org/wiki/File:Ripples_and_worm-cast_-_geograph.org.uk_-_982276.jpg
+  Changes: Converted to WebP.
+
 ## fg-020: Transfer a sketch through matching grid cells
 
 - File: lesson-photos/fg-020-1.webp
@@ -586,6 +622,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Unknown artist
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Drawing,_Design_for_a_Monument_to_Emperor_Charles_VI_of_Naples,_ca._1735_(CH_18539831).jpg
+  Changes: Resized and converted to WebP.
+
+## life-001: Match the filter to the system, not the shelf
+
+- File: lesson-photos/life-001-1.webp
+  Work: HVAC air filter
+  Author: Wikideas1
+  License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+  Source: https://commons.wikimedia.org/wiki/File:HVAC_air_filter.webp
   Changes: Resized and converted to WebP.
 
 ## life-003: Keep the dryer air path clear without servicing it
@@ -606,6 +651,42 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Writing_Alaska_on_condensation.jpg
   Changes: Resized and converted to WebP.
 
+## life-009: Make running low a visible event
+
+- File: lesson-photos/life-009-1.webp
+  Work: Mazda 3 fuel gauge showing empty
+  Author: Deloreanman14
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Mazda_3_Fuel_Gauge_Showing_Empty.jpg
+  Changes: Resized and converted to WebP.
+
+## life-024: Turn watts and hours into a usable estimate
+
+- File: lesson-photos/life-024-1.webp
+  Work: Plug-in power and energy monitor in a UK mains socket
+  Author: Gareth.randall
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Plug-in_Power_%26_Energy_Monitor_in_UK_Domestic_Mains_Socket.jpeg
+  Changes: Resized and converted to WebP.
+
+## life-026: Match the repair information to the exact model
+
+- File: lesson-photos/life-026-1.webp
+  Work: Motor nameplate, Malmbergs
+  Author: Olgailga2
+  License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+  Source: https://commons.wikimedia.org/wiki/File:Motor_nameplate_Malmbergs.jpg
+  Changes: Resized and converted to WebP.
+
+## life-030: A reachable screw is not a service instruction
+
+- File: lesson-photos/life-030-1.webp
+  Work: Top-Max TM-L2 battery charger
+  Author: Raimond Spekking
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Top-Max_TM-L2-1967.jpg
+  Changes: Cropped, resized and converted to WebP.
+
 ## life-031: A refrigerator dial is not a temperature reading
 
 - File: lesson-photos/life-031-1.webp
@@ -614,6 +695,33 @@ This file is generated from src/teaching/photos.json by npm run assets.
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Food_Safety_-_Cut_Waste_in_Refrigerators_(20120106-OC-AMW-0073).jpg
   Changes: Resized and converted to WebP.
+
+## life-038: A gate-checked bag needs a battery recheck
+
+- File: lesson-photos/life-038-1.webp
+  Work: Canon LP-EL battery pack
+  Author: Dinkun Chen
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Canon_LP-EL_BATTERY_PACK_(2).jpg
+  Changes: Resized and converted to WebP.
+
+## life-039: Measure the bag after the pockets are full
+
+- File: lesson-photos/life-039-1.webp
+  Work: Korean Air baggage sizer, Taichung Airport
+  Author: Saimmx
+  License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+  Source: https://commons.wikimedia.org/wiki/File:20250808_151744_Taichung_Airport_Korean_Air_baggage_sizer.jpg
+  Changes: Resized and converted to WebP.
+
+## mind-007: Keep both versions visible when comparing
+
+- File: lesson-photos/mind-007-1.webp
+  Work: Spot the difference
+  Author: Muband
+  License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
+  Source: https://commons.wikimedia.org/wiki/File:Spot_the_difference.png
+  Changes: Converted to WebP.
 
 ## mind-028: Give learning another encounter after a gap
 
@@ -631,6 +739,60 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Wikideas1
   License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
   Source: https://commons.wikimedia.org/wiki/File:Compound_interest.webp
+  Changes: Resized and converted to WebP.
+
+## money-009: Separate balance growth from buying power
+
+- File: lesson-photos/money-009-1.webp
+  Work: Reichsbanknote, 50 Milliarden Mark, 10 October 1923
+  Author: Reichsbankdirektorium Berlin
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:GER-119c-Reichsbanknote-50_Billion_Mark_(1923).jpg
+  Changes: Resized and converted to WebP.
+
+## money-031: Verify a money request on a separate channel
+
+- File: lesson-photos/money-031-1.webp
+  Work: Example of a phishing email from a fictional bank
+  Author: Andrew Levine
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:PhishingTrustedBank.png
+  Changes: Converted to WebP.
+
+## money-034: Do not hand remote control to a pop-up
+
+- File: lesson-photos/money-034-1.webp
+  Work: Example of a technical support scam popup
+  Author: Pahunkat
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Example_of_a_technical_support_scam_popup.png
+  Changes: Resized and converted to WebP.
+
+## money-036: Split a repayment into interest and principal
+
+- File: lesson-photos/money-036-1.webp
+  Work: Repayment type: annuity
+  Author: Crowdfundpanel.com
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Crowdfundpanel.com_-_Repayment_type_-_Annuity.png
+  Changes: Resized and converted to WebP.
+
+## observer-001: Write what happened before explaining why
+
+- File: lesson-photos/observer-001-1.webp
+  Work: Tree sketch in a notebook on the transmutation of species (1837)
+  Author: Charles Darwin
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Darwin_Tree_1837.png
+  Changes: Cropped, resized and converted to WebP.
+
+## observer-004: Could that detail be seen from there?
+
+- File: lesson-photos/observer-004-1.webp
+  Work: Bench-blocking bush
+  Author: Steve Daniels
+  License: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0
+  Source: https://commons.wikimedia.org/wiki/File:Bench-blocking_bush_-_geograph.org.uk_-_2082039.jpg
   Changes: Resized and converted to WebP.
 
 ## tech-006: A DHCP offer is not the completed lease exchange
@@ -685,6 +847,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:Survivorship-bias.svg
   Changes: Rendered from SVG and converted to WebP.
 
+## thinking-015: Read the slow requests behind the average
+
+- File: lesson-photos/thinking-015-1.webp
+  Work: Comparison of mean, median and mode
+  Author: Cmglee
+  License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0
+  Source: https://commons.wikimedia.org/wiki/File:Comparison_mean_median_mode.svg
+  Changes: Rendered from SVG and converted to WebP.
+
 ## thinking-018: Knowing the average does not stop the variation
 
 - File: lesson-photos/thinking-018-1.webp
@@ -710,6 +881,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Source: https://commons.wikimedia.org/wiki/File:High_accuracy_Low_precision.svg
   Changes: Rendered from SVG and converted to WebP.
 
+## thinking-029: Keep useful work without owing it more work
+
+- File: lesson-photos/thinking-029-1.webp
+  Work: British Airways Concorde G-BOAC
+  Author: Eduard Marmet
+  License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0
+  Source: https://commons.wikimedia.org/wiki/File:British_Airways_Concorde_G-BOAC_03.jpg
+  Changes: Resized and converted to WebP.
+
 ## thinking-038: Calculate what the faster stage leaves unchanged
 
 - File: lesson-photos/thinking-038-1.webp
@@ -718,6 +898,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Optimizing-different-parts.svg
   Changes: Rendered from SVG and converted to WebP.
+
+## thinking-040: Let the units check the estimate
+
+- File: lesson-photos/thinking-040-1.webp
+  Work: Artist's rendering of the Mars Climate Orbiter
+  Author: NASA/JPL/Corby Waste
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Mars_Climate_Orbiter_2.jpg
+  Changes: Resized and converted to WebP.
 
 ## wellbeing-029: Recognize pulses as a protein food
 
@@ -735,6 +924,15 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: U.S. Food and Drug Administration
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:FDA_Nutrition_Facts_Label_2016.png
+  Changes: Resized and converted to WebP.
+
+## work-003: Keep an explicit active-work limit
+
+- File: lesson-photos/work-003-1.webp
+  Work: Henrik Bothe plate spinning
+  Author: Henrikbothe
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Henrik_Bothe_plate_spinning.jpg
   Changes: Resized and converted to WebP.
 
 ## work-026: Put a checklist at a decision point

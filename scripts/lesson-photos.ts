@@ -77,10 +77,14 @@ async function fetchChecked(address: string, accept: string): Promise<Response> 
 async function api(base: string, parameters: Record<string, string | number>): Promise<ApiResult> {
   const url = new URL(base)
   for (const [key, value] of Object.entries({ format: 'json', formatversion: 2, ...parameters })) url.searchParams.set(key, String(value))
-  await pause(120)
-  const data = await (await fetchChecked(url.href, 'application/json')).json() as ApiResult
-  if (data.error) throw new Error(`Wikimedia API: ${data.error.code} ${data.error.info}`)
-  return data
+  // The search service sometimes answers that it is too busy. That passes, so the request is repeated a few times.
+  for (let attempt = 1; ; attempt += 1) {
+    await pause(120)
+    const data = await (await fetchChecked(url.href, 'application/json')).json() as ApiResult
+    if (!data.error) return data
+    if (attempt >= 5 || !/busy|maxlag|ratelimited|timeout/i.test(data.error.code)) throw new Error(`Wikimedia API: ${data.error.code} ${data.error.info}`)
+    await pause(4000 * attempt)
+  }
 }
 
 async function download(address: string): Promise<Buffer> {

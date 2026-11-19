@@ -237,6 +237,28 @@
       }
     }
   ],
+  "cinema-015": [
+    {
+      "src": "/lesson-photos/cinema-015-1.webp",
+      "width": 880,
+      "height": 778,
+      "bytes": 25306,
+      "sha256": "cf5e923a9f72e28c611f6c861762ddf6a264ed0d00e20130a8f315c3c9697b11",
+      "kind": "diagram",
+      "after": 1,
+      "title": "One side of the line, and what crossing does",
+      "alt": "A diagram seen from above. Two people face each other in the middle of a circle, and a dashed line through them divides the circle into a green half and a pink half. Cameras stand along the green arc and one camera stands in the pink half. Two small frames above show the pair from each half, with the two people on opposite sides of the screen in each.",
+      "caption": "Find the dashed line through the two people. That is the line of this lesson, the net across the tennis court. Follow the thin arrow up from the cameras on the green side to their frame: orange on the left of the screen, blue on the right. Now follow the arrow up from the single camera on the pink side. In its frame the two have swapped places. Each frame is fine alone. The broken red arrow between them marks the cut that would confuse a viewer, because the room would seem to flip.",
+      "credit": {
+        "work": "180 degree rule",
+        "author": "Grm wnr",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:180_degree_rule.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
   "cinema-016": [
     {
       "src": "/lesson-photos/cinema-016-1.webp",
@@ -1221,6 +1243,28 @@
       }
     }
   ],
+  "design-044": [
+    {
+      "src": "/lesson-photos/design-044-1.webp",
+      "width": 320,
+      "height": 320,
+      "bytes": 1774,
+      "sha256": "81f4fa9ce08605c1b4055c88101c862276d89da72b96ef5ff3fe1c9f74bac4e5",
+      "kind": "diagram",
+      "after": 1,
+      "title": "Two shadows with two causes",
+      "alt": "A computer-drawn pale gray ball on a white ground, lit from the upper right. The lower left side of the ball is in shade, and a dark oval shadow with a sharp edge lies on the ground to its left.",
+      "caption": "This ball was drawn by a computer with one small light at the upper right, so no second lamp muddles it. Find the two dark areas. The dim side of the ball is the form shadow: that surface faces away from the light, and nothing is in its way. The dark oval on the ground is the cast shadow: the ground there would be lit if the ball were not blocking it. Run this lesson's check. The cast shadow lies on the side away from the light. Its edge is unusually sharp because the light here is a single point.",
+      "credit": {
+        "work": "Point light source sharp shadow",
+        "author": "Timrb",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Point_light_source_sharp_shadow.png",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
   "design-047": [
     {
       "src": "/lesson-photos/design-047-1.webp",
@@ -1370,6 +1414,27 @@
       }
     }
   ],
+  "fg-017": [
+    {
+      "src": "/lesson-photos/fg-017-1.webp",
+      "width": 665,
+      "height": 609,
+      "bytes": 27680,
+      "sha256": "efd35dfd032e85b36403c42378a87717cb7e15652319d7f91cf1682f3b015176",
+      "kind": "scan",
+      "after": 1,
+      "title": "A circle laid flat, by ruler",
+      "alt": "An old printed diagram marked F.6. At the bottom a circle is drawn inside a square that is ruled into small squares. Above it the same ruled square is drawn receding into the distance, as a shape that narrows toward the top, and the circle inside it has become a flattened oval.",
+      "caption": "This diagram comes from a printed edition of Leon Battista Alberti's treatise on painting, which he wrote in the 1430s. At the bottom is a circle in a ruled square, seen face-on. Above it the same square lies flat and recedes, and the circle has flattened into an oval. Compare the two with this lesson's two spans: how wide, and how open. The opening from top to bottom is what has collapsed. The diagram finds the oval with ruled lines. This lesson asks you to find it by looking at the lid.",
+      "credit": {
+        "work": "Della pittura, diagram of a circle in perspective",
+        "author": "Leon Battista Alberti",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Della_Pittura_Alberti_perspective_circle_to_ellipse.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
   "fg-018": [
     {
       "src": "/lesson-photos/fg-018-1.webp",
@@ -1391,6 +1456,28 @@
       }
     }
   ],
+  "fg-019": [
+    {
+      "src": "/lesson-photos/fg-019-1.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 41782,
+      "sha256": "fe5c77364e63b71b5099ecde45a07ebced1c08266c8ede70641810eaff55a3d1",
+      "kind": "photo",
+      "after": 1,
+      "title": "Low light draws every ripple",
+      "alt": "A close view of wet sand covered in small ripples that run in two directions, with a small coiled worm cast near the top. Each ripple is bright on one side and dark on the other.",
+      "caption": "Nobody outlined these ripples. The photographer notes that the light was low evening light, and that light is doing the describing: each ridge is bright on one side and dark beyond it. Find one dark shape and point to the ridge that stands between it and the light. Then imagine the sun overhead. The same sand would look almost flat. Some of the dark here is a ridge turning away from the light, which this lesson calls form shading. For your study, keep only the patches whose blocking ridge you can point to.",
+      "credit": {
+        "work": "Ripples and worm-cast",
+        "author": "Jonathan Wilkins",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ripples_and_worm-cast_-_geograph.org.uk_-_982276.jpg",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
   "fg-020": [
     {
       "src": "/lesson-photos/fg-020-1.webp",
@@ -1408,6 +1495,28 @@
         "author": "Unknown artist",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Drawing,_Design_for_a_Monument_to_Emperor_Charles_VI_of_Naples,_ca._1735_(CH_18539831).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "life-001": [
+    {
+      "src": "/lesson-photos/life-001-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 61300,
+      "sha256": "51338cd25aa236553652cbfd865aaf76051bcc40df797e258c7c29222c29dfc5",
+      "kind": "photo",
+      "after": 2,
+      "title": "Same size, different type",
+      "alt": "A hand holds a flat, pale mesh filter panel at an angle in front of a dark furnace cabinet that carries yellow warning labels.",
+      "caption": "The photographer describes this as a washable, reusable filter measuring 16 by 25 inches. Compare that with the purchase note in this lesson: nominal sixteen by twenty-five by one inch, disposable pleated. The two numbers given match. The type does not, and neither a thickness nor a rating is given. On this lesson's checklist that is a match on two numbers, a change of type and two unknowns, so it is a question for the property manager and not a purchase. A match on the size printed on the front is where the check starts, not where it ends.",
+      "credit": {
+        "work": "HVAC air filter",
+        "author": "Wikideas1",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:HVAC_air_filter.webp",
         "changes": "Resized and converted to WebP."
       }
     }
@@ -1456,6 +1565,93 @@
       }
     }
   ],
+  "life-009": [
+    {
+      "src": "/lesson-photos/life-009-1.webp",
+      "width": 880,
+      "height": 606,
+      "bytes": 23014,
+      "sha256": "4a61a62ed462a38a263ab485a8743618f998de956f6e74c437289335321ac769",
+      "kind": "photo",
+      "after": 1,
+      "title": "The light comes on with range to spare",
+      "alt": "A car dashboard display. It reads 71 degrees Fahrenheit, then RANGE 24 miles. A fuel bar running from E to F is lit only at the E end. Below the display an orange fuel pump warning light is on.",
+      "caption": "The orange pump at the bottom is the fuel light from this lesson. Now read the line above it: range 24 miles. The light is on, and the car can still drive to a petrol station. It did not wait for zero. That margin is the whole design, and your reorder signal needs the same property: it has to fire while the stock on the shelf still covers the wait for more.",
+      "credit": {
+        "work": "Mazda 3 fuel gauge showing empty",
+        "author": "Deloreanman14",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mazda_3_Fuel_Gauge_Showing_Empty.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "life-024": [
+    {
+      "src": "/lesson-photos/life-024-1.webp",
+      "width": 880,
+      "height": 817,
+      "bytes": 19892,
+      "sha256": "3d9b24cfd5da63da5fbab54efeeb766ae5c96128279a50794366b79d02b3a94f",
+      "kind": "photo",
+      "after": 2,
+      "title": "A measured draw, not a label",
+      "alt": "A gray plug-in energy monitor in a British wall socket, with an appliance's white plug pushed into its front. Its small screen shows the number 10 above a row of buttons.",
+      "caption": "This monitor sits between the wall socket and the plug, and its screen shows what the appliance is drawing at this moment. The photographer records the reading as 10 watts. That is a measured figure for actual use, the kind this lesson asks for, and it can sit far below the maximum printed on a label. It is still a rate, like a speedometer reading. Multiply it by your hours, divide by 1,000 and multiply by your tariff before you call it a cost.",
+      "credit": {
+        "work": "Plug-in power and energy monitor in a UK mains socket",
+        "author": "Gareth.randall",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Plug-in_Power_%26_Energy_Monitor_in_UK_Domestic_Mains_Socket.jpeg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "life-026": [
+    {
+      "src": "/lesson-photos/life-026-1.webp",
+      "width": 880,
+      "height": 473,
+      "bytes": 53662,
+      "sha256": "f92a461aba4b2c734099915695d21812cafae222924c8a2f964f18f77058b0c9",
+      "kind": "photo",
+      "after": 1,
+      "title": "Brand on top, identity underneath",
+      "alt": "A metal nameplate fixed with two screws to a green machine. The top line reads Malmbergs in large letters. Below it: Three-phase induction motor, Frame MS 711-2, and a grid of ratings such as kW 0.37, RPM 2730 and V 230/400. The last entry reads NO. 1212073091.",
+      "caption": "Read this plate from the top. The largest word is the brand. It tells you who made the motor, and it would look the same on every motor from that maker. The identity is in the small print underneath: the frame designation, MS 711-2, and the ratings beside it. Those are the characters to compare, one by one, with what a manual says it covers. The entry at the bottom right, marked NO., is most likely a serial number. That one names a single motor, and it is the part to keep out of public searches.",
+      "credit": {
+        "work": "Motor nameplate, Malmbergs",
+        "author": "Olgailga2",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Motor_nameplate_Malmbergs.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "life-030": [
+    {
+      "src": "/lesson-photos/life-030-1.webp",
+      "width": 842,
+      "height": 880,
+      "bytes": 122898,
+      "sha256": "120342134935aa5e5da7c4f31cea8d0319c7825e3c9f8dfc51b4020f62bfb875",
+      "kind": "photo",
+      "after": 2,
+      "title": "The line, printed on the device",
+      "alt": "The printed label on the back of a black battery charger. Under the model and the input and output figures, a warning reads: Do not remove cover or back plate. No user-serviceable parts inside. Refer service to qualified service agent. A boxed caution below adds: Do not disassemble unit.",
+      "caption": "Read the warning in the middle of this label: do not remove cover, no user-serviceable parts inside, refer service to qualified service agent. That is the line between owner and technician from this lesson, and here the maker has printed it on the product. Notice what the label does not mention: screws. It does not say the case is hard to open. It says who should open it. This is a charger, not the speaker in the example, and the rule has the same form.",
+      "credit": {
+        "work": "Top-Max TM-L2 battery charger",
+        "author": "Raimond Spekking",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Top-Max_TM-L2-1967.jpg",
+        "changes": "Cropped, resized and converted to WebP."
+      }
+    }
+  ],
   "life-031": [
     {
       "src": "/lesson-photos/life-031-1.webp",
@@ -1474,6 +1670,72 @@
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Food_Safety_-_Cut_Waste_in_Refrigerators_(20120106-OC-AMW-0073).jpg",
         "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "life-038": [
+    {
+      "src": "/lesson-photos/life-038-1.webp",
+      "width": 880,
+      "height": 512,
+      "bytes": 42718,
+      "sha256": "9bc05eb002cfa6386fa50ac3d5c9b36a4bc3c22e059b3bfd136ca427442186e9",
+      "kind": "photo",
+      "after": 1,
+      "title": "The contacts on a spare battery",
+      "alt": "A black rechargeable camera battery lying on a dark surface. Its label reads Battery Pack, 7.2V, Rechargeable Li-ion, 1920mAh 14Wh. Small metal contacts sit in recesses at the left end.",
+      "caption": "This is a spare lithium battery for a camera. Look at its left end. The small metal contacts in the recesses are the terminals of this lesson, and loose in a pocket they are what a key or a coin could bridge. The label also states the size of the battery, 14 Wh, which is the kind of figure that limits on size are written in. A spare like this passes the location rule only in the cabin, and the container rule only with those contacts covered. Check the current guidance for your own flight.",
+      "credit": {
+        "work": "Canon LP-EL battery pack",
+        "author": "Dinkun Chen",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Canon_LP-EL_BATTERY_PACK_(2).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "life-039": [
+    {
+      "src": "/lesson-photos/life-039-1.webp",
+      "width": 660,
+      "height": 880,
+      "bytes": 31812,
+      "sha256": "2785eef35039618f611b268ce1baa738a67d5479e9297b6a98f7542c31272680",
+      "kind": "photo",
+      "after": 1,
+      "title": "The frame tests the packed bag",
+      "alt": "A white baggage sizer on an airport floor: an open frame with a tray at the bottom and a back panel ruled as a grid. Above it stands a tall blue board headed Carry-On Baggage Allowance. A red queue ribbon and check-in desks are behind.",
+      "caption": "This is the frame from this lesson, at an airport check-in. Look at its shape: a fixed opening with a ruled grid behind it. A bag passes only if all of it goes in, wheels, handle and bulging front pocket included. The frame cannot read a label that says cabin size, and it gives no credit for fitting on two sides out of three. This one stands at Taichung Airport in Taiwan. Your own flight has its own numbers, and they are on your booking.",
+      "credit": {
+        "work": "Korean Air baggage sizer, Taichung Airport",
+        "author": "Saimmx",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:20250808_151744_Taichung_Airport_Korean_Air_baggage_sizer.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "mind-007": [
+    {
+      "src": "/lesson-photos/mind-007-1.webp",
+      "width": 700,
+      "height": 386,
+      "bytes": 64526,
+      "sha256": "ef192b46dcca82b9f3e1f86d9f99e823c8270b5453181f39fda4809f52069543",
+      "kind": "artwork",
+      "after": 1,
+      "title": "Try the puzzle both ways",
+      "alt": "Two nearly identical cartoon pictures side by side. Each shows an old woman with glasses and a red-haired child behind a large pink layered cake, a white cat at the right, a wall clock, a cooking pot on a shelf, bananas, cherries and a tray of baking. Small details differ between the two pictures.",
+      "caption": "A real spot-the-difference puzzle. First try it the hard way: look at the left picture only, cover it, then look at the right one and say what changed. Then look at both together and go item to item, clock to clock, shelf to shelf, tray to tray. The differences that hid from your memory show up when both versions are in view. That is all this lesson asks you to do with the two invitations.",
+      "credit": {
+        "work": "Spot the difference",
+        "author": "Muband",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Spot_the_difference.png",
+        "changes": "Converted to WebP."
       }
     }
   ],
@@ -1516,6 +1778,136 @@
         "license": "CC0 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
         "source": "https://commons.wikimedia.org/wiki/File:Compound_interest.webp",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "money-009": [
+    {
+      "src": "/lesson-photos/money-009-1.webp",
+      "width": 880,
+      "height": 448,
+      "bytes": 97468,
+      "sha256": "82caf5148c0bedaf9c51b46f64ccae34655b9a0bacec8c2798e98115eabf59b9",
+      "kind": "meme",
+      "after": 3,
+      "title": "Fifty thousand million marks",
+      "alt": "A German banknote printed in black on cream paper with a blue-green tint in the middle. Large orange figures of 50 stand in the corners. The lettering reads Reichsbanknote, Fünfzig Milliarden Mark, and the small print gives the place and date Berlin, 10 October 1923.",
+      "caption": "A memory hook. This German banknote is dated 10 October 1923, during the hyperinflation of that year. Its face value is fünfzig Milliarden Mark: fifty thousand million marks. A person holding it had a larger number than anyone in this lesson and a very poor ruler, because the same note bought less and less as the weeks went by. The number on the paper is the coin count. The question that matters is how many baskets it buys at today's prices.",
+      "punchline": "Count in loaves, not in coins.",
+      "credit": {
+        "work": "Reichsbanknote, 50 Milliarden Mark, 10 October 1923",
+        "author": "Reichsbankdirektorium Berlin",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:GER-119c-Reichsbanknote-50_Billion_Mark_(1923).jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "money-031": [
+    {
+      "src": "/lesson-photos/money-031-1.webp",
+      "width": 549,
+      "height": 408,
+      "bytes": 24616,
+      "sha256": "831b30306bf7db1b9584b4777f901f0bc6640ef4b9aba955e55dd8f50faaf3b9",
+      "kind": "diagram",
+      "after": 2,
+      "title": "A message that brings its own checker",
+      "alt": "A made-up email under a TrustedBank logo. It tells a valued customer that a withdrawal of $135.25 was attempted from their account in another country, and asks them to visit the website through the link below to verify their personal information. A blue underlined web address follows, and the email is signed TrustedBank.",
+      "caption": "This email was made up as an example, and the bank does not exist. Read it for its shape. It announces a problem: a withdrawal abroad that may not have been yours. Then it supplies the helper: the link below. Ask this lesson's question of that link: who gave me this? The message did. So the link is the card from the man at the door, however official the logo looks. The spelling slips, recieved and discrepency, are a bonus. A message with perfect spelling gets the same question.",
+      "credit": {
+        "work": "Example of a phishing email from a fictional bank",
+        "author": "Andrew Levine",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:PhishingTrustedBank.png",
+        "changes": "Converted to WebP."
+      }
+    }
+  ],
+  "money-034": [
+    {
+      "src": "/lesson-photos/money-034-1.webp",
+      "width": 880,
+      "height": 467,
+      "bytes": 27452,
+      "sha256": "cb6a69b0a97a95be4a3d5860ad13af5d064adacbc7ba68fac9fd67b677e9a8a1",
+      "kind": "diagram",
+      "after": 2,
+      "title": "Underline the claims, circle the request",
+      "alt": "A mock-up of a scam page. A white box headed This page says warns in capital letters that the device is infected with many trojans and tells the reader to call certified technicians on a blanked-out number. Behind it a blue screen titled Critical Windows Error repeats the warning, says do not restart and gives the same blanked-out toll free number.",
+      "caption": "This is a demonstration, not a real pop-up, and its maker says the claims in it are deliberately unrealistic. Do this lesson's exercise on it. Underline what is claimed: many trojans, 11 viruses, a firewall at 5 percent. Circle what is requested: call this number immediately. Then read the first three words of the white box: This page says. A page can draw a blue error screen as easily as it draws an advert. Close it with the browser's own controls.",
+      "credit": {
+        "work": "Example of a technical support scam popup",
+        "author": "Pahunkat",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Example_of_a_technical_support_scam_popup.png",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "money-036": [
+    {
+      "src": "/lesson-photos/money-036-1.webp",
+      "width": 1280,
+      "height": 340,
+      "bytes": 23866,
+      "sha256": "49d3595d4738d70973751ff61dc6296d5ded643651a37d7365ab489c734d9609",
+      "kind": "diagram",
+      "after": 2,
+      "title": "Equal payments, shrinking interest",
+      "alt": "A wide bar chart with amounts in pounds on its vertical axis and dates from 2013 to 2018 along the bottom. Every bar has the same height. In each bar a gray part at the bottom, named Interest in the key, gets smaller from left to right while the green part above it, named Principal, gets larger, until the last bars are almost entirely green.",
+      "caption": "Each bar is one payment, and all the bars are the same height, like the 50-unit bucket. Inside a bar, the gray part at the bottom is that period's interest and the green part is principal. Follow the gray from left to right. It shrinks with every payment, because each payment lowers the debt that the next interest charge is worked out on. That is the pattern of month one and month two in this lesson, continued to the end of a loan. The source describes it from the side of an investor who lends the money and receives the same two parts.",
+      "credit": {
+        "work": "Repayment type: annuity",
+        "author": "Crowdfundpanel.com",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Crowdfundpanel.com_-_Repayment_type_-_Annuity.png",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "observer-001": [
+    {
+      "src": "/lesson-photos/observer-001-1.webp",
+      "width": 880,
+      "height": 817,
+      "bytes": 57482,
+      "sha256": "74cea43b09199831d97264309402b9c0488b83d1ad18ebf1e4a416abf4b9acc2",
+      "kind": "scan",
+      "after": 1,
+      "title": "Two words that label a guess",
+      "alt": "The upper part of a handwritten notebook page in ink. The words I think stand alone at the top left. Below them is a small branching sketch like a tree, with the number 1 in a circle at its root and the letters A, B, C and D at the ends of branches. More handwriting runs down the right side.",
+      "caption": "This is part of a page from a notebook that Charles Darwin kept in 1837. Read the two words at the top before you look at the sketch: I think. The branching drawing under them is an idea about how species might be related. It is not a thing he saw. Whatever he meant by them, those two words do the job of this lesson's second column. A reader can tell at once that what follows is a possible explanation and not an observation, which is what lets a later reader correct it.",
+      "credit": {
+        "work": "Tree sketch in a notebook on the transmutation of species (1837)",
+        "author": "Charles Darwin",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Darwin_Tree_1837.png",
+        "changes": "Cropped, resized and converted to WebP."
+      }
+    }
+  ],
+  "observer-004": [
+    {
+      "src": "/lesson-photos/observer-004-1.webp",
+      "width": 880,
+      "height": 584,
+      "bytes": 100724,
+      "sha256": "7d3e4f523dc53d3ca3aec416c5ab227da7b6007c226ea038d8668c5311768abf",
+      "kind": "meme",
+      "after": 3,
+      "title": "A seat with a view of a bush",
+      "alt": "A wooden bench, seen from behind, stands on a paved patch of ground and faces a tall, leafy bush that rises directly in front of it. Water and a car park are visible in the distance, but only to the left of the bush. The sky is blue with white clouds.",
+      "caption": "A memory hook. Draw the sightline from this bench to the water. It runs straight into the bush. Whoever sits here can report the bush in fine detail and cannot report a boat passing behind it, however carefully they look. That is the restricted-view seat of this lesson, outdoors. When two accounts differ, check the seat before you judge the person who sat in it.",
+      "punchline": "Being there is not the same as being able to see it.",
+      "credit": {
+        "work": "Bench-blocking bush",
+        "author": "Steve Daniels",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Bench-blocking_bush_-_geograph.org.uk_-_2082039.jpg",
         "changes": "Resized and converted to WebP."
       }
     }
@@ -1648,6 +2040,28 @@
       }
     }
   ],
+  "thinking-015": [
+    {
+      "src": "/lesson-photos/thinking-015-1.webp",
+      "width": 880,
+      "height": 660,
+      "bytes": 27942,
+      "sha256": "a45cfaebae516f50125072555e52a970f76cc3e073801b8fd52981c75dec3219",
+      "kind": "diagram",
+      "after": 1,
+      "title": "A long tail pulls the mean away",
+      "alt": "A chart of two curves with a legend: mode in red, median in green, mean in blue. A tall, narrow solid curve has its three vertical lines close together near 1.0. A low dotted curve with a long tail to the right has its three dotted lines far apart: the red near 0.4, the green at 1.0 and the blue near 1.65.",
+      "caption": "Start with the low dotted curve, the one with a long tail to the right. Its green line is the median: half of the values lie on each side of it. Its blue line is the mean, and the tail has dragged it out to about 1.65, well past the middle. Now look at the tall narrow curve, which has almost no tail. Its three lines nearly touch. So a wide gap between median and mean is the mark of a tail. The gallery, with a median of 0.2 seconds and a mean of 0.98, has the same mark.",
+      "credit": {
+        "work": "Comparison of mean, median and mode",
+        "author": "Cmglee",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Comparison_mean_median_mode.svg",
+        "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
   "thinking-018": [
     {
       "src": "/lesson-photos/thinking-018-1.webp",
@@ -1710,6 +2124,28 @@
       }
     }
   ],
+  "thinking-029": [
+    {
+      "src": "/lesson-photos/thinking-029-1.webp",
+      "width": 880,
+      "height": 584,
+      "bytes": 10160,
+      "sha256": "dbe543fa5f396878281affc4cac38d7f65843e00c53ee8d303a6efd3b9b76a7f",
+      "kind": "photo",
+      "after": 3,
+      "title": "The aircraft that gave the trap a name",
+      "alt": "A white Concorde airliner in flight against a clear blue sky, nose raised and landing gear down. The words British Airways run along its fuselage and its tail is dark blue.",
+      "caption": "This is Concorde, a different case from the costume. The trap in this lesson is also called the Concorde fallacy. The name comes from the way the British and French governments went on paying for the aircraft's development after it had become clear that there was no longer an economic case for it. It is a standard example of treating money already spent as a reason to spend more. Notice what this lesson adds to the usual telling: the aircraft that was built still flew. What the past produced can still matter.",
+      "credit": {
+        "work": "British Airways Concorde G-BOAC",
+        "author": "Eduard Marmet",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:British_Airways_Concorde_G-BOAC_03.jpg",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
   "thinking-038": [
     {
       "src": "/lesson-photos/thinking-038-1.webp",
@@ -1728,6 +2164,27 @@
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Optimizing-different-parts.svg",
         "changes": "Rendered from SVG and converted to WebP."
+      }
+    }
+  ],
+  "thinking-040": [
+    {
+      "src": "/lesson-photos/thinking-040-1.webp",
+      "width": 880,
+      "height": 800,
+      "bytes": 135284,
+      "sha256": "2dd06303ad7f98ad8dffbbf0fc69386a27e41491a37e0167ca3152ae9efcb2ad",
+      "kind": "artwork",
+      "after": 3,
+      "title": "A spacecraft lost to a missing unit",
+      "alt": "An artist's picture of a spacecraft above a red-brown planet. Its box-shaped body is wrapped in orange and gold foil, a long solar panel in three sections reaches down to the left, and a round dish antenna stands on top. The sky behind is black with faint stars.",
+      "caption": "This is an artist's picture of NASA's Mars Climate Orbiter, which was lost as it arrived at Mars in September 1999. The investigation found a unit mismatch. One piece of software reported the push of the thrusters in pound-force seconds, and the navigation software read the same numbers as newton seconds, which made them wrong by a factor of about 4.45. It is the megabyte and megabit mistake of this lesson with another pair of units. Writing the unit beside every quantity is aimed at exactly this kind of handover.",
+      "credit": {
+        "work": "Artist's rendering of the Mars Climate Orbiter",
+        "author": "NASA/JPL/Corby Waste",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Mars_Climate_Orbiter_2.jpg",
+        "changes": "Resized and converted to WebP."
       }
     }
   ],
@@ -1770,6 +2227,28 @@
         "author": "U.S. Food and Drug Administration",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:FDA_Nutrition_Facts_Label_2016.png",
+        "changes": "Resized and converted to WebP."
+      }
+    }
+  ],
+  "work-003": [
+    {
+      "src": "/lesson-photos/work-003-1.webp",
+      "width": 880,
+      "height": 594,
+      "bytes": 20376,
+      "sha256": "cb1c1fd50b3de985d918b881e8279dcf240f26b3f2acba88e421e1d054ba3f14",
+      "kind": "photo",
+      "after": 1,
+      "title": "Plates in the air",
+      "alt": "A man in a dark jacket and bow tie stands behind a table on a stage, looking up, with one hand on a tall thin pole. Six poles rise from the table. A plate sits on top of five of them, and a stack of plates lies on the table.",
+      "caption": "Count the plates in the air: five, on five poles. Now count the plates in his hands: none. Every one of the five is still his. Each will wobble, and when it does it will need him. Look where his eyes are. Work waiting on a reviewer or a reply is a plate on a pole. The stack on the table is the dashboard request: before another plate goes up, one of the five has to finish, pause by agreement or move. The performer is Henrik Bothe.",
+      "credit": {
+        "work": "Henrik Bothe plate spinning",
+        "author": "Henrikbothe",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Henrik_Bothe_plate_spinning.jpg",
         "changes": "Resized and converted to WebP."
       }
     }

@@ -430,9 +430,10 @@ test('all six shortcuts scroll and focus their named regions using the keyboard,
         await page.keyboard.press('Tab')
         await expect(region.getByRole('button', { name: 'How UNSCROLL works', exact: true })).toBeFocused()
         await page.keyboard.press('Tab')
-        await expect(region.locator('details > summary')).toBeFocused()
+        // The section's own disclosure. The list of picture credits is a second one, nested inside it.
+        await expect(region.locator(':scope > details > summary')).toBeFocused()
         await page.keyboard.press('Enter')
-        await expect(region.locator('details')).toHaveJSProperty('open', true)
+        await expect(region.locator(':scope > details')).toHaveJSProperty('open', true)
       }
     })
   }
