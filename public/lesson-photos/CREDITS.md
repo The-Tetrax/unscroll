@@ -1,6 +1,6 @@
 # Lesson picture credits
 
-UNSCROLL shows 66 pictures by other people in 61 lessons. Each one is in the public domain or under a Creative Commons license that allows reuse with credit. They are not covered by the project's MIT license, and each keeps the license named here. Every file comes from Wikimedia Commons and was changed only as stated. A credit does not mean that the author endorses UNSCROLL.
+UNSCROLL shows 84 pictures by other people in 77 lessons. Each one is in the public domain or under a Creative Commons license that allows reuse with credit. They are not covered by the project's MIT license, and each keeps the license named here. Every file comes from Wikimedia Commons and was changed only as stated. A credit does not mean that the author endorses UNSCROLL.
 
 This file is generated from src/teaching/photos.json by npm run assets.
 
@@ -230,7 +230,7 @@ This file is generated from src/teaching/photos.json by npm run assets.
 ## cinema-037: Continue the movement rather than restarting it
 
 - File: lesson-photos/cinema-037-1.webp
-  Work: Sallie Gardner au galop
+  Work: The Horse in Motion (1878)
   Author: Eadweard Muybridge
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:The_Horse_in_Motion_high_res.jpg
@@ -338,7 +338,7 @@ This file is generated from src/teaching/photos.json by npm run assets.
 ## design-005: Give each invitation color a job
 
 - File: lesson-photos/design-005-1.webp
-  Work: Pet show, WPA recreation project poster (1939)
+  Work: Pet show, WPA recreation project poster (1936 to 1939)
   Author: Work Projects Administration Poster Collection
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Pet_show_-_WPA_recreation_project,_Dist._No._2_LCCN98509537.jpg
@@ -469,11 +469,11 @@ This file is generated from src/teaching/photos.json by npm run assets.
 ## design-040: Fit the shoe inside a checked envelope
 
 - File: lesson-photos/design-040-1.webp
-  Work: Drawing Course (Cours de dessin), plate 32
+  Work: Drawing Course (Cours de dessin), plate 32, Le Cardinal Ximenes
   Author: Charles Bargue
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Bargue_I_-_0032.png
-  Changes: Converted to WebP.
+  Changes: Contrast raised and converted to WebP.
 
 ## design-041: Make box edges agree about the viewing direction
 
@@ -586,4 +586,162 @@ This file is generated from src/teaching/photos.json by npm run assets.
   Author: Unknown artist
   License: Public domain
   Source: https://commons.wikimedia.org/wiki/File:Drawing,_Design_for_a_Monument_to_Emperor_Charles_VI_of_Naples,_ca._1735_(CH_18539831).jpg
+  Changes: Resized and converted to WebP.
+
+## life-003: Keep the dryer air path clear without servicing it
+
+- File: lesson-photos/life-003-1.webp
+  Work: Dryer lint
+  Author: Atomicdragon136
+  License: CC BY 3.0, https://creativecommons.org/licenses/by/3.0
+  Source: https://commons.wikimedia.org/wiki/File:Dryer_lint.jpg
+  Changes: Resized and converted to WebP.
+
+## life-004: Follow bathroom moisture from air to glass
+
+- File: lesson-photos/life-004-1.webp
+  Work: Writing Alaska on condensation
+  Author: www.Pixel.la Free Stock Photos
+  License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+  Source: https://commons.wikimedia.org/wiki/File:Writing_Alaska_on_condensation.jpg
+  Changes: Resized and converted to WebP.
+
+## life-031: A refrigerator dial is not a temperature reading
+
+- File: lesson-photos/life-031-1.webp
+  Work: Food Safety - Cut Waste in Refrigerators (20120106-OC-AMW-0073)
+  Author: U.S. Department of Agriculture
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Food_Safety_-_Cut_Waste_in_Refrigerators_(20120106-OC-AMW-0073).jpg
+  Changes: Resized and converted to WebP.
+
+## mind-028: Give learning another encounter after a gap
+
+- File: lesson-photos/mind-028-1.webp
+  Work: ForgettingCurve
+  Author: Icez
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:ForgettingCurve.svg
+  Changes: Rendered from SVG and converted to WebP.
+
+## money-006: Calculate interest on earlier interest
+
+- File: lesson-photos/money-006-1.webp
+  Work: Compound interest
+  Author: Wikideas1
+  License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+  Source: https://commons.wikimedia.org/wiki/File:Compound_interest.webp
+  Changes: Resized and converted to WebP.
+
+## tech-006: A DHCP offer is not the completed lease exchange
+
+- File: lesson-photos/tech-006-1.webp
+  Work: DHCP session
+  Author: Gelmo96
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:DHCP_session.svg
+  Changes: Rendered from SVG and converted to WebP.
+
+## tech-008: Resolvers and authoritative DNS servers have different jobs
+
+- File: lesson-photos/tech-008-1.webp
+  Work: Example of an iterative DNS resolver
+  Author: Lion Kimbro
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Example_of_an_iterative_DNS_resolver.svg
+  Changes: Rendered from SVG and converted to WebP.
+
+## tech-011: Bandwidth does not remove round-trip waiting
+
+- File: lesson-photos/tech-011-1.webp
+  Work: Eastern Telegraph Co's System and its General Connections (chart, about 1901)
+  Author: Unknown author
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:1901_Eastern_Telegraph_cables.png
+  Changes: Resized and converted to WebP.
+
+## tech-014: Path MTU is constrained by the smallest link
+
+- File: lesson-photos/tech-014-1.webp
+  Work: Low Bridge Sign - geograph.org.uk - 2699837
+  Author: Gerald England
+  License: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0
+  Source: https://commons.wikimedia.org/wiki/File:Low_Bridge_Sign_-_geograph.org.uk_-_2699837.jpg
+  Changes: Converted to WebP.
+
+- File: lesson-photos/tech-014-2.webp
+  Work: Pauli Exclusion Principle - Flickr - Bistrosavage
+  Author: Doug Bowman
+  License: CC BY 2.0, https://creativecommons.org/licenses/by/2.0
+  Source: https://commons.wikimedia.org/wiki/File:Pauli_Exclusion_Principle_-_Flickr_-_Bistrosavage.jpg
+  Changes: Resized and converted to WebP.
+
+## thinking-004: Check the rule that admitted each example
+
+- File: lesson-photos/thinking-004-1.webp
+  Work: Survivorship-bias
+  Author: Martin Grandjean (vector), McGeddon (picture), US Air Force (hit plot concept)
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0
+  Source: https://commons.wikimedia.org/wiki/File:Survivorship-bias.svg
+  Changes: Rendered from SVG and converted to WebP.
+
+## thinking-018: Knowing the average does not stop the variation
+
+- File: lesson-photos/thinking-018-1.webp
+  Work: Planche de Galton
+  Author: Antoine Taveneaux
+  License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0
+  Source: https://commons.wikimedia.org/wiki/File:Planche_de_Galton.jpg
+  Changes: Resized and converted to WebP.
+
+## thinking-020: Repeated readings can share the same error
+
+- File: lesson-photos/thinking-020-1.webp
+  Work: High precision Low accuracy
+  Author: DarkEvil
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:High_precision_Low_accuracy.svg
+  Changes: Rendered from SVG and converted to WebP.
+
+- File: lesson-photos/thinking-020-2.webp
+  Work: High accuracy Low precision
+  Author: DarkEvil
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:High_accuracy_Low_precision.svg
+  Changes: Rendered from SVG and converted to WebP.
+
+## thinking-038: Calculate what the faster stage leaves unchanged
+
+- File: lesson-photos/thinking-038-1.webp
+  Work: Optimizing-different-parts
+  Author: Gorivero
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Optimizing-different-parts.svg
+  Changes: Rendered from SVG and converted to WebP.
+
+## wellbeing-029: Recognize pulses as a protein food
+
+- File: lesson-photos/wellbeing-029-1.webp
+  Work: Pulses for Sale in Market - Darjeeling - West Bengal - India (12431603075)
+  Author: Adam Jones
+  License: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0
+  Source: https://commons.wikimedia.org/wiki/File:Pulses_for_Sale_in_Market_-_Darjeeling_-_West_Bengal_-_India_(12431603075).jpg
+  Changes: Resized and converted to WebP.
+
+## wellbeing-032: Check whether a serving is the whole pack
+
+- File: lesson-photos/wellbeing-032-1.webp
+  Work: FDA Nutrition Facts Label 2016
+  Author: U.S. Food and Drug Administration
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:FDA_Nutrition_Facts_Label_2016.png
+  Changes: Resized and converted to WebP.
+
+## work-026: Put a checklist at a decision point
+
+- File: lesson-photos/work-026-1.webp
+  Work: Running the checklist (14729226029)
+  Author: U.S. Air Force
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Running_the_checklist_(14729226029).jpg
   Changes: Resized and converted to WebP.

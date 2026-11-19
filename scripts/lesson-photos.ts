@@ -7,6 +7,7 @@
 //   npm run photos -- edit <edits.json>                 rewrite the words of recorded pictures (offline)
 //   npm run photos -- remove <lesson> [slot]            delete a recorded photograph
 //   npm run photos -- review [id-prefix ...]            draw sheets of the recorded photographs (offline)
+//   npm run photos -- sources [id-prefix ...]           print what each source page says, to check names and dates
 //   npm run photos -- stats                             count the recorded photographs (offline)
 import fs from 'node:fs/promises'
 import { existsSync } from 'node:fs'
@@ -24,19 +25,21 @@ const WIKIPEDIA = 'https://en.wikipedia.org/w/api.php'
 const WORK = '.hallmark/photos'
 const DATA = 'src/teaching/photos.json'
 const OUTPUT = 'public/lesson-photos'
-const METADATA = 'License|LicenseShortName|LicenseUrl|Artist|Credit|ImageDescription|ObjectName|Restrictions'
+const METADATA = 'License|LicenseShortName|LicenseUrl|Artist|Credit|ImageDescription|ObjectName|Restrictions|DateTimeOriginal'
 const NOT_A_SUBJECT = /(?:logo|icon|ambox|question[ _]book|edit-clear|padlock|folder[ _]hexagonal|wiki(?:quote|source|books|data|versity|news|species|voyage|tionary)|commons-|oojs|nuvola|crystal[ _]clear|emblem|gnome-|disambig|flag[ _]of|pictogram|sound-icon|loudspeaker|text[ _]document|unbalanced[ _]scales|symbol[ _](?:support|oppose|neutral|category|list|portal|book))/i
 const lessonById = new Map(lessons.map((lesson) => [lesson.id, lesson]))
 
 interface Found {
   file: string; width: number; height: number; mime: string; thumb: string; page: string
-  license: string; licenseUrl?: string; author: string; work: string; description: string; restrictions: string; rejected?: string
+  license: string; licenseUrl?: string; author: string; work: string; description: string; date: string; restrictions: string; rejected?: string
 }
 interface Candidate extends Found { n: number }
 interface Pick {
   lesson: string; n?: number; file?: string; slot?: number; kind?: LessonPhoto['kind']; after?: number
   title: string; alt: string; caption: string; punchline?: string
   crop?: [number, number, number, number]; author?: string; work?: string; quality?: number; size?: number; fetch?: 1280 | 1920 | 3840
+  // For a faint scan or plate: stretches the tones to the full range. The credit records the change.
+  contrast?: boolean
 }
 interface ApiPage {
   title: string; missing?: boolean
@@ -139,7 +142,7 @@ async function imageInfo(titles: string[], width: number): Promise<Map<string, F
         license: terms?.name ?? `not accepted (${meta.License || meta.LicenseShortName || 'no license data'})`, ...(terms?.url ? { licenseUrl: terms.url } : {}),
         author: plain(meta.Artist) || plain(meta.Credit) || 'Unknown author',
         work: plain(meta.ObjectName) || page.title.replace(/^File:/, '').replace(/\.[a-z0-9]+$/i, '').replace(/[\u2013\u2014]/g, '-'),
-        description: plain(meta.ImageDescription), restrictions: meta.Restrictions ?? '',
+        description: plain(meta.ImageDescription), date: plain(meta.DateTimeOriginal), restrictions: meta.Restrictions ?? '',
       }
       if (!terms) entry.rejected = `license ${meta.License || meta.LicenseShortName || 'unknown'}`
       else if (!/^image\/(?:jpeg|png|webp|tiff|svg\+xml)$/.test(info.mime)) entry.rejected = `type ${info.mime}`
@@ -320,6 +323,7 @@ async function add(file: string) {
       image = image.extract({ left: Math.round(x * upright.info.width), top: Math.round(y * upright.info.height), width: Math.round(w * upright.info.width), height: Math.round(h * upright.info.height) })
     }
     const edge = pick.size ?? 880
+    if (pick.contrast) image = image.normalise()
     const output = await image.resize({ width: edge, height: edge, fit: 'inside', withoutEnlargement: true }).flatten({ background: '#ffffff' })
       .webp({ quality: pick.quality ?? 72, effort: 6 }).toBuffer({ resolveWithObject: true })
     const list = data[pick.lesson] ?? []
@@ -330,7 +334,7 @@ async function add(file: string) {
     await fs.writeFile(path.join(OUTPUT, name), output.data)
     const kind = pick.kind ?? 'photo'
     const vector = found.mime === 'image/svg+xml'
-    const changes = [vector && 'rendered from SVG', pick.crop && 'cropped', !vector && found.width > output.info.width && 'resized', 'converted to WebP'].filter(Boolean).join(', ').replace(/, ([^,]+)$/, ' and $1')
+    const changes = [vector && 'rendered from SVG', pick.crop && 'cropped', !vector && found.width > output.info.width && 'resized', pick.contrast && 'contrast raised', 'converted to WebP'].filter(Boolean).join(', ').replace(/, ([^,]+)$/, ' and $1')
     list[slot] = {
       src: `/lesson-photos/${name}`, width: output.info.width, height: output.info.height, bytes: output.data.length,
       sha256: crypto.createHash('sha256').update(output.data).digest('hex'), kind,
@@ -396,6 +400,25 @@ async function review(prefixes: string[], columns: number) {
   if (prefixes.length) for (const { id, index, photo } of entries) console.log(`\n${id} / ${index + 1}  ${photo.title}\n   SHOWS: ${photo.alt}\n   SAYS: ${photo.punchline ? `[${photo.punchline}] ` : ''}${photo.caption}`)
 }
 
+// Looking at a picture cannot confirm a name, a place or a date. This prints what the source page says about each
+// recorded picture, and the license it carries today, so those claims can be checked against it.
+async function sources(prefixes: string[], length: number) {
+  const data = await readData()
+  const entries = Object.entries(data).filter(([id]) => !prefixes.length || prefixes.some((prefix) => id.startsWith(prefix)))
+    .flatMap(([id, photos]) => photos.map((photo, index) => ({ id, index, photo, file: canonical(decodeURIComponent(new URL(photo.credit.source).pathname.replace(/^\/wiki\//, ''))) })))
+  const info = await imageInfo(entries.map((entry) => entry.file), 330)
+  let changed = 0
+  for (const { id, index, photo, file } of entries) {
+    const found = info.get(file)
+    const same = found?.license === photo.credit.license
+    if (!same) changed += 1
+    console.log(`\n${id} / ${index + 1}  ${file}`)
+    console.log(`   LICENSE: ${found ? `${found.license}${same ? '' : `  (RECORDED AS ${photo.credit.license})`}` : 'NOT FOUND ON COMMONS'}  BY: ${(found?.author ?? '').slice(0, 100)}${found?.date ? `  DATED: ${found.date.slice(0, 50)}` : ''}`)
+    console.log(`   PAGE SAYS: ${found?.description.slice(0, length) || '(no description)'}`)
+  }
+  console.log(`\n${entries.length} pictures checked, ${changed} with a missing page or a license that differs from the record.`)
+}
+
 async function stats() {
   const data = await readData()
   const groups = new Map<string, { lessons: number; covered: number; photos: number; bytes: number }>()
@@ -427,5 +450,6 @@ else if (command === 'add') await add(words[0])
 else if (command === 'edit') await edit(words[0])
 else if (command === 'remove') await remove(words[0], words[1] ? Number(words[1]) : undefined)
 else if (command === 'review') await review(words, flag('--cols', 3))
+else if (command === 'sources') await sources(words, flag('--length', 420))
 else if (command === 'stats') await stats()
-else { console.log('Commands: find <wishlist.json> [--max 8] [--cols 8] | show <batch> <lesson:n,n> ... [--cols 3] | add <picks.json> | edit <edits.json> | remove <lesson> [slot] | review [id-prefix ...] [--cols 3] | stats'); process.exitCode = 1 }
+else { console.log('Commands: find <wishlist.json> [--max 8] [--cols 8] | show <batch> <lesson:n,n> ... [--cols 3] | add <picks.json> | edit <edits.json> | remove <lesson> [slot] | review [id-prefix ...] [--cols 3] | sources [id-prefix ...] [--length 420] | stats'); process.exitCode = 1 }

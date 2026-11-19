@@ -1,5 +1,5 @@
 // Authoring aid: prints a compact outline of lessons so photographs and connections can be planned.
-// Usage: tsx scripts/list-lessons.ts [id-prefix ...] [--full] [--idea] [--counts]
+// Usage: tsx scripts/list-lessons.ts [id-prefix ...] [--full] [--idea] [--text] [--counts]
 import { lessons } from '../src/data/index.ts'
 
 const args = process.argv.slice(2)
@@ -27,5 +27,7 @@ if (args.includes('--counts')) {
     }
     // The second section opens with the lesson's own comparison, which a picture should match.
     if (idea) console.log(`   idea: ${guide.sections[1].title}: ${guide.sections[1].paragraphs[0].slice(0, 280)}`)
+    // The whole text, for writing a caption in the lesson's own words.
+    if (args.includes('--text')) for (const [index, section] of guide.sections.entries()) console.log(`   [${index}] ${section.title}\n${section.paragraphs.map((paragraph) => `      ${paragraph}`).join('\n')}`)
   }
 }

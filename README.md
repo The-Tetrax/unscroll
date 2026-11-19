@@ -86,7 +86,7 @@ Requires Node 24 and npm. Run `npm ci`, then `npm run dev`. Development serves a
 | `npm test` | Learning, schema, backup, attribution, and discovery unit tests |
 | `npm run test:e2e` | Phone Chrome, desktop Chrome, and phone WebKit flows |
 | `npm run check:discovery` | Read-only live Wikipedia smoke check, in-memory ledger |
-| `npm run photos -- <command>` | Authoring tool for lesson pictures: search Wikimedia Commons, preview, add, remove, review. Needs the network and is not part of the build |
+| `npm run photos -- <command>` | Authoring tool for lesson pictures: search Wikimedia Commons, preview, add, edit, remove, review, and compare the records with their source pages. Needs the network and is not part of the build |
 | `npm run package` | Rebuild and create static and full-source release archives |
 
 Before browser tests, run `npx playwright install chromium webkit`. Build before testing the production preview. CI installs the browser system dependencies on Ubuntu. The VS Code task **UNSCROLL: preview production PWA** runs the built app.
